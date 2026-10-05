@@ -8,6 +8,7 @@ import {
 import { showcaseSchema } from "./compositions/Showcase/schema";
 import { showcaseDurationInFrames } from "./compositions/Showcase/timing";
 import { Template, TEMPLATE_SECONDS } from "./compositions/_Template/Template";
+import { Polymate } from "./compositions/Polymate/Polymate";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -39,6 +40,17 @@ export const RemotionRoot: React.FC = () => {
         height={VIDEO.height}
         fps={VIDEO.fps}
         durationInFrames={showcaseDurationInFrames(VIDEO.fps)}
+      />
+
+      {/* Polymate brand film: format is fixed by the brief (1920x1080, 30 fps,
+          exactly 20 s = 600 frames) and must match timeline.json + the audio. */}
+      <Composition
+        id="Polymate"
+        component={Polymate}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={600}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

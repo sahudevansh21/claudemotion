@@ -49,11 +49,13 @@ src/
     Beat.tsx               <BeatProvider bpm> + useBeat() for music-synced motion
   compositions/
     Showcase/              sample: Showcase.tsx, schema.ts (zod props), timing.ts, scenes/*
+    Polymate/              20 s brand film: timeline.json (cuts + SFX cues), brand.ts, scenes/*
     _Template/Template.tsx copied by `npm run new`
 public/                    static assets → reference with staticFile("path")
   audio/beat-120bpm.mp3    generated 120 BPM loop (royalty-free)
   fonts/*.woff2            Inter + JetBrains Mono (OFL)
 scripts/new-composition.mjs
+scripts/polymate/generate_audio.py   Python music+SFX generator (reads Polymate/timeline.json)
 out/                       render output (git-ignored)
 ```
 

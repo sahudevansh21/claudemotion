@@ -6,6 +6,16 @@ Programmatic motion graphics with [Remotion](https://www.remotion.dev) **4.0.533
 - Reusable building blocks in `src/components` and `src/lib`; starter template + `npm run new` scaffolder.
 - Official **Remotion Agent Skills** in `.agents/skills` (+ `.claude/skills`), and project rules for agents in [`AGENTS.md`](AGENTS.md).
 
+## Polymate brand film
+
+20 s, 1920×1080, 30 fps. Source: `src/compositions/Polymate/`. Research and notes: [`docs/polymate/SOURCES.md`](docs/polymate/SOURCES.md).
+
+```bash
+pip install -r scripts/polymate/requirements.txt
+python3 scripts/polymate/generate_audio.py              # regenerate music + SFX from timeline.json
+npx remotion render Polymate out/polymate.mp4 --crf=16  # export
+```
+
 ## Requirements
 
 Node.js 18+ (tested with Node 22, npm 10). Remotion downloads its own headless Chrome and bundles FFmpeg on first render.

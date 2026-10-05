@@ -1,0 +1,302 @@
+{
+  "_comment": "Single source of truth for picture AND sound. Frames at 30 fps; scene cuts land on a 120 BPM grid (15 frames per beat). Scene components read `cues` (frames relative to scene start); scripts/polymate/generate_audio.py reads the same file and places each `sfx` at scene.start + cue.",
+  "fps": 30,
+  "durationInFrames": 600,
+  "bpm": 120,
+  "scenes": [
+    {
+      "id": "mark",
+      "start": 0,
+      "end": 45,
+      "cues": {
+        "assembled": 26
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "whoosh",
+          "gain": 0.55
+        },
+        {
+          "cue": "assembled",
+          "type": "accent",
+          "gain": 0.45,
+          "note": 0
+        }
+      ]
+    },
+    {
+      "id": "glyph",
+      "start": 45,
+      "end": 75,
+      "cues": {
+        "resolve": 18
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "glitch",
+          "gain": 0.4
+        },
+        {
+          "cue": "resolve",
+          "type": "click",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "tile",
+      "start": 75,
+      "end": 105,
+      "cues": {
+        "pop": 0,
+        "spin": 4
+      },
+      "sfx": [
+        {
+          "cue": "pop",
+          "type": "click",
+          "gain": 0.55
+        },
+        {
+          "cue": "spin",
+          "type": "whoosh",
+          "gain": 0.35
+        }
+      ]
+    },
+    {
+      "id": "wordmark",
+      "start": 105,
+      "end": 180,
+      "cues": {
+        "letters": 4,
+        "letterStep": 2,
+        "tagline": 32
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "impact",
+          "gain": 0.55
+        },
+        {
+          "cue": "tagline",
+          "type": "accent",
+          "gain": 0.4,
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "start": 180,
+      "end": 255,
+      "cues": {
+        "nav": 2,
+        "navStep": 3,
+        "typing": 14,
+        "rows": 38,
+        "rowStep": 6
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "click",
+          "gain": 0.5
+        },
+        {
+          "cue": "typing",
+          "type": "typing",
+          "gain": 0.3,
+          "count": 12,
+          "step": 1.6
+        },
+        {
+          "cue": "rows",
+          "type": "click",
+          "gain": 0.4
+        },
+        {
+          "cue": 44,
+          "type": "click",
+          "gain": 0.35
+        },
+        {
+          "cue": 50,
+          "type": "click",
+          "gain": 0.3
+        }
+      ]
+    },
+    {
+      "id": "markets",
+      "start": 255,
+      "end": 345,
+      "cues": {
+        "cards": 2,
+        "cardStep": 6,
+        "bars": 26
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "whoosh",
+          "gain": 0.45
+        },
+        {
+          "cue": 2,
+          "type": "click",
+          "gain": 0.45
+        },
+        {
+          "cue": 8,
+          "type": "click",
+          "gain": 0.4
+        },
+        {
+          "cue": 14,
+          "type": "click",
+          "gain": 0.35
+        },
+        {
+          "cue": "bars",
+          "type": "rise",
+          "gain": 0.3,
+          "length": 0.9
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "start": 345,
+      "end": 405,
+      "cues": {
+        "progress": 6,
+        "progressEnd": 30,
+        "confirmed": 32
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "click",
+          "gain": 0.5
+        },
+        {
+          "cue": "progress",
+          "type": "rise",
+          "gain": 0.25,
+          "length": 0.8
+        },
+        {
+          "cue": "confirmed",
+          "type": "chime",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "start": 405,
+      "end": 480,
+      "cues": {
+        "explore": 0,
+        "pan1": 16,
+        "trade": 24,
+        "pan2": 38,
+        "check": 44,
+        "track": 48
+      },
+      "sfx": [
+        {
+          "cue": "explore",
+          "type": "click",
+          "gain": 0.45
+        },
+        {
+          "cue": "pan1",
+          "type": "whoosh",
+          "gain": 0.4
+        },
+        {
+          "cue": "trade",
+          "type": "click",
+          "gain": 0.4
+        },
+        {
+          "cue": "pan2",
+          "type": "whoosh",
+          "gain": 0.35
+        },
+        {
+          "cue": "check",
+          "type": "accent",
+          "gain": 0.4,
+          "note": 7
+        }
+      ]
+    },
+    {
+      "id": "headline",
+      "start": 480,
+      "end": 525,
+      "cues": {
+        "swap1": 8,
+        "swap2": 16,
+        "fast": 26
+      },
+      "sfx": [
+        {
+          "cue": 0,
+          "type": "impact",
+          "gain": 0.5
+        },
+        {
+          "cue": "swap1",
+          "type": "click",
+          "gain": 0.45
+        },
+        {
+          "cue": "swap2",
+          "type": "click",
+          "gain": 0.45
+        },
+        {
+          "cue": "fast",
+          "type": "impact",
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "endcard",
+      "start": 525,
+      "end": 600,
+      "cues": {
+        "stamp": 3,
+        "wordmark": 10,
+        "cta": 22,
+        "sources": 30
+      },
+      "sfx": [
+        {
+          "cue": "stamp",
+          "type": "impact",
+          "gain": 0.6
+        },
+        {
+          "cue": "wordmark",
+          "type": "accent",
+          "gain": 0.4,
+          "note": 12
+        },
+        {
+          "cue": "cta",
+          "type": "click",
+          "gain": 0.4
+        }
+      ]
+    }
+  ]
+}
