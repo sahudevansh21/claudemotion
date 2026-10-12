@@ -12,6 +12,7 @@ import { Polymate } from "./compositions/Polymate/Polymate";
 import { TerraNode } from "./compositions/TerraNode/TerraNode";
 import { Collatera } from "./compositions/Collatera/Collatera";
 import { Allocra } from "./compositions/Allocra/Allocra";
+import { Nightshift } from "./compositions/Nightshift/Nightshift";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -87,6 +88,17 @@ export const RemotionRoot: React.FC = () => {
         height={1440}
         fps={60}
         durationInFrames={1800}
+      />
+
+      {/* NIGHTSHIFT motion-graphics teaser: 1920x1080 @ 30 fps, exactly 30 s
+          = 900 frames; must match its timeline.json and generated mix. */}
+      <Composition
+        id="Nightshift"
+        component={Nightshift}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={900}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}
