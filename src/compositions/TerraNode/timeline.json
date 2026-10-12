@@ -1,0 +1,142 @@
+{
+  "_comment": "Single source of truth for picture AND sound (frames @ 30 fps). Cuts sit on a 100 BPM grid (18 frames per beat). Scenes read `cues` (frames relative to scene start); scripts/terranode/generate_audio.py places each `sfx` at scene.start + cue.",
+  "fps": 30,
+  "durationInFrames": 600,
+  "bpm": 100,
+  "scenes": [
+    {
+      "id": "field",
+      "start": 0,
+      "end": 72,
+      "cues": { "caption": 30 },
+      "sfx": [
+        { "cue": 0, "type": "swell", "gain": 0.35, "length": 1.6 },
+        { "cue": "caption", "type": "tick", "gain": 0.3 }
+      ]
+    },
+    {
+      "id": "rows",
+      "start": 72,
+      "end": 126,
+      "cues": { "caption": 14 },
+      "sfx": [
+        { "cue": 0, "type": "whoosh", "gain": 0.45 },
+        { "cue": "caption", "type": "tick", "gain": 0.3 }
+      ]
+    },
+    {
+      "id": "node",
+      "start": 126,
+      "end": 198,
+      "cues": {
+        "ping1": 10,
+        "ping2": 28,
+        "ping3": 46,
+        "chips": 16,
+        "chipStep": 6,
+        "caption": 22
+      },
+      "sfx": [
+        { "cue": 0, "type": "click", "gain": 0.45 },
+        { "cue": "ping1", "type": "ping", "gain": 0.4 },
+        { "cue": "ping2", "type": "ping", "gain": 0.32 },
+        { "cue": "ping3", "type": "ping", "gain": 0.25 },
+        { "cue": "chips", "type": "tick", "gain": 0.3 },
+        { "cue": 22, "type": "tick", "gain": 0.28 },
+        { "cue": 28, "type": "tick", "gain": 0.26 }
+      ]
+    },
+    {
+      "id": "tablet",
+      "start": 198,
+      "end": 288,
+      "cues": {
+        "ui": 6,
+        "rows": 14,
+        "rowStep": 5,
+        "values": 20,
+        "leaf": 46,
+        "caption": 30
+      },
+      "sfx": [
+        { "cue": 0, "type": "whoosh", "gain": 0.4 },
+        { "cue": "ui", "type": "click", "gain": 0.45 },
+        { "cue": "rows", "type": "tick", "gain": 0.3 },
+        { "cue": 19, "type": "tick", "gain": 0.28 },
+        { "cue": 24, "type": "tick", "gain": 0.26 },
+        { "cue": 29, "type": "tick", "gain": 0.24 },
+        { "cue": 34, "type": "tick", "gain": 0.22 },
+        { "cue": "leaf", "type": "accent", "gain": 0.4, "note": 7 }
+      ]
+    },
+    {
+      "id": "leaf",
+      "start": 288,
+      "end": 360,
+      "cues": {
+        "frame": 6,
+        "scan": 12,
+        "scanEnd": 40,
+        "result": 42,
+        "caption": 18
+      },
+      "sfx": [
+        { "cue": "frame", "type": "click", "gain": 0.45 },
+        { "cue": "scan", "type": "scan", "gain": 0.3, "length": 0.95 },
+        { "cue": "result", "type": "chime", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "approve",
+      "start": 360,
+      "end": 432,
+      "cues": { "card": 6, "tap": 34, "done": 38, "caption": 14 },
+      "sfx": [
+        { "cue": 0, "type": "whoosh", "gain": 0.4 },
+        { "cue": "card", "type": "notify", "gain": 0.45 },
+        { "cue": "tap", "type": "click", "gain": 0.55 },
+        { "cue": "done", "type": "accent", "gain": 0.4, "note": 12 }
+      ]
+    },
+    {
+      "id": "network",
+      "start": 432,
+      "end": 504,
+      "cues": { "links": 8, "linkStep": 5, "caption": 20 },
+      "sfx": [
+        { "cue": 0, "type": "swell", "gain": 0.3, "length": 1.2 },
+        { "cue": "links", "type": "ping", "gain": 0.3 },
+        { "cue": 13, "type": "ping", "gain": 0.26 },
+        { "cue": 18, "type": "ping", "gain": 0.22 },
+        { "cue": "caption", "type": "tick", "gain": 0.3 }
+      ]
+    },
+    {
+      "id": "sky",
+      "start": 504,
+      "end": 600,
+      "cues": {
+        "tilt": 0,
+        "tiltEnd": 26,
+        "ring": 8,
+        "collapse": 34,
+        "type": 38,
+        "typeStep": 2,
+        "dot": 58,
+        "tagline": 62
+      },
+      "sfx": [
+        { "cue": "tilt", "type": "whoosh", "gain": 0.4 },
+        { "cue": "collapse", "type": "impact", "gain": 0.5 },
+        {
+          "cue": "type",
+          "type": "typing",
+          "gain": 0.28,
+          "count": 9,
+          "step": 2
+        },
+        { "cue": "dot", "type": "accent", "gain": 0.45, "note": 12 }
+      ]
+    }
+  ]
+}

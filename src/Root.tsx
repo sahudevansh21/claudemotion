@@ -9,6 +9,7 @@ import { showcaseSchema } from "./compositions/Showcase/schema";
 import { showcaseDurationInFrames } from "./compositions/Showcase/timing";
 import { Template, TEMPLATE_SECONDS } from "./compositions/_Template/Template";
 import { Polymate } from "./compositions/Polymate/Polymate";
+import { TerraNode } from "./compositions/TerraNode/TerraNode";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -47,6 +48,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Polymate"
         component={Polymate}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={600}
+      />
+
+      {/* TerraNode brand film: fixed by the brief (1920x1080, 30 fps, exactly
+          20 s = 600 frames); must match its timeline.json + generated audio. */}
+      <Composition
+        id="TerraNode"
+        component={TerraNode}
         width={1920}
         height={1080}
         fps={30}

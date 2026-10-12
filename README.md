@@ -16,6 +16,16 @@ python3 scripts/polymate/generate_audio.py              # regenerate music + SFX
 npx remotion render Polymate out/polymate.mp4 --crf=16  # export
 ```
 
+## TerraNode film
+
+20 s, 1920×1080, 30 fps. Source: `src/compositions/TerraNode/`. Research and notes: [`docs/terranode/SOURCES.md`](docs/terranode/SOURCES.md).
+
+```bash
+pip install -r scripts/terranode/requirements.txt
+python3 scripts/terranode/generate_audio.py               # regenerate music + SFX from timeline.json
+npx remotion render TerraNode out/terranode.mp4 --crf=16  # export
+```
+
 ## Requirements
 
 Node.js 18+ (tested with Node 22, npm 10). Remotion downloads its own headless Chrome and bundles FFmpeg on first render.
