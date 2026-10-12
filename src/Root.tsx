@@ -10,6 +10,7 @@ import { showcaseDurationInFrames } from "./compositions/Showcase/timing";
 import { Template, TEMPLATE_SECONDS } from "./compositions/_Template/Template";
 import { Polymate } from "./compositions/Polymate/Polymate";
 import { TerraNode } from "./compositions/TerraNode/TerraNode";
+import { Collatera } from "./compositions/Collatera/Collatera";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -63,6 +64,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={600}
+      />
+
+      {/* COLLATERA brand film: fixed by the brief (1920x1080, 60 fps, exactly
+          30 s = 1,800 frames); must match its timeline.json + generated audio. */}
+      <Composition
+        id="Collatera"
+        component={Collatera}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={1800}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

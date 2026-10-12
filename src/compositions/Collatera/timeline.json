@@ -1,0 +1,177 @@
+{
+  "_comment": "Single source of truth for picture AND sound. 60 fps, 1800 frames (30.000 s). Scene boundaries follow the brief (0/5/11/18/24/30 s) and sit on a 120 BPM grid (30 frames per beat). Scenes read `cues` (frames relative to scene start); scripts/collatera/generate_audio.py places each `sfx` at scene.start + cue.",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "bpm": 120,
+  "scenes": [
+    {
+      "id": "signal",
+      "start": 0,
+      "end": 300,
+      "cues": {
+        "grid": 0,
+        "pixels": 24,
+        "assemble": 60,
+        "assembleEnd": 150,
+        "name": 168,
+        "nameStep": 5,
+        "label": 228,
+        "push": 282
+      },
+      "sfx": [
+        { "cue": 0, "type": "drone", "gain": 0.35, "length": 2.4 },
+        {
+          "cue": "pixels",
+          "type": "clicks",
+          "gain": 0.22,
+          "count": 6,
+          "step": 6
+        },
+        {
+          "cue": "assemble",
+          "type": "clicks",
+          "gain": 0.26,
+          "count": 14,
+          "step": 6
+        },
+        { "cue": 150, "type": "accent", "gain": 0.45, "note": 0 },
+        { "cue": "name", "type": "typing", "gain": 0.3, "count": 9, "step": 5 },
+        {
+          "cue": "label",
+          "type": "typing",
+          "gain": 0.18,
+          "count": 10,
+          "step": 3
+        },
+        { "cue": "push", "type": "whoosh", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "problem",
+      "start": 300,
+      "end": 660,
+      "cues": {
+        "line1": 10,
+        "line2": 70,
+        "line3": 110,
+        "wordStep": 8,
+        "feed": 30,
+        "feedStep": 22,
+        "feedStop": 170,
+        "stale": 230,
+        "wipe": 336
+      },
+      "sfx": [
+        { "cue": "line1", "type": "accent", "gain": 0.4, "note": -5 },
+        { "cue": "line2", "type": "accent", "gain": 0.35, "note": -3 },
+        { "cue": "line3", "type": "impact", "gain": 0.45 },
+        {
+          "cue": "feed",
+          "type": "pulses",
+          "gain": 0.2,
+          "count": 7,
+          "step": 22
+        },
+        { "cue": "stale", "type": "warn", "gain": 0.4 },
+        { "cue": "wipe", "type": "whoosh", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "start": 660,
+      "end": 1080,
+      "cues": {
+        "p1": 10,
+        "p1Bar": 40,
+        "pan2": 120,
+        "p2": 140,
+        "pan3": 240,
+        "p3": 260,
+        "zoomOut": 340,
+        "push": 402
+      },
+      "sfx": [
+        { "cue": "p1", "type": "panel", "gain": 0.45 },
+        { "cue": "p1Bar", "type": "rise", "gain": 0.22, "length": 0.8 },
+        { "cue": "pan2", "type": "whoosh", "gain": 0.3 },
+        { "cue": "p2", "type": "panel", "gain": 0.42 },
+        { "cue": 190, "type": "warn", "gain": 0.3 },
+        { "cue": "pan3", "type": "whoosh", "gain": 0.3 },
+        { "cue": "p3", "type": "panel", "gain": 0.42 },
+        { "cue": 300, "type": "accent", "gain": 0.3, "note": -7 },
+        { "cue": "zoomOut", "type": "whoosh", "gain": 0.35 },
+        { "cue": "push", "type": "whoosh", "gain": 0.35 }
+      ]
+    },
+    {
+      "id": "workflow",
+      "start": 1080,
+      "end": 1440,
+      "cues": {
+        "stages": 6,
+        "stageStep": 22,
+        "scenario": 120,
+        "drag": 150,
+        "dragEnd": 190,
+        "risk": 192,
+        "preview": 216,
+        "card": 252,
+        "cardWord": 26
+      },
+      "sfx": [
+        {
+          "cue": "stages",
+          "type": "clicks",
+          "gain": 0.35,
+          "count": 4,
+          "step": 22
+        },
+        { "cue": "scenario", "type": "panel", "gain": 0.4 },
+        { "cue": "drag", "type": "fall", "gain": 0.25, "length": 0.65 },
+        { "cue": "risk", "type": "warn", "gain": 0.35 },
+        { "cue": "preview", "type": "accent", "gain": 0.35, "note": 7 },
+        { "cue": "card", "type": "impact", "gain": 0.45 },
+        { "cue": 278, "type": "click", "gain": 0.4 },
+        { "cue": 304, "type": "click", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "closing",
+      "start": 1440,
+      "end": 1800,
+      "cues": {
+        "mascot": 6,
+        "line1": 70,
+        "line2": 110,
+        "readonly": 196,
+        "lockup": 196,
+        "footer": 236
+      },
+      "sfx": [
+        { "cue": 0, "type": "whoosh", "gain": 0.35 },
+        {
+          "cue": "mascot",
+          "type": "clicks",
+          "gain": 0.25,
+          "count": 8,
+          "step": 4
+        },
+        {
+          "cue": "line1",
+          "type": "typing",
+          "gain": 0.26,
+          "count": 8,
+          "step": 3
+        },
+        {
+          "cue": "line2",
+          "type": "typing",
+          "gain": 0.26,
+          "count": 8,
+          "step": 3
+        },
+        { "cue": "lockup", "type": "final", "gain": 0.55 }
+      ]
+    }
+  ]
+}

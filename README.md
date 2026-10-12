@@ -26,6 +26,16 @@ python3 scripts/terranode/generate_audio.py               # regenerate music + S
 npx remotion render TerraNode out/terranode.mp4 --crf=16  # export
 ```
 
+## COLLATERA film
+
+30 s, 1920×1080, **60 fps** (1,800 frames). Source: `src/compositions/Collatera/`. Notes: [`docs/collatera/SOURCES.md`](docs/collatera/SOURCES.md).
+
+```bash
+pip install -r scripts/collatera/requirements.txt
+python3 scripts/collatera/generate_audio.py               # regenerate music + SFX from timeline.json
+npx remotion render Collatera out/collatera.mp4 --crf=16  # export
+```
+
 ## Requirements
 
 Node.js 18+ (tested with Node 22, npm 10). Remotion downloads its own headless Chrome and bundles FFmpeg on first render.
