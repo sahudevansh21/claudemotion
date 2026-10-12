@@ -11,6 +11,7 @@ import { Template, TEMPLATE_SECONDS } from "./compositions/_Template/Template";
 import { Polymate } from "./compositions/Polymate/Polymate";
 import { TerraNode } from "./compositions/TerraNode/TerraNode";
 import { Collatera } from "./compositions/Collatera/Collatera";
+import { Allocra } from "./compositions/Allocra/Allocra";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -73,6 +74,17 @@ export const RemotionRoot: React.FC = () => {
         component={Collatera}
         width={1920}
         height={1080}
+        fps={60}
+        durationInFrames={1800}
+      />
+
+      {/* ALLOCRA short film: 2K (2560x1440) @ 60 fps, exactly 30 s = 1,800
+          frames; must match its timeline.json, vo.json and generated mix. */}
+      <Composition
+        id="Allocra"
+        component={Allocra}
+        width={2560}
+        height={1440}
         fps={60}
         durationInFrames={1800}
       />

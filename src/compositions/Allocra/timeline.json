@@ -1,0 +1,194 @@
+{
+  "_comment": "Single source of truth for picture, voiceover and sound. 60 fps, 1800 frames (30.000 s). `vo` places each voiceover line (see vo.json for durations). Shots read `cues` (frames relative to the shot); scripts/allocra/generate_audio.py places `sfx` at shot.start + cue and mixes the VO.",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "vo": [
+    { "id": "l1", "at": 54, "act": 1 },
+    { "id": "l2", "at": 216, "act": 1 },
+    { "id": "l3", "at": 390, "act": 1 },
+    { "id": "l4", "at": 498, "act": 1 },
+    { "id": "l5", "at": 672, "act": 2 },
+    { "id": "l6", "at": 790, "act": 2 },
+    { "id": "l7", "at": 880, "act": 2 },
+    { "id": "l8", "at": 1040, "act": 2 },
+    { "id": "l9", "at": 1220, "act": 2 },
+    { "id": "l10", "at": 1370, "act": 2 },
+    { "id": "l11", "at": 1580, "act": 3 }
+  ],
+  "shots": [
+    {
+      "id": "city",
+      "start": 0,
+      "end": 54,
+      "grade": "night",
+      "cues": {},
+      "sfx": [
+        { "cue": 0, "type": "riser", "gain": 0.35, "length": 0.9 },
+        { "cue": 20, "type": "ping", "gain": 0.3 },
+        { "cue": 38, "type": "ping", "gain": 0.26 }
+      ]
+    },
+    {
+      "id": "feed",
+      "start": 54,
+      "end": 108,
+      "grade": "night",
+      "cues": { "toastStep": 9 },
+      "sfx": [
+        { "cue": 0, "type": "hit", "gain": 0.35 },
+        { "cue": 4, "type": "pings", "gain": 0.24, "count": 5, "step": 9 }
+      ]
+    },
+    {
+      "id": "profile",
+      "start": 108,
+      "end": 162,
+      "grade": "night",
+      "cues": {},
+      "sfx": [
+        { "cue": 0, "type": "hit", "gain": 0.3 },
+        { "cue": 18, "type": "ping", "gain": 0.25 }
+      ]
+    },
+    {
+      "id": "crowd",
+      "start": 162,
+      "end": 216,
+      "grade": "cold",
+      "cues": {},
+      "sfx": [
+        { "cue": 0, "type": "hit", "gain": 0.32 },
+        { "cue": 10, "type": "pings", "gain": 0.2, "count": 4, "step": 10 }
+      ]
+    },
+    {
+      "id": "apps",
+      "start": 216,
+      "end": 261,
+      "grade": "cold",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "hit", "gain": 0.4 }]
+    },
+    {
+      "id": "ticker",
+      "start": 261,
+      "end": 306,
+      "grade": "night",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "hit", "gain": 0.42 }]
+    },
+    {
+      "id": "tips",
+      "start": 306,
+      "end": 390,
+      "grade": "night",
+      "cues": { "toastStep": 12 },
+      "sfx": [
+        { "cue": 0, "type": "hit", "gain": 0.44 },
+        { "cue": 8, "type": "pings", "gain": 0.22, "count": 5, "step": 12 }
+      ]
+    },
+    {
+      "id": "eye",
+      "start": 390,
+      "end": 486,
+      "grade": "tension",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "whoosh", "gain": 0.35 }]
+    },
+    {
+      "id": "girl",
+      "start": 486,
+      "end": 600,
+      "grade": "tension",
+      "cues": { "phoneOff": 64, "lookUp": 70 },
+      "sfx": [{ "cue": 64, "type": "lock", "gain": 0.45 }]
+    },
+    {
+      "id": "black",
+      "start": 600,
+      "end": 648,
+      "grade": "none",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "cut", "gain": 0.5 }]
+    },
+    {
+      "id": "dawn",
+      "start": 648,
+      "end": 780,
+      "grade": "dawn",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "swell", "gain": 0.35, "length": 2.2 }]
+    },
+    {
+      "id": "screen",
+      "start": 780,
+      "end": 870,
+      "grade": "dawn",
+      "cues": {},
+      "sfx": [{ "cue": 0, "type": "whoosh", "gain": 0.25 }]
+    },
+    {
+      "id": "basket",
+      "start": 870,
+      "end": 1020,
+      "grade": "warmUI",
+      "cues": {
+        "rows": 10,
+        "rowStep": 14,
+        "drag": 60,
+        "dragEnd": 108,
+        "total": 112
+      },
+      "sfx": [
+        { "cue": 10, "type": "tick", "gain": 0.3 },
+        { "cue": 24, "type": "tick", "gain": 0.28 },
+        { "cue": 38, "type": "tick", "gain": 0.26 },
+        { "cue": 112, "type": "chime", "gain": 0.35 }
+      ]
+    },
+    {
+      "id": "diagnostics",
+      "start": 1020,
+      "end": 1200,
+      "grade": "warmUI",
+      "cues": { "overlap": 24, "issuer": 82, "cost": 140 },
+      "sfx": [
+        { "cue": 24, "type": "tick", "gain": 0.32 },
+        { "cue": 82, "type": "tick", "gain": 0.32 },
+        { "cue": 140, "type": "tick", "gain": 0.32 }
+      ]
+    },
+    {
+      "id": "phone",
+      "start": 1200,
+      "end": 1350,
+      "grade": "dawn",
+      "cues": { "checks": 20, "checkStep": 16 },
+      "sfx": [
+        { "cue": 20, "type": "tick", "gain": 0.28 },
+        { "cue": 36, "type": "tick", "gain": 0.26 },
+        { "cue": 52, "type": "tick", "gain": 0.24 }
+      ]
+    },
+    {
+      "id": "approve",
+      "start": 1350,
+      "end": 1500,
+      "grade": "warmUI",
+      "cues": { "hover": 60, "hold": 96 },
+      "sfx": [{ "cue": 96, "type": "breath", "gain": 0.3 }]
+    },
+    {
+      "id": "endcard",
+      "start": 1500,
+      "end": 1800,
+      "grade": "brand",
+      "cues": { "mark": 6, "line": 70, "wordmark": 110, "footer": 170 },
+      "sfx": [
+        { "cue": 6, "type": "boom", "gain": 0.55 },
+        { "cue": 110, "type": "chime", "gain": 0.4 }
+      ]
+    }
+  ]
+}
