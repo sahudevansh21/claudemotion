@@ -13,6 +13,7 @@ import { TerraNode } from "./compositions/TerraNode/TerraNode";
 import { Collatera } from "./compositions/Collatera/Collatera";
 import { Allocra } from "./compositions/Allocra/Allocra";
 import { Nightshift } from "./compositions/Nightshift/Nightshift";
+import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -99,6 +100,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={900}
+      />
+
+      {/* NIGHTSHIFT "Now live on" announcement: 1920x1080 @ 30 fps, 15 s =
+          450 frames; must match live.json and its generated mix. */}
+      <Composition
+        id="NightshiftLive"
+        component={NightshiftLive}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={450}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

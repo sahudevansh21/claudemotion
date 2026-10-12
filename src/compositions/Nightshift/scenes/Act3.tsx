@@ -10,7 +10,7 @@ import { City } from "../components/City";
 import { Chip, Mark, typed } from "../components/Ui";
 import { cue, ez, lerp } from "../timeline";
 
-const Stack: React.FC<{ words: string[]; at: number[]; align: "left" | "right"; size?: number }> = ({
+export const Stack: React.FC<{ words: string[]; at: number[]; align: "left" | "right"; size?: number }> = ({
   words,
   at,
   align,

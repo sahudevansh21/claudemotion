@@ -16,6 +16,7 @@ The video uses mix.wav.
 from __future__ import annotations
 
 import json
+import sys
 import wave
 from pathlib import Path
 
@@ -23,17 +24,19 @@ import numpy as np
 from scipy.signal import lfilter
 
 ROOT = Path(__file__).resolve().parents[2]
-TL = json.loads((ROOT / "src/compositions/Nightshift/timeline.json").read_text())
-OUT = ROOT / "public/nightshift/audio"
+# Usage: generate_audio.py [timeline.json relative to the Nightshift folder] [output folder]
+TL_NAME = sys.argv[1] if len(sys.argv) > 1 else "timeline.json"
+TL = json.loads((ROOT / "src/compositions/Nightshift" / TL_NAME).read_text())
+OUT = ROOT / (sys.argv[2] if len(sys.argv) > 2 else "public/nightshift/audio")
 
 SR = 48_000
 FPS = TL["fps"]
 DURATION = TL["durationInFrames"] / FPS  # exactly 30.0 s
 N = int(round(DURATION * SR))
 BEAT = 60 / TL["bpm"]  # 0.5 s
-SHOT = {s["id"]: (s["start"] / FPS, s["end"] / FPS) for s in TL["shots"]}
-DROP = SHOT["city"][0]   # 23.5 s: beat drop under the city inserts
-END = SHOT["end"][0]     # 27.5 s: music resolves into the end card
+MUSIC = {k: v / FPS for k, v in TL["music"].items()}
+DROP = MUSIC["drop"]  # beat drop (after a two-beat breakdown + riser)
+END = MUSIC["end"]    # music resolves into the end card
 rng = np.random.default_rng(7)
 
 
@@ -134,18 +137,18 @@ def make_music() -> np.ndarray:
     k, c = kick(), clap()
     for b in range(beats):
         at = b * BEAT
-        intro = at < SHOT["desk"][0]
+        intro = at < MUSIC["hats"]
         if intro and b % 2:
             continue
         # Breakdown: last bar before the drop drops the kick for the riser.
         if DROP - 2 * BEAT <= at < DROP:
             continue
         place(buf, k, at, db(-6 if at >= DROP else -8))
-        if not intro and b % 2 == 1 and at >= SHOT["prompt"][0]:
+        if not intro and b % 2 == 1 and at >= MUSIC["claps"]:
             place(buf, pan(c, 0.05), at, db(-14))
-        if at >= SHOT["desk"][0]:
+        if at >= MUSIC["hats"]:
             place(buf, pan(hat(), 0.35), at + BEAT / 2, db(-20))
-            if at >= SHOT["build"][0]:
+            if at >= MUSIC["full"]:
                 place(buf, pan(hat(), -0.3), at + BEAT / 4, db(-27))
                 place(buf, pan(hat(), -0.3), at + 3 * BEAT / 4, db(-27))
             if b % 4 == 3:
@@ -159,7 +162,7 @@ def make_music() -> np.ndarray:
         t0 += BAR
     for b in range(beats):
         at = b * BEAT + BEAT / 2
-        if SHOT["build"][0] <= at < END and not (DROP - 2 * BEAT <= at < DROP):
+        if MUSIC["full"] <= at < END and not (DROP - 2 * BEAT <= at < DROP):
             freqs = [midi(n + 12) for n in CHORDS[chord_idx(at)]]
             place(buf, pan(stab(freqs, 0.22), 0.3 if b % 2 else -0.3), at, db(-21))
 
@@ -167,7 +170,7 @@ def make_music() -> np.ndarray:
     t_b = t_axis(BEAT / 2 * 0.92)
     for kq in range(int(END / (BEAT / 2))):
         at = kq * BEAT / 2
-        if at < SHOT["card1"][0] or DROP - 2 * BEAT <= at < DROP:
+        if at < MUSIC["bass"] or DROP - 2 * BEAT <= at < DROP:
             continue
         f = midi(ROOTS[chord_idx(at)] + (12 if kq % 4 == 3 else 0))
         sig = lowpass(saw(f, t_b) * 0.6 + np.sin(2 * np.pi * f * t_b), 380 if at < DROP else 650)

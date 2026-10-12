@@ -1,0 +1,76 @@
+{
+  "_comment": "\"Now live on\" announcement. 30 fps, 450 frames (15.000 s), 120 BPM (15 frames per beat, cuts on beats). Shots read `cues` (frames relative to the shot); scripts/nightshift/generate_audio.py live.json public/nightshift/live-audio places `sfx` at shot.start + cue. `music` gives the arrangement points (frames).",
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 450,
+  "music": { "hats": 30, "claps": 60, "full": 105, "bass": 105, "drop": 285, "end": 360 },
+  "shots": [
+    {
+      "id": "close",
+      "start": 0,
+      "end": 60,
+      "cues": { "word1": 6, "word2": 14 },
+      "sfx": [
+        { "cue": 0, "type": "whoosh", "gain": 0.3 },
+        { "cue": 6, "type": "hit", "gain": 0.45 },
+        { "cue": 14, "type": "hit", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "should",
+      "start": 60,
+      "end": 105,
+      "cues": { "word1": 0, "word2": 6, "word3": 12 },
+      "sfx": [
+        { "cue": 0, "type": "impact", "gain": 0.5 },
+        { "cue": 6, "type": "hit", "gain": 0.4 },
+        { "cue": 12, "type": "hit", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "network",
+      "start": 105,
+      "end": 285,
+      "cues": { "core": 0, "p1": 15, "p2": 45, "p3": 75, "p4": 105, "wire": 10, "push": 150 },
+      "sfx": [
+        { "cue": 0, "type": "power", "gain": 0.45 },
+        { "cue": 15, "type": "zip", "gain": 0.3 },
+        { "cue": 25, "type": "pop", "gain": 0.4 },
+        { "cue": 26, "type": "chime", "gain": 0.25 },
+        { "cue": 45, "type": "zip", "gain": 0.3 },
+        { "cue": 55, "type": "pop", "gain": 0.4 },
+        { "cue": 56, "type": "chime", "gain": 0.25 },
+        { "cue": 75, "type": "zip", "gain": 0.3 },
+        { "cue": 85, "type": "pop", "gain": 0.4 },
+        { "cue": 86, "type": "chime", "gain": 0.25 },
+        { "cue": 105, "type": "zip", "gain": 0.3 },
+        { "cue": 115, "type": "pop", "gain": 0.4 },
+        { "cue": 116, "type": "chime", "gain": 0.3 }
+      ]
+    },
+    {
+      "id": "lineup",
+      "start": 285,
+      "end": 360,
+      "cues": { "head": 0, "logos": 8, "step": 5 },
+      "sfx": [
+        { "cue": 0, "type": "impact", "gain": 0.6 },
+        { "cue": 8, "type": "pop", "gain": 0.35 },
+        { "cue": 13, "type": "pop", "gain": 0.35 },
+        { "cue": 18, "type": "pop", "gain": 0.35 },
+        { "cue": 23, "type": "pop", "gain": 0.35 }
+      ]
+    },
+    {
+      "id": "end",
+      "start": 360,
+      "end": 450,
+      "cues": { "mark": 2, "word": 10, "line": 32, "rails": 44 },
+      "sfx": [
+        { "cue": 0, "type": "impact", "gain": 0.5 },
+        { "cue": 2, "type": "final", "gain": 0.45 },
+        { "cue": 10, "type": "typing", "gain": 0.28, "count": 10, "step": 2 }
+      ]
+    }
+  ]
+}

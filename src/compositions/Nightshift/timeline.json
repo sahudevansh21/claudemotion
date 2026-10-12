@@ -1,148 +1,398 @@
 {
-  "_comment": "Single source of truth for picture and sound. 30 fps, 900 frames (30.000 s), 120 BPM (15 frames per beat, every cut lands on a beat). Shots read `cues` (frames relative to the shot); scripts/nightshift/generate_audio.py places `sfx` at shot.start + cue.",
+  "_comment": "Single source of truth for picture and sound. 30 fps, 900 frames (30.000 s), 120 BPM (15 frames per beat, every cut lands on a beat). Shots read `cues` (frames relative to the shot); scripts/nightshift/generate_audio.py places `sfx` at shot.start + cue. `music` gives the arrangement points (frames) for the generated score.",
   "fps": 30,
   "bpm": 120,
   "durationInFrames": 900,
+  "music": {
+    "hats": 75,
+    "claps": 135,
+    "full": 210,
+    "bass": 300,
+    "drop": 705,
+    "end": 825
+  },
   "shots": [
     {
       "id": "logo",
       "start": 0,
       "end": 75,
-      "cues": { "mark": 0, "word": 10, "pill": 34, "card": 48 },
+      "cues": {
+        "mark": 0,
+        "word": 10,
+        "pill": 34,
+        "card": 48
+      },
       "sfx": [
-        { "cue": 0, "type": "impact", "gain": 0.5 },
-        { "cue": 10, "type": "typing", "gain": 0.32, "count": 10, "step": 2 },
-        { "cue": 34, "type": "pop", "gain": 0.4 },
-        { "cue": 48, "type": "whoosh", "gain": 0.35 }
+        {
+          "cue": 0,
+          "type": "impact",
+          "gain": 0.5
+        },
+        {
+          "cue": 10,
+          "type": "typing",
+          "gain": 0.32,
+          "count": 10,
+          "step": 2
+        },
+        {
+          "cue": 34,
+          "type": "pop",
+          "gain": 0.4
+        },
+        {
+          "cue": 48,
+          "type": "whoosh",
+          "gain": 0.35
+        }
       ]
     },
     {
       "id": "desk",
       "start": 75,
       "end": 135,
-      "cues": { "grab": 12, "drop": 40 },
+      "cues": {
+        "grab": 12,
+        "drop": 40
+      },
       "sfx": [
-        { "cue": 0, "type": "whoosh", "gain": 0.25 },
-        { "cue": 12, "type": "click", "gain": 0.4 },
-        { "cue": 40, "type": "pop", "gain": 0.35 }
+        {
+          "cue": 0,
+          "type": "whoosh",
+          "gain": 0.25
+        },
+        {
+          "cue": 12,
+          "type": "click",
+          "gain": 0.4
+        },
+        {
+          "cue": 40,
+          "type": "pop",
+          "gain": 0.35
+        }
       ]
     },
     {
       "id": "prompt",
       "start": 135,
       "end": 210,
-      "cues": { "type": 6, "chars": 61, "step": 0.75, "click": 62 },
+      "cues": {
+        "type": 6,
+        "chars": 61,
+        "step": 0.75,
+        "click": 62
+      },
       "sfx": [
-        { "cue": 6, "type": "typing", "gain": 0.28, "count": 23, "step": 2 },
-        { "cue": 62, "type": "click", "gain": 0.5 },
-        { "cue": 63, "type": "pop", "gain": 0.4 }
+        {
+          "cue": 6,
+          "type": "typing",
+          "gain": 0.28,
+          "count": 23,
+          "step": 2
+        },
+        {
+          "cue": 62,
+          "type": "click",
+          "gain": 0.5
+        },
+        {
+          "cue": 63,
+          "type": "pop",
+          "gain": 0.4
+        }
       ]
     },
     {
       "id": "build",
       "start": 210,
       "end": 300,
-      "cues": { "in1": 4, "in2": 14, "in3": 24, "oracle": 40, "wire": 48, "out": 64 },
+      "cues": {
+        "in1": 4,
+        "in2": 14,
+        "in3": 24,
+        "oracle": 40,
+        "wire": 48,
+        "out": 64
+      },
       "sfx": [
-        { "cue": 4, "type": "pop", "gain": 0.32 },
-        { "cue": 14, "type": "pop", "gain": 0.32 },
-        { "cue": 24, "type": "pop", "gain": 0.32 },
-        { "cue": 40, "type": "panel", "gain": 0.45 },
-        { "cue": 48, "type": "zip", "gain": 0.3 },
-        { "cue": 64, "type": "chime", "gain": 0.35 }
+        {
+          "cue": 4,
+          "type": "pop",
+          "gain": 0.32
+        },
+        {
+          "cue": 14,
+          "type": "pop",
+          "gain": 0.32
+        },
+        {
+          "cue": 24,
+          "type": "pop",
+          "gain": 0.32
+        },
+        {
+          "cue": 40,
+          "type": "panel",
+          "gain": 0.45
+        },
+        {
+          "cue": 48,
+          "type": "zip",
+          "gain": 0.3
+        },
+        {
+          "cue": 64,
+          "type": "chime",
+          "gain": 0.35
+        }
       ]
     },
     {
       "id": "card1",
       "start": 300,
       "end": 360,
-      "cues": { "line1": 4, "line2": 20 },
+      "cues": {
+        "line1": 4,
+        "line2": 20
+      },
       "sfx": [
-        { "cue": 0, "type": "cut", "gain": 0.45 },
-        { "cue": 4, "type": "click", "gain": 0.3 },
-        { "cue": 20, "type": "click", "gain": 0.3 }
+        {
+          "cue": 0,
+          "type": "cut",
+          "gain": 0.45
+        },
+        {
+          "cue": 4,
+          "type": "click",
+          "gain": 0.3
+        },
+        {
+          "cue": 20,
+          "type": "click",
+          "gain": 0.3
+        }
       ]
     },
     {
       "id": "wall",
       "start": 360,
       "end": 450,
-      "cues": { "step": 3 },
+      "cues": {
+        "step": 3
+      },
       "sfx": [
-        { "cue": 0, "type": "whoosh", "gain": 0.35 },
-        { "cue": 6, "type": "ticks", "gain": 0.22, "count": 16, "step": 3 }
+        {
+          "cue": 0,
+          "type": "whoosh",
+          "gain": 0.35
+        },
+        {
+          "cue": 6,
+          "type": "ticks",
+          "gain": 0.22,
+          "count": 16,
+          "step": 3
+        }
       ]
     },
     {
       "id": "status",
       "start": 450,
       "end": 510,
-      "cues": { "tap": 26, "online": 30 },
+      "cues": {
+        "tap": 26,
+        "online": 30
+      },
       "sfx": [
-        { "cue": 0, "type": "cut", "gain": 0.35 },
-        { "cue": 26, "type": "click", "gain": 0.5 },
-        { "cue": 30, "type": "power", "gain": 0.45 }
+        {
+          "cue": 0,
+          "type": "cut",
+          "gain": 0.35
+        },
+        {
+          "cue": 26,
+          "type": "click",
+          "gain": 0.5
+        },
+        {
+          "cue": 30,
+          "type": "power",
+          "gain": 0.45
+        }
       ]
     },
     {
       "id": "products",
       "start": 510,
       "end": 585,
-      "cues": { "head": 2, "oracle": 14, "vault": 26, "guardian": 38, "wires": 46 },
+      "cues": {
+        "head": 2,
+        "oracle": 14,
+        "vault": 26,
+        "guardian": 38,
+        "wires": 46
+      },
       "sfx": [
-        { "cue": 14, "type": "panel", "gain": 0.4 },
-        { "cue": 26, "type": "panel", "gain": 0.36 },
-        { "cue": 38, "type": "panel", "gain": 0.36 },
-        { "cue": 46, "type": "zip", "gain": 0.3 }
+        {
+          "cue": 14,
+          "type": "panel",
+          "gain": 0.4
+        },
+        {
+          "cue": 26,
+          "type": "panel",
+          "gain": 0.36
+        },
+        {
+          "cue": 38,
+          "type": "panel",
+          "gain": 0.36
+        },
+        {
+          "cue": 46,
+          "type": "zip",
+          "gain": 0.3
+        }
       ]
     },
     {
       "id": "card2",
       "start": 585,
       "end": 645,
-      "cues": { "line1": 4, "line2": 20 },
+      "cues": {
+        "line1": 4,
+        "line2": 20
+      },
       "sfx": [
-        { "cue": 0, "type": "cut", "gain": 0.45 },
-        { "cue": 4, "type": "click", "gain": 0.3 },
-        { "cue": 20, "type": "click", "gain": 0.3 }
+        {
+          "cue": 0,
+          "type": "cut",
+          "gain": 0.45
+        },
+        {
+          "cue": 4,
+          "type": "click",
+          "gain": 0.3
+        },
+        {
+          "cue": 20,
+          "type": "click",
+          "gain": 0.3
+        }
       ]
     },
     {
       "id": "zoom",
       "start": 645,
       "end": 705,
-      "cues": { "ring": 8, "you": 20, "engine": 38 },
+      "cues": {
+        "ring": 8,
+        "you": 20,
+        "engine": 38
+      },
       "sfx": [
-        { "cue": 0, "type": "whoosh", "gain": 0.3 },
-        { "cue": 8, "type": "rise", "gain": 0.3, "length": 1.6 },
-        { "cue": 38, "type": "click", "gain": 0.35 }
+        {
+          "cue": 0,
+          "type": "whoosh",
+          "gain": 0.3
+        },
+        {
+          "cue": 8,
+          "type": "rise",
+          "gain": 0.3,
+          "length": 1.6
+        },
+        {
+          "cue": 38,
+          "type": "click",
+          "gain": 0.35
+        }
       ]
     },
     {
       "id": "city",
       "start": 705,
       "end": 825,
-      "cues": { "word1": 0, "word2": 5, "word3": 10, "swap": 45, "chips": 75 },
+      "cues": {
+        "word1": 0,
+        "word2": 5,
+        "word3": 10,
+        "swap": 45,
+        "chips": 75
+      },
       "sfx": [
-        { "cue": 0, "type": "impact", "gain": 0.6 },
-        { "cue": 5, "type": "hit", "gain": 0.4 },
-        { "cue": 10, "type": "hit", "gain": 0.4 },
-        { "cue": 45, "type": "impact", "gain": 0.5 },
-        { "cue": 75, "type": "pop", "gain": 0.4 },
-        { "cue": 80, "type": "pop", "gain": 0.4 },
-        { "cue": 85, "type": "pop", "gain": 0.4 },
-        { "cue": 105, "type": "rise", "gain": 0.3, "length": 0.5 }
+        {
+          "cue": 0,
+          "type": "impact",
+          "gain": 0.6
+        },
+        {
+          "cue": 5,
+          "type": "hit",
+          "gain": 0.4
+        },
+        {
+          "cue": 10,
+          "type": "hit",
+          "gain": 0.4
+        },
+        {
+          "cue": 45,
+          "type": "impact",
+          "gain": 0.5
+        },
+        {
+          "cue": 75,
+          "type": "pop",
+          "gain": 0.4
+        },
+        {
+          "cue": 80,
+          "type": "pop",
+          "gain": 0.4
+        },
+        {
+          "cue": 85,
+          "type": "pop",
+          "gain": 0.4
+        },
+        {
+          "cue": 105,
+          "type": "rise",
+          "gain": 0.3,
+          "length": 0.5
+        }
       ]
     },
     {
       "id": "end",
       "start": 825,
       "end": 900,
-      "cues": { "pill": 2, "mark": 6, "word": 14, "foot": 34 },
+      "cues": {
+        "pill": 2,
+        "mark": 6,
+        "word": 14,
+        "foot": 34
+      },
       "sfx": [
-        { "cue": 0, "type": "impact", "gain": 0.55 },
-        { "cue": 14, "type": "typing", "gain": 0.28, "count": 10, "step": 2 },
-        { "cue": 6, "type": "final", "gain": 0.45 }
+        {
+          "cue": 0,
+          "type": "impact",
+          "gain": 0.55
+        },
+        {
+          "cue": 14,
+          "type": "typing",
+          "gain": 0.28,
+          "count": 10,
+          "step": 2
+        },
+        {
+          "cue": 6,
+          "type": "final",
+          "gain": 0.45
+        }
       ]
     }
   ]

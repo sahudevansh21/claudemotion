@@ -53,3 +53,19 @@ feature claim.
 python3 scripts/nightshift/generate_audio.py
 npx remotion render Nightshift out/nightshift.mp4 --crf=18
 ```
+
+## "Now live on" announcement (`NightshiftLive`)
+
+15 s, 1920×1080 @ 30 fps (450 frames), timing in `live.json`:
+
+| Time | Shot |
+| --- | --- |
+| 0–2 s | night city, "MARKETS / CLOSE.", status line |
+| 2–3.5 s | tight on the ticker ring, "PRICES / SHOULD / NOT." |
+| 3.5–9.5 s | the engine core powers on and wires up to Algorand, Harmonic, Sentora and Morpho (in that order); each card flips to LIVE, data pulses along the wires |
+| 9.5–12 s | beat drop: "NOW LIVE ON" + the four logos with LIVE pills |
+| 12–15 s | end card: mark + wordmark, "Markets close. Prices should not.", rails strip |
+
+Partner logos were cut from the supplied logo strip into white-on-transparent
+PNGs (`public/nightshift/partners/`). Audio:
+`python3 scripts/nightshift/generate_audio.py live.json public/nightshift/live-audio`.

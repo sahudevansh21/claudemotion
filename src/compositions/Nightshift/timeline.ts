@@ -4,19 +4,28 @@ import timeline from "./timeline.json";
 
 export const TIMELINE = timeline;
 
-/** Shot start/end/cues by id (frames @ 30 fps). */
-export const shot = (id: string) => {
-  const s = timeline.shots.find((x) => x.id === id);
-  if (!s) throw new Error(`Unknown shot ${id}`);
-  return { ...s, duration: s.end - s.start };
+type TimelineJson = {
+  shots: { id: string; start: number; end: number; cues: object }[];
 };
 
-/** Cue frame relative to its shot — the same numbers the audio script uses. */
-export const cue = (id: string, name: string): number => {
-  const v = (shot(id).cues as unknown as Record<string, number>)[name];
-  if (v === undefined) throw new Error(`Unknown cue ${id}.${name}`);
-  return v;
+/** Shot / cue lookups for a timeline JSON (frames). */
+export const makeTimeline = (tl: TimelineJson) => {
+  const shot = (id: string) => {
+    const s = tl.shots.find((x) => x.id === id);
+    if (!s) throw new Error(`Unknown shot ${id}`);
+    return { ...s, duration: s.end - s.start };
+  };
+  /** Cue frame relative to its shot — the same numbers the audio script uses. */
+  const cue = (id: string, name: string): number => {
+    const v = (shot(id).cues as Record<string, number>)[name];
+    if (v === undefined) throw new Error(`Unknown cue ${id}.${name}`);
+    return v;
+  };
+  return { shot, cue };
 };
+
+/** Teaser timeline (frames @ 30 fps). */
+export const { shot, cue } = makeTimeline(timeline);
 
 /** Eased 0 → 1 from `start` over `duration` frames (clamped). */
 export const ez = (
