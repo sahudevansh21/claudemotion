@@ -17,6 +17,7 @@ import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
 import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { PolymateGoldenHour } from "./compositions/Polymate/PolymateGoldenHour";
+import { BCMPromo } from "./compositions/BCM/BCMPromo";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -147,6 +148,17 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         fps={60}
         durationInFrames={1800}
+      />
+
+      {/* BCM super-fast promo: 1920x1080 @ 30 fps, exactly 10 s = 300 frames;
+          must match BCM/bcm.json + its generated audio. */}
+      <Composition
+        id="BCMPromo"
+        component={BCMPromo}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={300}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

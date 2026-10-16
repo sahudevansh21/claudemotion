@@ -1,0 +1,24 @@
+{
+  "_comment": "BCM 10 s super-fast promo, 30 fps (300 frames), 1920x1080, silent. Scene starts are ABSOLUTE frames, mirroring the reference's beat order at ~3x speed.",
+  "fps": 30,
+  "durationInFrames": 300,
+  "scenes": {
+    "w1": 0,
+    "w2": 9,
+    "w3": 18,
+    "w4": 27,
+    "button": 39,
+    "press": 51,
+    "meter": 63,
+    "wipe": 90,
+    "logo": 94,
+    "ranks": 126,
+    "donut": 159,
+    "radar": 189,
+    "caught": 203,
+    "card": 216,
+    "chain": 243,
+    "icon": 268,
+    "end": 276
+  }
+}
