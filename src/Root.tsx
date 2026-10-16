@@ -16,6 +16,7 @@ import { Nightshift } from "./compositions/Nightshift/Nightshift";
 import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
 import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
+import { PolymateGoldenHour } from "./compositions/Polymate/PolymateGoldenHour";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -131,6 +132,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="PolymateForum"
         component={PolymateForum}
+        width={3840}
+        height={2160}
+        fps={60}
+        durationInFrames={1800}
+      />
+
+      {/* POLYMATE "The Golden Hour": one painterly take, 4K (3840x2160) @ 60 fps,
+          exactly 30 s = 1,800 frames; must match golden/golden.json. */}
+      <Composition
+        id="PolymateGoldenHour"
+        component={PolymateGoldenHour}
         width={3840}
         height={2160}
         fps={60}

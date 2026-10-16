@@ -52,6 +52,7 @@ src/
     Polymate/              20 s brand film: timeline.json (cuts + SFX cues), brand.ts, scenes/*
                            + PolymateMinimal (10 s, 4K60 minimal film, minimal/*)
                            + PolymateForum (30 s, 4K60 seamless take, forum/*)
+                           + PolymateGoldenHour (30 s, 4K60 painterly take, golden/*)
     TerraNode/             20 s cinematic film: procedural golden-hour landscape, devices, sky end card
     Collatera/             30 s @ 60 fps pixel-art film: decoded mascot matrix, dashboard camera, timeline.json
     Nightshift/            30 s motion-graphics teaser: node canvas + cursors, statement cards, procedural night city
@@ -63,6 +64,8 @@ scripts/new-composition.mjs
 scripts/polymate/generate_audio.py   Python music+SFX generator (reads Polymate/timeline.json)
 scripts/polymate/generate_minimal_audio.py  ambient score + decode ticks (reads Polymate/minimal/minimal.json)
 scripts/polymate/generate_forum_audio.py    string-pad score + UI sound (reads Polymate/forum/forum.json)
+scripts/polymate/generate_golden_audio.py   120 BPM groove + SaaS UI sfx + orchestral swell (reads Polymate/golden/golden.json)
+scripts/polymate/generate_paper_texture.py  paper grain PNG for PolymateGoldenHour
 scripts/terranode/generate_audio.py  Python music+SFX generator (reads TerraNode/timeline.json)
 scripts/collatera/generate_audio.py  Python music+SFX generator (reads Collatera/timeline.json)
 scripts/nightshift/generate_audio.py Python music+SFX generator (reads Nightshift/timeline.json)

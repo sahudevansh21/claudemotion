@@ -1,0 +1,262 @@
+{
+  "_comment": "PolymateGoldenHour: one continuous 30 s take at 60 fps (1800 frames), rendered 3840x2160. All cues are ABSOLUTE frames; the groove runs at 120 BPM so one beat = 30 frames and most cues sit on the beat grid. scripts/polymate/generate_golden_audio.py reads `music` and `sfx` from this file.",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "bpm": 120,
+  "cues": {
+    "paintStart": 30,
+    "paintEnd": 210,
+    "ringsInk": 30,
+    "ringsGold": 150,
+    "spinStart": 150,
+    "caption1": 195,
+    "caption1Out": 315,
+    "beam": 300,
+    "fan": 390,
+    "cardsIn": 420,
+    "symbolStart": 720,
+    "visit1": 780,
+    "visit2": 840,
+    "visit3": 900,
+    "symbolEnd": 960,
+    "converge": 960,
+    "convergeEnd": 1050,
+    "emblemIn": 1020,
+    "flatten": 1140,
+    "morph": 1190,
+    "morphEnd": 1260,
+    "rows": 1260,
+    "caption2": 1290,
+    "select": 1320,
+    "click": 1350,
+    "detail": 1360,
+    "traceStart": 1380,
+    "traceEnd": 1440,
+    "buy": 1440,
+    "confirmed": 1455,
+    "caption2Out": 1490,
+    "collapse": 1500,
+    "sunrise": 1500,
+    "doors": 1530,
+    "pullStart": 1530,
+    "pullEnd": 1780,
+    "lift": 1560,
+    "lockup": 1650,
+    "cta": 1700
+  },
+  "music": {
+    "grooveFrom": 300,
+    "fullFrom": 540,
+    "breakFrom": 1470,
+    "dropAt": 1530,
+    "outroTo": 1740
+  },
+  "sfx": [
+    {
+      "at": 4,
+      "type": "scribble",
+      "gain": 0.22,
+      "length": 1.6
+    },
+    {
+      "at": 40,
+      "type": "brushes",
+      "gain": 0.3,
+      "length": 2.8
+    },
+    {
+      "at": 195,
+      "type": "chime",
+      "gain": 0.3
+    },
+    {
+      "at": 180,
+      "type": "riser",
+      "gain": 0.35,
+      "length": 2.0
+    },
+    {
+      "at": 300,
+      "type": "impact",
+      "gain": 0.75
+    },
+    {
+      "at": 300,
+      "type": "beam",
+      "gain": 0.4
+    },
+    {
+      "at": 390,
+      "type": "whoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 420,
+      "type": "pop",
+      "gain": 0.5
+    },
+    {
+      "at": 450,
+      "type": "pop",
+      "gain": 0.5
+    },
+    {
+      "at": 480,
+      "type": "pop",
+      "gain": 0.5
+    },
+    {
+      "at": 510,
+      "type": "pop",
+      "gain": 0.5
+    },
+    {
+      "at": 540,
+      "type": "sparkle",
+      "gain": 0.25
+    },
+    {
+      "at": 720,
+      "type": "whoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 780,
+      "type": "ping",
+      "gain": 0.32
+    },
+    {
+      "at": 840,
+      "type": "ping",
+      "gain": 0.32
+    },
+    {
+      "at": 900,
+      "type": "ping",
+      "gain": 0.32
+    },
+    {
+      "at": 960,
+      "type": "ping",
+      "gain": 0.36
+    },
+    {
+      "at": 960,
+      "type": "swoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 1020,
+      "type": "bloom",
+      "gain": 0.55
+    },
+    {
+      "at": 1020,
+      "type": "bell",
+      "gain": 0.32
+    },
+    {
+      "at": 1140,
+      "type": "riser",
+      "gain": 0.22,
+      "length": 0.8
+    },
+    {
+      "at": 1190,
+      "type": "swoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 1260,
+      "type": "click",
+      "gain": 0.35
+    },
+    {
+      "at": 1275,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 1290,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 1305,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 1320,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 1350,
+      "type": "press",
+      "gain": 0.55
+    },
+    {
+      "at": 1360,
+      "type": "whoosh",
+      "gain": 0.2
+    },
+    {
+      "at": 1380,
+      "type": "trace",
+      "gain": 0.3,
+      "length": 1.0
+    },
+    {
+      "at": 1440,
+      "type": "press",
+      "gain": 0.55
+    },
+    {
+      "at": 1455,
+      "type": "success",
+      "gain": 0.5
+    },
+    {
+      "at": 1470,
+      "type": "riser",
+      "gain": 0.45,
+      "length": 1.0
+    },
+    {
+      "at": 1500,
+      "type": "swoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 1530,
+      "type": "impact",
+      "gain": 0.9
+    },
+    {
+      "at": 1530,
+      "type": "doors",
+      "gain": 0.4
+    },
+    {
+      "at": 1650,
+      "type": "logo",
+      "gain": 0.75
+    },
+    {
+      "at": 1650,
+      "type": "bell",
+      "gain": 0.35
+    },
+    {
+      "at": 1700,
+      "type": "pop",
+      "gain": 0.35
+    },
+    {
+      "at": 1715,
+      "type": "pop",
+      "gain": 0.3
+    }
+  ]
+}
