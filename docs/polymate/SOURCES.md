@@ -68,3 +68,28 @@ timing in `minimal/minimal.json`, audio from
   "Executing Trade…" and "Position Opened · YES · $50" card (labelled
   ILLUSTRATIVE UI), CTA t.me/Tryoddsbot.
 - Fonts: Silkscreen (OFL, pixel mono for captions), Inter (UI card).
+
+## PolymateForum — "The Forum" (30 s, 4K @ 60 fps, one seamless take)
+
+`src/compositions/Polymate/PolymateForum.tsx` + `forum/Forum.tsx`, all timing in
+`forum/forum.json` (absolute frames), audio from
+`scripts/polymate/generate_forum_audio.py`.
+
+| Time | Beat |
+| --- | --- |
+| 0–6 s | The banner's Roman forum as a plate; slow dolly in, foreground columns with imperial-red banners part; a faint gold signal travels through the forum. "The future is uncertain." types on. |
+| 6–12 s | The signal blooms into the supplied emblem; a gold ring draws round it; gentle orbit and specular sheen; the forum defocuses. "Trading it shouldn't / be complicated." |
+| 12–20 s | The lapis stone grows into a sapphire-marble interface (gold border): Live Markets list, a soft touch dot scrolls (discovery) and taps a market (selection). "Discover markets." → "Pick a side." |
+| 20–25 s | YES selected, $50, one slide-to-trade motion → "Executing Trade…" → "Position Opened · YES · $50" (banner copy). "Trade in one motion." |
+| 25–30 s | The interface collapses back into the stone, the emblem returns, glides to centre and settles on a marble pedestal as the camera pulls back to the forum. Lockup: PolyMate / The trading layer for prediction markets.; "TryOdds is live · t.me/Tryoddsbot"; "OddsAlert · CopyOdds — coming soon". |
+
+Notes:
+- **Logo**: the supplied 400 px emblem is used as-is (white background removed,
+  4× Lanczos upscale + light sharpening) — no change to shape, colour or
+  proportion. At 4K it is shown at most ~1,040 px wide, so it is slightly soft;
+  a high-resolution PNG or SVG of the emblem would make it pin-sharp.
+- **Environment**: centre crop of the supplied 1500×500 banner (forum, Acropolis,
+  Colosseum, banners), upscaled; it reads as a soft, hazy plate behind crisp
+  vector foreground columns, interface and type.
+- **Markets** in the interface are illustrative and labelled ILLUSTRATIVE.
+- OddsAlert and CopyOdds are shown only as "coming soon"; TryOdds as live.
