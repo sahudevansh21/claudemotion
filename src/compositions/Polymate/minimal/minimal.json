@@ -1,0 +1,54 @@
+{
+  "_comment": "PolymateMinimal: 10 s at 60 fps (600 frames), rendered 3840x2160. Shots read `cues` (frames relative to the shot); captions decode in at `in` and scramble out at `out`. scripts/polymate/generate_minimal_audio.py reads this file and places a soft tick on every decoded character plus each `sfx` at shot.start + cue.",
+  "fps": 60,
+  "durationInFrames": 600,
+  "shots": [
+    {
+      "id": "sky",
+      "start": 0,
+      "end": 150,
+      "cues": { "in": 14, "out": 124 },
+      "caption": "THE TRADING LAYER FOR [PREDICTION MARKETS]",
+      "sfx": [{ "cue": 0, "type": "air", "gain": 0.5 }]
+    },
+    {
+      "id": "marble",
+      "start": 150,
+      "end": 270,
+      "cues": { "in": 14, "out": 98 },
+      "caption": "TRADE THE FUTURE, [FAST].",
+      "sfx": [{ "cue": 0, "type": "air", "gain": 0.4 }]
+    },
+    {
+      "id": "trade",
+      "start": 270,
+      "end": 390,
+      "cues": { "exec": 4, "fillEnd": 56, "opened": 60, "in": 12, "out": 100 },
+      "caption": "TRADE. MARKETS. [POSITIONS].",
+      "sfx": [
+        { "cue": 0, "type": "air", "gain": 0.35 },
+        { "cue": 60, "type": "chime", "gain": 0.35 }
+      ]
+    },
+    {
+      "id": "mark",
+      "start": 390,
+      "end": 480,
+      "cues": { "assemble": 0, "assembleLen": 70 },
+      "caption": "",
+      "sfx": [
+        { "cue": 0, "type": "swell", "gain": 0.4 },
+        { "cue": 50, "type": "thump", "gain": 0.5 }
+      ]
+    },
+    {
+      "id": "end",
+      "start": 480,
+      "end": 600,
+      "cues": { "in": 12, "in2": 34, "fade": 106 },
+      "caption": "START TRADING",
+      "caption2": "[T.ME/TRYODDSBOT]",
+      "sfx": [{ "cue": 0, "type": "final", "gain": 0.45 }]
+    }
+  ]
+}

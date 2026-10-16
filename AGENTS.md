@@ -50,6 +50,7 @@ src/
   compositions/
     Showcase/              sample: Showcase.tsx, schema.ts (zod props), timing.ts, scenes/*
     Polymate/              20 s brand film: timeline.json (cuts + SFX cues), brand.ts, scenes/*
+                           + PolymateMinimal (10 s, 4K60 minimal film, minimal/*)
     TerraNode/             20 s cinematic film: procedural golden-hour landscape, devices, sky end card
     Collatera/             30 s @ 60 fps pixel-art film: decoded mascot matrix, dashboard camera, timeline.json
     Nightshift/            30 s motion-graphics teaser: node canvas + cursors, statement cards, procedural night city
@@ -59,6 +60,7 @@ public/                    static assets → reference with staticFile("path")
   fonts/*.woff2            Inter + JetBrains Mono (OFL)
 scripts/new-composition.mjs
 scripts/polymate/generate_audio.py   Python music+SFX generator (reads Polymate/timeline.json)
+scripts/polymate/generate_minimal_audio.py  ambient score + decode ticks (reads Polymate/minimal/minimal.json)
 scripts/terranode/generate_audio.py  Python music+SFX generator (reads TerraNode/timeline.json)
 scripts/collatera/generate_audio.py  Python music+SFX generator (reads Collatera/timeline.json)
 scripts/nightshift/generate_audio.py Python music+SFX generator (reads Nightshift/timeline.json)

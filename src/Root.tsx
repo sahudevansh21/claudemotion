@@ -14,6 +14,7 @@ import { Collatera } from "./compositions/Collatera/Collatera";
 import { Allocra } from "./compositions/Allocra/Allocra";
 import { Nightshift } from "./compositions/Nightshift/Nightshift";
 import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
+import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -111,6 +112,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={450}
+      />
+
+      {/* POLYMATE minimal product film: 4K (3840x2160) @ 60 fps, exactly
+          10 s = 600 frames; must match minimal/minimal.json and its mix. */}
+      <Composition
+        id="PolymateMinimal"
+        component={PolymateMinimal}
+        width={3840}
+        height={2160}
+        fps={60}
+        durationInFrames={600}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}
