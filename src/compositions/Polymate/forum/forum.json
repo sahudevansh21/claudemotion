@@ -34,25 +34,193 @@
     "cta": 1700,
     "soon": 1720
   },
-  "music": { "pulseFrom": 720, "pulseTo": 1500, "resolve": 1560 },
+  "music": {
+    "pulseFrom": 720,
+    "pulseTo": 1500,
+    "resolve": 1560,
+    "bpm": 120,
+    "groove": 360,
+    "drop": 720,
+    "breakFrom": 1470,
+    "final": 1620
+  },
   "sfx": [
-    { "at": 90, "type": "shimmer", "gain": 0.35, "length": 4.0 },
-    { "at": 330, "type": "bloom", "gain": 0.45 },
-    { "at": 450, "type": "chime", "gain": 0.3 },
-    { "at": 720, "type": "glass", "gain": 0.35 },
-    { "at": 800, "type": "tap", "gain": 0.18 },
-    { "at": 830, "type": "tap", "gain": 0.16 },
-    { "at": 860, "type": "tap", "gain": 0.16 },
-    { "at": 890, "type": "tap", "gain": 0.14 },
-    { "at": 900, "type": "swish", "gain": 0.2 },
-    { "at": 1010, "type": "press", "gain": 0.4 },
-    { "at": 1040, "type": "glass", "gain": 0.22 },
-    { "at": 1260, "type": "slide", "gain": 0.3 },
-    { "at": 1330, "type": "press", "gain": 0.35 },
-    { "at": 1340, "type": "ticks", "gain": 0.12, "count": 8, "step": 6 },
-    { "at": 1400, "type": "chime", "gain": 0.42 },
-    { "at": 1500, "type": "glass", "gain": 0.3 },
-    { "at": 1640, "type": "thud", "gain": 0.4 },
-    { "at": 1620, "type": "final", "gain": 0.45 }
+    {
+      "at": 0,
+      "type": "riser",
+      "gain": 0.35,
+      "length": 1.5
+    },
+    {
+      "at": 90,
+      "type": "shimmer",
+      "gain": 0.3,
+      "length": 4.0
+    },
+    {
+      "at": 300,
+      "type": "riser",
+      "gain": 0.4,
+      "length": 0.5
+    },
+    {
+      "at": 330,
+      "type": "impact",
+      "gain": 0.55
+    },
+    {
+      "at": 332,
+      "type": "bloom",
+      "gain": 0.35
+    },
+    {
+      "at": 450,
+      "type": "chime",
+      "gain": 0.3
+    },
+    {
+      "at": 690,
+      "type": "whoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 720,
+      "type": "impact",
+      "gain": 0.5
+    },
+    {
+      "at": 725,
+      "type": "swoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 800,
+      "type": "pop",
+      "gain": 0.4
+    },
+    {
+      "at": 830,
+      "type": "pop",
+      "gain": 0.38
+    },
+    {
+      "at": 860,
+      "type": "pop",
+      "gain": 0.36
+    },
+    {
+      "at": 890,
+      "type": "pop",
+      "gain": 0.34
+    },
+    {
+      "at": 900,
+      "type": "swish",
+      "gain": 0.35
+    },
+    {
+      "at": 960,
+      "type": "whoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 1010,
+      "type": "click",
+      "gain": 0.6
+    },
+    {
+      "at": 1040,
+      "type": "swoosh",
+      "gain": 0.4
+    },
+    {
+      "at": 1180,
+      "type": "whoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 1260,
+      "type": "slide",
+      "gain": 0.45
+    },
+    {
+      "at": 1330,
+      "type": "click",
+      "gain": 0.55
+    },
+    {
+      "at": 1340,
+      "type": "ticks",
+      "gain": 0.25,
+      "count": 8,
+      "step": 6
+    },
+    {
+      "at": 1400,
+      "type": "success",
+      "gain": 0.55
+    },
+    {
+      "at": 1470,
+      "type": "riser",
+      "gain": 0.45,
+      "length": 2.4
+    },
+    {
+      "at": 1500,
+      "type": "swoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 1620,
+      "type": "impact",
+      "gain": 0.65
+    },
+    {
+      "at": 1620,
+      "type": "final",
+      "gain": 0.4
+    },
+    {
+      "at": 1640,
+      "type": "thud",
+      "gain": 0.35
+    },
+    {
+      "at": 1700,
+      "type": "pop",
+      "gain": 0.3
+    },
+    {
+      "at": 1720,
+      "type": "pop",
+      "gain": 0.28
+    }
+  ],
+  "typing": [
+    {
+      "at": 60,
+      "chars": 24
+    },
+    {
+      "at": 420,
+      "chars": 20
+    },
+    {
+      "at": 466,
+      "chars": 15
+    },
+    {
+      "at": 760,
+      "chars": 17
+    },
+    {
+      "at": 990,
+      "chars": 12
+    },
+    {
+      "at": 1210,
+      "chars": 20
+    }
   ]
 }
