@@ -18,6 +18,7 @@ import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { PolymateGoldenHour } from "./compositions/Polymate/PolymateGoldenHour";
 import { BCMPromo } from "./compositions/BCM/BCMPromo";
+import { NightshiftNyx } from "./compositions/Nightshift/NightshiftNyx";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -155,6 +156,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="BCMPromo"
         component={BCMPromo}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={300}
+      />
+
+      {/* NIGHTSHIFT × Nyx text interstitial: 1920x1080 @ 30 fps, 10 s, silent
+          (cut between screen-recording segments). */}
+      <Composition
+        id="NightshiftNyx"
+        component={NightshiftNyx}
         width={1920}
         height={1080}
         fps={30}
