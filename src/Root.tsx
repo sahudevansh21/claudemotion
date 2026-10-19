@@ -17,6 +17,7 @@ import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
 import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { QuantoraPosts } from "./compositions/Quantora/Posts";
+import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -146,6 +147,17 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         fps={1}
         durationInFrames={10}
+      />
+
+      {/* NIGHTSHIFT launch film: 1920x1080 @ 30 fps, 39.4 s = 1,182 frames;
+          must match launch/launch.json and launch/vo.json. */}
+      <Composition
+        id="NightshiftLaunch"
+        component={NightshiftLaunch}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={1182}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

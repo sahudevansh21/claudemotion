@@ -62,6 +62,7 @@ src/
     TerraNode/             20 s cinematic film: procedural golden-hour landscape, devices, sky end card
     Collatera/             30 s @ 60 fps pixel-art film: decoded mascot matrix, dashboard camera, timeline.json
     Nightshift/            30 s motion-graphics teaser: node canvas + cursors, statement cards, procedural night city
+                           + NightshiftLive (15 s) + NightshiftLaunch (39 s remake of a launch film, launch/*)
     _Template/Template.tsx copied by `npm run new`
 public/                    static assets → reference with staticFile("path")
   audio/beat-120bpm.mp3    generated 120 BPM loop (royalty-free)
@@ -73,6 +74,7 @@ scripts/polymate/generate_forum_audio.py    string-pad score + UI sound (reads P
 scripts/terranode/generate_audio.py  Python music+SFX generator (reads TerraNode/timeline.json)
 scripts/collatera/generate_audio.py  Python music+SFX generator (reads Collatera/timeline.json)
 scripts/nightshift/generate_audio.py Python music+SFX generator (reads Nightshift/timeline.json)
+scripts/nightshift/generate_launch_vo.py / generate_launch_audio.py / capture_site.mjs  launch film VO, bed, site screenshots
 out/                       render output (git-ignored)
 ```
 

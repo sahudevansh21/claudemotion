@@ -1,0 +1,89 @@
+{
+  "voice": "af_heart",
+  "lines": [
+    {
+      "id": "l1",
+      "at": 0.15,
+      "speed": 1.0,
+      "text": "The future of markets isn't just the opening bell."
+    },
+    {
+      "id": "l2",
+      "at": 3.76,
+      "speed": 1.0,
+      "text": "It's making sure prices keep moving after it."
+    },
+    {
+      "id": "l3",
+      "at": 7.14,
+      "speed": 1.05,
+      "text": "Fewer stale prices, smaller Monday gaps,"
+    },
+    {
+      "id": "l4",
+      "at": 10.96,
+      "speed": 1.0,
+      "text": "safer loans on the same collateral."
+    },
+    {
+      "id": "l5",
+      "at": 13.9,
+      "speed": 1.0,
+      "text": "At Nightshift, we're building the after-hours layer"
+    },
+    {
+      "id": "l6",
+      "at": 16.62,
+      "speed": 1.0,
+      "text": "for tokenized stocks and ETFs."
+    },
+    {
+      "id": "l7",
+      "at": 19.62,
+      "speed": 0.95,
+      "text": "Meet Nightshift."
+    },
+    {
+      "id": "l8",
+      "at": 21.68,
+      "speed": 1.05,
+      "text": "Fair value for ETF tokens, every minute, all night,"
+    },
+    {
+      "id": "l9",
+      "at": 25.0,
+      "speed": 1.05,
+      "text": "with confidence scores and a public API."
+    },
+    {
+      "id": "l10",
+      "at": 27.8,
+      "speed": 1.0,
+      "text": "Borrow against them on Base,"
+    },
+    {
+      "id": "l11",
+      "at": 29.35,
+      "speed": 1.05,
+      "text": "watched by the Guardian, proven by Cloak,"
+    },
+    {
+      "id": "l12",
+      "at": 31.65,
+      "speed": 1.0,
+      "text": "and locked on Algorand."
+    },
+    {
+      "id": "l13",
+      "at": 33.96,
+      "speed": 0.95,
+      "text": "Nightshift."
+    },
+    {
+      "id": "l14",
+      "at": 35.4,
+      "speed": 1.0,
+      "text": "Live, proven, and on the record."
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "_comment": "NightshiftLaunch: 1:1 remake of the supplied launch film's structure, timing and effects for Nightshift. 30 fps, 1182 frames (39.4 s). Scene times in SECONDS; vo.json holds the voiceover placement. scripts/nightshift/generate_launch_audio.py reads this file + vo.json.",
+  "fps": 30,
+  "durationInFrames": 1182,
+  "scenes": [
+    {
+      "id": "intro",
+      "from": 0,
+      "to": 3.6
+    },
+    {
+      "id": "cards",
+      "from": 3.6,
+      "to": 7.0
+    },
+    {
+      "id": "stale",
+      "from": 7.0,
+      "to": 8.55
+    },
+    {
+      "id": "gaps",
+      "from": 8.55,
+      "to": 10.8
+    },
+    {
+      "id": "loans",
+      "from": 10.8,
+      "to": 13.6
+    },
+    {
+      "id": "layer",
+      "from": 13.6,
+      "to": 19.25
+    },
+    {
+      "id": "meet",
+      "from": 19.25,
+      "to": 21.55
+    },
+    {
+      "id": "screens",
+      "from": 21.55,
+      "to": 33.6
+    },
+    {
+      "id": "end",
+      "from": 33.6,
+      "to": 39.4
+    }
+  ],
+  "words": {
+    "intro": [
+      [
+        "The",
+        0.2
+      ],
+      [
+        "future",
+        0.42
+      ],
+      [
+        "of",
+        0.72
+      ],
+      [
+        "markets",
+        0.86
+      ],
+      [
+        "isn't",
+        1.32
+      ],
+      [
+        "just",
+        1.56
+      ],
+      [
+        "the",
+        1.78
+      ],
+      [
+        "opening",
+        1.92
+      ],
+      [
+        "bell.",
+        2.3
+      ]
+    ],
+    "cards": [
+      [
+        "It's",
+        0.16
+      ],
+      [
+        "making",
+        0.36
+      ],
+      [
+        "sure",
+        0.62
+      ],
+      [
+        "prices",
+        0.86
+      ],
+      [
+        "keep",
+        1.24
+      ],
+      [
+        "moving",
+        1.44
+      ],
+      [
+        "after",
+        1.86
+      ],
+      [
+        "it.",
+        2.14
+      ]
+    ],
+    "stale": [
+      [
+        "Fewer",
+        0.14
+      ],
+      [
+        "stale",
+        0.5
+      ],
+      [
+        "prices.",
+        0.8
+      ]
+    ],
+    "gaps": [
+      [
+        "Smaller",
+        0.0
+      ],
+      [
+        "Monday",
+        0.42
+      ],
+      [
+        "gaps.",
+        0.78
+      ]
+    ],
+    "loans": [
+      [
+        "Safer",
+        0.16
+      ],
+      [
+        "loans",
+        0.46
+      ],
+      [
+        "on",
+        0.74
+      ],
+      [
+        "the",
+        0.86
+      ],
+      [
+        "same",
+        0.98
+      ],
+      [
+        "collateral.",
+        1.2
+      ]
+    ],
+    "layer": [
+      [
+        "At",
+        0.3
+      ],
+      [
+        "Nightshift,",
+        0.46
+      ],
+      [
+        "we're",
+        1.12
+      ],
+      [
+        "building",
+        1.36
+      ],
+      [
+        "the",
+        1.74
+      ],
+      [
+        "after-hours",
+        1.9
+      ],
+      [
+        "layer",
+        2.5
+      ],
+      [
+        "for",
+        3.02
+      ],
+      [
+        "tokenized",
+        3.2
+      ],
+      [
+        "stocks",
+        3.7
+      ],
+      [
+        "and",
+        4.06
+      ],
+      [
+        "ETFs.",
+        4.24
+      ]
+    ]
+  },
+  "captions": [
+    {
+      "at": 21.55,
+      "text": "Fair value for ETF tokens",
+      "shot": "hero"
+    },
+    {
+      "at": 23.35,
+      "text": "Every minute, all night",
+      "shot": "oracle"
+    },
+    {
+      "at": 25.0,
+      "text": "Confidence scores",
+      "shot": "oracleZoom"
+    },
+    {
+      "at": 26.35,
+      "text": "A public API",
+      "shot": "oracleApi"
+    },
+    {
+      "at": 27.75,
+      "text": "Borrow on Base",
+      "shot": "app"
+    },
+    {
+      "at": 29.3,
+      "text": "Guardian on watch",
+      "shot": "guardian"
+    },
+    {
+      "at": 30.6,
+      "text": "Proven by Cloak",
+      "shot": "proof"
+    },
+    {
+      "at": 31.85,
+      "text": "Locked on Algorand",
+      "shot": "transparency"
+    }
+  ],
+  "sfx": [
+    {
+      "at": 0.0,
+      "type": "drone",
+      "gain": 0.35,
+      "length": 3.6
+    },
+    {
+      "at": 3.25,
+      "type": "riser",
+      "gain": 0.35,
+      "length": 0.4
+    },
+    {
+      "at": 3.6,
+      "type": "whoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 4.4,
+      "type": "click",
+      "gain": 0.4
+    },
+    {
+      "at": 7.0,
+      "type": "swoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 7.2,
+      "type": "ticks",
+      "gain": 0.12,
+      "count": 22,
+      "step": 0.05
+    },
+    {
+      "at": 8.55,
+      "type": "swoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 9.4,
+      "type": "success",
+      "gain": 0.35
+    },
+    {
+      "at": 10.8,
+      "type": "swoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 11.9,
+      "type": "click",
+      "gain": 0.4
+    },
+    {
+      "at": 13.6,
+      "type": "swoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 14.4,
+      "type": "pop",
+      "gain": 0.3
+    },
+    {
+      "at": 14.9,
+      "type": "pop",
+      "gain": 0.28
+    },
+    {
+      "at": 15.4,
+      "type": "pop",
+      "gain": 0.28
+    },
+    {
+      "at": 15.9,
+      "type": "pop",
+      "gain": 0.26
+    },
+    {
+      "at": 16.4,
+      "type": "pop",
+      "gain": 0.26
+    },
+    {
+      "at": 16.9,
+      "type": "pop",
+      "gain": 0.26
+    },
+    {
+      "at": 19.0,
+      "type": "riser",
+      "gain": 0.4,
+      "length": 0.3
+    },
+    {
+      "at": 19.25,
+      "type": "impact",
+      "gain": 0.55
+    },
+    {
+      "at": 21.55,
+      "type": "whoosh",
+      "gain": 0.45
+    },
+    {
+      "at": 23.35,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 25.0,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 26.35,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 27.75,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 28.6,
+      "type": "click",
+      "gain": 0.45
+    },
+    {
+      "at": 29.3,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 30.6,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 31.2,
+      "type": "click",
+      "gain": 0.45
+    },
+    {
+      "at": 31.85,
+      "type": "swoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 33.6,
+      "type": "impact",
+      "gain": 0.5
+    },
+    {
+      "at": 34.6,
+      "type": "typing",
+      "gain": 0.25,
+      "count": 21,
+      "step": 0.06
+    },
+    {
+      "at": 35.4,
+      "type": "pop",
+      "gain": 0.3
+    },
+    {
+      "at": 35.95,
+      "type": "pop",
+      "gain": 0.3
+    },
+    {
+      "at": 36.55,
+      "type": "pop",
+      "gain": 0.32
+    },
+    {
+      "at": 36.6,
+      "type": "final",
+      "gain": 0.4
+    }
+  ]
+}
