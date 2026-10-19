@@ -4,6 +4,11 @@ This repo makes videos with **Remotion 4.0.533** (React → MP4). Every frame is
 a React render of a pure function of the frame number. Read this file before
 creating or editing a video.
 
+**Making a new film from a prompt? Follow `docs/MOTION_PLAYBOOK.md` step by
+step** (brief → reference analysis → brand extraction → timeline JSON →
+scenes → audio → QA contact sheets → verified export). Helper scripts:
+`scripts/tools/analyze-reference.sh`, `contact-sheet.sh`, `verify-render.sh`.
+
 The official **Remotion Agent Skills** are installed in `.agents/skills/`
 (symlinked into `.claude/skills/`). Start from
 `.agents/skills/remotion-best-practices/SKILL.md`; it routes to topic files
@@ -53,14 +58,17 @@ src/
                            + PolymateMinimal (10 s, 4K60 minimal film, minimal/*)
                            + PolymateForum (30 s, 4K60 seamless take, forum/*)
                            + PolymateGoldenHour (30 s, 4K60 painterly take, golden/*)
+    BCM/                   10 s super-fast 1080p30 promo (reference-matched beats), bcm.json, brand.tsx (traced vector logo)
     TerraNode/             20 s cinematic film: procedural golden-hour landscape, devices, sky end card
     Collatera/             30 s @ 60 fps pixel-art film: decoded mascot matrix, dashboard camera, timeline.json
     Nightshift/            30 s motion-graphics teaser: node canvas + cursors, statement cards, procedural night city
+                           + NightshiftNyx (10 s text interstitial for the Nyx voice assistant)
     _Template/Template.tsx copied by `npm run new`
 public/                    static assets → reference with staticFile("path")
   audio/beat-120bpm.mp3    generated 120 BPM loop (royalty-free)
   fonts/*.woff2            Inter + JetBrains Mono (OFL)
 scripts/new-composition.mjs
+scripts/tools/             analyze-reference.sh, contact-sheet.sh, verify-render.sh (see docs/MOTION_PLAYBOOK.md)
 scripts/polymate/generate_audio.py   Python music+SFX generator (reads Polymate/timeline.json)
 scripts/polymate/generate_minimal_audio.py  ambient score + decode ticks (reads Polymate/minimal/minimal.json)
 scripts/polymate/generate_forum_audio.py    string-pad score + UI sound (reads Polymate/forum/forum.json)
