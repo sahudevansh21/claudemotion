@@ -16,6 +16,7 @@ import { Nightshift } from "./compositions/Nightshift/Nightshift";
 import { NightshiftLive } from "./compositions/Nightshift/NightshiftLive";
 import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
+import { QuantoraPosts } from "./compositions/Quantora/Posts";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -135,6 +136,16 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         fps={60}
         durationInFrames={1800}
+      />
+
+      {/* QUANTORA LABS: 10 still posts, 4K. Frame N renders post N+1. */}
+      <Composition
+        id="QuantoraPosts"
+        component={QuantoraPosts}
+        width={3840}
+        height={2160}
+        fps={1}
+        durationInFrames={10}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}
