@@ -18,6 +18,7 @@ import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { QuantoraPosts } from "./compositions/Quantora/Posts";
 import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
+import { AegisLaunch } from "./compositions/Aegis/AegisLaunch";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -158,6 +159,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={1182}
+      />
+
+      {/* AEGISNET launch film: 1920x1080 @ 30 fps, 30 s = 900 frames; must
+          match Aegis/aegis.json and its generated mix. */}
+      <Composition
+        id="AegisLaunch"
+        component={AegisLaunch}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={900}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

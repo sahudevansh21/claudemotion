@@ -63,6 +63,7 @@ src/
     Collatera/             30 s @ 60 fps pixel-art film: decoded mascot matrix, dashboard camera, timeline.json
     Nightshift/            30 s motion-graphics teaser: node canvas + cursors, statement cards, procedural night city
                            + NightshiftLive (15 s) + NightshiftLaunch (39 s remake of a launch film, launch/*)
+    Aegis/                 AegisLaunch: 30 s film, title cards + site clips (aegis.json)
     _Template/Template.tsx copied by `npm run new`
 public/                    static assets → reference with staticFile("path")
   audio/beat-120bpm.mp3    generated 120 BPM loop (royalty-free)
@@ -75,6 +76,7 @@ scripts/terranode/generate_audio.py  Python music+SFX generator (reads TerraNode
 scripts/collatera/generate_audio.py  Python music+SFX generator (reads Collatera/timeline.json)
 scripts/nightshift/generate_audio.py Python music+SFX generator (reads Nightshift/timeline.json)
 scripts/nightshift/generate_launch_vo.py / generate_launch_audio.py / capture_site.mjs  launch film VO, bed, site screenshots
+scripts/aegis/generate_audio.py / capture_site.mjs  AegisLaunch music+SFX, site captures
 out/                       render output (git-ignored)
 ```
 

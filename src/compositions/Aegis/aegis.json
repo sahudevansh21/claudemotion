@@ -1,0 +1,41 @@
+{
+  "_comment": "AegisLaunch: 30 s at 30 fps (900 frames), 1920x1080. Structure after the supplied Nyx feature video (title cards with a small mono label and a big display line, intercut with zoomed screen-recording clips of the real site, logo end card). Times in SECONDS. scripts/aegis/generate_audio.py reads this file.",
+  "fps": 30,
+  "durationInFrames": 900,
+  "bpm": 120,
+  "scenes": [
+    { "id": "t-meet", "from": 0, "to": 2.5 },
+    { "id": "c-hero", "from": 2.5, "to": 4.5, "clip": "hero" },
+    { "id": "t-identity", "from": 4.5, "to": 7.0 },
+    { "id": "c-benefits", "from": 7.0, "to": 9.0, "clip": "benefits" },
+    { "id": "t-trades", "from": 9.0, "to": 12.0 },
+    { "id": "c-situations", "from": 12.0, "to": 14.5, "clip": "situations" },
+    { "id": "c-phases", "from": 14.5, "to": 16.5, "clip": "phases" },
+    { "id": "t-human", "from": 16.5, "to": 19.0 },
+    { "id": "c-dashboard", "from": 19.0, "to": 22.0, "clip": "dashboard" },
+    { "id": "c-walkthrough", "from": 22.0, "to": 24.0, "clip": "walkthrough" },
+    { "id": "t-guardrails", "from": 24.0, "to": 26.5 },
+    { "id": "logo", "from": 26.5, "to": 30.0 }
+  ],
+  "sfx": [
+    { "at": 0.0, "type": "impact", "gain": 0.45 },
+    { "at": 2.5, "type": "whoosh", "gain": 0.4 },
+    { "at": 4.5, "type": "swoosh", "gain": 0.4 },
+    { "at": 5.4, "type": "typing", "gain": 0.22, "count": 19, "step": 0.05 },
+    { "at": 7.0, "type": "whoosh", "gain": 0.4 },
+    { "at": 9.0, "type": "swoosh", "gain": 0.4 },
+    { "at": 10.0, "type": "click", "gain": 0.4 },
+    { "at": 11.0, "type": "click", "gain": 0.4 },
+    { "at": 12.0, "type": "whoosh", "gain": 0.4 },
+    { "at": 14.5, "type": "swoosh", "gain": 0.3 },
+    { "at": 16.5, "type": "swoosh", "gain": 0.4 },
+    { "at": 17.4, "type": "ticks", "gain": 0.14, "count": 12, "step": 0.08 },
+    { "at": 18.4, "type": "success", "gain": 0.35 },
+    { "at": 19.0, "type": "whoosh", "gain": 0.4 },
+    { "at": 22.0, "type": "swoosh", "gain": 0.3 },
+    { "at": 24.0, "type": "swoosh", "gain": 0.4 },
+    { "at": 25.9, "type": "riser", "gain": 0.4, "length": 0.6 },
+    { "at": 26.5, "type": "impact", "gain": 0.6 },
+    { "at": 26.5, "type": "final", "gain": 0.4 }
+  ]
+}
