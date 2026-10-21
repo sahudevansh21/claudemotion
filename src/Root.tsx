@@ -18,7 +18,7 @@ import { PolymateMinimal } from "./compositions/Polymate/PolymateMinimal";
 import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { PolymateGoldenHour } from "./compositions/Polymate/PolymateGoldenHour";
 import { BCMPromo } from "./compositions/BCM/BCMPromo";
-import { NightshiftNyx } from "./compositions/Nightshift/NightshiftNyx";
+import { NightshiftNyx, NightshiftNyx20 } from "./compositions/Nightshift/NightshiftNyx";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -171,6 +171,16 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={300}
+      />
+
+      {/* NIGHTSHIFT × Nyx, 20 s cut (adds chat demo + controls): 1920x1080 @ 30 fps, silent. */}
+      <Composition
+        id="NightshiftNyx20"
+        component={NightshiftNyx20}
+        width={1920}
+        height={1080}
+        fps={30}
+        durationInFrames={600}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}
