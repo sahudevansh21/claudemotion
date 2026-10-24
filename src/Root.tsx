@@ -19,6 +19,7 @@ import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { QuantoraPosts } from "./compositions/Quantora/Posts";
 import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
 import { AegisLaunch } from "./compositions/Aegis/AegisLaunch";
+import { AllocraLaunch } from "./compositions/Allocra/AllocraLaunch";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -170,6 +171,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={30}
         durationInFrames={900}
+      />
+
+      {/* ALLOCRA launch film: 1920x1080 @ 60 fps, exactly 30 s = 1,800
+          frames; must match Allocra/launch/launch.json. */}
+      <Composition
+        id="AllocraLaunch"
+        component={AllocraLaunch}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={1800}
       />
 
       {/* @new-composition-registrations (scripts/new-composition.mjs inserts above this line) */}

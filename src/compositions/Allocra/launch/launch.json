@@ -1,0 +1,162 @@
+{
+  "_comment": "AllocraLaunch: 30 s master, 1920x1080 @ 60 fps (1800 frames). Times in SECONDS, cut on a 90 BPM grid (beat = 0.6667 s). Motion grammar from the supplied openstick launch film; storyboard from the brief. scripts/allocra/generate_launch_audio.py reads this file.",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "bpm": 90,
+  "scenes": [
+    {
+      "id": "signature",
+      "from": 0,
+      "to": 3.333
+    },
+    {
+      "id": "philosophy",
+      "from": 3.333,
+      "to": 7.333
+    },
+    {
+      "id": "reveal",
+      "from": 7.333,
+      "to": 13.333
+    },
+    {
+      "id": "capabilities",
+      "from": 13.333,
+      "to": 19.333
+    },
+    {
+      "id": "payoff",
+      "from": 19.333,
+      "to": 26.0
+    },
+    {
+      "id": "final",
+      "from": 26.0,
+      "to": 30.0
+    }
+  ],
+  "music": {
+    "drums": 7.333,
+    "drop": 13.333,
+    "break": 25.0,
+    "final": 26.0
+  },
+  "sfx": [
+    {
+      "at": 0.35,
+      "type": "riser",
+      "gain": 0.3,
+      "length": 0.65
+    },
+    {
+      "at": 1.0,
+      "type": "impact",
+      "gain": 0.6
+    },
+    {
+      "at": 3.333,
+      "type": "sweep",
+      "gain": 0.4
+    },
+    {
+      "at": 5.2,
+      "type": "scratch",
+      "gain": 0.35
+    },
+    {
+      "at": 5.75,
+      "type": "click",
+      "gain": 0.35
+    },
+    {
+      "at": 7.333,
+      "type": "sweep",
+      "gain": 0.45
+    },
+    {
+      "at": 10.0,
+      "type": "click",
+      "gain": 0.5
+    },
+    {
+      "at": 10.2,
+      "type": "sweep",
+      "gain": 0.3
+    },
+    {
+      "at": 13.333,
+      "type": "impact",
+      "gain": 0.5
+    },
+    {
+      "at": 15.333,
+      "type": "sweep",
+      "gain": 0.35
+    },
+    {
+      "at": 17.333,
+      "type": "sweep",
+      "gain": 0.35
+    },
+    {
+      "at": 16.2,
+      "type": "ticks",
+      "gain": 0.12,
+      "count": 10,
+      "step": 0.06
+    },
+    {
+      "at": 19.333,
+      "type": "impact",
+      "gain": 0.45
+    },
+    {
+      "at": 22.667,
+      "type": "sweep",
+      "gain": 0.35
+    },
+    {
+      "at": 23.3,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 23.8,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 24.3,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 24.8,
+      "type": "click",
+      "gain": 0.3
+    },
+    {
+      "at": 25.0,
+      "type": "riser",
+      "gain": 0.45,
+      "length": 1.0
+    },
+    {
+      "at": 26.0,
+      "type": "impact",
+      "gain": 0.65
+    },
+    {
+      "at": 27.6,
+      "type": "typing",
+      "gain": 0.2,
+      "count": 12,
+      "step": 0.07
+    },
+    {
+      "at": 29.33,
+      "type": "accent",
+      "gain": 0.45
+    }
+  ]
+}
