@@ -142,7 +142,7 @@ const TICKER = [
 const ASKS = [["486.21", 92], ["486.10", 58], ["485.99", 108], ["485.88", 71], ["485.77", 124]] as const;
 const BIDS = [["485.61", 108], ["485.50", 66], ["485.39", 119], ["485.28", 77], ["485.17", 39]] as const;
 
-const Terminal: React.FC<{ t: number }> = ({ t }) => {
+export const Terminal: React.FC<{ t: number }> = ({ t }) => {
   const W = 1360;
   const shown = Math.floor(ez(t, 0.35, 1.6, IO) * CANDLES.length);
   const price = 485.69 + Math.sin(t * 9) * 0.06 + Math.floor(t * 8) * 0.01;
