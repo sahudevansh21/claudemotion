@@ -20,6 +20,9 @@ import { QuantoraPosts } from "./compositions/Quantora/Posts";
 import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
 import { AegisLaunch } from "./compositions/Aegis/AegisLaunch";
 import { AllocraLaunch } from "./compositions/Allocra/AllocraLaunch";
+import { Oryn } from "./compositions/Oryn/Oryn";
+import { OrynSite } from "./compositions/Oryn/OrynSite";
+import { OrynPosts } from "./compositions/Oryn/OrynPosts";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -196,6 +199,15 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={seconds(TEMPLATE_SECONDS, VIDEO.fps)}
         />
       </Folder>
+      {/* ORYN brand film: 3840x2160 @ 120 fps, exactly 30 s = 3,600 frames; must match timeline.json + the audio. */}
+      <Composition id="Oryn" component={Oryn} width={3840} height={2160} fps={120} durationInFrames={3600} />
+
+      {/* ORYN website/SaaS animation: 1920x1080 @ 60 fps, 15 s = 900 frames. */}
+      <Composition id="OrynSite" component={OrynSite} width={1920} height={1080} fps={60} durationInFrames={900} />
+
+      {/* ORYN social posts: 6 stills at 1080x1350 (4:5); frame N = post N. Render with --scale=2. */}
+      <Composition id="OrynPosts" component={OrynPosts} width={1080} height={1350} fps={1} durationInFrames={6} />
+
     </>
   );
 };

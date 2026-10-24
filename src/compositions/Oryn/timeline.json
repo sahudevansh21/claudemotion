@@ -1,0 +1,21 @@
+{
+  "fps": 120,
+  "durationInFrames": 3600,
+  "bpm": 96,
+  "scenes": [
+    { "id": "hook",    "start": 0,    "end": 600,  "cues": { "logo": 0, "is": 30, "safe": 105, "act": 180, "card": 300, "sub": 380 },
+      "sfx": [ {"cue": 0, "type": "impact", "gain": 0.9}, {"cue": 30, "type": "pop", "gain": 0.6}, {"cue": 105, "type": "pop", "gain": 0.7}, {"cue": 180, "type": "impact", "gain": 0.7}, {"cue": 300, "type": "whoosh", "gain": 0.5} ] },
+    { "id": "board",   "start": 600,  "end": 1200, "cues": { "head": 20, "cards": 80, "pan": 200 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 80, "type": "tick", "gain": 0.4}, {"cue": 125, "type": "tick", "gain": 0.4}, {"cue": 170, "type": "tick", "gain": 0.4}, {"cue": 215, "type": "tick", "gain": 0.4}, {"cue": 260, "type": "tick", "gain": 0.4}, {"cue": 305, "type": "tick", "gain": 0.4}, {"cue": 350, "type": "tick", "gain": 0.4}, {"cue": 395, "type": "tick", "gain": 0.4} ] },
+    { "id": "site",    "start": 1200, "end": 1800, "cues": { "frame": 10, "words": 60 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 60, "type": "pop", "gain": 0.6}, {"cue": 140, "type": "pop", "gain": 0.6}, {"cue": 220, "type": "pop", "gain": 0.6} ] },
+    { "id": "verdict", "start": 1800, "end": 2400, "cues": { "name": 20, "stamp": 110, "meta": 200, "frame": 260 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 20, "type": "thud", "gain": 0.8}, {"cue": 110, "type": "impact", "gain": 0.9}, {"cue": 260, "type": "whoosh", "gain": 0.4} ] },
+    { "id": "guard",   "start": 2400, "end": 3000, "cues": { "title": 10, "form": 80, "blocked": 300 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 100, "type": "tick", "gain": 0.4}, {"cue": 140, "type": "tick", "gain": 0.4}, {"cue": 180, "type": "tick", "gain": 0.4}, {"cue": 300, "type": "impact", "gain": 1.0} ] },
+    { "id": "time",    "start": 3000, "end": 3300, "cues": { "head": 10, "slider": 60 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 60, "type": "riser", "gain": 0.5}, {"cue": 220, "type": "chime", "gain": 0.6} ] },
+    { "id": "end",     "start": 3300, "end": 3600, "cues": { "logo": 10, "line": 90, "foot": 170 },
+      "sfx": [ {"cue": 0, "type": "whoosh", "gain": 0.6}, {"cue": 12, "type": "impact", "gain": 0.9}, {"cue": 90, "type": "chime", "gain": 0.5} ] }
+  ]
+}
