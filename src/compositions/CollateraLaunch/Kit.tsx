@@ -159,7 +159,8 @@ export const GlitchText: React.FC<{
   const scan = `repeating-linear-gradient(0deg, #000 0 ${Math.max(2, size * 0.035)}px, rgba(0,0,0,${0.15 + 0.85 * p * (1 - q)}) ${Math.max(2, size * 0.035)}px ${Math.max(4, size * 0.06)}px)`;
   const wrap: React.CSSProperties = {
     position: "relative",
-    display: "inline-block",
+    display: "block",
+    width: "fit-content",
     opacity: Math.min(1, p * 2.5) * (1 - q),
     transform: `translateX(${(1 - p) * size * 0.25 - q * size * 0.6}px) scaleX(${1 + q * 0.5})`,
     transformOrigin: "left center",

@@ -19,6 +19,7 @@ import { PolymateForum } from "./compositions/Polymate/PolymateForum";
 import { QuantoraPosts } from "./compositions/Quantora/Posts";
 import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
 import { AegisLaunch } from "./compositions/Aegis/AegisLaunch";
+import { CollateraLaunch } from "./compositions/CollateraLaunch/Launch";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -184,6 +185,17 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={seconds(TEMPLATE_SECONDS, VIDEO.fps)}
         />
       </Folder>
+
+      {/* COLLATERA launch: 20 s, 4K (3840x2160) @ 120 fps = 2,400 frames;
+          must match CollateraLaunch/launch.json and its generated mix. */}
+      <Composition
+        id="CollateraLaunch"
+        component={CollateraLaunch}
+        width={3840}
+        height={2160}
+        fps={120}
+        durationInFrames={2400}
+      />
     </>
   );
 };
