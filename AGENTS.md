@@ -11,6 +11,12 @@ such as `remotion-markup/transitions.md`, `audio.md`, `sequencing.md`,
 `text-highlights.md`, `voiceover.md`, `captions`. Prefer them over memory
 when an API detail matters. Live docs: https://www.remotion.dev/docs
 
+## Playbook
+
+The full from-zero method for brand films and stills is in
+**`docs/PLAYBOOK.md`** (skill: `brand-film`). Read it before starting a new
+client video.
+
 ## Reference videos
 
 The user's standing preference: **always use http://whatships.com/ as the
