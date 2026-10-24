@@ -9,7 +9,7 @@ import { Terminal } from "./Shots";
  * composition's own aspect decides the layout. Design canvas: 1920×1080
  * (landscape) or 1080×1350 (4:5), scaled to the output size.
  */
-const Grid: React.FC = () => (
+export const Grid: React.FC = () => (
   <AbsoluteFill>
     <AbsoluteFill
       style={{
@@ -31,7 +31,7 @@ const Grid: React.FC = () => (
   </AbsoluteFill>
 );
 
-const Pixels: React.FC<{ spots: [number, number, number][] }> = ({ spots }) => (
+export const Pixels: React.FC<{ spots: [number, number, number][] }> = ({ spots }) => (
   <>
     {spots.map(([x, y, s], i) => (
       <div key={i} style={{ position: "absolute", left: x, top: y, width: s, height: s, background: i % 3 ? CL.lime : CL.panel }} />
@@ -39,7 +39,7 @@ const Pixels: React.FC<{ spots: [number, number, number][] }> = ({ spots }) => (
   </>
 );
 
-const Chip: React.FC<{ text: string }> = ({ text }) => (
+export const Chip: React.FC<{ text: string }> = ({ text }) => (
   <div style={{ padding: "10px 16px", border: `2px solid ${CL.line}`, background: CL.evergreen, fontFamily: PIX, fontSize: 18, color: CL.mint, boxShadow: `5px 5px 0 ${CL.shadow}` }}>
     {text}
   </div>
@@ -57,14 +57,14 @@ const Headline: React.FC<{ size: number }> = ({ size }) => (
   </div>
 );
 
-const Eyebrow: React.FC = () => (
+export const Eyebrow: React.FC = () => (
   <div style={{ fontFamily: PIX, fontSize: 20, color: CL.lime, display: "flex", alignItems: "center", gap: 12 }}>
     <div style={{ width: 10, height: 10, background: CL.lime }} />
     COLLATERAL RISK MONITORING / 001
   </div>
 );
 
-const Footer: React.FC = () => (
+export const Footer: React.FC = () => (
   <div style={{ display: "flex", alignItems: "center", gap: 16, fontFamily: MONO, fontSize: 22, color: CL.sage }}>
     <span style={{ fontFamily: PIX, color: CL.lime, fontSize: 24 }}>collatera.buzz</span>
     <span>·</span>

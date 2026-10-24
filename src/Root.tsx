@@ -21,6 +21,7 @@ import { NightshiftLaunch } from "./compositions/Nightshift/NightshiftLaunch";
 import { AegisLaunch } from "./compositions/Aegis/AegisLaunch";
 import { CollateraLaunch } from "./compositions/CollateraLaunch/Launch";
 import { CollateraPoster } from "./compositions/CollateraLaunch/Poster";
+import { CollateraPosts } from "./compositions/CollateraLaunch/Posts";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -201,6 +202,8 @@ export const RemotionRoot: React.FC = () => {
       {/* COLLATERA launch posters (stills): 16:9 4K and 4:5 (2160x2700). */}
       <Composition id="CollateraPoster" component={CollateraPoster} width={3840} height={2160} fps={1} durationInFrames={1} />
       <Composition id="CollateraPoster45" component={CollateraPoster} width={2160} height={2700} fps={1} durationInFrames={1} />
+      {/* COLLATERA social posts: 5 stills at 4:5 (2160x2700), one per frame. */}
+      <Composition id="CollateraPosts" component={CollateraPosts} width={2160} height={2700} fps={1} durationInFrames={5} />
     </>
   );
 };
