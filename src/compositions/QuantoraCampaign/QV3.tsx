@@ -133,8 +133,8 @@ const Phrase: React.FC = () => {
           <div style={{ position: "absolute", inset: 0, opacity: v(2) }}>
             <Fan w={560} h={320} p={ez(t, 3.2, 4.4)} />
           </div>
-          <div style={{ position: "absolute", inset: 0, opacity: v(3), transform: "scale(0.6)", transformOrigin: "50% 40%" }}>
-            <Chart w={900} h={420} />
+          <div style={{ position: "absolute", inset: 0, opacity: v(3), paddingTop: 30 }}>
+            <Chart w={560} h={270} stroke={3} />
           </div>
         </div>
       </div>

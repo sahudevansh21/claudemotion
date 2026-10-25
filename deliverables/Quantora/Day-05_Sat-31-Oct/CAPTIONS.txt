@@ -1,0 +1,37 @@
+QUANTORA LABS · DAY 05 · Saturday 31 October 2026 · theme: Coverage
+All visuals 1080×1920 (9:16), videos 60 fps.
+================================================================
+
+[QP3] POST · Tokenized stocks vs ETFs: what to watch
+Post at: 16:00 UTC · Channels: X · LinkedIn
+
+CAPTION:
+Tokenized stocks and ETFs both bring traditional markets onchain.
+
+Before reading either, check three things: underlying market hours, liquidity, and how the price reaches the chain.
+
+Hashtags · X: #TokenizedStocks #OnchainFinance #QuantResearch
+Hashtags · LinkedIn: #TokenizedStocks #ETFs #OnchainFinance #QuantResearch #MarketStructure
+Hashtags · Instagram/TikTok: #TokenizedStocks #ETFs #OnchainFinance #QuantResearch #Crypto #Web3 #MarketSimulation #Quantora
+
+Note: Keep it generic and factual. No claims about specific products or issuers.
+
+----------------------------------------------------------------
+
+[QA2] ARTICLE · Tokenized stocks and ETFs onchain: what to measure
+Post at: 18:00 UTC · Channels: Blog · X Article
+
+CAPTION:
+Tokenized stocks and ETFs onchain look like any token. They don't behave like one.
+
+Three things to measure first ↓
+
+Hashtags · X: #TokenizedStocks #OnchainFinance #QuantResearch
+Hashtags · LinkedIn: #TokenizedStocks #ETFs #OnchainFinance #QuantResearch #MarketStructure
+Hashtags · Instagram/TikTok: #TokenizedStocks #ETFs #OnchainFinance #QuantResearch #Crypto #Web3 #MarketSimulation #Quantora
+
+Note: Keep it product-agnostic. Add 'Not investment advice.'
+
+----------------------------------------------------------------
+
+Rules: no performance or return claims · charts are illustrative · simulations are not forecasts · add 'Not investment advice.' to articles.
