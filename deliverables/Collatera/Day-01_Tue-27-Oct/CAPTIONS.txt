@@ -1,0 +1,42 @@
+COLLATERA · DAY 01 · Tuesday 27 October 2026 · theme: Launch day
+================================================================
+
+[V1] VIDEO · Introducing Collatera
+Post at: 14:00 UTC · Channels: X (pinned) · LinkedIn · Instagram Reels · Format: 25 s · 1080p60 (1920×1080) + 9:16 1080×1920 @ 60 fps
+
+CAPTION:
+Catch stale oracles before they catch you. 👾
+
+Introducing Collatera: read-only collateral risk monitoring for DeFi loans backed by tokenized stocks & ETFs.
+
+No keys. No signatures.
+→ collatera.buzz
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement #Algorand
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #CryptoTools #Fintech #Collatera
+
+Note: Terminal values are the site's simulated demo data. Keep the label visible.
+
+----------------------------------------------------------------
+
+[P1] POST · Launch poster
+Post at: 17:00 UTC · Channels: X · LinkedIn · Instagram · Format: 16:9 3840×2160 + 4:5 2160×2700
+
+CAPTION:
+Catch stale oracles before they catch you. 👾
+
+Collatera monitors collateral risk across DeFi and tokenized assets.
+Real-time signals. Smarter risk decisions.
+
+collatera.buzz
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #Fintech #Collatera
+
+Note: Already produced: deliverables/collatera-poster-16x9-4k.jpg and collatera-poster-4x5.jpg.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

@@ -1,0 +1,20 @@
+COLLATERA · DAY 13 · Sunday 08 November 2026 · theme: Product
+================================================================
+
+[A3] ARTICLE · Reading your position health: buffer, oracle age, LTV
+Post at: 15:00 UTC · Channels: Blog · X Article · Format: ≈280 words · annotated screenshot
+
+CAPTION:
+Buffer. Oracle age. LTV.
+
+Three numbers, three different questions. How to read Collatera's position health panel ↓
+
+Hashtags · X: #DeFi #RWA
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Web3 #Collatera
+
+Note: Label the demo values as simulated in the text and the image.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

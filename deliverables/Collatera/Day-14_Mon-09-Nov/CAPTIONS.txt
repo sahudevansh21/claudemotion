@@ -1,0 +1,38 @@
+COLLATERA · DAY 14 · Monday 09 November 2026 · theme: Principles
+================================================================
+
+[V7] VIDEO · Monitoring first. Automation later.
+Post at: 14:00 UTC · Channels: X · LinkedIn · Format: 20 s · 1080p60 (1920×1080)
+
+CAPTION:
+Monitoring first. Automation later.
+
+V1 is read-only: one demo vault modeled on Algorand lending markets. No keys, no funds moved.
+
+A token is a proposal, not a promise. Paid usage comes first.
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement #Algorand
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #CryptoTools #Fintech #Collatera
+
+Note: Keep the 'proposal, not a promise' and 'no guarantee' wording intact. No price, yield or token-launch talk.
+
+----------------------------------------------------------------
+
+[P8] POST · A token is a proposal, not a promise
+Post at: 17:00 UTC · Channels: X · LinkedIn · Format: 1:1 2160×2160
+
+CAPTION:
+A token is a proposal, not a promise.
+
+Subscriptions and B2B accounts fund monitoring first. Any token role stays a proposal until usage proves it's needed.
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #Fintech #Collatera
+
+Note: Must keep the disclaimer. No price, launch-date or yield talk.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

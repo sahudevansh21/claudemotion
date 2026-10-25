@@ -1,0 +1,38 @@
+COLLATERA · DAY 10 · Thursday 05 November 2026 · theme: Ecosystem
+================================================================
+
+[P6] POST · Where tokenized collateral lives
+Post at: 17:00 UTC · Channels: X · LinkedIn · Format: 16:9 3840×2160
+
+CAPTION:
+Where tokenized collateral lives.
+
+Lending markets, vaults and curators on top, with a settlement layer underneath. Collatera tracks risk across the stack.
+
+(Coverage targets, not partners.)
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #Fintech #Collatera
+
+Note: Use official logos only if brand guidelines allow; otherwise names only. No @-tags.
+
+----------------------------------------------------------------
+
+[A5] ARTICLE · Where tokenized collateral lives: the lending stack, mapped
+Post at: 15:00 UTC · Channels: Blog · X Article · Format: ≈280 words · P6 as header
+
+CAPTION:
+Where does tokenized collateral actually live?
+
+Markets, vaults, curators, settlement. The lending stack, mapped ↓
+
+Hashtags · X: #DeFi #RWA
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Web3 #Collatera
+
+Note: No @-tags of the venues. TVL numbers change; omit them or cite DefiLlama with a date.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

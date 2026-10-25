@@ -1,0 +1,20 @@
+COLLATERA · DAY 08 · Tuesday 03 November 2026 · theme: Problem
+================================================================
+
+[P5] POST · Markets close. Loans don't.
+Post at: 17:00 UTC · Channels: X · Instagram · Format: 1:1 2160×2160
+
+CAPTION:
+Markets close. Loans don't. 🌙
+
+Tokenized stocks trade on-chain 24/7, but the underlying exchange sleeps. Collatera accounts for closed exchanges, overnight gaps and thinner liquidity.
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #Fintech #Collatera
+
+Note: Keep the timeline generic and marked illustrative. Don't claim specific exchange behaviour for any token.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

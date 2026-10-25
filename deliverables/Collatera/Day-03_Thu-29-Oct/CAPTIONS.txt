@@ -1,0 +1,20 @@
+COLLATERA · DAY 03 · Thursday 29 October 2026 · theme: Educate
+================================================================
+
+[A1] ARTICLE · Why tokenized-stock collateral needs oracle freshness checks
+Post at: 15:00 UTC · Channels: X Article · Medium · LinkedIn · blog · Format: ≈300 words · header image 16:9
+
+CAPTION:
+New post: why tokenized-stock collateral needs oracle freshness checks. 📖
+
+Your loan reads the oracle, not the market. Here's why that matters ↓
+
+Hashtags · X: #DeFi #RWA
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Web3 #Collatera
+
+Note: Add 'Not financial advice.' at the end when publishing.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

@@ -181,15 +181,15 @@ const P5: React.FC = () => (
       <polyline points="540,580 900,580" fill="none" stroke="#E2A23B" strokeWidth={7} strokeDasharray="14 10" />
       <polyline points="900,580 900,700 1040,720" fill="none" stroke="#FF6B5A" strokeWidth={7} />
       <rect x={540} y={560} width={360} height={170} fill="rgba(255,107,90,0.12)" stroke="#FF6B5A" strokeDasharray="6 6" />
-      <text x={720} y={760} textAnchor="middle" fontFamily="JetBrains Mono" fontSize={22} fill="#FFB4A8">the gap your oracle can't see</text>
+      <text x={1040} y={770} textAnchor="end" fontFamily="JetBrains Mono" fontSize={22} fill="#FFB4A8">the gap your oracle can't see</text>
     </svg>
     <div style={{ position: "absolute", left: 60, top: 220 }}>
-      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 88, lineHeight: 1.1, color: INK }}>MARKETS</div>
-      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 88, lineHeight: 1.1, color: INK }}>CLOSE.</div>
+      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: INK }}>MARKETS</div>
+      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: INK }}>CLOSE.</div>
     </div>
     <div style={{ position: "absolute", right: 60, top: 220, textAlign: "right" }}>
-      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 88, lineHeight: 1.1, color: CL.mint }}>LOANS</div>
-      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 88, lineHeight: 1.1, color: CL.lime }}>DON'T.</div>
+      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: CL.mint }}>LOANS</div>
+      <div style={{ fontFamily: PIX, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: CL.lime }}>DON'T.</div>
     </div>
     <div style={{ position: "absolute", left: 60, bottom: 60, fontFamily: MONO, fontSize: 20, color: "#2E5A45" }}>Illustrative timeline</div>
     <div style={{ position: "absolute", right: 60, bottom: 60, fontFamily: PIX, fontSize: 20, color: CL.sage }}>collatera.buzz</div>
@@ -253,20 +253,20 @@ const Header: React.FC<{ tag: string; lines: [string, boolean][]; visual?: React
     {light ? <PaperBg /> : <Grid />}
     <div style={{ position: "absolute", left: 110, top: 110 }}><Tag text={tag} dark={light} /></div>
     <div style={{ position: "absolute", left: 110, top: 230 }}>
-      <H size={70} dark={light} lines={lines} />
+      <H size={60} dark={light} lines={lines} />
     </div>
-    <div style={{ position: "absolute", right: 110, top: 200 }}>{visual}</div>
-    <div style={{ position: "absolute", left: 110, bottom: 80 }}>{light ? <Foot dark /> : <Footer />}</div>
+    <div style={{ position: "absolute", right: 110, top: 420 }}>{visual}</div>
+    {light ? <Foot dark /> : <div style={{ position: "absolute", left: 110, bottom: 80 }}><Footer /></div>}
   </AbsoluteFill>
 );
-const A1: React.FC = () => <Header tag="ARTICLE / 01" lines={[["WHY TOKENIZED-STOCK", false], ["COLLATERAL NEEDS", false], ["ORACLE FRESHNESS", true], ["CHECKS.", true]]} visual={<div style={{ transform: "scale(0.75)", transformOrigin: "100% 0" }}><Lines /></div>} />;
+const A1: React.FC = () => <Header tag="ARTICLE / 01" lines={[["WHY TOKENIZED-STOCK", false], ["COLLATERAL NEEDS", false], ["ORACLE FRESHNESS", true], ["CHECKS.", true]]} visual={<div style={{ transform: "scale(0.62)", transformOrigin: "100% 0" }}><Lines /></div>} />;
 const A2: React.FC = () => <Header tag="ARTICLE / 02" lines={[["THE OVERNIGHT GAP:", false], ["WHEN MARKETS CLOSE", false], ["AND LOANS DON'T.", true]]} visual={<Mascot cell={22} />} />;
 const A3: React.FC = () => (
   <Header
     tag="ARTICLE / 03"
     lines={[["READING YOUR", false], ["POSITION HEALTH:", false], ["BUFFER, ORACLE", true], ["AGE, LTV.", true]]}
     visual={
-      <div style={{ transform: "scale(0.62)", transformOrigin: "100% 0" }}>
+      <div style={{ transform: "scale(0.5)", transformOrigin: "100% 0" }}>
         <Terminal t={2.4} />
       </div>
     }

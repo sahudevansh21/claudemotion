@@ -1,0 +1,45 @@
+COLLATERA · DAY 06 · Sunday 01 November 2026 · theme: Product
+================================================================
+
+[V2] VIDEO · Know what changed before you act
+Post at: 14:00 UTC · Channels: X · LinkedIn · Format: 30 s · 1080p60 (1920×1080)
+
+CAPTION:
+Know what changed before you act.
+
+→ Monitor
+→ Stress test
+→ Get alerts
+→ Preview repayment
+
+Every decision stays in your hands. You confirm any repayment yourself.
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement #Algorand
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #CryptoTools #Fintech #Collatera
+
+Note: Confirm the alerts feature status before posting. The site lists it as a flow step; V1 is read-only monitoring of one demo vault.
+
+----------------------------------------------------------------
+
+[P4] POST · Know what backs your position
+Post at: 17:00 UTC · Channels: X · LinkedIn · Instagram · Format: 4:5 2160×2700
+
+CAPTION:
+Know what backs your position.
+
+01 Collateral health
+02 Freshness checks
+03 Liquidity risk
+
+Read-only monitoring for DeFi loans backed by tokenized stocks & ETFs, starting on Algorand.
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #Fintech #Collatera
+
+Note: Already produced: deliverables/collatera-posts/03-backs-your-position.jpg.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.

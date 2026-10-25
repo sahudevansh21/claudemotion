@@ -1,0 +1,38 @@
+COLLATERA · DAY 15 · Tuesday 10 November 2026 · theme: Wrap-up
+================================================================
+
+[V5] VIDEO · One page. Every risk in view.
+Post at: 14:00 UTC · Channels: X · LinkedIn · website hero · Format: 30 s · 1080p60 (1920×1080)
+
+CAPTION:
+One page. Every risk in view.
+
+Terminal · Market pulse · Integrations · Position health
+
+Read-only monitoring for tokenized-asset-backed loans → collatera.buzz
+
+Hashtags · X: #DeFi #RWA #Algorand
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement #Algorand
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Crypto #Web3 #Algorand #OnChain #CryptoTools #Fintech #Collatera
+
+Note: Show the TVL figures only if the capture is fresh, and keep the 'not affiliated' footnote readable in the integration shot.
+
+----------------------------------------------------------------
+
+[A4] ARTICLE · Monitoring first, automation later: how we're building Collatera
+Post at: 15:00 UTC · Channels: Blog · LinkedIn · X Article · Format: ≈300 words · founder voice
+
+CAPTION:
+Monitoring first. Automation later.
+
+Why Collatera starts read-only, and what has to be true before anything else ships ↓
+
+Hashtags · X: #DeFi #RWA
+Hashtags · LinkedIn: #DeFi #TokenizedAssets #RWA #RiskManagement
+Hashtags · Instagram: #DeFi #RWA #TokenizedStocks #Web3 #Collatera
+
+Note: Have the founder review before publishing.
+
+----------------------------------------------------------------
+
+Rules: keep 'SIMULATED DATA' labels visible · never tag Aave/Euler/Morpho/Sentora/Robinhood (coverage targets, not partners) · add 'Not financial advice.' to articles.
