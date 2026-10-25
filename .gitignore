@@ -8,3 +8,5 @@ out
 
 # Too large for GitHub (>100 MB); kept locally and delivered directly
 deliverables/oryn-4k120.mp4
+
+__pycache__/

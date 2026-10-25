@@ -247,3 +247,9 @@ Use only these devices:
 6. End on a centred logo plus one line or URL.
 Content stays real data only; do not reuse the reference brands' logos, names or figures.
 If the user supplies new reference videos, that replaces this list: re-analyse and update `docs/references/ANALYSIS.md` first.
+
+
+## Standing output spec (set by the user, in force until they change it)
+
+Every video is delivered at 1920x1080 (1080p) and 60 fps, 16:9. Do not render videos at 4K or 120 fps unless the user asks for it in that request.
+Register new video compositions at width=1920, height=1080, fps=60; posts/stills keep their own 4:5 spec.

@@ -39,7 +39,7 @@ def add(**k): D.append(k)
 
 # ---------------------------------------------------------------- DAY 1
 add(id="V1", day=1, kind="Video", pillar="Launch", title="Introducing Oryn",
-    fmt="30 s, 16:9, 3840x2160 @ 60 fps, music + SFX, no VO", ref="Conqueror (Introducing X for ...) + Krea (cursor, leaderboard)",
+    fmt="30 s, 16:9, 1920x1080 @ 60 fps, music + SFX, no VO", ref="Conqueror (Introducing X for ...) + Krea (cursor, leaderboard)",
     objective="Announce Oryn and explain the product in one sentence.",
     script=[
         "0-4 s  “Introducing Oryn for”; the last word swaps in place: xTSLA / oNVDA / BUIDL / USTB (blur out, blur in). Flat cream, soft halftone bloom.",
@@ -50,7 +50,7 @@ add(id="V1", day=1, kind="Video", pillar="Launch", title="Introducing Oryn",
     ],
     caption="Introducing Oryn. The state-of-the-asset layer. One verdict per token, per chain, with a reason and the evidence. Is it safe to act on this token right now? Now you can branch on one value.",
     tags="#Oryn #RWA #Tokenization #DeFi #OnchainFinance",
-    prompt=REMO + "Task: build the 30 s film “Introducing Oryn” at 3840x2160, 60 fps. " + STYLE +
+    prompt=REMO + "Task: build the 30 s film “Introducing Oryn” at 1920x1080, 60 fps. " + STYLE +
            " Scenes: (1) “Introducing Oryn for [xTSLA|oNVDA|BUIDL|USTB]” with in-place word swap on a cream blurred halftone background; (2) a cursor draws a prompt card with the line “Is it safe to act on this token right now?”; (3) an 8-row leaderboard of Oryn deployments rises in, the cursor selects xTSLA SOL and the row becomes a black pill reading Divergent with the reason text; (4) in-place swaps: “One verdict per token, per chain.” / “A reason. The evidence.”; (5) centred badge from public/oryn/img/logo.png, line “State of assets activated.” Original 96 BPM music, soft UI ticks, no wipes or stamps.")
 
 add(id="P1", day=1, kind="Post", pillar="Launch", title="Hero: Is it safe to act?",
@@ -86,12 +86,12 @@ add(id="A1", day=3, kind="Article (short)", pillar="Thought leadership", title="
 
 # ---------------------------------------------------------------- DAY 4
 add(id="V2", day=4, kind="Video", pillar="Product", title="Divergent: when a split is not applied",
-    fmt="20 s, 16:9, 3840x2160 @ 60 fps", ref="Notion (flat colour per idea) + Krea (cursor)",
+    fmt="20 s, 16:9, 1920x1080 @ 60 fps", ref="Notion (flat colour per idea) + Krea (cursor)",
     objective="Show the most dramatic verdict with a real example.",
     script=["0-4 s  Flat cream. “A stock split is announced.” swaps to “The issuer applies it.”", "4-9 s  Two chain cards slide up: Ethereum and Solana. Cursor points at Solana.", "9-15 s  Background cross-fades to near-black. Pill: Divergent. “Stock split 3:1 not applied on Solana.”", "15-20 s  “One chain behind. Oryn catches it.” Badge end card."],
     caption="The issuer split the stock 3:1. Solana didn’t get the memo. That’s a Divergent verdict. Oryn flags it before you act.",
     tags="#Oryn #xStocks #RWA #OnchainRisk",
-    prompt=REMO + "Task: 20 s film at 3840x2160/60 fps. " + STYLE + " Use the xTSLA example only (Stock split 3:1 not applied on Solana; next change unknown). Colour sequence: cream, then near-black with red type. Include a typing caret on the reason line. No invented numbers beyond 3:1.")
+    prompt=REMO + "Task: 20 s film at 1920x1080/60 fps. " + STYLE + " Use the xTSLA example only (Stock split 3:1 not applied on Solana; next change unknown). Colour sequence: cream, then near-black with red type. Include a typing caret on the reason line. No invented numbers beyond 3:1.")
 
 add(id="P3", day=4, kind="Post", pillar="Product", title="xTSLA Divergent",
     fmt=POSTFMT, ref="Conqueror (flat, high contrast)",
@@ -103,12 +103,12 @@ add(id="P3", day=4, kind="Post", pillar="Product", title="xTSLA Divergent",
 
 # ---------------------------------------------------------------- DAY 5
 add(id="V3", day=5, kind="Video", pillar="Product", title="Replay any moment",
-    fmt="15 s, 16:9, 3840x2160 @ 60 fps", ref="Pages. (tilted plane, depth blur)",
+    fmt="15 s, 16:9, 1920x1080 @ 60 fps", ref="Pages. (tilted plane, depth blur)",
     objective="Show the Time Machine.",
     script=["0-3 s  Dark plane tilts into view with the board cards. Title swaps: “Replay” / “any moment.”", "3-11 s  Cursor drags the slider across -1D, NOW, NEXT OPEN, +1D; cards re-colour as it moves (Illustrative state changes).", "11-15 s  Plane levels out. “Verdicts, calendar and alerts all follow.” Badge end."],
     caption="Time Machine. Replay any moment and the verdicts, calendar and alerts all follow.",
     tags="#Oryn #TimeMachine #RWA",
-    prompt=REMO + "Task: 15 s film at 3840x2160/60 fps. " + STYLE + " Dark mode plane with perspective tilt (rotateX 8 deg, rotateY -10 deg) and depth-of-field blur on far cards. The slider labels are -1D, NOW, NEXT OPEN, +1D and the +41.25h readout from the site. Card state changes while scrubbing are Illustrative and must carry a small Illustrative tag.")
+    prompt=REMO + "Task: 15 s film at 1920x1080/60 fps. " + STYLE + " Dark mode plane with perspective tilt (rotateX 8 deg, rotateY -10 deg) and depth-of-field blur on far cards. The slider labels are -1D, NOW, NEXT OPEN, +1D and the +41.25h readout from the site. Card state changes while scrubbing are Illustrative and must carry a small Illustrative tag.")
 
 # ---------------------------------------------------------------- DAY 6
 add(id="P4", day=6, kind="Post", pillar="Education", title="Market closed is not broken",
@@ -129,12 +129,12 @@ add(id="A2", day=6, kind="Article (short)", pillar="Education", title="How to re
 
 # ---------------------------------------------------------------- DAY 7
 add(id="V4", day=7, kind="Video", pillar="Product", title="The Guard",
-    fmt="20 s, 16:9, 3840x2160 @ 60 fps", ref="Notion agents (prompt box, flat colour) + Supabase (typing)",
+    fmt="20 s, 16:9, 1920x1080 @ 60 fps", ref="Notion agents (prompt box, flat colour) + Supabase (typing)",
     objective="Show the decision-point product: check before you act.",
     script=["0-4 s  Flat yellow. “Before you swap,” swaps to “ask the Guard.”", "4-10 s  Form card rises in; caret types Token: xTSLA, Chain: SOL, Action: Swap.", "10-15 s  Background cuts via colour change to red; result card: BLOCKED. Stock split 3:1 not applied on Solana.", "15-20 s  “Unknown means not actionable.” Badge end."],
     caption="The Guard. Type the token and chain, get a verdict before you act. xTSLA on Solana: BLOCKED.",
     tags="#Oryn #Guard #RWA",
-    prompt=REMO + "Task: 20 s film at 3840x2160/60 fps. " + STYLE + " The form values (xTSLA, SOL, Swap) are Illustrative. The result text is taken from the Oryn board. Typing caret, send button pulse, one flat-colour change per idea.")
+    prompt=REMO + "Task: 20 s film at 1920x1080/60 fps. " + STYLE + " The form values (xTSLA, SOL, Swap) are Illustrative. The result text is taken from the Oryn board. Typing caret, send button pulse, one flat-colour change per idea.")
 
 add(id="P5", day=7, kind="Post", pillar="Product", title="BLOCKED",
     fmt=POSTFMT, ref="Conqueror (bold single message)",
@@ -146,12 +146,12 @@ add(id="P5", day=7, kind="Post", pillar="Product", title="BLOCKED",
 
 # ---------------------------------------------------------------- DAY 8
 add(id="V5", day=8, kind="Video", pillar="Product", title="Same token, different chain",
-    fmt="25 s, 16:9, 3840x2160 @ 60 fps", ref="Krea 3 (leaderboard rows, black pill)",
+    fmt="25 s, 16:9, 1920x1080 @ 60 fps", ref="Krea 3 (leaderboard rows, black pill)",
     objective="Show per-chain verdicts: xTSLA ETH vs SOL.",
     script=["0-5 s  “Same token.” / “Different chain.” swapped in place.", "5-14 s  Two rows rise: xTSLA·ETH Market closed, xTSLA·SOL Divergent; black pill highlight moves between them with the cursor.", "14-22 s  Reason lines type on for each.", "22-25 s  “One verdict per token, per chain.” Badge."],
     caption="Same token. Different chain. Different answer. xTSLA is Market closed on Ethereum and Divergent on Solana.",
     tags="#Oryn #xStocks #MultiChain",
-    prompt=REMO + "Task: 25 s film at 3840x2160/60 fps. " + STYLE + " Leaderboard table styled like the Krea reference: white-card rows, black pill on the highlighted row, cursor moves between rows. Data: xTSLA ETH Market closed (market opens in 6h), xTSLA SOL Divergent (Stock split 3:1 not applied on Solana).")
+    prompt=REMO + "Task: 25 s film at 1920x1080/60 fps. " + STYLE + " Leaderboard table styled like the Krea reference: white-card rows, black pill on the highlighted row, cursor moves between rows. Data: xTSLA ETH Market closed (market opens in 6h), xTSLA SOL Divergent (Stock split 3:1 not applied on Solana).")
 
 add(id="P6", day=8, kind="Post", pillar="Education", title="Stale is not a weekend",
     fmt=POSTFMT, ref="Notion",
@@ -163,12 +163,12 @@ add(id="P6", day=8, kind="Post", pillar="Education", title="Stale is not a weeke
 
 # ---------------------------------------------------------------- DAY 9
 add(id="V6", day=9, kind="Video", pillar="Product", title="Action pending: the dividend",
-    fmt="20 s, 16:9, 3840x2160 @ 60 fps", ref="Conqueror (cycling lines, mini cards)",
+    fmt="20 s, 16:9, 1920x1080 @ 60 fps", ref="Conqueror (cycling lines, mini cards)",
     objective="Teach Lookahead: events before they land.",
     script=["0-5 s  “A dividend is coming.” swaps to “Is your multiplier ready?”", "5-12 s  Mini calendar card: effective 2026-10-27 22:00 UTC. Row xAAPL·ETH Action pending.", "12-17 s  Countdown chip “event effective in 38h”.", "17-20 s  “Dividend $0.27 / share. Multiplier not yet applied.” Badge."],
     caption="Dividend $0.27 per share, effective 2026-10-27 22:00 UTC, multiplier not yet applied on Ethereum or Solana. That’s Action pending.",
     tags="#Oryn #xAAPL #Lookahead",
-    prompt=REMO + "Task: 20 s film at 3840x2160/60 fps on a flat yellow background. " + STYLE + " Use only the xAAPL dividend facts: $0.27 / share, effective 2026-10-27 22:00 UTC, multiplier not yet applied on Ethereum and Solana, event effective in 38h. The calendar card is a simplified Illustrative UI.")
+    prompt=REMO + "Task: 20 s film at 1920x1080/60 fps on a flat yellow background. " + STYLE + " Use only the xAAPL dividend facts: $0.27 / share, effective 2026-10-27 22:00 UTC, multiplier not yet applied on Ethereum and Solana, event effective in 38h. The calendar card is a simplified Illustrative UI.")
 
 add(id="P7", day=9, kind="Post", pillar="Product", title="Action pending",
     fmt=POSTFMT, ref="Conqueror",
@@ -188,12 +188,12 @@ add(id="A3", day=10, kind="Article (short)", pillar="Education", title="When the
     prompt="Writing prompt: Write a 200-word article “When the redemption window is shut” for collateral and risk teams. Facts allowed: BUIDL (BlackRock USD Institutional Digital Liquidity Fund) on Ethereum and Arbitrum is Redemption closed, window opens in 6h; USTB (Superstate Short Duration US Gov Securities Fund) on Ethereum is Open, NAV strike in 13h. Explain why NAV is not the same as redeemable NAV. No advice, no invented figures. End with the footer line.")
 
 add(id="V7", day=10, kind="Video", pillar="Product", title="Four chains, one verdict",
-    fmt="20 s, 16:9, 3840x2160 @ 60 fps", ref="Supabase Middleware (icon carousel, in-place swaps)",
+    fmt="20 s, 16:9, 1920x1080 @ 60 fps", ref="Supabase Middleware (icon carousel, in-place swaps)",
     objective="Multi-chain coverage story.",
     script=["0-4 s  “Introducing per-chain verdicts”.", "4-13 s  Right-hand icon carousel cycles ETH, SOL, BASE, ARB; text swaps: “Check it on Ethereum / Solana / Base / Arbitrum.”", "13-17 s  Icons cluster, “All of them.”", "17-20 s  Badge + “One verdict per token, per chain.”"],
     caption="Ethereum, Solana, Base, Arbitrum. One verdict per token, per chain.",
     tags="#Oryn #Ethereum #Solana #Base #Arbitrum",
-    prompt=REMO + "Task: 20 s dark-mode film at 3840x2160/60 fps in the Supabase style: near-black background, vertical icon carousel on the right, headline words swapped in place (Ethereum, Solana, Base, Arbitrum, all of them). Chain icons are simple Illustrative glyphs; do not use official chain logos unless supplied.")
+    prompt=REMO + "Task: 20 s dark-mode film at 1920x1080/60 fps in the Supabase style: near-black background, vertical icon carousel on the right, headline words swapped in place (Ethereum, Solana, Base, Arbitrum, all of them). Chain icons are simple Illustrative glyphs; do not use official chain logos unless supplied.")
 
 # ---------------------------------------------------------------- DAY 11
 add(id="P8", day=11, kind="Post (carousel, 5 slides)", pillar="Product", title="Three clocks",
@@ -205,12 +205,12 @@ add(id="P8", day=11, kind="Post (carousel, 5 slides)", pillar="Product", title="
     prompt="Image-generation prompt (per slide): flat 4:5 slides, one solid colour per slide (cream, blue, yellow, red, cream), huge condensed clock-time number as the hero (6h, 38h, 6h/13h), a small caption in monospace, thick black outline cards with hard shadow, no clock illustrations.")
 
 add(id="V8", day=11, kind="Video", pillar="Product", title="Oryn tour (one-take)",
-    fmt="45 s, 16:9, 3840x2160 @ 60 fps, near-silent music bed", ref="Pages. (one-take tilted 3D plane)",
+    fmt="45 s, 16:9, 1920x1080 @ 60 fps, near-silent music bed", ref="Pages. (one-take tilted 3D plane)",
     objective="Flagship product tour: all seven sections.",
     script=["0-6 s  Dark plane: Board cards. 6-12 s Asset detail xTSLA. 12-18 s Lookahead calendar. 18-24 s Divergence list (4 divergent). 24-30 s Wallet. 30-36 s Guard BLOCKED. 36-42 s API panel (Illustrative). 42-45 s Spotlight on badge: “State of assets activated.”"],
     caption="Seven sections, one verdict: Board, Asset, Lookahead, Divergence, Wallet, Guard, API.",
     tags="#Oryn #ProductTour",
-    prompt=REMO + "Task: 45 s one-take film at 3840x2160/60 fps. " + STYLE + " One continuous camera across a tilted dark 3D plane of Oryn UI cards (perspective 2400px, rotateX 10, rotateY -12), spotlight reveal on each section, depth blur on far cards, no hard cuts. Use the real recording at public/oryn/clips/site.mp4 inside one card for authenticity. API panel is Illustrative: show only a verdict value, not an invented schema.")
+    prompt=REMO + "Task: 45 s one-take film at 1920x1080/60 fps. " + STYLE + " One continuous camera across a tilted dark 3D plane of Oryn UI cards (perspective 2400px, rotateX 10, rotateY -12), spotlight reveal on each section, depth blur on far cards, no hard cuts. Use the real recording at public/oryn/clips/site.mp4 inside one card for authenticity. API panel is Illustrative: show only a verdict value, not an invented schema.")
 
 # ---------------------------------------------------------------- DAY 12
 add(id="A4", day=12, kind="Article (short)", pillar="Thought leadership", title="A bond is not an asset",

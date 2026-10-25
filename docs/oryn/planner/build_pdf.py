@@ -127,7 +127,7 @@ S += [t, Paragraph("Voice", H2)] + bullets([
 S += [Paragraph("Visual system", H2)] + bullets([
     "Posts: cream paper #e4dfca, ink #0d0d0f, blue #2630c8, yellow #f2c200, red #e5321f, lavender #b9b3ee, deep green #1d3a24. Fonts Anton (display), Space Grotesk (text), Space Mono (labels).",
     "Videos: ONLY the motion grammar of the five reference films: words blur in/out and swap in place; cursor or caret drives the story; one idea per beat on one flat colour or one tilted dark plane; UI cards rise in from below; logos float and cluster; code types on; end on a centred logo plus one line. No wipes, stamps or shakes.",
-    "Specs: videos 3840x2160 (16:9) at 60 fps; posts 1080x1350 designed, delivered 2160x2700 JPEG; articles ~200-220 words."])
+    "Specs: videos 1920x1080 (16:9) at 60 fps; posts 1080x1350 designed, delivered 2160x2700 JPEG; articles ~200-220 words."])
 S += [PageBreak()]
 
 # ------------------------------------------------------------------ facts
@@ -171,7 +171,7 @@ S += bullets([
     "After generating anything, check it against the Fact Bank before publishing."])
 S += [Paragraph("Master prompts (reusable)", H2)]
 masters = [
-    ("VIDEO", C.REMO + "Task: build a [N]-second film at 3840x2160/60 fps titled [TITLE] in the style of reference film [Krea | Notion | Conqueror | Pages | Supabase]. " + C.STYLE + " Facts allowed: [PASTE FROM FACT BANK]. Shots: [LIST WITH TIMES]. Deliver: contact sheet of stills, then the MP4, with ffprobe and loudness check."),
+    ("VIDEO", C.REMO + "Task: build a [N]-second film at 1920x1080/60 fps titled [TITLE] in the style of reference film [Krea | Notion | Conqueror | Pages | Supabase]. " + C.STYLE + " Facts allowed: [PASTE FROM FACT BANK]. Shots: [LIST WITH TIMES]. Deliver: contact sheet of stills, then the MP4, with ffprobe and loudness check."),
     ("POST", "Design one Oryn social post (4:5, 1080x1350, delivered 2160x2700). Palette cream #e4dfca, ink #0d0d0f, blue #2630c8, yellow #f2c200, red #e5321f, lavender #b9b3ee. Anton headline, Space Grotesk body, Space Mono labels, thick black outline cards with hard offset shadow, one idea, generous negative space, no photos, no gradients, no invented data. Copy: [PASTE VERBATIM]."),
     ("ARTICLE", "Write a [200-220]-word article titled [TITLE] for Oryn. Audience: builders and risk teams working with tokenised real-world assets. Tone: calm, precise, no hype, no advice. Use ONLY these facts: [PASTE FROM FACT BANK]. Structure: hook, problem, two or three real examples, one-line close. End with: Simulated issuer data · Not investment advice."),
 ]
@@ -215,7 +215,7 @@ S += [Paragraph("Things to verify", H2)] + bullets([
     "Fonts are lookalikes (Anton, Space Grotesk, Space Mono). Send the brand fonts if you want an exact match."])
 S += [Paragraph("Production order (suggested)", H2)] + bullets([
     "Week 1 builds: V1, P1, P2, V2, P3, V3 (days 1-6).", "Week 2 builds: P4, A2, V4, P5, V5, P6, V6, P7.",
-    "Week 3 builds: A3, V7, P8, V8, A4. Videos render in 15-40 minutes each at 4K/60 on 4 cores; start renders in the background."])
+    "Week 3 builds: A3, V7, P8, V8, A4. Videos render in about 5-15 minutes each at 1080p60 on 4 cores; start renders in the background."])
 S += [Paragraph("Metrics to track (no targets assumed)", H2)] + bullets([
     "Per piece: views, saves, shares, profile visits, link clicks. Per week: follower change, replies asking about a specific verdict.",
     "Set targets after week 1 using your own baseline; this plan does not assume any."])
