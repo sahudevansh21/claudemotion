@@ -21,8 +21,9 @@ from scipy.signal import butter, lfilter
 ROOT = Path(__file__).resolve().parents[2]
 TL_NAME = sys.argv[1] if len(sys.argv) > 1 else "timeline"
 OUT_NAME = sys.argv[2] if len(sys.argv) > 2 else "mix"
-TL = json.loads((ROOT / f"src/compositions/Oryn/{TL_NAME}.json").read_text())
-OUT = ROOT / "public/oryn/audio"
+TL = json.loads((ROOT / "src/compositions" / (TL_NAME if "/" in TL_NAME else f"Oryn/{TL_NAME}")).with_suffix(".json").read_text())
+OUT_SUB = sys.argv[3] if len(sys.argv) > 3 else "oryn/audio"
+OUT = ROOT / "public" / OUT_SUB
 OUT.mkdir(parents=True, exist_ok=True)
 SR = 48_000
 FPS = TL["fps"]
@@ -158,14 +159,16 @@ KICK_STEPS = [0, 6, 10]
 for bar in range(n_bars):
     t0 = bar * BAR
     root, tri = CH[bar % 4]
-    full = t0 >= 5.0
-    mid = t0 >= 2.5
+    calm = TL.get("calm", False)
+    full = t0 >= 5.0 and not calm
+    mid = t0 >= 2.5 and not calm
     last = bar == n_bars - 1
     # pad + arp keys
     pn = [midi(n + 12) for n in tri] + [midi(tri[0] + 24)]
-    put(music, pad(pn, BAR + 0.3), t0, 1.0, 0.0)
+    put(music, pad(pn, BAR + 0.3), t0, 2.2 if calm else 1.0, 0.0)
     for s in range(8):
-        if not mid and s % 2: continue
+        if not mid and not calm and s % 2: continue
+        if calm and s % 2: continue
         note = tri[(s * 2 + (bar % 3)) % 3] + 24 + (12 if s % 4 == 3 else 0)
         put(music, bell(midi(note), 1.0), t0 + s * BEAT / 2, 0.55, -0.3 if s % 2 else 0.3)
     if mid:

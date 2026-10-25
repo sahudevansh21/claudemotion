@@ -29,6 +29,8 @@ import { OrynDay3Hero } from "./compositions/Oryn/OrynDay3Hero";
 import { OrynV2, OrynV4, OrynV5, OrynV6 } from "./compositions/Oryn/films";
 import { OrynV3, OrynV7, OrynV8 } from "./compositions/Oryn/films2";
 import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
+import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, AllocraV7, AllocraV8, AllocraV9, AllocraV10 } from "./compositions/AllocraContent/videos";
+import { AllocraPosts } from "./compositions/AllocraContent/posts";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -235,6 +237,21 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ORYN posts P4-P8 (days 7-14): 9 frames at 1080x1350; render with --scale=2. */}
       <Composition id="OrynPosts2" component={OrynPosts2} width={1080} height={1350} fps={1} durationInFrames={9} />
+
+      {/* ALLOCRA content-plan videos: 1080x1920 vertical @ 60 fps; timing in AllocraContent/av*.json. */}
+      <Composition id="AllocraV1" component={AllocraV1} width={1080} height={1920} fps={60} durationInFrames={1080} />
+      <Composition id="AllocraV2" component={AllocraV2} width={1080} height={1920} fps={60} durationInFrames={960} />
+      <Composition id="AllocraV3" component={AllocraV3} width={1080} height={1920} fps={60} durationInFrames={840} />
+      <Composition id="AllocraV4" component={AllocraV4} width={1080} height={1920} fps={60} durationInFrames={960} />
+      <Composition id="AllocraV5" component={AllocraV5} width={1080} height={1920} fps={60} durationInFrames={840} />
+      <Composition id="AllocraV6" component={AllocraV6} width={1080} height={1920} fps={60} durationInFrames={840} />
+      <Composition id="AllocraV7" component={AllocraV7} width={1080} height={1920} fps={60} durationInFrames={1320} />
+      <Composition id="AllocraV8" component={AllocraV8} width={1080} height={1920} fps={60} durationInFrames={840} />
+      <Composition id="AllocraV9" component={AllocraV9} width={1080} height={1920} fps={60} durationInFrames={840} />
+      <Composition id="AllocraV10" component={AllocraV10} width={1080} height={1920} fps={60} durationInFrames={1080} />
+
+      {/* ALLOCRA posts: 10 stills at 1080x1350 (4:5); render with --scale=2. */}
+      <Composition id="AllocraPosts" component={AllocraPosts} width={1080} height={1350} fps={1} durationInFrames={10} />
 
     </>
   );

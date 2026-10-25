@@ -1,0 +1,85 @@
+{
+ "fps": 60,
+ "durationInFrames": 1320,
+ "bpm": 84,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0,
+   "end": 180,
+   "cues": {
+    "swap": 20
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 30,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "cards",
+   "start": 180,
+   "end": 1080,
+   "cues": {
+    "first": 10,
+    "each": 180
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 190,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 370,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 550,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 730,
+     "type": "pop",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 1080,
+   "end": 1320,
+   "cues": {
+    "at": 14
+   },
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}
