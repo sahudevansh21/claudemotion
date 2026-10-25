@@ -18,7 +18,7 @@ DELIVERABLES = [
     # ───────────── VIDEOS ─────────────
     dict(
         id="V1", kind="VIDEO", day=1, title="Introducing Collatera",
-        platform="X (pinned) · LinkedIn · Instagram Reels", fmt="25 s · 16:9 1920×1080 + 9:16 cut · 60 fps",
+        platform="X (pinned) · LinkedIn · Instagram Reels", fmt="25 s · 1080p60 (1920×1080) + 9:16 1080×1920 @ 60 fps",
         ref="SUPABASE MIDDLEWARE (locked ref #5)",
         objective="Launch the brand. One clear line: what Collatera watches, and that it is read-only.",
         shots=[
@@ -34,12 +34,12 @@ DELIVERABLES = [
         ],
         audio="Original chill electronic, ≈80 BPM, soft UI ticks on each swap, a resolving chord at 22 s. −14 LUFS.",
         caption="Catch stale oracles before they catch you. 👾\n\nIntroducing Collatera: read-only collateral risk monitoring for DeFi loans backed by tokenized stocks & ETFs.\n\nNo keys. No signatures.\n→ collatera.buzz",
-        prompt="Using the claudemotion repo and the locked whatships house style, build a 25 s 1920×1080 60 fps composition 'CollateraIntro' that recreates the Supabase Middleware reference shot for shot (docs/reference/whatships/ANALYSIS.md §5) for Collatera. Brand: background #002A1F/#003D2D, accent lime #75FF00, mint #D8FFE0, Silkscreen display font + JetBrains Mono, pixel mascot from src/compositions/Collatera/components/Mascot.tsx. Shots: [paste the shot list above]. Use only STYLE.md vocabulary (letter blur-in, word swap + icon reel, code-window highlight bars, annotation pills, 3D-tilted panel, type-on URL, logo end). Rebuild the terminal from src/compositions/CollateraLaunch/Shots.tsx and keep the 'SIMULATED DATA' label. Original ≈80 BPM score via scripts/*/generate_audio.py. Render 1080p60 plus a 9:16 cut.",
+        prompt="Using the claudemotion repo and the locked whatships house style, build a 25 s 1920×1080 60 fps composition 'CollateraIntro' that recreates the Supabase Middleware reference shot for shot (docs/reference/whatships/ANALYSIS.md §5) for Collatera. Brand: background #002A1F/#003D2D, accent lime #75FF00, mint #D8FFE0, Silkscreen display font + JetBrains Mono, pixel mascot from src/compositions/Collatera/components/Mascot.tsx. Shots: [paste the shot list above]. Use only STYLE.md vocabulary (letter blur-in, word swap + icon reel, code-window highlight bars, annotation pills, 3D-tilted panel, type-on URL, logo end). Rebuild the terminal from src/compositions/CollateraLaunch/Shots.tsx and keep the 'SIMULATED DATA' label. Original ≈80 BPM score via scripts/*/generate_audio.py. Render 1080p60 plus a 9:16 cut at 60 fps.",
         notes="Terminal values are the site's simulated demo data. Keep the label visible.",
     ),
     dict(
         id="V2", kind="VIDEO", day=6, title="Know what changed before you act",
-        platform="X · LinkedIn", fmt="30 s · 16:9 1920×1080 · 24/30 fps",
+        platform="X · LinkedIn", fmt="30 s · 1080p60 (1920×1080)",
         ref="NOTION AI (locked ref #2)",
         objective="Explain the four-step flow: Monitor → Stress test → Get alerts → Preview repayment.",
         shots=[
@@ -54,12 +54,12 @@ DELIVERABLES = [
         ],
         audio="Original ≈110 BPM: plucks, a silent beat at 17 s, 808 slides under the slot-roll, then a groove. −16 LUFS.",
         caption="Know what changed before you act.\n\n→ Monitor\n→ Stress test\n→ Get alerts\n→ Preview repayment\n\nEvery decision stays in your hands. You confirm any repayment yourself.",
-        prompt="In claudemotion, build 'CollateraFlow' (30 s, 1920×1080, 30 fps) recreating the Notion AI reference (ANALYSIS.md §2) shot for shot with Collatera's brand on light mint plates (#EDF7EA, #DDF5E3, #FCE9DC). Use WordType with blur, Scribble write-on, AgentChecklist with a timer, SlotList, PlateWipe, Cursor + ClickPulse and the logo end. Copy: [shot list]. Mark every number ILLUSTRATIVE. Original 110 BPM score (plucks → silence → 808 slides → groove).",
+        prompt="In claudemotion, build 'CollateraFlow' (30 s, 1920×1080, 60 fps) recreating the Notion AI reference (ANALYSIS.md §2) shot for shot with Collatera's brand on light mint plates (#EDF7EA, #DDF5E3, #FCE9DC). Use WordType with blur, Scribble write-on, AgentChecklist with a timer, SlotList, PlateWipe, Cursor + ClickPulse and the logo end. Copy: [shot list]. Mark every number ILLUSTRATIVE. Original 110 BPM score (plucks → silence → 808 slides → groove).",
         notes="Confirm the alerts feature status before posting. The site lists it as a flow step; V1 is read-only monitoring of one demo vault.",
     ),
     dict(
         id="V3", kind="VIDEO", day=4, title="Watch the price. Watch the oracle.",
-        platform="X · Instagram Reels", fmt="20 s · 16:9 + 4:5 · 30 fps",
+        platform="X · Instagram Reels", fmt="20 s · 1080p60 (1920×1080) + 4:5 cut @ 60 fps",
         ref="KREA 3 (locked ref #1)",
         objective="Show the core insight: price and oracle freshness are different things.",
         shots=[
@@ -73,12 +73,12 @@ DELIVERABLES = [
         ],
         audio="Original electronic ≈120 BPM, sparse intro, groove from 5 s. −14 LUFS.",
         caption="Watch the price. Watch the oracle. 🟩\n\nTokenized-asset price, oracle freshness and your liquidation line, side by side.\n\nSimulated data · collatera.buzz",
-        prompt="In claudemotion, build 'CollateraOracle' (20 s, 1920×1080, 30 fps) recreating the Krea 3 reference (ANALYSIS.md §1) for Collatera: a ransom-note font-swap title, a bar chart with a cursor-dragged bar, a node + dashed line, a scatter chart with a filling region, and a leaderboard-style position health card. Brand palette and fonts as in src/compositions/Collatera/brand.ts. All values SIMULATED. Original 120 BPM score.",
+        prompt="In claudemotion, build 'CollateraOracle' (20 s, 1920×1080, 60 fps) recreating the Krea 3 reference (ANALYSIS.md §1) for Collatera: a ransom-note font-swap title, a bar chart with a cursor-dragged bar, a node + dashed line, a scatter chart with a filling region, and a leaderboard-style position health card. Brand palette and fonts as in src/compositions/Collatera/brand.ts. All values SIMULATED. Original 120 BPM score.",
         notes="Values from the site's simulated terminal: Liquidation 412.50, Buffer 14.7%, Oracle age 89 min, LTV 39.8%.",
     ),
     dict(
         id="V4", kind="VIDEO", day=11, title="Your oracle is… stale",
-        platform="X · Instagram Reels · TikTok", fmt="25 s · 9:16 1080×1920 + 16:9 · 25 fps",
+        platform="X · Instagram Reels · TikTok", fmt="25 s · 1080p60 (1920×1080) + 9:16 1080×1920 @ 60 fps",
         ref="CONQUEROR (locked ref #3)",
         objective="Make staleness and overnight gaps feel urgent, using a phrase-swap format.",
         shots=[
@@ -93,12 +93,12 @@ DELIVERABLES = [
         ],
         audio="Original electronic ≈128 BPM, a drop at 7 s, notification blips on beats. −16 LUFS.",
         caption="Your oracle is… stale. 👀\n\nMarkets close. Loans don't. Collatera watches oracle age, buffers and closed-market gaps, read-only.\n\ncollatera.buzz",
-        prompt="In claudemotion, build 'CollateraStale' (25 s, 1080×1920 and 1920×1080, 25 fps) recreating the Conqueror reference (ANALYSIS.md §3) for Collatera: NameCycler, PixelDissolve, halftone texture in lime/forest, ExtremeZoomInput, PhraseSwap 'Your oracle is…', a monitor mockup, and a NotificationStack with illustrative alerts. Original 128 BPM score.",
+        prompt="In claudemotion, build 'CollateraStale' (25 s, 1920×1080 and 1080×1920, 60 fps) recreating the Conqueror reference (ANALYSIS.md §3) for Collatera: NameCycler, PixelDissolve, halftone texture in lime/forest, ExtremeZoomInput, PhraseSwap 'Your oracle is…', a monitor mockup, and a NotificationStack with illustrative alerts. Original 128 BPM score.",
         notes="The notifications are illustrative mock-ups. Mark them as such and do not imply live alerts unless the feature has shipped.",
     ),
     dict(
         id="V5", kind="VIDEO", day=15, title="One page. Every risk in view.",
-        platform="X · LinkedIn · website hero", fmt="30 s · 16:9 1920×1080 · 60 fps",
+        platform="X · LinkedIn · website hero", fmt="30 s · 1080p60 (1920×1080)",
         ref="ACCETERNITY (locked ref #4)",
         objective="Showcase the whole site/product as a premium fly-over, closing the 15 days.",
         shots=[
@@ -116,7 +116,7 @@ DELIVERABLES = [
     ),
     dict(
         id="V6", kind="VIDEO", day=9, title="Built around the lending stack",
-        platform="X · LinkedIn", fmt="20 s · 16:9 · 60 fps",
+        platform="X · LinkedIn", fmt="20 s · 1080p60 (1920×1080)",
         ref="SUPABASE MIDDLEWARE (locked ref #5)",
         objective="Explain where tokenized collateral lives, without implying partnerships.",
         shots=[
@@ -134,7 +134,7 @@ DELIVERABLES = [
     ),
     dict(
         id="V7", kind="VIDEO", day=14, title="Monitoring first. Automation later.",
-        platform="X · LinkedIn", fmt="20 s · 16:9 · 24/30 fps",
+        platform="X · LinkedIn", fmt="20 s · 1080p60 (1920×1080)",
         ref="NOTION AI (locked ref #2)",
         objective="Trust-building: honest roadmap and token stance.",
         shots=[
@@ -147,7 +147,7 @@ DELIVERABLES = [
         ],
         audio="Original soft plucks ≈100 BPM, calm. −17 LUFS.",
         caption="Monitoring first. Automation later.\n\nV1 is read-only: one demo vault modeled on Algorand lending markets. No keys, no funds moved.\n\nA token is a proposal, not a promise. Paid usage comes first.",
-        prompt="In claudemotion, build 'CollateraRoadmap' (20 s, 1920×1080, 30 fps) in the Notion AI reference style: WordType, Underline, PlateWipe, roadmap cards with tick pills, Scribble. Copy verbatim from the site's roadmap and token-role sections.",
+        prompt="In claudemotion, build 'CollateraRoadmap' (20 s, 1920×1080, 60 fps) in the Notion AI reference style: WordType, Underline, PlateWipe, roadmap cards with tick pills, Scribble. Copy verbatim from the site's roadmap and token-role sections.",
         notes="Keep the 'proposal, not a promise' and 'no guarantee' wording intact. No price, yield or token-launch talk.",
     ),
     # ───────────── POSTS ─────────────

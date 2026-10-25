@@ -39,6 +39,12 @@ those.** Before planning any video, read
 - A user-uploaded reference for a specific job is used together with this
   set, not instead of it, unless the user says it replaces the set.
 
+## Default output format (user rule, 2026-10-25)
+
+**Every video renders at 1920×1080 (1080p), 60 fps** unless the user asks for
+something else for that specific video. Vertical cuts are 1080×1920 at 60 fps.
+Register compositions with `width={1920} height={1080} fps={60}`.
+
 ## Commands
 
 | Task | Command |

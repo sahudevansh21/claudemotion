@@ -9,6 +9,9 @@ description: Make a premium motion-graphics brand film, launch video or set of s
 > films (`docs/reference/whatships/ANALYSIS.md` + `STYLE.md`). Use only that
 > motion vocabulary, and no other animation styles, until the user renews the
 > reference set. See AGENTS.md "Reference videos".
+>
+> **Default format:** every video renders at 1080p (1920×1080), 60 fps unless
+> the user asks otherwise for that video.
 
 Follow `docs/PLAYBOOK.md` (full method, commands, recipes, pitfalls). In short:
 

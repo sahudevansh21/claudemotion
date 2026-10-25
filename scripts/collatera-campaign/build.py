@@ -143,7 +143,7 @@ pages.append(f"""
    <tr><td>Trust</td><td>Read-only and roadmap honesty content</td><td>Replies and quote-posts, sentiment</td></tr></table>
   <h3 style="margin:6mm 0 3mm">CONTENT MIX: 20 DELIVERABLES</h3>
   <table><tr><th>TYPE</th><th>COUNT</th><th>FORMAT</th><th>STYLE</th></tr>
-   <tr><td>{kind_tag('VIDEO')}</td><td>7</td><td>20–30 s SaaS motion films, 16:9 + 9:16 cuts</td><td>Locked whatships references only: Supabase, Notion AI, Krea 3, Conqueror, Acceternity</td></tr>
+   <tr><td>{kind_tag('VIDEO')}</td><td>7</td><td>20–30 s SaaS motion films, 1080p 60 fps + 9:16 cuts</td><td>Locked whatships references only: Supabase, Notion AI, Krea 3, Conqueror, Acceternity</td></tr>
    <tr><td>{kind_tag('POST')}</td><td>8</td><td>4:5, 1:1, 16:9 stills and one carousel</td><td>Pixel-terminal brand system (as on the site)</td></tr>
    <tr><td>{kind_tag('ARTICLE')}</td><td>5</td><td>≈300-word posts for X Articles, Medium, LinkedIn and the blog</td><td>Plain, calm, factual founder voice</td></tr></table>
   {foot(2)}
@@ -251,7 +251,7 @@ pages.append(f"""
 <div class="page">
   <div class="eyebrow">05 / PRODUCTION NOTES</div>
   <h2>HOW TO MAKE IT.</h2>
-  <div class="panel"><h3>VIDEOS</h3><div style="margin-top:2mm">Built in the claudemotion repo with Remotion. Each video recreates one locked whatships reference shot for shot (docs/reference/whatships/ANALYSIS.md). Deliver 16:9 at 1080p or 4K plus a 9:16 cut. Original music per reference genre (80–130 BPM), at −14 to −18 LUFS. Every UI shot labelled SIMULATED DATA.</div></div>
+  <div class="panel"><h3>VIDEOS</h3><div style="margin-top:2mm">Built in the claudemotion repo with Remotion. Each video recreates one locked whatships reference shot for shot (docs/reference/whatships/ANALYSIS.md). Deliver every video at 1080p 60 fps (1920×1080), plus a 9:16 cut at 1080×1920 60 fps. Original music per reference genre (80–130 BPM), at −14 to −18 LUFS. Every UI shot labelled SIMULATED DATA.</div></div>
   <div class="panel"><h3>POSTS</h3><div style="margin-top:2mm">Preferred: build in the repo (src/compositions/CollateraLaunch/Posts.tsx) so type and UI are pixel-exact. The image prompts are for quick concepting in an AI image tool. Always re-set the text in Silkscreen afterwards, because AI tools misspell words. Already produced: P1 (poster), P4 and P7 (in deliverables/collatera-posts/).</div></div>
   <div class="panel"><h3>ARTICLES</h3><div style="margin-top:2mm">Drafts are publish-ready at about 300 words. Founder review before posting. Header image = the paired post. Publish on X Articles and cross-post to Medium and LinkedIn 24 h later.</div></div>
   <div class="panel"><h3>HASHTAGS &amp; TAGS</h3><div style="margin-top:2mm">Use 2–3 max on X: #DeFi #RWA #Algorand (#TokenizedStocks where relevant). Do not tag lending venues or chains.</div></div>
