@@ -1,0 +1,42 @@
+{
+  "fps": 60,
+  "durationInFrames": 1500,
+  "bpm": 80,
+  "scenes": [
+    { "id": "introducing", "from": 0, "to": 2.4 },
+    { "id": "title", "from": 2.2, "to": 4.4 },
+    { "id": "watch", "from": 4.3, "to": 8.0 },
+    { "id": "burst", "from": 7.9, "to": 10.1 },
+    { "id": "grid", "from": 10.0, "to": 13.2 },
+    { "id": "tilt", "from": 13.0, "to": 16.6 },
+    { "id": "readonly", "from": 16.5, "to": 18.1 },
+    { "id": "typing", "from": 17.9, "to": 21.1 },
+    { "id": "end", "from": 21.0, "to": 25.0 }
+  ],
+  "swaps": [4.55, 5.3, 6.05, 6.8],
+  "sfx": [
+    { "at": 0.05, "type": "shimmer", "gain": 0.35 },
+    { "at": 1.0, "type": "swish", "gain": 0.35 },
+    { "at": 2.3, "type": "whoosh", "gain": 0.4 },
+    { "at": 2.95, "type": "tick", "gain": 0.45 },
+    { "at": 4.3, "type": "whoosh", "gain": 0.35 },
+    { "at": 4.55, "type": "tick", "gain": 0.5 },
+    { "at": 5.3, "type": "tick", "gain": 0.5 },
+    { "at": 6.05, "type": "tick", "gain": 0.5 },
+    { "at": 6.8, "type": "tick", "gain": 0.5 },
+    { "at": 7.9, "type": "pop", "gain": 0.45 },
+    { "at": 9.9, "type": "whoosh", "gain": 0.35 },
+    { "at": 10.25, "type": "ticks", "gain": 0.3, "count": 9, "step": 0.07 },
+    { "at": 11.6, "type": "tick", "gain": 0.4 },
+    { "at": 12.95, "type": "whoosh", "gain": 0.45 },
+    { "at": 13.9, "type": "pop", "gain": 0.3 },
+    { "at": 14.2, "type": "pop", "gain": 0.3 },
+    { "at": 14.5, "type": "pop", "gain": 0.3 },
+    { "at": 16.4, "type": "whoosh", "gain": 0.4 },
+    { "at": 18.1, "type": "typing", "gain": 0.22, "count": 34, "step": 0.075 },
+    { "at": 21.0, "type": "whoosh", "gain": 0.35 },
+    { "at": 21.3, "type": "typing", "gain": 0.22, "count": 18, "step": 0.07 },
+    { "at": 22.6, "type": "click", "gain": 0.4 },
+    { "at": 22.8, "type": "chime", "gain": 0.45 }
+  ]
+}
