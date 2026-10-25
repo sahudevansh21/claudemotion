@@ -33,7 +33,7 @@
     { "at": 14.2, "type": "pop", "gain": 0.3 },
     { "at": 14.5, "type": "pop", "gain": 0.3 },
     { "at": 16.4, "type": "whoosh", "gain": 0.4 },
-    { "at": 18.1, "type": "typing", "gain": 0.22, "count": 34, "step": 0.075 },
+    { "at": 18.1, "type": "typing", "gain": 0.22, "count": 40, "step": 0.065 },
     { "at": 21.0, "type": "whoosh", "gain": 0.35 },
     { "at": 21.3, "type": "typing", "gain": 0.22, "count": 18, "step": 0.07 },
     { "at": 22.6, "type": "click", "gain": 0.4 },

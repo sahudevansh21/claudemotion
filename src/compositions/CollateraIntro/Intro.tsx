@@ -554,8 +554,8 @@ const LINES = [
 ];
 const S7b: React.FC = () => {
   const t = useT();
-  const cps = 46;
-  const start = 0.2;
+  const cps = 84;
+  const start = 0.15;
   const total = Math.max(0, (t - start) * cps);
   let used = 0;
   const shown = LINES.map((l) => {
