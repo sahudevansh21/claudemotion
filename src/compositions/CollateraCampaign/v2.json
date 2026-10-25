@@ -1,0 +1,182 @@
+{
+  "id": "v2",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "music": {
+    "style": "notion",
+    "bpm": 110,
+    "silence": 16.6,
+    "end": 28.6,
+    "lufs": -16
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "from": 0,
+      "to": 3.2,
+      "in": 0.01
+    },
+    {
+      "id": "know",
+      "from": 3.0,
+      "to": 5.2
+    },
+    {
+      "id": "input",
+      "from": 5.0,
+      "to": 8.4
+    },
+    {
+      "id": "check",
+      "from": 8.2,
+      "to": 14.2
+    },
+    {
+      "id": "stress",
+      "from": 14.0,
+      "to": 17.2
+    },
+    {
+      "id": "slots",
+      "from": 17.0,
+      "to": 24.2
+    },
+    {
+      "id": "preview",
+      "from": 24.0,
+      "to": 27.2
+    },
+    {
+      "id": "cards",
+      "from": 27.0,
+      "to": 28.9,
+      "out": 0.15
+    },
+    {
+      "id": "logo",
+      "from": 28.8,
+      "to": 30.0,
+      "in": 0.15,
+      "out": 0.01
+    }
+  ],
+  "sfx": [
+    {
+      "at": 0.05,
+      "type": "shimmer",
+      "gain": 0.3
+    },
+    {
+      "at": 1.4,
+      "type": "scribble",
+      "gain": 0.4
+    },
+    {
+      "at": 3.0,
+      "type": "whoosh",
+      "gain": 0.3
+    },
+    {
+      "at": 5.0,
+      "type": "whoosh",
+      "gain": 0.4
+    },
+    {
+      "at": 5.5,
+      "type": "typing",
+      "gain": 0.2,
+      "count": 14,
+      "step": 0.07
+    },
+    {
+      "at": 7.35,
+      "type": "click",
+      "gain": 0.5
+    },
+    {
+      "at": 8.9,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 9.45,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 10.0,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 10.55,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 11.1,
+      "type": "tick",
+      "gain": 0.35
+    },
+    {
+      "at": 14.0,
+      "type": "whoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 15.2,
+      "type": "scribble",
+      "gain": 0.4
+    },
+    {
+      "at": 17.0,
+      "type": "whoosh",
+      "gain": 0.4
+    },
+    {
+      "at": 22.4,
+      "type": "pop",
+      "gain": 0.4
+    },
+    {
+      "at": 24.0,
+      "type": "whoosh",
+      "gain": 0.35
+    },
+    {
+      "at": 25.9,
+      "type": "click",
+      "gain": 0.5
+    },
+    {
+      "at": 26.0,
+      "type": "chime",
+      "gain": 0.35
+    },
+    {
+      "at": 27.05,
+      "type": "tick",
+      "gain": 0.45
+    },
+    {
+      "at": 27.5,
+      "type": "tick",
+      "gain": 0.45
+    },
+    {
+      "at": 27.95,
+      "type": "tick",
+      "gain": 0.45
+    },
+    {
+      "at": 28.4,
+      "type": "tick",
+      "gain": 0.45
+    },
+    {
+      "at": 28.85,
+      "type": "pop",
+      "gain": 0.4
+    }
+  ]
+}

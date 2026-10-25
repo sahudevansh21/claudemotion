@@ -23,6 +23,7 @@ import { CollateraLaunch } from "./compositions/CollateraLaunch/Launch";
 import { CollateraPoster } from "./compositions/CollateraLaunch/Poster";
 import { CollateraPosts } from "./compositions/CollateraLaunch/Posts";
 import { CollateraIntro } from "./compositions/CollateraIntro/Intro";
+import { CampaignCompositions } from "./compositions/CollateraCampaign/Compositions";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -207,6 +208,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="CollateraPosts" component={CollateraPosts} width={2160} height={2700} fps={1} durationInFrames={5} />
       {/* COLLATERA content plan V1: 25 s, 1920x1080 @ 60 fps = 1,500 frames (CollateraIntro/intro.json). */}
       <Composition id="CollateraIntro" component={CollateraIntro} width={1920} height={1080} fps={60} durationInFrames={1500} />
+      <CampaignCompositions />
     </>
   );
 };
