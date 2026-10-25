@@ -1,0 +1,29 @@
+{
+  "id": "v5",
+  "fps": 60,
+  "durationInFrames": 1800,
+  "music": { "style": "foley", "end": 29.0, "lufs": -20 },
+  "scenes": [
+    { "id": "fly", "from": 0, "to": 19.2, "in": 0.6 },
+    { "id": "arc", "from": 19.0, "to": 24.2 },
+    { "id": "macro", "from": 24.0, "to": 27.2 },
+    { "id": "pages", "from": 27.0, "to": 28.7 },
+    { "id": "logo", "from": 28.5, "to": 30.0, "out": 0.01 }
+  ],
+  "sfx": [
+    { "at": 0.2, "type": "whoosh", "gain": 0.25 },
+    { "at": 2.4, "type": "whoosh", "gain": 0.2 },
+    { "at": 4.8, "type": "whoosh", "gain": 0.2 },
+    { "at": 8.0, "type": "whoosh", "gain": 0.3 },
+    { "at": 13.8, "type": "whoosh", "gain": 0.25 },
+    { "at": 19.0, "type": "whoosh", "gain": 0.3 },
+    { "at": 20.5, "type": "tick", "gain": 0.3 },
+    { "at": 21.5, "type": "tick", "gain": 0.3 },
+    { "at": 22.5, "type": "tick", "gain": 0.3 },
+    { "at": 24.0, "type": "whoosh", "gain": 0.3 },
+    { "at": 25.2, "type": "shimmer", "gain": 0.3 },
+    { "at": 27.0, "type": "tick", "gain": 0.35 },
+    { "at": 27.6, "type": "tick", "gain": 0.35 },
+    { "at": 28.6, "type": "chime", "gain": 0.35 }
+  ]
+}
