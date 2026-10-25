@@ -61,7 +61,7 @@ const P7: React.FC = () => (
     <Top status="pending" label="Product · Lookahead" />
     <div style={{ position: "absolute", left: 60, top: 180, fontFamily: DISPLAY, fontSize: 350, lineHeight: 1, color: C.blue }}>xAAPL.</div>
     <div style={{ position: "absolute", left: 70, top: 630, fontFamily: DISPLAY, fontSize: 128, lineHeight: 1, color: C.ink, whiteSpace: "nowrap" }}>ACTION PENDING.</div>
-    <div style={{ position: "absolute", left: 70, right: 70, top: 800, fontFamily: SANS, fontWeight: 700, fontSize: 48, lineHeight: 1.2, color: C.ink, letterSpacing: -0.8 }}>Dividend $0.27 / share · effective 2026-10-27 22:00 UTC</div>
+    <div style={{ position: "absolute", left: 70, right: 70, top: 790, fontFamily: SANS, fontWeight: 700, fontSize: 52, lineHeight: 1.18, color: C.ink, letterSpacing: -0.8 }}>Dividend $0.27 / share<br />effective 2026-10-27 22:00 UTC</div>
     <div style={{ position: "absolute", left: 70, right: 70, top: 970, fontFamily: MONO, fontWeight: 700, fontSize: 24, letterSpacing: 2, textTransform: "uppercase", color: "rgba(13,13,15,0.75)" }}>Multiplier not yet applied · event effective in 38h</div>
     <div style={{ position: "absolute", left: 70, bottom: 150 }}><Barcode w={460} h={46} color={C.ink} seed="p7" /></div>
     <Foot />

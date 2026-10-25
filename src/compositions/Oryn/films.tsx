@@ -32,7 +32,7 @@ const V2Cards: React.FC = () => {
         <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 5, textTransform: "uppercase", color: dark ? "rgba(255,255,255,0.6)" : "rgba(13,13,15,0.55)" }}>Chain {chain}</div>
         <div style={{ fontFamily: DISPLAY, fontSize: 150, lineHeight: 1.05, color: dark ? C.red : C.blue, marginTop: 16, textTransform: "none" }}>xTSLA</div>
         <div style={{ fontFamily: SANS, fontSize: 26, color: dark ? "rgba(255,255,255,0.7)" : "rgba(13,13,15,0.6)", marginTop: 4 }}>{name}</div>
-        <div style={{ marginTop: 40 }}><Chip status={dark ? "divergent" : status === "divergent" ? "closed" : status} size={26} /></div>
+        <div style={{ marginTop: 40 }}><Chip status={status} size={26} /></div>
       </div>
     );
   };

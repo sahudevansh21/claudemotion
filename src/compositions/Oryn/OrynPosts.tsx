@@ -9,10 +9,10 @@ const H = 1350;
 const Label: React.FC<{ children: React.ReactNode; color?: string }> = ({ children, color = C.red }) => (
   <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 5, textTransform: "uppercase", color, fontWeight: 700 }}>{children}</div>
 );
-const Foot: React.FC<{ dark?: boolean; n: number }> = ({ dark, n }) => (
+const Foot: React.FC<{ dark?: boolean; n?: number }> = ({ dark }) => (
   <div style={{ position: "absolute", left: 70, right: 70, bottom: 56, display: "flex", justifyContent: "space-between", alignItems: "center", fontFamily: MONO, fontSize: 17, letterSpacing: 3, textTransform: "uppercase", color: dark ? "rgba(255,255,255,0.6)" : "rgba(13,13,15,0.6)" }}>
     <span>Oryn · State of assets activated</span>
-    <span>0{n}/06</span>
+    <span />
   </div>
 );
 
