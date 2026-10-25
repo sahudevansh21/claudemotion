@@ -25,6 +25,7 @@ import { OrynSite } from "./compositions/Oryn/OrynSite";
 import { OrynPosts } from "./compositions/Oryn/OrynPosts";
 import { OrynIntro } from "./compositions/Oryn/OrynIntro";
 import { OrynCarousel2 } from "./compositions/Oryn/OrynCarousel2";
+import { OrynDay3Hero } from "./compositions/Oryn/OrynDay3Hero";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -215,6 +216,9 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ORYN Day 2 / P2 "The six verdicts" carousel: 7 slides at 1080x1350 (4:5); frame N = slide N+1. Render with --scale=2. */}
       <Composition id="OrynCarousel2" component={OrynCarousel2} width={1080} height={1350} fps={1} durationInFrames={7} />
+
+      {/* ORYN Day 3 / A1 hero image: 1080x1350 (4:5), one still. Render with --scale=2. */}
+      <Composition id="OrynDay3Hero" component={OrynDay3Hero} width={1080} height={1350} fps={1} durationInFrames={1} />
 
     </>
   );
