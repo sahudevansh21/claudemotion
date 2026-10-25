@@ -5,12 +5,17 @@ description: Make a premium motion-graphics brand film, launch video or set of s
 
 # Brand film workflow
 
+> **House style lock:** all videos must recreate the five whatships reference
+> films (`docs/reference/whatships/ANALYSIS.md` + `STYLE.md`). Use only that
+> motion vocabulary, and no other animation styles, until the user renews the
+> reference set. See AGENTS.md "Reference videos".
+
 Follow `docs/PLAYBOOK.md` (full method, commands, recipes, pitfalls). In short:
 
 1. **Analyse the reference** second by second: ffprobe, 1 fps timestamped
    contact sheet, scene-cut detection, full-res key frames, ebur128 loudness,
-   spectrogram, faster-whisper transcript (VO lines + timings). Also study
-   launch films on http://whatships.com/.
+   spectrogram, faster-whisper transcript (VO lines + timings). Choose which
+   of the 5 locked whatships references the film follows.
 2. **Extract the brand**: palette, OFL lookalike fonts (`npm pack @fontsource/<font>`),
    logo cut-out (never alter an "exact" logo), site copy (`curl` + strip tags),
    real UI via `scripts/*/capture_site.mjs` (Playwright, 2×).

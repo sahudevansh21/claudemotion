@@ -17,12 +17,27 @@ The full from-zero method for brand films and stills is in
 **`docs/PLAYBOOK.md`** (skill: `brand-film`). Read it before starting a new
 client video.
 
-## Reference videos
+## Reference videos: HOUSE STYLE LOCK (active until the user renews it)
 
-The user's standing preference: **always use http://whatships.com/ as the
-source for motion/launch-video references** (study its launch films for
-pacing, type treatment and transitions) alongside any reference the user
-uploads.
+**Every new video must follow the five whatships.com reference films, and only
+those.** Before planning any video, read
+`docs/reference/whatships/ANALYSIS.md` and `docs/reference/whatships/STYLE.md`.
+
+- Pick the closest reference (Krea 3, Notion AI, Conqueror, Acceternity,
+  Supabase Middleware). Match its structure, pacing, transitions, type
+  treatment, camera and sound shot for shot, rebuilt with the client's own
+  brand, UI, copy and an original score. Never reuse their footage, logos or
+  music.
+- Use **only** the motion vocabulary listed in `STYLE.md`. Do not use other
+  animation styles from older films in this repo, even if they are reusable,
+  unless the user explicitly renews or changes the reference set. Banned
+  examples: the chromatic/scan-line glitch text, pixel-noise fields, neon
+  waves, ray bursts, beat-pulse zooms, cinematic LUT/letterbox, particle
+  bursts, procedural landscapes and cities.
+- Brand assets (logo, colours, fonts) still come from the client. The lock is
+  on motion and structure, not on brand identity.
+- A user-uploaded reference for a specific job is used together with this
+  set, not instead of it, unless the user says it replaces the set.
 
 ## Commands
 
