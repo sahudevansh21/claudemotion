@@ -231,3 +231,19 @@ the Studio preview.
    nothing clipped by the safe area, fonts loaded).
 4. If asked for an export: `npx remotion render …` completes and
    `ffprobe out/<file>.mp4` shows the expected size, fps and duration.
+
+
+## Standing style rule (set by the user, in force until they renew it)
+
+All videos must follow the motion grammar of the five reference launch films analysed in
+`docs/references/ANALYSIS.md` (Krea 3, Notion agents, Conqueror, "Pages.", Supabase Middleware), and nothing else.
+Do not introduce other animation styles (no colour-block wipes, stamps, shakes or other house styles of my own).
+Use only these devices:
+1. Headline words blur in/out and are swapped in place, never hard-cut.
+2. A cursor or typing caret drives the story.
+3. One idea per beat, on one flat colour (Notion/Conqueror) or one tilted dark 3D plane (Pages/Supabase).
+4. Simplified UI cards rise in from below with soft shadows; leaderboard rows highlight "our" row in a black pill.
+5. Logos/icons float and cluster; code and terminals type on.
+6. End on a centred logo plus one line or URL.
+Content stays real data only; do not reuse the reference brands' logos, names or figures.
+If the user supplies new reference videos, that replaces this list: re-analyse and update `docs/references/ANALYSIS.md` first.
