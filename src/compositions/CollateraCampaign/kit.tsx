@@ -9,7 +9,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { Stage } from "../../components/Stage";
 import { CL, CL_FONTS } from "../Collatera/brand";
 import { Mascot } from "../Collatera/components/Mascot";
 
@@ -68,7 +67,7 @@ export const Scene: React.FC<{ len: number; children: React.ReactNode; inDur?: n
   );
 };
 
-/** Letter-by-letter blur-in. */
+/** Letter-by-letter blur-in. Wraps at word boundaries when the line is too wide. */
 export const Letters: React.FC<{ text: string; at: number; step?: number; dur?: number; style?: React.CSSProperties }> = ({
   text,
   at,
@@ -77,16 +76,23 @@ export const Letters: React.FC<{ text: string; at: number; step?: number; dur?: 
   style,
 }) => {
   const t = useT();
+  let k = 0;
+  const words = text.split(" ");
   return (
-    <span style={{ whiteSpace: "pre", display: "inline-block", ...style }}>
-      {Array.from(text).map((ch, i) => {
-        const p = ez(t, at + i * step, at + i * step + dur);
-        return (
-          <span key={i} style={{ display: "inline-block", opacity: p, filter: p < 1 ? `blur(${(1 - p) * 10}px)` : undefined, transform: `translateY(${(1 - p) * 10}px)` }}>
-            {ch}
-          </span>
-        );
-      })}
+    <span style={{ display: "inline", ...style }}>
+      {words.map((w, wi) => (
+        <span key={wi} style={{ display: "inline-block", whiteSpace: "pre" }}>
+          {Array.from(w + (wi < words.length - 1 ? " " : "")).map((ch) => {
+            const i = k++;
+            const p = ez(t, at + i * step, at + i * step + dur);
+            return (
+              <span key={i} style={{ display: "inline-block", opacity: p, filter: p < 1 ? `blur(${(1 - p) * 10}px)` : undefined, transform: `translateY(${(1 - p) * 10}px)` }}>
+                {ch}
+              </span>
+            );
+          })}
+        </span>
+      ))}
     </span>
   );
 };
@@ -513,13 +519,32 @@ export const LogoEnd: React.FC<{ light?: boolean; at?: number; line?: string }> 
 
 export type SceneDef = { id: string; from: number; to: number; in?: number; out?: number };
 
+/** True when the composition is portrait (9:16 cut): scenes switch to a 1080×1920 layout. */
+export const useV = () => {
+  const { width, height } = useVideoConfig();
+  return height > width;
+};
+/** Design canvas: 1920×1080 landscape or 1080×1920 portrait, scaled to the output. */
+export const DesignStage: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { width, height } = useVideoConfig();
+  const v = height > width;
+  const dw = v ? 1080 : 1920;
+  const dh = v ? 1920 : 1080;
+  const s = Math.min(width / dw, height / dh);
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+      <div style={{ position: "relative", width: dw, height: dh, flexShrink: 0, overflow: "hidden", transform: `scale(${s})` }}>{children}</div>
+    </AbsoluteFill>
+  );
+};
+
 /** Film runner: scenes from a timeline + mix.wav. */
 export const Film: React.FC<{ scenes: SceneDef[]; map: Record<string, React.FC>; audio: string; bg?: string; glow?: boolean }> = ({ scenes, map, audio, bg = K.bg, glow = true }) => {
   const { fps } = useVideoConfig();
   return (
     <AbsoluteFill style={{ background: bg }}>
       {glow ? <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 40%, #0A2A1E 0%, ${bg} 70%)` }} /> : null}
-      <Stage>
+      <DesignStage>
         {scenes.map((s) => {
           const S = map[s.id];
           const from = Math.round(s.from * fps);
@@ -532,7 +557,7 @@ export const Film: React.FC<{ scenes: SceneDef[]; map: Record<string, React.FC>;
             </Sequence>
           );
         })}
-      </Stage>
+      </DesignStage>
       <Audio src={staticFile(audio)} />
     </AbsoluteFill>
   );

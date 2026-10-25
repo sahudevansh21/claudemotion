@@ -1,6 +1,6 @@
 import { AbsoluteFill, random } from "remotion";
 import { Corners, ez, IO, lerp, Letters, PixelDissolve, Swap, useT } from "../CollateraCampaign/kit";
-import { Chart, Mark, Mono, Paper, Q, QMONO, SERIF, VFilm, VH, VW, WORD } from "./qkit";
+import { Chart, Mark, Mono, Paper, Q, QMONO, SERIF, useDims, useL, VFilm, WORD } from "./qkit";
 import TL from "./qv3.json";
 
 /**
@@ -16,17 +16,28 @@ const Halftone: React.FC<{ drift?: number }> = ({ drift = 0 }) => (
     <AbsoluteFill style={{ backgroundImage: "radial-gradient(rgba(22,21,20,0.55) 2.2px, transparent 2.6px)", backgroundSize: "11px 11px", backgroundPosition: `${drift}px 0`, WebkitMaskImage: "linear-gradient(170deg, #000 0%, rgba(0,0,0,0.2) 55%, #000 100%)", maskImage: "linear-gradient(170deg, #000 0%, rgba(0,0,0,0.2) 55%, #000 100%)" }} />
   </AbsoluteFill>
 );
-const Wordmark: React.FC = () => <div style={{ position: "absolute", left: 0, top: 860, width: VW, textAlign: "center", fontFamily: WORD, fontSize: 150, letterSpacing: 26, color: "rgba(22,21,20,0.88)" }}>QUANTORA</div>;
+const Wordmark: React.FC = () => {
+  const L = useL();
+  const [W] = useDims();
+  return <div style={{ position: "absolute", left: 0, top: L ? 440 : 860, width: W, textAlign: "center", fontFamily: WORD, fontSize: L ? 200 : 150, letterSpacing: L ? 40 : 26, color: "rgba(22,21,20,0.88)" }}>QUANTORA</div>;
+};
 
 const Blob: React.FC = () => {
   const t = useT();
   return (
     <AbsoluteFill style={{ background: "#3A3732", overflow: "hidden" }}>
-      {[
-        ["#161514", 380, 760, 520],
-        ["#8F8A80", 720, 1200, 600],
-        ["#B8B0A2", 520, 1000, 460],
-      ].map(([c, x, y, r], i) => (
+      {(useL()
+        ? [
+            ["#161514", 700, 400, 560],
+            ["#8F8A80", 1250, 680, 640],
+            ["#B8B0A2", 960, 540, 480],
+          ]
+        : [
+            ["#161514", 380, 760, 520],
+            ["#8F8A80", 720, 1200, 600],
+            ["#B8B0A2", 520, 1000, 460],
+          ]
+      ).map(([c, x, y, r], i) => (
         <div key={i} style={{ position: "absolute", left: (x as number) + Math.sin(t * 0.9 + i) * 70 - (r as number) / 2, top: (y as number) + Math.cos(t * 0.7 + i * 2) * 60 - (r as number) / 2, width: r as number, height: r as number, borderRadius: "50%", background: c as string, filter: "blur(120px)", opacity: 0.8 }} />
       ))}
     </AbsoluteFill>
@@ -35,6 +46,8 @@ const Blob: React.FC = () => {
 
 const Intro: React.FC = () => {
   const t = useT();
+  const L = useL();
+  const [W, H] = useDims();
   return (
     <AbsoluteFill>
       <Halftone drift={t * 20} />
@@ -56,9 +69,9 @@ const Intro: React.FC = () => {
             </span>
           </div>
         </AbsoluteFill>
-        <Corners x={110} y={860} w={860} h={200} color="#FFFFFF" />
+        <Corners x={L ? 520 : 110} y={L ? 440 : 860} w={L ? 880 : 860} h={200} color="#FFFFFF" />
       </AbsoluteFill>
-      {t >= 3.3 && t < 4.0 ? <PixelDissolve at={3.3} dur={0.6} cols={18} color="#8F8A80" w={VW} h={VH} /> : null}
+      {t >= 3.3 && t < 4.0 ? <PixelDissolve at={3.3} dur={0.6} cols={L ? 32 : 18} color="#8F8A80" w={W} h={H} /> : null}
     </AbsoluteFill>
   );
 };
@@ -70,15 +83,17 @@ const Input: React.FC = () => {
   const zIn = ez(t, 1.6, 2.2, IO);
   const zOut = ez(t, 2.4, 2.95, IO);
   const z = 1 + (zIn - zOut) * 4.5;
+  const L = useL();
+  const [W] = useDims();
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Halftone drift={t * 20 + 60} />
-      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: "760px 1250px" }}>
+      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: L ? "1240px 820px" : "760px 1250px" }}>
         <Wordmark />
-        <div style={{ position: "absolute", top: 640, width: VW, textAlign: "center", fontFamily: SERIF, fontSize: 64, color: Q.ink }}>
+        <div style={{ position: "absolute", top: L ? 260 : 640, width: W, textAlign: "center", fontFamily: SERIF, fontSize: 64, color: Q.ink }}>
           <Letters text="Start with a question" at={0.05} step={0.02} />
         </div>
-        <div style={{ position: "absolute", left: 90, top: 1110, width: 900, minHeight: 200, borderRadius: 22, background: "rgba(255,253,247,0.85)", boxShadow: "0 20px 50px rgba(0,0,0,0.18)", padding: "34px 36px", boxSizing: "border-box", fontFamily: SERIF, fontSize: 50, lineHeight: 1.25, color: Q.ink }}>
+        <div style={{ position: "absolute", left: L ? 460 : 90, top: L ? 720 : 1110, width: L ? 1000 : 900, minHeight: L ? 140 : 200, borderRadius: 22, background: "rgba(255,253,247,0.85)", boxShadow: "0 20px 50px rgba(0,0,0,0.18)", padding: "34px 36px", boxSizing: "border-box", fontFamily: SERIF, fontSize: 50, lineHeight: 1.25, color: Q.ink }}>
           {n === 0 ? <span style={{ color: Q.faint }}>Ask a market question…</span> : s.slice(0, n)}
           <span style={{ display: "inline-block", width: 3, height: 52, background: Q.ink, marginLeft: 4, verticalAlign: "middle", opacity: Math.floor(t * 2.4) % 2 ? 1 : 0.2 }} />
         </div>
@@ -117,10 +132,12 @@ const Phrase: React.FC = () => {
   const t = useT();
   const times = [0.6, 1.8, 3.2, 4.6];
   const stage = times.filter((x) => t >= x).length - 1;
+  const L = useL();
+  const [W] = useDims();
   const v = (k: number) => (stage === k ? ez(t, times[k], times[k] + 0.4) : 0);
   return (
     <AbsoluteFill style={{ background: "#FFFFFF" }}>
-      <div style={{ position: "absolute", top: 520, width: VW, display: "flex", justifyContent: "center", transform: "scale(1.45)", transformOrigin: "50% 60%" }}>
+      <div style={{ position: "absolute", top: L ? 300 : 520, left: L ? 280 : 0, width: L ? 800 : W, display: "flex", justifyContent: "center", transform: `scale(${L ? 1.3 : 1.45})`, transformOrigin: "50% 60%" }}>
         <div style={{ position: "relative", width: 560, height: 320 }}>
           <div style={{ position: "absolute", inset: 0, display: "flex", justifyContent: "center", alignItems: "center", opacity: v(0) }}>
             <div style={{ width: 220, height: 220, borderRadius: 999, border: `3px solid ${Q.ink}`, display: "flex", justifyContent: "center", alignItems: "center", fontFamily: SERIF, fontSize: 150, fontStyle: "italic" }}>?</div>
@@ -138,7 +155,7 @@ const Phrase: React.FC = () => {
           </div>
         </div>
       </div>
-      <div style={{ position: "absolute", top: 980, width: VW, textAlign: "center", fontFamily: SERIF, fontWeight: 500, fontSize: 90, letterSpacing: -2, color: Q.ink, opacity: ez(t, 0.4, 0.8) }}>
+      <div style={{ position: "absolute", top: L ? 380 : 980, left: L ? 1060 : 0, width: L ? 760 : W, textAlign: L ? "left" : "center", fontFamily: SERIF, fontWeight: 500, fontSize: 90, letterSpacing: -2, color: Q.ink, opacity: ez(t, 0.4, 0.8) }}>
         <div>Your thesis is…</div>
         <div style={{ position: "relative", height: 110, fontStyle: "italic", fontWeight: 400 }}>
           {["a hunch.", "a chart.", "simulated.", "evidence."].map((w, i) => {
@@ -146,7 +163,7 @@ const Phrase: React.FC = () => {
             const b = i < 3 ? ez(t, times[i + 1] - 0.12, times[i + 1] + 0.1) : 0;
             const o = a * (1 - b);
             return (
-              <div key={w} style={{ position: "absolute", left: 0, right: 0, top: 0, textAlign: "center", opacity: o, filter: o < 1 ? `blur(${(1 - o) * 12}px)` : undefined, transform: `translateY(${(1 - a) * 18 - b * 10}px)` }}>
+              <div key={w} style={{ position: "absolute", left: 0, right: 0, top: 0, textAlign: L ? "left" : "center", opacity: o, filter: o < 1 ? `blur(${(1 - o) * 12}px)` : undefined, transform: `translateY(${(1 - a) * 18 - b * 10}px)` }}>
                 {w}
               </div>
             );
@@ -154,7 +171,7 @@ const Phrase: React.FC = () => {
         </div>
       </div>
       {stage === 2 ? (
-        <div style={{ position: "absolute", top: 1290, width: VW, textAlign: "center" }}>
+        <div style={{ position: "absolute", top: L ? 820 : 1290, left: L ? 280 : 0, width: L ? 800 : W, textAlign: "center" }}>
           <Mono size={18} color={Q.faint}>Illustrative simulation</Mono>
         </div>
       ) : null}
@@ -165,10 +182,22 @@ const Phrase: React.FC = () => {
 const Phone: React.FC = () => {
   const t = useT();
   const cam = ez(t, 0, 4.2, IO);
+  const L = useL();
+  const [W, H] = useDims();
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Paper />
-      <div style={{ position: "absolute", left: VW / 2, top: VH / 2, transform: `translate(-50%, -50%) scale(${lerp(cam, 0.9, 1.08)}) rotate(${lerp(cam, -4, 2)}deg)` }}>
+      {L ? (
+        <div style={{ position: "absolute", left: 140, top: 360, width: 760, fontFamily: SERIF, fontWeight: 500, fontSize: 84, lineHeight: 1.08, letterSpacing: -2, color: Q.ink, opacity: ez(t, 0.2, 0.7) }}>
+          Stress the idea
+          <br />
+          <i style={{ fontWeight: 400 }}>before you trust it.</i>
+          <Mono size={18} color={Q.faint} style={{ marginTop: 40 }}>
+            Illustrative simulation · not a forecast
+          </Mono>
+        </div>
+      ) : null}
+      <div style={{ position: "absolute", left: L ? 1350 : W / 2, top: H / 2, transform: `translate(-50%, -50%) scale(${L ? lerp(cam, 0.72, 0.8) : lerp(cam, 0.9, 1.08)}) rotate(${lerp(cam, -4, 2)}deg)` }}>
         <div style={{ width: 600, height: 1220, borderRadius: 80, background: "#111", padding: 18, boxShadow: "0 50px 100px rgba(0,0,0,0.3)" }}>
           <div style={{ width: "100%", height: "100%", borderRadius: 64, background: Q.paper, padding: "90px 40px", boxSizing: "border-box", position: "relative" }}>
             <div style={{ position: "absolute", top: 24, left: "50%", transform: "translateX(-50%)", width: 160, height: 34, borderRadius: 99, background: "#111" }} />

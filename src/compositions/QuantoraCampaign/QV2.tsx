@@ -1,6 +1,6 @@
 import { AbsoluteFill, random } from "remotion";
 import { Cursor, cursorPath, ez, IO, lerp, Letters, useT, Words } from "../CollateraCampaign/kit";
-import { Chart, chartXY, Chip, Guides, Lockup, MARKS, Mono, Paper, Q, QMONO, SERIF, VFilm, WORD } from "./qkit";
+import { Chart, chartXY, Chip, Guides, Lockup, MARKS, Mono, Paper, Q, QMONO, SERIF, useL, VFilm, WORD } from "./qkit";
 import TL from "./qv2.json";
 
 /**
@@ -25,13 +25,16 @@ const Ransom: React.FC = () => {
     [460, 260],
     [520, 1650],
   ];
+  const L = useL();
+  const fragsL: [number, number][] = [[200, 160], [1500, 140], [160, 820], [1560, 800], [880, 90], [900, 880]];
   return (
     <AbsoluteFill>
       <Paper />
-      {frags.map(([x, y], i) => {
+      {(L ? fragsL : frags).map(([x, y], i) => {
         const p = ez(t, i * 0.08, 0.5 + i * 0.08);
+        const [mx, my] = L ? [960, 540] : [540, 960];
         return (
-          <div key={i} style={{ position: "absolute", left: x + (x - 540) * fly * 1.5, top: y + (y - 960) * fly * 1.5, opacity: p * (1 - fly), transform: `rotate(${(random(`fr${i}`) - 0.5) * 20}deg)`, background: "rgba(255,253,247,0.75)", boxShadow: "0 12px 26px rgba(22,21,20,0.12)", padding: 14 }}>
+          <div key={i} style={{ position: "absolute", left: x + (x - mx) * fly * 1.5, top: y + (y - my) * fly * 1.5, opacity: p * (1 - fly), transform: `rotate(${(random(`fr${i}`) - 0.5) * 20}deg)`, background: "rgba(255,253,247,0.75)", boxShadow: "0 12px 26px rgba(22,21,20,0.12)", padding: 14 }}>
             <svg width={180} height={80}>
               <polyline points={Array.from({ length: 12 }, (_, k) => `${k * 16},${40 + Math.sin(k * 0.9 + i) * 20 - k * 1.5}`).join(" ")} fill="none" stroke={Q.ink} strokeWidth={2} />
             </svg>
@@ -72,22 +75,21 @@ const Ransom: React.FC = () => {
   );
 };
 
-const CW = 900;
-const CH = 620;
-const CX = 90;
-const CY = 820;
+const LAY = { v: { CW: 900, CH: 620, CX: 90, CY: 820 }, l: { CW: 1000, CH: 600, CX: 820, CY: 260 } };
 const NOTE = ["What could it cost?", "Why is it moving?", "What does the data support?"];
 
 const ChartScene: React.FC = () => {
   const t = useT();
   const l2 = ez(t, 0.6, 1.1, IO);
+  const L = useL();
+  const { CW, CH, CX, CY } = L ? LAY.l : LAY.v;
   const draw = ez(t, 0.6, 2.6, IO);
   const times = [2.8, 5.8, 8.8];
   const pts = MARKS.map((m) => chartXY(CW, CH, m.i));
   const c = cursorPath(
     t,
     [
-      [0, 980, 1750],
+      [0, L ? 1800 : 980, L ? 1000 : 1750],
       [2.6, CX + pts[0][0], CY + pts[0][1]],
       [5.0, CX + pts[0][0], CY + pts[0][1]],
       [5.6, CX + pts[1][0], CY + pts[1][1]],
@@ -102,8 +104,8 @@ const ChartScene: React.FC = () => {
     <AbsoluteFill>
       <Paper />
       <Guides />
-      <div style={{ position: "absolute", left: 90, top: lerp(l2, 330, 220), fontFamily: SERIF, fontWeight: 500, fontSize: lerp(l2, 96, 72), letterSpacing: -1.5, color: Q.ink }}>Every move has a story.</div>
-      <div style={{ position: "absolute", left: 90, top: 330, fontFamily: SERIF, fontSize: 96, letterSpacing: -2, color: Q.ink, fontStyle: "italic" }}>
+      <div style={{ position: "absolute", left: L ? 110 : 90, top: L ? lerp(l2, 400, 300) : lerp(l2, 330, 220), width: L ? 640 : undefined, fontFamily: SERIF, fontWeight: 500, fontSize: L ? lerp(l2, 84, 64) : lerp(l2, 96, 72), letterSpacing: -1.5, color: Q.ink }}>Every move has a story.</div>
+      <div style={{ position: "absolute", left: L ? 110 : 90, top: L ? 480 : 330, fontFamily: SERIF, fontSize: L ? 84 : 96, letterSpacing: -2, color: Q.ink, fontStyle: "italic" }}>
         {t > 0.7 ? <Words text="Read it clearly." at={0.7} /> : null}
       </div>
       <div style={{ position: "absolute", left: CX, top: CY }}>
@@ -115,8 +117,8 @@ const ChartScene: React.FC = () => {
         const shrink = ez(t, a + 1.3, a + 1.9, IO);
         const [x, y] = pts[k];
         const big = 1 - shrink;
-        const left = lerp(shrink, 540, CX + x + (k === 2 ? -560 : 20));
-        const top = lerp(shrink, 1160, CY + y + (k === 2 ? -80 : 26));
+        const left = lerp(shrink, L ? 1320 : 540, CX + x + (k === 2 ? -560 : 20));
+        const top = lerp(shrink, L ? 560 : 1160, CY + y + (k === 2 ? -80 : 26));
         return (
           <div key={m.label} style={{ position: "absolute", left, top, opacity: pin, transform: `translate(${-50 * big}%, ${-50 * big}%) scale(${1 + big * 1.5})`, transformOrigin: "left top", whiteSpace: "nowrap" }}>
             <Chip text={shrink > 0.5 ? `${m.label} · ${NOTE[k]}` : m.label} dark={big > 0.5} size={shrink > 0.5 ? 16 : 30} />
@@ -126,7 +128,7 @@ const ChartScene: React.FC = () => {
       <div style={{ position: "absolute", left: CX + pts[1][0] - 160, top: CY + CH + 70, opacity: ez(t, 6.6, 7.0) * (1 - ez(t, 9, 9.4)) }}>
         <Mono size={18} color={Q.soft}>market closed · gap (illustrative)</Mono>
       </div>
-      <div style={{ position: "absolute", left: 90, top: 1560 }}>
+      <div style={{ position: "absolute", left: L ? CX : 90, top: L ? 980 : 1560 }}>
         <Mono size={16} color={Q.faint}>Illustrative chart · no data</Mono>
       </div>
       <Cursor x={c.x} y={c.y} press={c.press} color={Q.ink} opacity={ez(t, 1.6, 2.0)} />
@@ -142,7 +144,13 @@ const ROWS: [string, string][] = [
 const Board: React.FC = () => {
   const t = useT();
   const hi = t < 0.8 ? 0 : t < 1.6 ? 1 : 2;
-  const c = cursorPath(t, [
+  const L = useL();
+  const c = cursorPath(t, L ? [
+    [0, 1800, 1000],
+    [0.7, 1700, 270],
+    [1.5, 1700, 510],
+    [2.3, 1700, 750],
+  ] : [
     [0, 980, 1700],
     [0.7, 900, 820],
     [1.5, 900, 1060],
@@ -151,13 +159,13 @@ const Board: React.FC = () => {
   return (
     <AbsoluteFill>
       <Paper />
-      <div style={{ position: "absolute", left: 90, top: 420, fontFamily: SERIF, fontWeight: 500, fontSize: 84, letterSpacing: -1.5, color: Q.ink }}>
+      <div style={{ position: "absolute", left: L ? 110 : 90, top: L ? 400 : 420, width: L ? 700 : undefined, fontFamily: SERIF, fontWeight: 500, fontSize: 84, letterSpacing: -1.5, color: Q.ink }}>
         <Words text="Before it's a signal," at={0.05} />
         <div style={{ fontStyle: "italic", fontWeight: 400 }}>
           <Words text="three questions." at={0.35} />
         </div>
       </div>
-      <div style={{ position: "absolute", left: 90, top: 720, width: 900, background: "rgba(255,253,247,0.7)", border: `1.5px solid ${Q.ink}`, padding: "16px 0" }}>
+      <div style={{ position: "absolute", left: L ? 880 : 90, top: L ? 160 : 720, width: 900, background: "rgba(255,253,247,0.7)", border: `1.5px solid ${Q.ink}`, padding: "16px 0" }}>
         {ROWS.map(([k, d], i) => {
           const p = ez(t, 0.1 + i * 0.1, 0.45 + i * 0.1);
           const on = i === hi;

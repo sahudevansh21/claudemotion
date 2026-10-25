@@ -1,5 +1,5 @@
 QUANTORA LABS · DAY 02 · Wednesday 28 October 2026 · theme: Method
-All visuals 1080×1920 (9:16), videos 60 fps.
+Videos 1920×1080 (16:9) 60 fps · posts 1080×1920 (9:16).
 ================================================================
 
 [QP2] POST · How we read a chart (carousel)

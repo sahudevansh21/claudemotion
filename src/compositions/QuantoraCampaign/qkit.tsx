@@ -23,15 +23,22 @@ export const QMONO = "'JetBrains Mono', monospace";
 export const VW = 1080;
 export const VH = 1920;
 
+/** Landscape (16:9) when width > height: scenes switch to a 1920×1080 layout. */
+export const useL = () => {
+  const { width, height } = useVideoConfig();
+  return width > height;
+};
+export const useDims = (): [number, number] => (useL() ? [1920, 1080] : [VW, VH]);
+
 /** Warm paper with fibre texture and a faint dotted grid. */
 export const Paper: React.FC<{ seed?: number; dots?: boolean }> = ({ seed = 3, dots = true }) => (
   <AbsoluteFill style={{ background: Q.paper }}>
-    <svg width={VW} height={VH} style={{ position: "absolute", inset: 0 }}>
+    <svg width={1920} height={1920} style={{ position: "absolute", inset: 0 }}>
       <filter id={`qp-${seed}`}>
         <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves={2} seed={seed} />
         <feColorMatrix type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.32  0 0 0 0 0.28  0 0 0 0.45 -0.1" />
       </filter>
-      <rect width={VW} height={VH} filter={`url(#qp-${seed})`} opacity={0.45} />
+      <rect width={1920} height={1920} filter={`url(#qp-${seed})`} opacity={0.45} />
     </svg>
     {dots ? <AbsoluteFill style={{ backgroundImage: `radial-gradient(${Q.grid} 1.3px, transparent 1.5px)`, backgroundSize: "36px 36px" }} /> : null}
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 42%, rgba(255,253,247,0.35) 0%, transparent 60%, rgba(120,110,95,0.10) 100%)" }} />
@@ -132,26 +139,30 @@ export const Chip: React.FC<{ text: string; dark?: boolean; size?: number; style
 );
 
 /** Corner crop guides like the banner. */
-export const Guides: React.FC = () => (
-  <svg width={VW} height={VH} style={{ position: "absolute", inset: 0 }}>
-    <g stroke="rgba(22,21,20,0.3)" strokeWidth={1.2}>
-      <line x1={60} y1={0} x2={60} y2={120} />
-      <line x1={0} y1={60} x2={120} y2={60} />
-      <line x1={VW - 60} y1={VH - 120} x2={VW - 60} y2={VH} />
-      <line x1={VW - 120} y1={VH - 60} x2={VW} y2={VH - 60} />
-    </g>
-  </svg>
-);
+export const Guides: React.FC = () => {
+  const [W, H] = useDims();
+  return (
+    <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
+      <g stroke="rgba(22,21,20,0.3)" strokeWidth={1.2}>
+        <line x1={60} y1={0} x2={60} y2={120} />
+        <line x1={0} y1={60} x2={120} y2={60} />
+        <line x1={W - 60} y1={H - 120} x2={W - 60} y2={H} />
+        <line x1={W - 120} y1={H - 60} x2={W} y2={H - 60} />
+      </g>
+    </svg>
+  );
+};
 
 export type VScene = { id: string; from: number; to: number; in?: number; out?: number };
 
 /** Vertical film runner: scenes on a 1080×1920 canvas + mix.wav. */
 export const VFilm: React.FC<{ scenes: VScene[]; map: Record<string, React.FC>; audio: string; bg?: string }> = ({ scenes, map, audio, bg = Q.paper }) => {
   const { fps, width, height } = useVideoConfig();
-  const s = Math.min(width / VW, height / VH);
+  const [W, H] = width > height ? [1920, 1080] : [VW, VH];
+  const s = Math.min(width / W, height / H);
   return (
     <AbsoluteFill style={{ background: bg, justifyContent: "center", alignItems: "center" }}>
-      <div style={{ position: "relative", width: VW, height: VH, flexShrink: 0, overflow: "hidden", transform: `scale(${s})` }}>
+      <div style={{ position: "relative", width: W, height: H, flexShrink: 0, overflow: "hidden", transform: `scale(${s})` }}>
         {scenes.map((sc) => {
           const S = map[sc.id];
           const from = Math.round(sc.from * fps);

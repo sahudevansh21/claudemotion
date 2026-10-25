@@ -1,5 +1,5 @@
 import { AbsoluteFill } from "remotion";
-import { ez, Film, Glyph, K, LogoEnd, MONO, Plate, SANS, Scribble, Underline, useT, Words } from "./kit";
+import { ez, Film, Glyph, K, LogoEnd, MONO, Plate, SANS, Scribble, Underline, useT, useV, Words } from "./kit";
 import TL from "./v7.json";
 
 /**
@@ -27,13 +27,16 @@ const Hook: React.FC = () => (
   </AbsoluteFill>
 );
 
-const Card: React.FC<{ tag: string; title: string; children: React.ReactNode }> = ({ tag, title, children }) => (
-  <div style={{ width: 1180, background: "#FFFFFF", borderRadius: 28, padding: "44px 52px", boxShadow: "0 30px 70px rgba(0,48,31,0.14)" }}>
+const Card: React.FC<{ tag: string; title: string; children: React.ReactNode }> = ({ tag, title, children }) => {
+  const v = useV();
+  return (
+  <div style={{ width: v ? 960 : 1180, background: "#FFFFFF", borderRadius: 28, padding: "44px 52px", boxShadow: "0 30px 70px rgba(0,48,31,0.14)" }}>
     <div style={{ fontFamily: MONO, fontSize: 22, color: "#6E8578", letterSpacing: 2 }}>{tag}</div>
     <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, color: K.ink, marginTop: 10, letterSpacing: -1 }}>{title}</div>
     <div style={{ marginTop: 28 }}>{children}</div>
   </div>
-);
+  );
+};
 
 const NOW = ["One demo vault modeled on Algorand lending markets", "Read-only position monitoring", "No keys, no funds moved", "No automatic execution"];
 const Now: React.FC = () => {
@@ -62,6 +65,7 @@ const Now: React.FC = () => {
 
 const Later: React.FC = () => {
   const t = useT();
+  const v = useV();
   return (
     <AbsoluteFill>
       <Plate color={K.butter} />
@@ -72,7 +76,7 @@ const Later: React.FC = () => {
           </div>
         </Card>
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 1080, top: 820 }}>
+      <div style={{ position: "absolute", left: v ? 170 : 1080, top: v ? 1380 : 820 }}>
         <Scribble lines={["Needs funding,", "legal review & security checks"]} at={1.6} size={28} rotate={-4} />
       </div>
     </AbsoluteFill>
@@ -81,7 +85,7 @@ const Later: React.FC = () => {
 
 const Paid: React.FC = () => (
   <AbsoluteFill style={{ background: K.paper, justifyContent: "center", alignItems: "center" }}>
-    <div style={{ ...T, fontSize: 88, textAlign: "center", lineHeight: 1.2 }}>
+    <div style={{ ...T, fontSize: 88, textAlign: "center", lineHeight: 1.2, maxWidth: 960 }}>
       <div>
         <Words text="Paid usage comes first." at={0.05} />
       </div>
@@ -97,7 +101,7 @@ const Paid: React.FC = () => (
 
 const Disc: React.FC = () => (
   <AbsoluteFill style={{ background: K.paper, justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 30 }}>
-    <div style={{ ...T, fontSize: 60, textAlign: "center" }}>
+    <div style={{ ...T, fontSize: 60, textAlign: "center", maxWidth: 940 }}>
       <Words text="Subscriptions and B2B accounts fund monitoring." at={0.05} step={0.06} />
     </div>
     <div style={{ fontFamily: MONO, fontSize: 28, color: "#5D6F64" }}>

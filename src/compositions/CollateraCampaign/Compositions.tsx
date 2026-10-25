@@ -22,6 +22,13 @@ export const CampaignCompositions: React.FC = () => (
     <Composition id="CollateraV4" component={CollateraV4} width={1920} height={1080} fps={60} durationInFrames={v4.durationInFrames} />
     <Composition id="CollateraV7" component={CollateraV7} width={1920} height={1080} fps={60} durationInFrames={v7.durationInFrames} />
     <Composition id="CollateraV5" component={CollateraV5} width={1920} height={1080} fps={60} durationInFrames={v5.durationInFrames} />
+    {/* 9:16 cuts (1080×1920, 60 fps): same films, portrait layouts. */}
+    <Composition id="CollateraV2Vertical" component={CollateraV2} width={1080} height={1920} fps={60} durationInFrames={v2.durationInFrames} />
+    <Composition id="CollateraV3Vertical" component={CollateraV3} width={1080} height={1920} fps={60} durationInFrames={v3.durationInFrames} />
+    <Composition id="CollateraV4Vertical" component={CollateraV4} width={1080} height={1920} fps={60} durationInFrames={v4.durationInFrames} />
+    <Composition id="CollateraV5Vertical" component={CollateraV5} width={1080} height={1920} fps={60} durationInFrames={v5.durationInFrames} />
+    <Composition id="CollateraV6Vertical" component={CollateraV6} width={1080} height={1920} fps={60} durationInFrames={v6.durationInFrames} />
+    <Composition id="CollateraV7Vertical" component={CollateraV7} width={1080} height={1920} fps={60} durationInFrames={v7.durationInFrames} />
     {/* Campaign stills: one frame per post (fps = 1). */}
     <Composition id="CampaignPosts45" component={CampaignPosts45} width={2160} height={2700} fps={1} durationInFrames={6} />
     <Composition id="CampaignPostsSquare" component={CampaignPostsSquare} width={2160} height={2160} fps={1} durationInFrames={2} />

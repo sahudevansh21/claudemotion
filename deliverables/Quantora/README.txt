@@ -1,6 +1,6 @@
 QUANTORA LABS · 7-DAY CONTENT PACK
 
-One folder per day: videos (1080×1920, 60 fps MP4 + SFX-only WAV), posts (1080×1920 JPG),
+One folder per day: videos (1920×1080 16:9, 60 fps MP4 + SFX-only WAV), posts (1080×1920 JPG),
 articles (Markdown + 1080×1920 cover) and CAPTIONS.txt.
 
 Plan: Quantora-content-plan.pdf

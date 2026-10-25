@@ -24,9 +24,9 @@ ST = ROOT / "out/quantora/stills"
 V = ROOT / "out/quantora"
 
 FILES = {
-    "QV1": [(V / "qv1.mp4", "QV1-introducing-quantora-1080x1920-60fps.mp4"), (ROOT / "public/collatera-campaign/qv1/sfx.wav", "QV1-sound-effects-only.wav")],
-    "QV2": [(V / "qv2.mp4", "QV2-risk-context-evidence-1080x1920-60fps.mp4"), (ROOT / "public/collatera-campaign/qv2/sfx.wav", "QV2-sound-effects-only.wav")],
-    "QV3": [(V / "qv3.mp4", "QV3-your-thesis-is-tested-1080x1920-60fps.mp4"), (ROOT / "public/collatera-campaign/qv3/sfx.wav", "QV3-sound-effects-only.wav")],
+    "QV1": [(V / "qv1-16x9.mp4", "QV1-introducing-quantora-16x9-1920x1080-60fps.mp4"), (ROOT / "public/collatera-campaign/qv1/sfx.wav", "QV1-sound-effects-only.wav")],
+    "QV2": [(V / "qv2-16x9.mp4", "QV2-risk-context-evidence-16x9-1920x1080-60fps.mp4"), (ROOT / "public/collatera-campaign/qv2/sfx.wav", "QV2-sound-effects-only.wav")],
+    "QV3": [(V / "qv3-16x9.mp4", "QV3-your-thesis-is-tested-16x9-1920x1080-60fps.mp4"), (ROOT / "public/collatera-campaign/qv3/sfx.wav", "QV3-sound-effects-only.wav")],
     "QP1": [(ST / "QP1-launch-poster.jpg", "QP1-launch-poster-1080x1920.jpg")],
     "QP2": [(ST / f"QP2-slide-{i}-of-5.jpg", f"QP2-how-we-read-a-chart-slide-{i}-of-5-1080x1920.jpg") for i in range(1, 6)],
     "QP3": [(ST / "QP3-tokenized-stocks-vs-etfs.jpg", "QP3-tokenized-stocks-vs-etfs-1080x1920.jpg")],
@@ -51,7 +51,7 @@ def main():
         date = S + dt.timedelta(days=d - 1)
         folder = OUT / f"Day-{d:02d}_{date.strftime('%a-%d-%b')}"
         folder.mkdir(parents=True)
-        cap = [f"QUANTORA LABS · DAY {d:02d} · {date.strftime('%A %d %B %Y')} · theme: {theme}", "All visuals 1080×1920 (9:16), videos 60 fps.", "=" * 64, ""]
+        cap = [f"QUANTORA LABS · DAY {d:02d} · {date.strftime('%A %d %B %Y')} · theme: {theme}", "Videos 1920×1080 (16:9) 60 fps · posts 1080×1920 (9:16).", "=" * 64, ""]
         for i in ids:
             x = BY[i]
             for src, name in FILES[i]:
@@ -65,7 +65,7 @@ def main():
                     f"Hashtags · X: {TAGS[0]}", f"Hashtags · LinkedIn: {TAGS[1]}", f"Hashtags · Instagram/TikTok: {TAGS[2]}", "", f"Note: {x['notes']}", "", "-" * 64, ""]
         cap += ["Rules: no performance or return claims · charts are illustrative · simulations are not forecasts · add 'Not investment advice.' to articles."]
         (folder / "CAPTIONS.txt").write_text("\n".join(cap))
-    readme = ["QUANTORA LABS · 7-DAY CONTENT PACK", "", "One folder per day: videos (1080×1920, 60 fps MP4 + SFX-only WAV), posts (1080×1920 JPG),", "articles (Markdown + 1080×1920 cover) and CAPTIONS.txt.", "", "Plan: Quantora-content-plan.pdf", ""]
+    readme = ["QUANTORA LABS · 7-DAY CONTENT PACK", "", "One folder per day: videos (1920×1080 16:9, 60 fps MP4 + SFX-only WAV), posts (1080×1920 JPG),", "articles (Markdown + 1080×1920 cover) and CAPTIONS.txt.", "", "Plan: Quantora-content-plan.pdf", ""]
     for d, ids, _ in CALENDAR:
         date = S + dt.timedelta(days=d - 1)
         readme.append(f"Day {d:02d} {date.strftime('%a %d %b')}: " + " · ".join(f"{i} {BY[i]['title']}" for i in ids))
