@@ -285,6 +285,10 @@ def main():
     m, x = music(), sfx()
     m *= db(-5) / (np.abs(m).max() + 1e-9)
     x *= db(-7) / (np.abs(x).max() + 1e-9)
+    # SFX-only stem (no music), normalised to -1 dBFS peak, same timing as the film
+    stem = x * (db(-1.0) / (np.abs(x).max() + 1e-9))
+    stem[-int(0.02 * SR):] = 0
+    write(OUT / "sfx.wav", stem)
     m = duck(m, x, 0.25)
     mix = m + x
     mix *= db(-1.0) / (np.abs(mix).max() + 1e-9)
