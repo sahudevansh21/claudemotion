@@ -1,0 +1,126 @@
+{
+ "fps": 60,
+ "durationInFrames": 1200,
+ "bpm": 96,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0,
+   "end": 240,
+   "cues": {
+    "swap": 70,
+    "each": 80
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 70,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cards",
+   "start": 240,
+   "end": 540,
+   "cues": {
+    "cards": 20,
+    "cursor": 150
+   },
+   "sfx": [
+    {
+     "cue": 20,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 50,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 190,
+     "type": "pop",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "start": 540,
+   "end": 900,
+   "cues": {
+    "pill": 40,
+    "text": 110,
+    "meta": 260
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.35
+    },
+    {
+     "cue": 130,
+     "type": "tick",
+     "gain": 0.35
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.35
+    },
+    {
+     "cue": 170,
+     "type": "tick",
+     "gain": 0.35
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.35
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 900,
+   "end": 1200,
+   "cues": {
+    "badge": 14
+   },
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

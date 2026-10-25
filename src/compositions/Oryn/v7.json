@@ -1,0 +1,104 @@
+{
+ "fps": 60,
+ "durationInFrames": 1200,
+ "bpm": 96,
+ "scenes": [
+  {
+   "id": "intro",
+   "start": 0,
+   "end": 240,
+   "cues": {
+    "title": 10
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 120,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "carousel",
+   "start": 240,
+   "end": 780,
+   "cues": {
+    "start": 20,
+    "each": 120
+   },
+   "sfx": [
+    {
+     "cue": 20,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 140,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 260,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 380,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 500,
+     "type": "pop",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "cluster",
+   "start": 780,
+   "end": 1020,
+   "cues": {
+    "cluster": 20,
+    "text": 100
+   },
+   "sfx": [
+    {
+     "cue": 20,
+     "type": "riser",
+     "gain": 0.3
+    },
+    {
+     "cue": 100,
+     "type": "pop",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 1020,
+   "end": 1200,
+   "cues": {
+    "badge": 14
+   },
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 100,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

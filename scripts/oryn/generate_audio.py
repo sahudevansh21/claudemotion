@@ -199,7 +199,7 @@ for sc in TL["scenes"]:
             c = 1 - 0.55 * np.exp(-np.arange(min(L, N - i)) / SR * 5)
             duck[i:i + len(c)] = np.minimum(duck[i:i + len(c)], c)
 
-mix = music * duck * 0.75 + fx * 0.85
+mix = music * duck * TL.get("musicGain", 0.75) + fx * 0.85
 # glue + limiter
 mix = np.tanh(mix * 1.15) / np.tanh(1.15)
 pk = np.max(np.abs(mix)); mix *= 0.58 / pk   # ~ -13 LUFS social-film target

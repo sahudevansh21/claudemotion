@@ -1,0 +1,120 @@
+{
+ "fps": 60,
+ "durationInFrames": 1500,
+ "bpm": 96,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0,
+   "end": 300,
+   "cues": {
+    "a": 10,
+    "b": 110
+   },
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 110,
+     "type": "pop",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "rows",
+   "start": 300,
+   "end": 840,
+   "cues": {
+    "rows": 24,
+    "move": 200
+   },
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 42,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 100,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 220,
+     "type": "pop",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "reasons",
+   "start": 840,
+   "end": 1320,
+   "cues": {
+    "t1": 20,
+    "t2": 210
+   },
+   "sfx": [
+    {
+     "cue": 20,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 60,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 210,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 230,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 250,
+     "type": "tick",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 1320,
+   "end": 1500,
+   "cues": {
+    "badge": 14
+   },
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 100,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

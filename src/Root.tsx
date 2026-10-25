@@ -26,6 +26,9 @@ import { OrynPosts } from "./compositions/Oryn/OrynPosts";
 import { OrynIntro } from "./compositions/Oryn/OrynIntro";
 import { OrynCarousel2 } from "./compositions/Oryn/OrynCarousel2";
 import { OrynDay3Hero } from "./compositions/Oryn/OrynDay3Hero";
+import { OrynV2, OrynV4, OrynV5, OrynV6 } from "./compositions/Oryn/films";
+import { OrynV3, OrynV7, OrynV8 } from "./compositions/Oryn/films2";
+import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -219,6 +222,19 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ORYN Day 3 / A1 hero image: 1080x1350 (4:5), one still. Render with --scale=2. */}
       <Composition id="OrynDay3Hero" component={OrynDay3Hero} width={1080} height={1350} fps={1} durationInFrames={1} />
+
+      {/* ORYN content-plan videos, all 1920x1080 @ 60 fps; timing in v2/v4/v5/v6.json. */}
+      <Composition id="OrynV2" component={OrynV2} width={1920} height={1080} fps={60} durationInFrames={1200} />
+      <Composition id="OrynV4" component={OrynV4} width={1920} height={1080} fps={60} durationInFrames={1200} />
+      <Composition id="OrynV5" component={OrynV5} width={1920} height={1080} fps={60} durationInFrames={1500} />
+      <Composition id="OrynV6" component={OrynV6} width={1920} height={1080} fps={60} durationInFrames={1200} />
+
+      <Composition id="OrynV3" component={OrynV3} width={1920} height={1080} fps={60} durationInFrames={900} />
+      <Composition id="OrynV7" component={OrynV7} width={1920} height={1080} fps={60} durationInFrames={1200} />
+      <Composition id="OrynV8" component={OrynV8} width={1920} height={1080} fps={60} durationInFrames={2700} />
+
+      {/* ORYN posts P4-P8 (days 7-14): 9 frames at 1080x1350; render with --scale=2. */}
+      <Composition id="OrynPosts2" component={OrynPosts2} width={1080} height={1350} fps={1} durationInFrames={9} />
 
     </>
   );

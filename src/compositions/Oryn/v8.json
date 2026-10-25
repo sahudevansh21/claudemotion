@@ -1,0 +1,76 @@
+{
+ "fps": 60,
+ "durationInFrames": 2700,
+ "bpm": 96,
+ "scenes": [
+  {
+   "id": "tour",
+   "start": 0,
+   "end": 2520,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 2,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 360,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 720,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 1080,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 1440,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 1800,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 2160,
+     "type": "whoosh",
+     "gain": 0.3
+    },
+    {
+     "cue": 2400,
+     "type": "riser",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 2520,
+   "end": 2700,
+   "cues": {
+    "badge": 14
+   },
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 100,
+     "type": "chime",
+     "gain": 0.8
+    }
+   ]
+  }
+ ],
+ "musicGain": 0.3
+}
