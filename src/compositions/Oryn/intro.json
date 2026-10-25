@@ -1,0 +1,17 @@
+{
+  "fps": 60,
+  "durationInFrames": 1800,
+  "bpm": 96,
+  "scenes": [
+    { "id": "intro",  "start": 0,    "end": 240,  "cues": { "swap": 50, "each": 38 },
+      "sfx": [ {"cue": 8, "type": "pop", "gain": 0.5}, {"cue": 50, "type": "tick", "gain": 0.5}, {"cue": 88, "type": "tick", "gain": 0.5}, {"cue": 126, "type": "tick", "gain": 0.5}, {"cue": 164, "type": "tick", "gain": 0.5} ] },
+    { "id": "prompt", "start": 240,  "end": 540,  "cues": { "drag": 20, "text": 130 },
+      "sfx": [ {"cue": 20, "type": "tick", "gain": 0.5}, {"cue": 95, "type": "pop", "gain": 0.6}, {"cue": 130, "type": "tick", "gain": 0.4}, {"cue": 160, "type": "tick", "gain": 0.4}, {"cue": 190, "type": "tick", "gain": 0.4} ] },
+    { "id": "board",  "start": 540,  "end": 1080, "cues": { "rows": 30, "click": 250, "card": 285 },
+      "sfx": [ {"cue": 30, "type": "tick", "gain": 0.35}, {"cue": 38, "type": "tick", "gain": 0.35}, {"cue": 46, "type": "tick", "gain": 0.35}, {"cue": 54, "type": "tick", "gain": 0.35}, {"cue": 62, "type": "tick", "gain": 0.35}, {"cue": 70, "type": "tick", "gain": 0.35}, {"cue": 78, "type": "tick", "gain": 0.35}, {"cue": 86, "type": "tick", "gain": 0.35}, {"cue": 250, "type": "pop", "gain": 0.8}, {"cue": 285, "type": "tick", "gain": 0.5}, {"cue": 330, "type": "tick", "gain": 0.4}, {"cue": 360, "type": "tick", "gain": 0.4} ] },
+    { "id": "claims", "start": 1080, "end": 1500, "cues": { "one": 30, "reason": 220 },
+      "sfx": [ {"cue": 6, "type": "riser", "gain": 0.35}, {"cue": 30, "type": "pop", "gain": 0.5}, {"cue": 220, "type": "pop", "gain": 0.5} ] },
+    { "id": "end",    "start": 1500, "end": 1800, "cues": { "badge": 20, "line": 110, "foot": 190 },
+      "sfx": [ {"cue": 20, "type": "pop", "gain": 0.7}, {"cue": 110, "type": "chime", "gain": 0.7} ] }
+  ]
+}

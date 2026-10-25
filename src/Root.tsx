@@ -23,6 +23,7 @@ import { AllocraLaunch } from "./compositions/Allocra/AllocraLaunch";
 import { Oryn } from "./compositions/Oryn/Oryn";
 import { OrynSite } from "./compositions/Oryn/OrynSite";
 import { OrynPosts } from "./compositions/Oryn/OrynPosts";
+import { OrynIntro } from "./compositions/Oryn/OrynIntro";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -207,6 +208,9 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ORYN social posts: 6 stills at 1080x1350 (4:5); frame N = post N. Render with --scale=2. */}
       <Composition id="OrynPosts" component={OrynPosts} width={1080} height={1350} fps={1} durationInFrames={6} />
+
+      {/* ORYN Day 1 / V1 "Introducing Oryn": 3840x2160 @ 60 fps, 30 s = 1,800 frames; timing in intro.json. */}
+      <Composition id="OrynIntro" component={OrynIntro} width={3840} height={2160} fps={60} durationInFrames={1800} />
 
     </>
   );

@@ -4,13 +4,14 @@ Original music + SFX for the ORYN film (30 s, 96 BPM, F minor, no samples, no
 vocals). Synthesised with numpy/scipy and timed from
 src/compositions/Oryn/timeline.json so sound can't drift from picture.
 
-    python3 scripts/oryn/generate_audio.py
+    python3 scripts/oryn/generate_audio.py [timeline-name] [output-name]   # defaults: timeline mix
 
 Writes public/oryn/audio/mix.wav (48 kHz, 16-bit stereo).
 """
 from __future__ import annotations
 
 import json
+import sys
 import wave
 from pathlib import Path
 
@@ -18,7 +19,9 @@ import numpy as np
 from scipy.signal import butter, lfilter
 
 ROOT = Path(__file__).resolve().parents[2]
-TL = json.loads((ROOT / "src/compositions/Oryn/timeline.json").read_text())
+TL_NAME = sys.argv[1] if len(sys.argv) > 1 else "timeline"
+OUT_NAME = sys.argv[2] if len(sys.argv) > 2 else "mix"
+TL = json.loads((ROOT / f"src/compositions/Oryn/{TL_NAME}.json").read_text())
 OUT = ROOT / "public/oryn/audio"
 OUT.mkdir(parents=True, exist_ok=True)
 SR = 48_000
@@ -204,6 +207,6 @@ pk = np.max(np.abs(mix)); mix *= 0.58 / pk   # ~ -13 LUFS social-film target
 fade = int(1.2 * SR); mix[:, -fade:] *= np.linspace(1, 0, fade); mix[:, :96] *= np.linspace(0, 1, 96)
 
 pcm = (np.clip(mix, -1, 1).T * 32767).astype("<i2")
-with wave.open(str(OUT / "mix.wav"), "wb") as w:
+with wave.open(str(OUT / f"{OUT_NAME}.wav"), "wb") as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(pcm.tobytes())
-print("wrote", OUT / "mix.wav", f"{DUR:.2f}s")
+print("wrote", OUT / f"{OUT_NAME}.wav", f"{DUR:.2f}s")
