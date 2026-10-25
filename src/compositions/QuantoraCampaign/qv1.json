@@ -1,0 +1,33 @@
+{
+  "id": "qv1",
+  "fps": 60,
+  "durationInFrames": 1200,
+  "music": { "style": "chill", "bpm": 80, "end": 18.0, "lufs": -16 },
+  "scenes": [
+    { "id": "intro", "from": 0, "to": 2.4, "in": 0.01 },
+    { "id": "chart", "from": 2.2, "to": 4.7 },
+    { "id": "swap", "from": 4.5, "to": 8.4 },
+    { "id": "burst", "from": 8.2, "to": 11.2 },
+    { "id": "tilt", "from": 11.0, "to": 14.7 },
+    { "id": "read", "from": 14.5, "to": 17.6 },
+    { "id": "end", "from": 17.4, "to": 20.0, "out": 0.01 }
+  ],
+  "swaps": [4.8, 6.0, 7.2],
+  "sfx": [
+    { "at": 0.05, "type": "shimmer", "gain": 0.3 },
+    { "at": 1.1, "type": "tick", "gain": 0.35 },
+    { "at": 2.2, "type": "whoosh", "gain": 0.3 },
+    { "at": 2.6, "type": "scribble", "gain": 0.3 },
+    { "at": 4.8, "type": "tick", "gain": 0.45 },
+    { "at": 6.0, "type": "tick", "gain": 0.45 },
+    { "at": 7.2, "type": "tick", "gain": 0.45 },
+    { "at": 8.3, "type": "pop", "gain": 0.4 },
+    { "at": 11.0, "type": "whoosh", "gain": 0.3 },
+    { "at": 11.9, "type": "pop", "gain": 0.3 },
+    { "at": 12.4, "type": "pop", "gain": 0.3 },
+    { "at": 12.9, "type": "pop", "gain": 0.3 },
+    { "at": 14.5, "type": "whoosh", "gain": 0.3 },
+    { "at": 17.5, "type": "chime", "gain": 0.4 },
+    { "at": 18.1, "type": "typing", "gain": 0.2, "count": 12, "step": 0.065 }
+  ]
+}

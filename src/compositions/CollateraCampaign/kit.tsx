@@ -440,11 +440,11 @@ export const Notifs: React.FC<{ items: { title: string; body: string; at: number
 };
 
 /** Blocky pixel dissolve: reveals `children` over a cover colour. */
-export const PixelDissolve: React.FC<{ at: number; dur?: number; cols?: number; color: string }> = ({ at, dur = 0.6, cols = 32, color }) => {
+export const PixelDissolve: React.FC<{ at: number; dur?: number; cols?: number; color: string; w?: number; h?: number }> = ({ at, dur = 0.6, cols = 32, color, w = 1920, h = 1080 }) => {
   const t = useT();
-  const rows = Math.round((cols * 1080) / 1920);
-  const cw = 1920 / cols;
-  const ch = 1080 / rows;
+  const rows = Math.round((cols * h) / w);
+  const cw = w / cols;
+  const ch = h / rows;
   const cells: React.ReactNode[] = [];
   for (let r = 0; r < rows; r++) {
     for (let c = 0; c < cols; c++) {
@@ -454,7 +454,7 @@ export const PixelDissolve: React.FC<{ at: number; dur?: number; cols?: number; 
     }
   }
   return (
-    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }} shapeRendering="crispEdges">
+    <svg width={w} height={h} style={{ position: "absolute", inset: 0 }} shapeRendering="crispEdges">
       {cells}
     </svg>
   );
