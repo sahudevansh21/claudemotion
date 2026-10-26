@@ -170,7 +170,7 @@ export const AllocraV4: React.FC = () => <Film tl={t4} audio={AUD(4)} bg={bgFrom
 
 /* ================= V7 Ecosystem ================= */
 const t7 = T(av7);
-const PROTOS = [
+export const PROTOS = [
   { n: "Ondo Finance", h: "@Ondo", cat: "Tokenized treasuries & stocks", d: "Bringing Wall Street to the world. Tokenization & tech behind OndoPerps, Ondo Stocks, USDY, OUSG.", fol: "383.9K", join: "March 2021", b: "Low-volatility treasury and equity exposure" },
   { n: "xStocks", h: "@xStocksFi", cat: "Tokenized equities & ETFs", d: "xStocks by @Payward. Access US and global tokenized equities, ETFs, and IPOs. 1,000+ assets. 45B+ volume. 110+ countries.", fol: "87.3K", join: "April 2025", b: "Equity and ETF sleeves" },
   { n: "Centrifuge", h: "@centrifuge", cat: "Tokenized funds & credit", d: "Bringing the full power of onchain finance to asset managers and investors. Built on Ethereum.", fol: "94.2K", join: "April 2018", b: "Credit and fixed-income sleeves" },

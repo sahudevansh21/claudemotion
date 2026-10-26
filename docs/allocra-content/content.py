@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Allocra Labs: 7-day content plan, 20 deliverables (10 photos + 10 vertical videos).
+"""Allocra Labs: 7-day content plan, 20 deliverables (10 photos + 10 videos).
 Every fact is verbatim from the supplied allocra.buzz copy (Preview / TestNet demo). Nothing invented."""
 
 FACTS = [
@@ -26,9 +26,9 @@ STYLE = ("Video style (standing rule): follow ONLY the motion grammar of the fiv
          "end on a centred logo plus one line or URL. No wipes, stamps or shakes.")
 REMO = ("You are working in the claudemotion repo (Remotion 4, Python audio); follow docs/PLAYBOOK.md and the standing rules in AGENTS.md. Allocra brand: vermilion #C12E19, dark brown #20130E, cream #F6DAC3, accent #CF3321; "
         "Instrument Serif headlines (tight tracking), DM Sans body, JetBrains Mono labels (self-hosted); logo public/allocra/content/logo.png. Use only facts from the Fact Bank and label the allocation slate as Preview (TestNet demo). "
-        "Vertical 1080x1920 at 60 fps. One component per scene, drive everything from the frame, timing in a JSON timeline that also drives the calm original score (scripts/oryn/generate_audio.py). Lint, render stills for a contact sheet, then render and verify with ffprobe and ebur128. ")
+        "Landscape 16:9, 1920x1080 at 60 fps. One component per scene, drive everything from the frame, timing in a JSON timeline that also drives the calm original score (scripts/oryn/generate_audio.py). Lint, render stills for a contact sheet, then render and verify with ffprobe and ebur128. ")
 POSTFMT = "4:5, 1080x1350 design canvas, delivered at 2160x2700 JPEG"
-VFMT = "1080x1920 vertical, 60 fps, original calm score + soft UI sounds, no voiceover"
+VFMT = "1920x1080 (16:9), 60 fps, original calm score + soft UI sounds, no voiceover"
 
 D = []
 def add(**k): D.append(k)

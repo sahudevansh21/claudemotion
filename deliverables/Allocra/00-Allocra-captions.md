@@ -1,6 +1,6 @@
 # Allocra: 7-day content, captions and hashtags
 
-All videos are 1080x1920 @ 60 fps; all photos are 2160x2700 (4:5). Files are named allocra-dNN-<id>-<title>. Post the video first, then the photo 3-4 hours later.
+All videos are 1920x1080 (16:9) @ 60 fps; all photos are 2160x2700 (4:5). Files are named allocra-dNN-<id>-<title>. Post the video first, then the photo 3-4 hours later.
 Preview / TestNet demo · Not investment advice. Protocol figures are from official X profiles checked 24 Oct 2026.
 
 

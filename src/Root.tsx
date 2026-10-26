@@ -31,6 +31,7 @@ import { OrynV3, OrynV7, OrynV8 } from "./compositions/Oryn/films2";
 import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
 import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, AllocraV7, AllocraV8, AllocraV9, AllocraV10 } from "./compositions/AllocraContent/videos";
 import { AllocraPosts } from "./compositions/AllocraContent/posts";
+import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, AllocraH7, AllocraH8, AllocraH9, AllocraH10 } from "./compositions/AllocraContent/videosH";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -252,6 +253,18 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ALLOCRA posts: 10 stills at 1080x1350 (4:5); render with --scale=2. */}
       <Composition id="AllocraPosts" component={AllocraPosts} width={1080} height={1350} fps={1} durationInFrames={10} />
+
+      {/* ALLOCRA 16:9 videos: 1920x1080 @ 60 fps; same timing and scores as the vertical cuts. */}
+      <Composition id="AllocraH1" component={AllocraH1} width={1920} height={1080} fps={60} durationInFrames={1080} />
+      <Composition id="AllocraH2" component={AllocraH2} width={1920} height={1080} fps={60} durationInFrames={960} />
+      <Composition id="AllocraH3" component={AllocraH3} width={1920} height={1080} fps={60} durationInFrames={840} />
+      <Composition id="AllocraH4" component={AllocraH4} width={1920} height={1080} fps={60} durationInFrames={960} />
+      <Composition id="AllocraH5" component={AllocraH5} width={1920} height={1080} fps={60} durationInFrames={840} />
+      <Composition id="AllocraH6" component={AllocraH6} width={1920} height={1080} fps={60} durationInFrames={840} />
+      <Composition id="AllocraH7" component={AllocraH7} width={1920} height={1080} fps={60} durationInFrames={1320} />
+      <Composition id="AllocraH8" component={AllocraH8} width={1920} height={1080} fps={60} durationInFrames={840} />
+      <Composition id="AllocraH9" component={AllocraH9} width={1920} height={1080} fps={60} durationInFrames={840} />
+      <Composition id="AllocraH10" component={AllocraH10} width={1920} height={1080} fps={60} durationInFrames={1080} />
 
     </>
   );
