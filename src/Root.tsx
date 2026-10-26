@@ -31,6 +31,7 @@ import { OrynV3, OrynV7, OrynV8 } from "./compositions/Oryn/films2";
 import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
 import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, AllocraV7, AllocraV8, AllocraV9, AllocraV10 } from "./compositions/AllocraContent/videos";
 import { AllocraPosts } from "./compositions/AllocraContent/posts";
+import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, AllocraH7, AllocraH8, AllocraH9, AllocraH10 } from "./compositions/AllocraContent/videosH";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
@@ -265,6 +266,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AllocraH8" component={AllocraH8} width={1920} height={1080} fps={60} durationInFrames={840} />
       <Composition id="AllocraH9" component={AllocraH9} width={1920} height={1080} fps={60} durationInFrames={840} />
       <Composition id="AllocraH10" component={AllocraH10} width={1920} height={1080} fps={60} durationInFrames={1080} />
+
+      {/* LAMPZI launch film: 2560x1440 (2K) @ 60 fps, exactly 15 s = 900 frames; timing + SFX cues in timeline.json. */}
+      <Composition id="Lampzi" component={Lampzi} width={2560} height={1440} fps={60} durationInFrames={900} />
 
     </>
   );
