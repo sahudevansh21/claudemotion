@@ -32,6 +32,7 @@ import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
 import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, AllocraV7, AllocraV8, AllocraV9, AllocraV10 } from "./compositions/AllocraContent/videos";
 import { AllocraPosts } from "./compositions/AllocraContent/posts";
 import { Lampzi } from "./compositions/Lampzi/Lampzi";
+import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
 import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, AllocraH7, AllocraH8, AllocraH9, AllocraH10 } from "./compositions/AllocraContent/videosH";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
@@ -269,6 +270,9 @@ export const RemotionRoot: React.FC = () => {
 
       {/* LAMPZI launch film: 2560x1440 (2K) @ 60 fps, exactly 15 s = 900 frames; timing + SFX cues in timeline.json. */}
       <Composition id="Lampzi" component={Lampzi} width={2560} height={1440} fps={60} durationInFrames={900} />
+
+      {/* LAMPZI website walkover: 1920x1080 @ 60 fps, exactly 40 s = 2,400 frames; timing in walk/timeline.json. */}
+      <Composition id="LampziWalk" component={LampziWalk} width={1920} height={1080} fps={60} durationInFrames={2400} />
 
     </>
   );

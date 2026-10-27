@@ -1,0 +1,56 @@
+{
+ "fps": 60,
+ "durationInFrames": 2400,
+ "scenes": [
+  {
+   "id": "intro",
+   "start": 0,
+   "end": 156
+  },
+  {
+   "id": "home",
+   "start": 156,
+   "end": 420
+  },
+  {
+   "id": "create",
+   "start": 420,
+   "end": 636
+  },
+  {
+   "id": "editor",
+   "start": 636,
+   "end": 984
+  },
+  {
+   "id": "resumes",
+   "start": 984,
+   "end": 1140
+  },
+  {
+   "id": "templates",
+   "start": 1140,
+   "end": 1536
+  },
+  {
+   "id": "tips",
+   "start": 1536,
+   "end": 1824
+  },
+  {
+   "id": "tracker",
+   "start": 1824,
+   "end": 1992
+  },
+  {
+   "id": "more",
+   "start": 1992,
+   "end": 2160
+  },
+  {
+   "id": "end",
+   "start": 2160,
+   "end": 2400
+  }
+ ]
+}
