@@ -33,6 +33,7 @@ import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, Alloc
 import { AllocraPosts } from "./compositions/AllocraContent/posts";
 import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
+import { VybePosts } from "./compositions/Vybe/posts";
 import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, AllocraH7, AllocraH8, AllocraH9, AllocraH10 } from "./compositions/AllocraContent/videosH";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
@@ -273,6 +274,9 @@ export const RemotionRoot: React.FC = () => {
 
       {/* LAMPZI website walkover: 1920x1080 @ 60 fps, exactly 40 s = 2,400 frames; timing in walk/timeline.json. */}
       <Composition id="LampziWalk" component={LampziWalk} width={1920} height={1080} fps={60} durationInFrames={2400} />
+
+      {/* VYBE posts: 15 stills at 1080x1350 (4:5); frame N = post N+1. Render with --scale=2. */}
+      <Composition id="VybePosts" component={VybePosts} width={1080} height={1350} fps={1} durationInFrames={15} />
 
     </>
   );
