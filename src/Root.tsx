@@ -35,6 +35,7 @@ import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
 import { VybePosts } from "./compositions/Vybe/posts";
 import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, AllocraH7, AllocraH8, AllocraH9, AllocraH10 } from "./compositions/AllocraContent/videosH";
+import { Reel, REEL_SECONDS, reelSchema } from "./compositions/Reel/Reel";
 // @new-composition-imports (scripts/new-composition.mjs inserts above this line)
 
 /**
@@ -44,6 +45,25 @@ import { AllocraH1, AllocraH2, AllocraH3, AllocraH4, AllocraH5, AllocraH6, Alloc
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Vertical reel (IBW event), 1080x1920 @ 60 fps, 23 s; edit copied from
+          docs/references/REEL_ANALYSIS.md. Shots + timings: Reel/reel.json. */}
+      <Composition
+        id="DevanshReel"
+        component={Reel}
+        schema={reelSchema}
+        defaultProps={{
+          hook: "I'm not just learning to build.",
+          payoff: "I'm building to learn.",
+          name: "Devansh Sahu",
+          handle: "",
+          lowercase: true,
+        }}
+        width={1080}
+        height={1920}
+        fps={60}
+        durationInFrames={REEL_SECONDS * 60}
+      />
+
       <Composition
         id="Showcase"
         component={Showcase}
