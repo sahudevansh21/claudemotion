@@ -1,0 +1,17 @@
+argus (@argus_io) - 15 posts, 2160x2700 (4:5). Theme: black stage, teal-green UV glow and fluorescent specks, white grotesk with mint key phrase, the gold swirl logo (cut from your banner, soft). The 15 ms inference and 99.4% precision figures are quoted from the Argus profile and labelled as such; the UV viewfinder visuals are illustrative. Check: please confirm both figures and 'Built on Virtu' before posting; no medical or regulatory claims are made.
+
+01 Making the Invisible Visible.
+02 Detecting microbial contamination invisible to the human eye.
+03 UV fluorescence.
+04 Optical CV.
+05 Biomedical AI. Built on Virtu.
+06 One pipeline, three layers: UV fluorescence, optical CV, biomedical AI.
+07 15 ms inference (as stated on the profile).
+08 99.4% precision (as stated on the profile).
+09 It looks clean.
+10 Argus makes the invisible visible.
+11 Invisible to the human eye (illustrative UV view).
+12 Built on Virtu.
+13 Same surface. Two views. (illustrative)
+14 Fast. Precise. Visible. 15 ms, 99.4%, 3 layers.
+15 Argus. Making the Invisible Visible. argus-iota.vercel.app @argus_io
