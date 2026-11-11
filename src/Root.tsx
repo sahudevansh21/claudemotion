@@ -38,6 +38,7 @@ import { OrynX } from "./compositions/XPosts/oryn";
 import { AegisX } from "./compositions/XPosts/aegis";
 import { SafefiX } from "./compositions/XPosts/safefi";
 import { ArgusX } from "./compositions/XPosts/argus";
+import { PolymateX } from "./compositions/XPosts/polymate";
 import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
 import { VybePosts } from "./compositions/Vybe/posts";
@@ -270,6 +271,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AegisX" component={AegisX} width={1080} height={1350} fps={1} durationInFrames={15} />
       <Composition id="SafefiX" component={SafefiX} width={1080} height={1350} fps={1} durationInFrames={15} />
       <Composition id="ArgusX" component={ArgusX} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="PolymateX" component={PolymateX} width={1080} height={1350} fps={1} durationInFrames={15} />
 
       {/* ALLOCRA 16:9 videos: 1920x1080 @ 60 fps; same timing and scores as the vertical cuts. */}
       <Composition id="AllocraH1" component={AllocraH1} width={1920} height={1080} fps={60} durationInFrames={1080} />
