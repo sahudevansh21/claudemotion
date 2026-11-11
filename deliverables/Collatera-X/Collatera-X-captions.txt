@@ -1,0 +1,17 @@
+Collatera (@collatera_io) - 15 posts, 2160x2700 (4:5). Theme: night-green pixel world, lime Silkscreen type, pixel moon and stars, offset-shadow panels, decoded mascot. Copy from the profile and the Collatera brief; all gauges, feeds and the -20% scenario are illustrative and labelled. Check: no protection or liquidation-prevention claims are made; 'Starting on Algorand / Demo v1' comes from the brief.
+
+01 Monitoring collateral risk across DeFi and tokenized assets.
+02 Collateral risk doesn't wait. Your monitoring shouldn't either.
+03 Catch stale oracles before they catch you.
+04 Real-time signals. Smarter risk decisions.
+05 01 Buffer (illustrative).
+06 02 Price freshness (illustrative).
+07 03 Closed-market liquidity risk. Prices can gap between market close and the next open.
+08 How it works: Monitor, Stress test, Get alerts, Preview repayment.
+09 Drag the price: -20% stress scenario, not a forecast.
+10 Read-only risk monitoring. Preview only, no transaction is sent, you decide.
+11 See it. Understand it. Decide.
+12 Across DeFi and tokenized assets.
+13 Monitoring first. Automation later.
+14 Starting on Algorand. Demo v1.
+15 Collatera. collatera.buzz @collatera_io

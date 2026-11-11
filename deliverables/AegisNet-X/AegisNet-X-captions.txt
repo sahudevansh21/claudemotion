@@ -1,0 +1,17 @@
+AegisNet (@AegisNets) - 15 posts, 2160x2700 (4:5). Theme: black stage, silver dotted wave, white Inter headline with one italic serif word, mono chips, two-bar mark redrawn as vector. Copy from the profile, banner, pinned post and aegisnet.solrun.fun; site screenshots are the supplied captures. Check: AegisNet is building on Sepolia testnet (stated in the footer); the >= $1,000 / Midnight ZK gate flow comes from the site; mark is a vector lookalike.
+
+01 Let AI agents trade onchain, with a human on the big calls.
+02 An AI agent with your wallet and no brakes is a liability.
+03 A name (ENS).
+04 Clean routes (1inch, Uniswap v4).
+05 A human veto (World ID).
+06 Routine -> auto. Big calls -> you.
+07 Agents act. Humans keep the veto.
+08 Every trade: small ones run, big ones wait, rogue ones stop.
+09 A human on the big calls: >= $1,000, Midnight ZK gate, World ID, cleared.
+10 Your AI agent's control room (site screenshot).
+11 Five steps (site walkthrough screenshot).
+12 Autonomy for agents. Control for owners.
+13 Building on Sepolia testnet.
+14 Give your first agent guardrails.
+15 AegisNet. aegisnet.solrun.fun @AegisNets

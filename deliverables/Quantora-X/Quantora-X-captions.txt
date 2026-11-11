@@ -1,0 +1,17 @@
+Quantora Labs (@Quantora_Labs) - 15 posts, 2160x2700 (4:5). Theme: warm paper, Newsreader serif with one italic word, Jost wordmark, mono labels, annotated charts. Every chart is synthetic and labelled; no real values. Check: fonts are lookalikes; the editorial lines (e.g. 'Ask before it does', 'The path matters') are framing, not claims.
+
+01 Cover lockup: The market, read clearly.
+02 Quantitative research for onchain finance.
+03 Tokenized stocks.
+04 ETFs, read clearly.
+05 Market simulations (synthetic paths).
+06 How bad can it get? Drawdown, path and the assumptions behind both.
+07 From the peak to the trough (illustrative).
+08 The path matters.
+09 The assumptions behind both.
+10 The market, read clearly.
+11 Research preview. Synthetic demo data.
+12 Read the path, not just the number.
+13 Three subjects: Tokenized stocks, ETFs, Market simulations.
+14 How bad can it get? Ask before it does.
+15 Quantora. quantora.buzz @Quantora_Labs

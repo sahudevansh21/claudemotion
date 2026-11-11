@@ -31,6 +31,11 @@ import { OrynV3, OrynV7, OrynV8 } from "./compositions/Oryn/films2";
 import { OrynPosts2 } from "./compositions/Oryn/OrynPosts2";
 import { AllocraV1, AllocraV2, AllocraV3, AllocraV4, AllocraV5, AllocraV6, AllocraV7, AllocraV8, AllocraV9, AllocraV10 } from "./compositions/AllocraContent/videos";
 import { AllocraPosts } from "./compositions/AllocraContent/posts";
+import { AllocraPosts15 } from "./compositions/AllocraContent/posts15";
+import { QuantoraX } from "./compositions/XPosts/quantora";
+import { CollateraX } from "./compositions/XPosts/collatera";
+import { OrynX } from "./compositions/XPosts/oryn";
+import { AegisX } from "./compositions/XPosts/aegis";
 import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
 import { VybePosts } from "./compositions/Vybe/posts";
@@ -256,6 +261,11 @@ export const RemotionRoot: React.FC = () => {
 
       {/* ALLOCRA posts: 10 stills at 1080x1350 (4:5); render with --scale=2. */}
       <Composition id="AllocraPosts" component={AllocraPosts} width={1080} height={1350} fps={1} durationInFrames={10} />
+      <Composition id="AllocraPosts15" component={AllocraPosts15} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="QuantoraX" component={QuantoraX} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="CollateraX" component={CollateraX} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="OrynX" component={OrynX} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="AegisX" component={AegisX} width={1080} height={1350} fps={1} durationInFrames={15} />
 
       {/* ALLOCRA 16:9 videos: 1920x1080 @ 60 fps; same timing and scores as the vertical cuts. */}
       <Composition id="AllocraH1" component={AllocraH1} width={1920} height={1080} fps={60} durationInFrames={1080} />

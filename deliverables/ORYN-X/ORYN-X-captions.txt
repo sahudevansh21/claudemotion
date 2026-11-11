@@ -1,0 +1,17 @@
+ORYN (@oryn_io) - 15 posts, 2160x2700 (4:5). Theme: banner cream stock, cyan halftone, navy clouds, orange asterisk and flame, Anton/Space Grotesk. Verdict cards use the Oryn board data verbatim (simulated issuer data, not investment advice). Check: fonts are lookalikes; chain list on post 4 (ETH, SOL, BASE, ARB) is taken from the board entries shown in posts 7-12.
+
+01 State of assets activated. Real-time intelligence for tokenized assets.
+02 Introducing ORYN. The real-time intelligence for tokenized assets.
+03 It tracks corporate actions, market sessions, redemption windows and data freshness.
+04 Across issuers and chains.
+05 One live status for every asset.
+06 Six verdicts.
+07 xTSLA (ETH): Market closed.
+08 xTSLA (SOL): Divergent. Stock split 3:1 not applied on Solana.
+09 xAAPL: Action pending. Dividend $0.27 / share.
+10 dMSFT: Stale. Arbitrum head is not advancing.
+11 BUIDL: Redemption closed.
+12 USTB: Open.
+13 Unknown means not actionable.
+14 Is it safe to act?
+15 ORYN. oryn.solrun.fun @oryn_io
