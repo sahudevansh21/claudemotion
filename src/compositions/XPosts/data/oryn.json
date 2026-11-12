@@ -1,0 +1,231 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a stale feed?",
+  "hi": "stale",
+  "s": "A price that stopped updating when it should still be moving. Not the same as a market that is simply closed.",
+  "v": "cs",
+  "bg": "cream",
+  "cap": "Closed and stale can look identical on a chart: a flat price. Closed means the exchange is shut and a frozen oracle price is expected. Stale means the feed stopped advancing when it should not have. Oryn gives each its own verdict. Board data is simulated."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Four ways a token can track its asset",
+  "hi": "track",
+  "items": [
+   "Rebasing · Backed xStocks",
+   "Total-return · Ondo Global Markets",
+   "Stablecoin · Dinari dShares",
+   "NAV · Securitize BUIDL, Superstate USTB"
+  ],
+  "bg": "yellow",
+  "cap": "Not every tokenized asset follows its underlying the same way. Oryn's issuer models: rebasing (Backed xStocks), total-return (Ondo Global Markets), stablecoin (Dinari dShares) and NAV (Securitize BUIDL, Superstate USTB). Worth knowing before you act on one."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Same split, different chains.",
+  "hi": "different chains",
+  "s": "Board example (simulated): oNFLX, stock split 10:1 not applied on Ethereum and on Base.",
+  "v": "split",
+  "bg": "navy",
+  "cap": "Corporate actions 101: when a stock splits, its tokenized versions have to catch up on every chain. Board example (simulated data): oNFLX, 10:1 split not applied on Ethereum or Base. Oryn marks that as Divergent."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "When redemption is shut.",
+  "hi": "shut",
+  "s": "Fund redemption window is shut; collateral cannot be redeemed at published NAV. Board example (simulated): BUIDL, window opens in 6h.",
+  "v": "card:6",
+  "bg": "red",
+  "cap": "Redemption windows matter for anything held as collateral. Board example (simulated): BUIDL, redemption window shut, collateral cannot be redeemed at published NAV, window opens in 6h. Oryn calls that Redemption closed."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is a NAV strike?",
+  "hi": "NAV strike",
+  "s": "The point at which a fund's net asset value is set. Board example (simulated): USTB, NAV strike in 13h.",
+  "v": "card:7",
+  "bg": "cream",
+  "cap": "NAV funds don't tick like stocks. They publish a net asset value at set times, called a NAV strike. Board example (simulated): USTB on Ethereum, redemptions open, NAV fresh, NAV strike in 13h. Verdict: Open."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Replay any moment.",
+  "hi": "any moment",
+  "s": "Verdicts, calendar and alerts all follow the Time Machine. Stops: -1D, NOW, NEXT OPEN, +1D.",
+  "v": "tl",
+  "bg": "navy",
+  "cap": "The Time Machine lets you replay any moment. Verdicts, calendar and alerts all follow. Jump between -1D, NOW, NEXT OPEN and +1D and see the board as it stood. Simulated issuer data. Not investment advice."
+ },
+ {
+  "a": "Product",
+  "k": "list",
+  "h": "Seven sections. One question.",
+  "hi": "One question",
+  "items": [
+   "01  Board",
+   "02  Asset",
+   "03  Lookahead",
+   "04  Divergence",
+   "05  Wallet",
+   "06  Guard",
+   "07  API"
+  ],
+  "bg": "cream",
+  "cap": "Oryn has seven sections: Board, Asset, Lookahead, Divergence, Wallet, Guard and API. All built around one question: is it safe to act on this token right now?"
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "1 of 15 is actionable.",
+  "hi": "1 of 15",
+  "s": "Board snapshot (simulated): Open 1 · Market closed 5 · Action pending 2 · Redemption closed 2 · Stale 1 · Divergent 4.",
+  "v": "bar",
+  "bg": "yellow",
+  "cap": "Board snapshot, simulated issuer data: 15 deployments, 1 actionable now. Open 1, Market closed 5, Action pending 2, Redemption closed 2, Stale 1, Divergent 4. A price alone wouldn't tell you that."
+ },
+ {
+  "a": "Product",
+  "k": "list",
+  "h": "What happens next, per asset.",
+  "hi": "next",
+  "items": [
+   "Market opens in 6h",
+   "Event effective in 38h",
+   "Redemption window opens in 6h",
+   "NAV strike in 13h"
+  ],
+  "lab": "Lookahead",
+  "bg": "navy",
+  "cap": "Lookahead: every verdict comes with what happens next. Board examples (simulated): market opens in 6h, event effective in 38h, redemption window opens in 6h, NAV strike in 13h."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which check do you run first?",
+  "hi": "first",
+  "items": [
+   "A  Market session",
+   "B  Corporate action",
+   "C  Redemption window",
+   "D  Data freshness"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "cream",
+  "cap": "Community question: before you act on a tokenized asset, which check do you run first? A) Market session B) Corporate action C) Redemption window D) Data freshness. Tell us why in the replies."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which mismatch worries you most?",
+  "hi": "mismatch",
+  "items": [
+   "A  Split not applied on one chain",
+   "B  DEX price drifting above reference",
+   "C  Dividend multiplier not yet applied",
+   "D  Something else"
+  ],
+  "s": "Examples from the simulated board. Reply A to D.",
+  "bg": "yellow",
+  "cap": "Examples from the simulated board: a stock split not applied on one chain, a DEX price drifting above reference, a dividend multiplier not yet applied. Which would you most want flagged before you act? A, B, C or D?"
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Should a closed market block an action?",
+  "hi": "block",
+  "items": [
+   "A  Yes, always",
+   "B  No, just flag it",
+   "C  Depends on the asset",
+   "D  Depends on the action"
+  ],
+  "s": "Builders especially: tell us in the replies.",
+  "bg": "navy",
+  "cap": "Question for builders: when the underlying market is closed, should an app block the action, or show the verdict and let the user decide? A) Block B) Flag C) Depends on the asset D) Depends on the action."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "A price is a number. A verdict is a decision.",
+  "hi": "A verdict is a decision.",
+  "s": "Our view.",
+  "bg": "cream",
+  "cap": "Our take: a price is a number. A verdict is something you can branch on. One value, a reason and the evidence is easier to get right than a pile of fields.",
+  "v": "ast"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Unknown should never default to go.",
+  "hi": "never default to go",
+  "s": "Unknown means not actionable.",
+  "bg": "red",
+  "cap": "A rule worth keeping: when the state is unknown, the answer is not 'probably fine'. Unknown means not actionable. Systems that touch tokenized assets should fail closed.",
+  "v": "ast"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "A bond proves skin in the game, not that an offchain asset exists.",
+  "hi": "not that an offchain asset exists",
+  "s": "Keep the two ideas apart.",
+  "bg": "navy",
+  "cap": "Easy to mix up: a bond shows the issuer has something at stake. It does not prove the offchain asset behind a token exists. Keep the two ideas separate when you assess collateral.",
+  "v": "ast"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A lender, before accepting collateral.",
+  "hi": "before accepting collateral",
+  "s": "Hypothetical. Open, Market closed or Divergent: each verdict changes the answer.",
+  "v": "chips",
+  "bg": "cream",
+  "cap": "Use case (hypothetical): a lender is about to accept a tokenized stock as collateral. The question is not only 'what is the price?' but 'is it safe to act right now?' Open, Market closed and Divergent each change the answer."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A wallet, before the user taps.",
+  "hi": "before the user taps",
+  "s": "Hypothetical. A stale feed on one chain? Warn. Market closed? Say when it opens.",
+  "v": "card:4",
+  "bg": "yellow",
+  "cap": "Use case (hypothetical): a wallet reads the verdict before an action. Stale feed? Show a warning. Market closed? Say when it opens. Open? Stay out of the way. Illustration only, not a statement about any specific wallet."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A trading venue, after the closing bell.",
+  "hi": "after the closing bell",
+  "s": "Hypothetical. Frozen quotes are expected. A feed that stops while the market is open is not.",
+  "v": "cs",
+  "bg": "navy",
+  "cap": "Use case (hypothetical): a venue lists tokenized stocks. After the closing bell, frozen quotes are expected. A feed that stops advancing while the market is open is not. Telling the two apart is the job."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "We started from a different question.",
+  "hi": "different question",
+  "s": "Not 'what is it worth?' but 'is it safe to act on it right now?'",
+  "bg": "yellow",
+  "cap": "Most tools start from price. Oryn starts from the question that comes after it: is it safe to act on this token right now? Verdicts, reasons, evidence and the Time Machine all follow from that.",
+  "v": "flame"
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "ORYN",
+  "s": "Real-time intelligence for tokenized assets.",
+  "bg": "cream",
+  "cap": "Real-time intelligence for tokenized assets. Oryn tracks corporate actions, market sessions, redemption windows and data freshness across issuers and chains, as one live status per asset. MVP, simulated issuer data. oryn.solrun.fun"
+ }
+]

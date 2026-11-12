@@ -1,0 +1,209 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is an AI agent with a wallet?",
+  "hi": "wallet",
+  "s": "Software that can sign transactions for you. Useful, and risky without limits.",
+  "v": "mark",
+  "bg": "wave",
+  "cap": "An AI agent with a wallet is software that can sign transactions on your behalf. Useful, and risky without limits. AegisNet gives it a name (ENS), clean routes (1inch, Uniswap v4) and a human veto (World ID)."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Why give an agent a name?",
+  "hi": "a name",
+  "s": "A readable identity beats a raw address. AegisNet binds every agent to an ENS identity.",
+  "v": "ens",
+  "bg": "plain",
+  "cap": "Why give an agent a name? A readable identity beats a raw address, and it makes an agent easier to recognise and track. AegisNet binds every agent to an ENS identity, like agent1.aegisnet.eth."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is proof of human?",
+  "hi": "proof of human",
+  "s": "A way to show a real person stands behind an approval. AegisNet pauses high-value moves for World ID proof of human.",
+  "v": "mark",
+  "bg": "wave",
+  "cap": "Proof of human: a way to show that a real person stands behind an approval. AegisNet pauses high-value moves for World ID proof of human, so agents act and humans keep the veto."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is a swap route?",
+  "hi": "route",
+  "s": "The path a trade takes to find a price. AegisNet routes trades through 1inch SwapVM and Uniswap v4.",
+  "v": "route",
+  "bg": "plain",
+  "cap": "A swap route is the path a trade takes to find its price. AegisNet routes an agent's trades through 1inch SwapVM and Uniswap v4: clean routes instead of ad hoc ones."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Every trade, three outcomes.",
+  "hi": "three outcomes",
+  "s": "Small ones run. Big ones wait. Rogue ones stop.",
+  "v": "gate",
+  "bg": "plain",
+  "cap": "Every trade, three outcomes. Small ones run. Big ones wait for a human. Rogue ones stop. That's the design: routine to auto, big calls to you."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Three situations.",
+  "hi": "situations",
+  "s": "The AegisNet site walks through three situations an agent can face.",
+  "v": "shot:situations",
+  "bg": "plain",
+  "cap": "Three situations, walked through on the AegisNet site. See how an agent's trades are handled, and where a human steps in. Building on Sepolia testnet. aegisnet.solrun.fun"
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Four phases.",
+  "hi": "phases",
+  "s": "A request traced through four phases, shown on the AegisNet site.",
+  "v": "shot:phases",
+  "bg": "plain",
+  "cap": "Four phases, one request. The AegisNet site traces how a request moves from an agent to a trade, so you can see where each check sits. Testnet only."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Your agent's control room.",
+  "hi": "control room",
+  "s": "The dashboard on aegisnet.solrun.fun. Testnet.",
+  "v": "shot:dashboard",
+  "bg": "plain",
+  "cap": "Your AI agent's control room: the AegisNet dashboard, where an owner sets the guardrails and watches what the agent does. Building on Sepolia testnet."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Five steps, in order.",
+  "hi": "in order",
+  "s": "A guided walkthrough on the AegisNet site.",
+  "v": "shot:walkthrough",
+  "bg": "plain",
+  "cap": "Five steps, in order: the walkthrough on the AegisNet site takes you from connecting a wallet to guarded trades. Testnet. aegisnet.solrun.fun"
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Big calls go to a human.",
+  "hi": "human",
+  "s": "From $1,000, a move passes the Midnight ZK gate and waits for World ID proof of human.",
+  "v": "flow",
+  "bg": "wave",
+  "cap": "Big calls go to a human. On the AegisNet site, a move of $1,000 or more passes the Midnight ZK gate and waits for World ID proof of human before it clears. Testnet."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Contracts on Sepolia.",
+  "hi": "Sepolia",
+  "s": "AegisNet is building on Sepolia testnet. The site lists five contracts live there.",
+  "v": "shot:contracts",
+  "bg": "plain",
+  "cap": "AegisNet is building on Sepolia testnet. The site lists five contracts live there: a place to see how the pieces fit before anything touches mainnet. Testnet only."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "How much would you let an agent move alone?",
+  "hi": "alone",
+  "items": [
+   "A  Nothing",
+   "B  Up to $100",
+   "C  Up to $1,000",
+   "D  More, with limits"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "plain",
+  "cap": "Community question: how much would you let an AI agent move without asking you? A) Nothing B) Up to $100 C) Up to $1,000 D) More, with clear limits. Tell us your reasoning."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What should an agent never do alone?",
+  "hi": "never",
+  "items": [
+   "A  Move large sums",
+   "B  Approve new contracts",
+   "C  Change its own limits",
+   "D  Buy a brand new token"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "wave",
+  "cap": "What should an AI agent never do alone? A) Move large sums B) Approve new contracts C) Change its own limits D) Buy a brand new token. Your answers shape how we think about guardrails."
+ },
+ {
+  "a": "Community question",
+  "k": "big",
+  "h": "What would you name your agent?",
+  "hi": "name",
+  "s": "Reply with your best ENS-style name.",
+  "v": "ens",
+  "bg": "plain",
+  "cap": "Every agent on AegisNet gets an ENS identity, like agent1.aegisnet.eth. What would you name yours? Reply with your best ENS-style name."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Autonomy needs a brake pedal.",
+  "hi": "brake pedal",
+  "s": "Our view.",
+  "bg": "wave",
+  "cap": "Our view: autonomy needs a brake pedal. An AI agent with your wallet and no brakes is a liability. Give it limits, and a human who can say no.",
+  "v": "mark"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "The best approval is the one you only see when it matters.",
+  "hi": "only see when it matters",
+  "s": "Our view.",
+  "bg": "plain",
+  "cap": "Our view: the best approval is the one you only see when it matters. Routine should run on its own; the big calls should come to you.",
+  "v": "ens"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A treasury agent, rebalancing.",
+  "hi": "rebalancing",
+  "s": "Hypothetical. Small trades run on their own. A large one waits for a human.",
+  "v": "gate",
+  "bg": "wave",
+  "cap": "Use case (hypothetical): a treasury agent rebalances a portfolio. The routine trades run on their own; a large one waits for a human to clear it. Illustration only, on testnet."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "An agent, testing on Sepolia.",
+  "hi": "testing",
+  "s": "Hypothetical. Try the guardrails with testnet funds before anything real is at stake.",
+  "v": "route",
+  "bg": "plain",
+  "cap": "Use case (hypothetical): try an agent on Sepolia testnet first. Watch the routes, the identity and the veto work with testnet funds before real money is anywhere near."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Early, and building on testnet.",
+  "hi": "testnet",
+  "s": "AegisNet is building on Sepolia testnet. Everything shown is testnet.",
+  "v": "mark",
+  "bg": "wave",
+  "cap": "We're early. AegisNet is building on Sepolia testnet, so everything you see is testnet. Agents act, humans keep the veto, and we're building it in the open."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "AegisNet",
+  "s": "Let AI agents trade onchain, with a human on the big calls.",
+  "cap": "AegisNet: let AI agents trade onchain, with a human on the big calls. Every agent gets an ENS identity, clean routes through 1inch and Uniswap v4, and a World ID human veto. Building on Sepolia testnet. aegisnet.solrun.fun"
+ }
+]

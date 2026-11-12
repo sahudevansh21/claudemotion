@@ -1,0 +1,221 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a prediction market?",
+  "hi": "prediction market",
+  "s": "A market where people trade on the outcome of future events. Prices reflect what the crowd expects.",
+  "v": "yesno",
+  "bg": "cream",
+  "cap": "What is a prediction market? A market where people trade on the outcome of future events. Prices reflect what the crowd expects to happen. PolyMate is the trading layer for them."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "How to read a price.",
+  "hi": "price",
+  "s": "If YES trades at 0.60, the market is implying roughly a 60% chance. Illustrative numbers.",
+  "v": "price",
+  "bg": "cream",
+  "cap": "How to read a price: if YES trades at 0.60, the market is implying roughly a 60% chance. Illustrative numbers, not a live market."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "YES and NO.",
+  "hi": "NO",
+  "items": [
+   "YES|In a typical market, pays out if the event happens.",
+   "NO|In a typical market, pays out if it doesn't."
+  ],
+  "bg": "lapis",
+  "cap": "YES and NO. In a typical prediction market, YES pays out if the event happens and NO pays out if it doesn't. Always read the specific market's rules."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is resolution?",
+  "hi": "resolution",
+  "s": "The moment the outcome is decided, by each market's rules. Read them before you trade.",
+  "v": "forum",
+  "bg": "cream",
+  "cap": "Resolution is the moment a market's outcome is decided, according to its rules. Read the rules before you trade: the wording is what counts."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Before you size a position",
+  "hi": "size a position",
+  "items": [
+   "What is the question, exactly?",
+   "What are the resolution rules?",
+   "How much can I afford to lose?",
+   "Why do I disagree with the price?"
+  ],
+  "bg": "lapis",
+  "cap": "Before you size a position: What is the question, exactly? What are the resolution rules? How much can I afford to lose? Why do I disagree with the price? Not financial advice."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "A price is not a promise.",
+  "hi": "not a promise",
+  "s": "It's the crowd's current estimate. It moves as people learn.",
+  "v": "price",
+  "bg": "red",
+  "cap": "A price is not a promise. It's the crowd's current estimate, and it moves as people learn. Treat it as information, not a guarantee. Illustrative."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Positions, at a glance.",
+  "hi": "at a glance",
+  "s": "The Positions tab shows what you hold. Illustrative example.",
+  "v": "cards",
+  "bg": "cream",
+  "cap": "Positions, at a glance. PolyMate has Trade, Markets, Positions, Strategy and Balance tabs, and Positions shows what you hold. Illustrative example, not live data."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Trade, then watch it execute.",
+  "hi": "execute",
+  "s": "Position Opened. Executing Trade… Illustrative example.",
+  "v": "cards",
+  "bg": "lapis",
+  "cap": "Trade, then watch it execute. The PolyMate banner shows a Position Opened card (YES, $50) and an Executing Trade… step. Illustrative examples."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Start trading.",
+  "hi": "trading",
+  "s": "t.me/Tryoddsbot",
+  "v": "emblem",
+  "bg": "cream",
+  "cap": "Start trading. The trading layer for prediction markets. Building tools to trade the future, fast. t.me/Tryoddsbot"
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is liquidity?",
+  "hi": "liquidity",
+  "s": "How easily you can buy or sell without moving the price. Thin markets move more.",
+  "v": "robot",
+  "bg": "lapis",
+  "cap": "Liquidity is how easily you can buy or sell without moving the price. In a thin market, one trade can move it a lot. Worth checking before you size a position. Not financial advice."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Pick a category you'd trade.",
+  "hi": "category",
+  "items": [
+   "A  Politics",
+   "B  Sports",
+   "C  Crypto",
+   "D  Culture"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "cream",
+  "cap": "Pick a category you'd trade. A) Politics B) Sports C) Crypto D) Culture. Tell us the kind of question you wish was a market."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What's your default position size?",
+  "hi": "position size",
+  "items": [
+   "A  $10",
+   "B  $50",
+   "C  $100",
+   "D  Depends on conviction"
+  ],
+  "s": "Reply with A, B, C or D. Not advice.",
+  "bg": "lapis",
+  "cap": "What's your default position size? A) $10 B) $50 C) $100 D) Depends on conviction. Size small enough that being wrong is fine. Not financial advice."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Conviction or price?",
+  "hi": "Conviction",
+  "items": [
+   "A  I trade on conviction",
+   "B  I trade on price",
+   "C  Both",
+   "D  Just watching"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "cream",
+  "cap": "Do you trade on conviction or on price? A) Conviction B) Price C) Both D) Just watching. Tell us how you decide."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Fast tools, slow decisions.",
+  "hi": "slow decisions",
+  "s": "Our view.",
+  "bg": "red",
+  "cap": "Our view: fast tools, slow decisions. Speed belongs in the interface. Patience belongs in the thinking.",
+  "v": "emblem"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Disagreeing with the price is the whole game.",
+  "hi": "the whole game",
+  "s": "Our view.",
+  "bg": "lapis",
+  "cap": "Our view: in a prediction market, disagreeing with the price is the whole game. Know why you disagree before you act on it.",
+  "v": "robot"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Read the rules before you read the odds.",
+  "hi": "the rules",
+  "s": "Our view.",
+  "bg": "cream",
+  "cap": "Our view: read the rules before you read the odds. A market's resolution wording matters more than its current price.",
+  "v": "forum"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Expressing a view on an upcoming event.",
+  "hi": "a view",
+  "s": "Hypothetical. Back your read of what happens next with a position.",
+  "v": "yesno",
+  "bg": "red",
+  "cap": "Use case (hypothetical): you have a view on an upcoming event and want to back it with a position. A prediction market turns an opinion into a trade. Not financial advice."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Checking positions between meetings.",
+  "hi": "between meetings",
+  "s": "Hypothetical. A quick look at what you hold, then back to your day.",
+  "v": "cards",
+  "bg": "cream",
+  "cap": "Use case (hypothetical): checking your positions between meetings. A quick look at what you hold, then back to your day. Illustrative example."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Where Rome argued about what comes next.",
+  "hi": "what comes next",
+  "s": "The forum was where people weighed the future. PolyMate is a modern forum for it.",
+  "v": "forum",
+  "bg": "cream",
+  "cap": "Ancient forums were where people argued about what would happen next. PolyMate is a modern forum for the future: building tools to trade it, fast."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "PolyMate",
+  "s": "The trading layer for prediction markets.",
+  "bg": "cream",
+  "cap": "PolyMate: the trading layer for prediction markets. Building tools to trade the future, fast. Start trading at t.me/Tryoddsbot. @Polymatedotfun"
+ }
+]

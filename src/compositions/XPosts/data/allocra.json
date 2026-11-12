@@ -1,0 +1,209 @@
+[
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "A series of deliberate choices.",
+  "hi": "deliberate choices",
+  "s": "Every great portfolio, like every great painting.",
+  "v": "p:scholars",
+  "bg": "red",
+  "cap": "Old masters. New allocation. Every great portfolio, like every great painting, is a series of deliberate choices. Allocra borrows the patience of the old masters for the way you invest."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Concentration is not overlap.",
+  "hi": "not overlap",
+  "items": [
+   "Concentration|How much of a basket sits in one position or one issuer.",
+   "Overlap|The same holdings showing up in more than one fund."
+  ],
+  "bg": "dark",
+  "cap": "Two things that get mixed up. Concentration: how much of a basket sits in one position or issuer. Overlap: the same holdings appearing in more than one fund. Allocra shows both before you confirm."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Quotes and costs, before you click.",
+  "hi": "before you click",
+  "s": "A quote is the price you are shown. A cost is what it takes to act on it. Both belong in the plan.",
+  "v": "p:reader",
+  "bg": "cream",
+  "cap": "A quote is the price you are shown. Trading costs are what it takes to act on it. Allocra puts both next to your plan, so you see concentration, overlap, quotes and trading costs before you confirm."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Allocation is the split. Selection is the pick.",
+  "hi": "Selection is the pick.",
+  "s": "Deciding how much goes where is a different job from choosing what to buy.",
+  "v": "bars",
+  "bg": "red",
+  "cap": "Allocation is how your money is split. Selection is which things you pick inside each slice. Allocra starts with the first: plan a tokenized ETF basket around the positions you actually want to own."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Plan first.",
+  "hi": "first",
+  "s": "Allocation slate (Preview): Core allocation, 3 ETFs. US equity 55%, International equity 25%, US bonds 20%.",
+  "v": "slate",
+  "bg": "dark",
+  "cap": "Plan first. The allocation slate in the TestNet demo shows a sample Core allocation across 3 ETFs: US equity 55%, International equity 25%, US bonds 20%. Preview data. Assets remain individually held until you approve a trade."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Build a basket that feels like yours.",
+  "hi": "feels like yours",
+  "s": "Adjust target weights and see the basket diagnostics respond. Preview / TestNet demo.",
+  "v": "ui:basket",
+  "bg": "red",
+  "cap": "Build a basket that feels like yours. In the TestNet demo, adjust target weights and watch the basket diagnostics respond. Preview data, not investment advice."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Look beneath the percentages.",
+  "hi": "beneath",
+  "s": "Portfolio diagnostics in the Preview: largest issuer, holding overlap, estimated trading cost.",
+  "v": "ui:insights",
+  "bg": "dark",
+  "cap": "Look beneath the percentages. Portfolio diagnostics in the Preview cover largest issuer, holding overlap and estimated trading cost. Sample values from the TestNet demo."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Your portfolio, in perspective.",
+  "hi": "in perspective",
+  "s": "Allocation overview, portfolio path and the 'Before you trade' checks. Preview / TestNet demo.",
+  "v": "ui:overview",
+  "bg": "cream",
+  "cap": "Your portfolio, in perspective. The overview page brings together your allocation, the portfolio path and the checks to run before you trade. Preview / TestNet demo."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Nothing moves until you say so.",
+  "hi": "you say so",
+  "s": "Assets remain individually held until you approve a trade.",
+  "v": "p:reader",
+  "bg": "red",
+  "cap": "Plan first. Assets remain individually held until you approve a trade. Allocra is a planning desk: nothing moves until you say so. TestNet demo."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What do you check before you confirm?",
+  "hi": "before you confirm",
+  "items": [
+   "A  Concentration",
+   "B  Overlap",
+   "C  Quotes",
+   "D  Trading costs"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "dark",
+  "cap": "Community question: before you confirm a trade, what do you check first? A) Concentration B) Overlap C) Quotes D) Trading costs. Tell us what you look at and why."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which sleeve do you start with?",
+  "hi": "start with",
+  "items": [
+   "A  Income",
+   "B  Core",
+   "C  Growth",
+   "D  I plan all three"
+  ],
+  "s": "The demo slate has three tabs: Income, Core, Growth.",
+  "bg": "cream",
+  "cap": "The allocation slate has three tabs: Income, Core and Growth. Which one do you plan first? A) Income B) Core C) Growth D) All three together."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Defaults are decisions someone else made.",
+  "hi": "someone else",
+  "s": "Make yours on purpose.",
+  "bg": "red",
+  "cap": "A default is just a decision someone else made for you. Allocation is better made on purpose. Plan clearly. Act deliberately."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Volatility is part of the story.",
+  "hi": "part of the story",
+  "s": "Hold steady.",
+  "v": "p:lions",
+  "bg": "dark",
+  "cap": "Volatility is part of the story. A portfolio looked at only when it is calm hides the chapters that test it. Hold steady, and plan for the whole book."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Looking back is not looking ahead.",
+  "hi": "not looking ahead",
+  "s": "Know the risk.",
+  "bg": "cream",
+  "cap": "Past performance tells you what happened, not what will. Know the risk before you act. Strategy over reaction."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A $1,200 monthly plan.",
+  "hi": "$1,200",
+  "s": "Hypothetical, using the demo slate: spread a monthly purchase across the weights you set.",
+  "v": "bars",
+  "bg": "dark",
+  "cap": "Use case (hypothetical): you plan a monthly purchase of $1,200 and split it across the weights you chose. The demo slate shows the monthly purchase and an estimated annual cost before you confirm. Preview data."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Before adding another fund.",
+  "hi": "another fund",
+  "s": "Hypothetical. Does the new fund share holdings with what you already own?",
+  "v": "venn",
+  "bg": "red",
+  "cap": "Use case (hypothetical): you are about to add another fund to a basket. Check overlap first: does it share holdings with what you already own? Concentration and overlap are on the page before you confirm."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Strategy over reaction.",
+  "hi": "reaction",
+  "s": "Every move is a decision.",
+  "v": "p:chess",
+  "bg": "cream",
+  "cap": "Every move is a decision. Strategy over reaction. Plan the position, check the numbers, then act on purpose."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "A private allocation desk.",
+  "hi": "private",
+  "s": "Private allocation desk / 01. Your assets. Your allocation.",
+  "v": "site:home",
+  "bg": "dark",
+  "cap": "Private allocation desk / 01. Your assets. Your allocation. Plan a tokenized ETF basket around the positions you actually want to own."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Built around the tokenization ecosystem.",
+  "s": "Allocra tracks the protocols that bring real-world assets onchain. Names belong to their owners; Allocra is not affiliated with, sponsored or endorsed by them.",
+  "v": "site:universe",
+  "bg": "red",
+  "cap": "Allocra tracks the protocols that bring real-world assets onchain, with links so you can check each profile yourself. Names belong to their owners. Not affiliated with, sponsored or endorsed by these protocols."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "Plan clearly. Act deliberately.",
+  "s": "Assets remain individually held. Preview / TestNet demo.",
+  "bg": "red",
+  "cap": "Allocra: a tokenized ETF basket planned around the positions you actually want to own. See concentration, overlap, quotes and trading costs before you confirm. Preview / TestNet demo. allocra.buzz"
+ }
+]

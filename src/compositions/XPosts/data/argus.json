@@ -1,0 +1,194 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "Why can't we see contamination?",
+  "hi": "can't see",
+  "s": "Microbes are far too small for the eye. A surface can look spotless and still carry them.",
+  "v": "vf",
+  "cap": "Why can't we see contamination? Microbes are far too small for the eye, so a surface can look spotless and still carry them. Argus detects microbial contamination invisible to the human eye."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is UV fluorescence?",
+  "hi": "UV fluorescence",
+  "s": "Some materials absorb ultraviolet light and re-emit it as visible light. That glow can reveal what white light misses.",
+  "v": "specks",
+  "cap": "UV fluorescence: some materials absorb ultraviolet light and re-emit it as visible light. That glow can reveal what white light misses. It's the first layer in Argus."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is optical computer vision?",
+  "hi": "computer vision",
+  "s": "Software that reads images and turns what it sees into measurements.",
+  "v": "pipe",
+  "cap": "Optical computer vision is software that reads images and turns what it sees into measurements. In Argus it works on what UV fluorescence reveals."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Inference time, explained.",
+  "hi": "Inference time",
+  "s": "How long a model takes to produce a result from one input. Argus states 15 ms on its profile.",
+  "v": "stats",
+  "cap": "Inference time is how long a model takes to produce a result from one input. Argus states 15 ms inference on its profile. Fast results are what make checking practical."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Precision, explained.",
+  "hi": "Precision",
+  "s": "Of everything a model flags, the share that is correct. Argus states 99.4% precision on its profile.",
+  "v": "prec",
+  "cap": "Precision: of everything a model flags, the share that is correct. Argus states 99.4% precision on its profile. In plain terms, about 994 of every 1,000 flags would be right."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Looks clean vs is clean.",
+  "hi": "is clean",
+  "items": [
+   "Looks clean|What the eye can confirm.",
+   "Is clean|What a measurement can confirm."
+  ],
+  "cap": "Looks clean is what the eye can confirm. Is clean is what a measurement can confirm. They're not the same thing, and the gap is invisible by definition."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Three layers, one pipeline.",
+  "hi": "one pipeline",
+  "s": "UV fluorescence + optical CV + biomedical AI.",
+  "v": "pipe",
+  "cap": "Three layers, one pipeline: UV fluorescence, optical computer vision and biomedical AI, working together to detect microbial contamination invisible to the human eye."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "The foundation is Virtu.",
+  "hi": "Virtu",
+  "s": "Argus is built on Virtu, as stated on its profile.",
+  "v": "specks",
+  "cap": "The foundation is Virtu. Argus is built on Virtu, as stated on its profile, with UV fluorescence, optical CV and biomedical AI on top."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "15 ms. 99.4%.",
+  "hi": "99.4%",
+  "s": "Inference time and precision, as stated on the Argus profile.",
+  "v": "stats",
+  "cap": "15 ms inference. 99.4% precision. Both figures are as stated on the Argus profile. Speed and accuracy are what make an invisible problem practical to check."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A hospital corridor that looks clean.",
+  "hi": "looks clean",
+  "s": "Hypothetical. Looking clean is the starting point, not the answer.",
+  "v": "vf",
+  "cap": "Use case (hypothetical): a corridor that looks clean. Looking clean is the starting point, not the answer. Argus is about checking what the eye can't."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A prep surface, between shifts.",
+  "hi": "between shifts",
+  "s": "Hypothetical. A quick check on what white light can't show.",
+  "v": "specks",
+  "cap": "Use case (hypothetical): a food prep surface between shifts. A quick UV-based check on what white light can't show. Illustration only."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A lab bench, before the next sample.",
+  "hi": "before the next sample",
+  "s": "Hypothetical. Confirm the surface is clean before it matters.",
+  "v": "vf",
+  "cap": "Use case (hypothetical): a lab bench before the next sample. Confirm the surface is clean before it matters, not after. Illustration only."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Where would invisible contamination worry you most?",
+  "hi": "worry you most",
+  "items": [
+   "A  Kitchens",
+   "B  Hospitals",
+   "C  Labs",
+   "D  Public transport"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "cap": "Where would invisible contamination worry you most? A) Kitchens B) Hospitals C) Labs D) Public transport. Tell us why in the replies."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Would you trust 'looks clean'?",
+  "hi": "looks clean",
+  "items": [
+   "A  Always",
+   "B  In some places",
+   "C  Rarely",
+   "D  Never"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "cap": "It looks clean. Would you trust that? A) Always B) In some places C) Rarely D) Never. What would you want to see before you did?"
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which matters more: speed or precision?",
+  "hi": "speed or precision",
+  "items": [
+   "A  Speed",
+   "B  Precision",
+   "C  Both equally",
+   "D  Depends on the place"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "cap": "Which matters more when you're checking for contamination: speed or precision? A) Speed B) Precision C) Both equally D) Depends on the place. Argus states 15 ms and 99.4%."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Visible is a low bar.",
+  "hi": "low bar",
+  "s": "Our view.",
+  "cap": "Our view: visible is a low bar. If the only test for clean is what the eye can see, we're missing the part that matters."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Clean should be measured, not assumed.",
+  "hi": "measured, not assumed",
+  "s": "Our view.",
+  "cap": "Our view: clean should be measured, not assumed. Assumptions are comfortable. Measurements are useful."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "You can't manage what you can't see.",
+  "hi": "can't see",
+  "s": "Our view.",
+  "cap": "Our view: you can't manage what you can't see. Making the invisible visible is the first step. Everything else follows."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Light the eye can't see.",
+  "hi": "can't see",
+  "s": "UV fluorescence, optical CV and biomedical AI, working together.",
+  "v": "pipe",
+  "cap": "Light the eye can't see can reveal what it can't. UV fluorescence, optical computer vision and biomedical AI, working together to make the invisible visible."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "argus",
+  "s": "Making the Invisible Visible.",
+  "cap": "Argus: detecting microbial contamination invisible to the human eye. UV fluorescence, optical computer vision and biomedical AI, built on Virtu. 15 ms inference, 99.4% precision, as stated on the profile. argus-iota.vercel.app"
+ }
+]

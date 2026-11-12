@@ -1,0 +1,225 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a stale oracle?",
+  "hi": "stale",
+  "s": "A price feed that stopped updating. The market keeps moving; the number on your screen does not.",
+  "v": "feed",
+  "bg": "night",
+  "cap": "A stale oracle is a price feed that stopped updating. The market keeps moving; the number on your screen doesn't. That gap is where collateral risk can hide. Collatera watches price freshness. Illustrative graphic."
+ },
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a collateral buffer?",
+  "hi": "buffer",
+  "s": "The room a position has before it needs attention.",
+  "v": "buffer",
+  "bg": "green",
+  "cap": "A collateral buffer is the room a position has before it needs attention. It is one of three things Collatera watches, with price freshness and closed-market liquidity risk. Gauges shown are illustrative."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Why closed markets matter.",
+  "hi": "closed markets",
+  "s": "Tokenized stocks track markets that close. Prices can gap between market close and the next open.",
+  "v": "gap",
+  "bg": "night",
+  "cap": "Tokenized stocks follow markets that close. Prices can gap between market close and the next open, and onchain collateral doesn't pause. Closed-market liquidity risk is one of the three things Collatera monitors. Illustrative."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Stress test the price.",
+  "hi": "Stress test",
+  "s": "Drag the price down and see the effect. A user-chosen scenario, not a forecast.",
+  "v": "slider",
+  "bg": "green",
+  "cap": "A stress test asks 'what if?' without predicting. Drag the price down 20% and see what it does to the position. A user-chosen scenario, not a forecast. Illustrative."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Three checks for a loan backed by tokenized assets",
+  "hi": "Three checks",
+  "items": [
+   "Buffer",
+   "Price freshness",
+   "Closed-market liquidity risk"
+  ],
+  "bg": "night",
+  "cap": "Three checks for a loan backed by tokenized stocks or ETFs: 1) the buffer 2) price freshness 3) closed-market liquidity risk. Collatera monitors all three, read-only."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Fresh vs stale.",
+  "hi": "stale",
+  "items": [
+   "Fresh|The feed is updating on schedule.",
+   "Stale|The feed stopped. Numbers still look calm. They may be old."
+  ],
+  "bg": "green",
+  "cap": "Fresh: the feed is updating on schedule. Stale: the feed stopped, and the numbers still look calm. They may be old. Telling them apart is the point of price-freshness monitoring."
+ },
+ {
+  "a": "Product",
+  "k": "steps",
+  "h": "Monitor. Stress test. Alert. Preview.",
+  "hi": "Alert.",
+  "items": [
+   "Monitor the position",
+   "Stress test the price",
+   "Get alerts",
+   "Preview repayment"
+  ],
+  "lab": "Workflow",
+  "bg": "night",
+  "cap": "Collatera's workflow: Monitor the position. Stress test the price. Get alerts. Preview repayment. See it, understand it, then decide."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Read-only, by design.",
+  "hi": "Read-only",
+  "s": "Preview only. No transaction is sent. You decide.",
+  "v": "ro",
+  "bg": "green",
+  "cap": "Collatera is read-only risk monitoring. Preview only: no transaction is sent, and you decide. It watches; it doesn't move funds."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Preview the repayment.",
+  "hi": "repayment",
+  "s": "See what a repayment would do to the buffer before you decide. Preview only.",
+  "v": "buffer",
+  "bg": "night",
+  "cap": "Before you repay, preview it. Collatera's last workflow step shows what a repayment would do to the position. Preview only: no transaction is sent. Illustrative gauges."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "A demo vault, modelled on Algorand.",
+  "hi": "demo vault",
+  "s": "Demo v1 shows how monitoring works on lending markets like Algorand's. Demo data only.",
+  "v": "moon",
+  "bg": "green",
+  "cap": "Demo v1 is a demo vault modelled on Algorand lending markets, built to show how collateral monitoring works. Demo data only, starting on Algorand."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What do you check first on a loan?",
+  "hi": "first",
+  "items": [
+   "A  Buffer",
+   "B  Price freshness",
+   "C  Market hours",
+   "D  Repayment path"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "night",
+  "cap": "Community question: you open a loan backed by tokenized assets. What do you check first? A) Buffer B) Price freshness C) Market hours D) Repayment path. Tell us why in the replies."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which alert would you want first?",
+  "hi": "alert",
+  "items": [
+   "A  Stale price",
+   "B  Low buffer",
+   "C  Market about to close",
+   "D  Market about to open"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "green",
+  "cap": "If you could only get one alert, which would it be? A) Stale price B) Low buffer C) Market about to close D) Market about to open. Collatera is about getting the right signal early."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Weekend price gaps: priced in?",
+  "hi": "priced in",
+  "items": [
+   "A  Always",
+   "B  Sometimes",
+   "C  Never thought about it",
+   "D  What gap?"
+  ],
+  "s": "Be honest. Reply with A to D.",
+  "bg": "night",
+  "cap": "Prices can gap between market close and the next open. Do you price that in when you borrow against tokenized stocks? A) Always B) Sometimes C) Never thought about it D) What gap?"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Dashboards should explain, not just alarm.",
+  "hi": "explain",
+  "s": "Our view.",
+  "bg": "lime",
+  "cap": "Our take: a risk dashboard that only alarms makes you anxious, not informed. See it. Understand it. Then decide. That is the order we prefer.",
+  "v": "mascot"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Risk is not only the price. It is how fresh the price is.",
+  "hi": "how fresh the price is",
+  "s": "Our view.",
+  "bg": "night",
+  "cap": "Our take: collateral risk isn't only about what the price is. It's about how fresh the price is, and whether the market behind it is even open.",
+  "v": "mascot"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A borrower, before the weekend.",
+  "hi": "before the weekend",
+  "s": "Hypothetical. Check the buffer and closed-market risk before the market closes.",
+  "v": "gap",
+  "bg": "green",
+  "cap": "Use case (hypothetical): a borrower with a loan backed by tokenized stocks checks the buffer and closed-market risk before the market closes for the weekend. Illustrative graphic."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "An analyst, comparing two feeds.",
+  "hi": "two feeds",
+  "s": "Hypothetical. Which one is fresh, and which one only looks calm?",
+  "v": "feed",
+  "bg": "night",
+  "cap": "Use case (hypothetical): an analyst compares two price feeds. Which is fresh, and which only looks calm? Price-freshness monitoring answers that at a glance. Illustrative."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Start with seeing.",
+  "hi": "seeing",
+  "s": "A read-only monitor puts understanding before any action.",
+  "v": "ro",
+  "bg": "lime",
+  "cap": "We start with seeing. A read-only monitor puts understanding before any action: monitoring first, automation later."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Built in pixels. Watching in real time.",
+  "hi": "Watching",
+  "s": "Monitoring collateral risk across DeFi and tokenized assets.",
+  "v": "mascot",
+  "bg": "night",
+  "cap": "Built in pixels, watching in real time. Collatera monitors collateral risk across DeFi and tokenized assets, with real-time signals for smarter risk decisions."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "Collatera",
+  "s": "Real-time signals. Smarter risk decisions.",
+  "bg": "night",
+  "cap": "Collatera: monitoring collateral risk across DeFi and tokenized assets. Real-time signals. Smarter risk decisions. Read-only, starting on Algorand with Demo v1. collatera.buzz"
+ }
+]

@@ -1,0 +1,223 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is smart contract risk?",
+  "hi": "smart contract risk",
+  "s": "The chance that a bug or exploit in a contract's code costs users their funds.",
+  "v": "lock",
+  "bg": "light",
+  "cap": "Smart contract risk: the chance that a bug or exploit in a contract's code costs users their funds. It's one reason 'hoping nothing breaks' isn't a security strategy. #SafeFi #SmartContractRisk"
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "An audit is not a guarantee.",
+  "hi": "not a guarantee",
+  "s": "Audits reduce risk. They don't remove it.",
+  "v": "shield",
+  "bg": "dark",
+  "cap": "An audit is a careful review, not a guarantee. It can reduce risk; it can't remove it. That gap is what onchain security has to plan for."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Hope vs a plan.",
+  "hi": "a plan",
+  "items": [
+   "Hope|Nothing breaks, and you never have to think about it.",
+   "A plan|You decide in advance what happens if something does."
+  ],
+  "bg": "light",
+  "cap": "Hope: nothing breaks, and you never have to think about it. A plan: you decide in advance what happens if something does. Security is the second one."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is decentralized insurance?",
+  "hi": "decentralized",
+  "s": "Cover whose rules live in code and community, not in one company. In general terms; details vary by protocol.",
+  "v": "shield",
+  "bg": "light",
+  "cap": "In general terms, decentralized insurance means cover whose rules live in code and community rather than in a single company. Details vary by protocol, so always read the terms. #CryptoInsurance"
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Where onchain risk can come from",
+  "hi": "onchain risk",
+  "items": [
+   "A bug in contract code",
+   "A failing price oracle",
+   "A governance attack",
+   "A compromised key"
+  ],
+  "bg": "dark",
+  "cap": "Where onchain risk can come from: a bug in contract code, a failing price oracle, a governance attack, a compromised key. Different risks, one goal: know them before you deposit. #DeFi"
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Self-custody means self-responsibility.",
+  "hi": "self-responsibility",
+  "s": "Mistakes onchain are hard to reverse. Plan before you sign.",
+  "v": "tiles",
+  "bg": "light",
+  "cap": "Self-custody gives you control, and with it the responsibility. Mistakes onchain are hard to reverse, so plan before you sign."
+ },
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a stablecoin depeg?",
+  "hi": "depeg",
+  "s": "When a stablecoin trades away from the price it is meant to hold.",
+  "v": "tiles",
+  "bg": "dark",
+  "cap": "A stablecoin depeg is when a stablecoin trades away from the price it is meant to hold. It's one of the onchain risks worth knowing before you deposit. #DeFi"
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Cover for your digital assets.",
+  "hi": "Cover",
+  "s": "Decentralized insurance, built for onchain.",
+  "bg": "light",
+  "v": "shield",
+  "cap": "SafeFi is building cover for your digital assets: decentralized insurance, on-chain. Details will matter, and we'll keep it plain. #SafeFi #CryptoInsurance"
+ },
+ {
+  "a": "Product",
+  "k": "list",
+  "h": "Three lines, one idea.",
+  "hi": "one idea",
+  "items": [
+   "Decentralized protection for your digital assets.",
+   "On-chain security. Web3 insurance.",
+   "Building a safer decentralized future."
+  ],
+  "bg": "dark",
+  "cap": "Three lines, one idea. Decentralized protection for your digital assets. On-chain security. Web3 insurance. Building a safer decentralized future. #SafeFi"
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Web3 insurance, on-chain.",
+  "hi": "on-chain",
+  "s": "On-chain security. Web3 insurance.",
+  "bg": "light",
+  "v": "globe",
+  "cap": "On-chain security. Web3 insurance. Digital assets live onchain, so the protection around them should too. That's the idea behind SafeFi."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What worries you most onchain?",
+  "hi": "worries",
+  "items": [
+   "A  Contract bugs",
+   "B  Oracle failures",
+   "C  Stablecoin depegs",
+   "D  Phishing"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "light",
+  "cap": "Community question: what worries you most onchain? A) Contract bugs B) Oracle failures C) Stablecoin depegs D) Phishing. Tell us what you do about it. #DeFi"
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Do you read the audit before you deposit?",
+  "hi": "audit",
+  "items": [
+   "A  Always",
+   "B  I skim it",
+   "C  Rarely",
+   "D  What audit?"
+  ],
+  "s": "Be honest. Reply A to D.",
+  "bg": "dark",
+  "cap": "Do you read the audit before you deposit? A) Always B) I skim it C) Rarely D) What audit? No judgement. Knowing what an audit does and doesn't cover is a good habit."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Is a small premium worth the peace of mind?",
+  "hi": "peace of mind",
+  "items": [
+   "A  Yes",
+   "B  Maybe",
+   "C  Depends on the cover",
+   "D  No"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "light",
+  "cap": "Would a small premium be worth the peace of mind? A) Yes B) Maybe C) Depends on the cover D) No. We're curious how you think about onchain risk. #CryptoInsurance"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Security is a habit, not a launch checklist.",
+  "hi": "a habit",
+  "s": "Our view.",
+  "bg": "light",
+  "cap": "Our view: security is a habit, not a launch checklist. It's what you do every day, long after the audit is published.",
+  "v": "lock"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "'It's audited' is where the questions start.",
+  "hi": "where the questions start",
+  "s": "Our view.",
+  "bg": "dark",
+  "cap": "Our view: 'it's audited' is where the questions start, not where they end. Audited by whom, what scope, and what happens if it still fails?",
+  "v": "shield"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Insurance is for the day the plan fails.",
+  "hi": "the plan fails",
+  "s": "Our view.",
+  "bg": "light",
+  "cap": "Our view: insurance isn't for the days that go to plan. It's for the day the plan fails. That's why it belongs in a security strategy.",
+  "v": "tiles"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A liquidity provider, asking 'what if?'",
+  "hi": "what if",
+  "s": "Hypothetical. You've deposited into a pool. What happens if the contract fails?",
+  "v": "lock",
+  "bg": "dark",
+  "cap": "Use case (hypothetical): you've deposited into a liquidity pool and a question crosses your mind: what happens if the contract fails? That 'what if' is where decentralized insurance starts."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A long-term holder, planning for tail events.",
+  "hi": "tail events",
+  "s": "Hypothetical. You hold ETH and BTC and want a plan for the rare, bad day.",
+  "v": "tiles",
+  "bg": "light",
+  "cap": "Use case (hypothetical): a long-term holder of ETH and BTC wants a plan for the rare, bad day, not just the good ones. Protection is part of the plan."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Most of us have asked 'what if this breaks?'",
+  "hi": "what if this breaks",
+  "s": "That question is why we're building.",
+  "v": "shield",
+  "bg": "dark",
+  "cap": "Most of us have asked 'what if this breaks?' at some point onchain. That question is why we're building SafeFi: a safer decentralized future."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "SafeFi",
+  "s": "Decentralized protection for your digital assets.",
+  "cap": "SafeFi: decentralized protection for your digital assets. On-chain security. Web3 insurance. Building a safer decentralized future. safefisolana.vercel.app #SafeFi"
+ }
+]

@@ -1,0 +1,217 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is DeSci?",
+  "hi": "DeSci",
+  "s": "Decentralized science: using open, onchain tools to fund, share and verify research.",
+  "v": "mol",
+  "bg": "planet",
+  "cap": "What is DeSci? Decentralized science: using open, onchain tools to fund, share and verify research. Maybe that's where the future of science is heading."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Why is funding research hard?",
+  "hi": "funding",
+  "s": "Grants, paperwork and gatekeepers can slow good ideas down. Maybe blockchain can help fix that.",
+  "v": "flow",
+  "bg": "plain",
+  "cap": "Funding scientific research can be painfully complicated: grants, paperwork, gatekeepers. Maybe blockchain can help fix that. That's the question behind DeSci."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What can a blockchain record?",
+  "hi": "record",
+  "s": "Who contributed what, and when, in a way that is hard to quietly change.",
+  "v": "chain",
+  "bg": "plain",
+  "cap": "A blockchain can record who contributed what, and when, in a way that is hard to quietly change. For research, a clear record of contribution is a useful thing."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Four ingredients of DeSci",
+  "hi": "DeSci",
+  "items": [
+   "Research · asking and testing",
+   "Funding · paying for the work",
+   "Collaboration · working across labs",
+   "AI · helping with analysis"
+  ],
+  "bg": "plain",
+  "cap": "Four ingredients in decentralized science: Research, Funding, Collaboration and AI. desciBnb brings them together with blockchain, built on BNB Chain."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is BNB Chain?",
+  "hi": "BNB Chain",
+  "s": "A blockchain that works with Ethereum-style tooling. desciBnb is built on it.",
+  "v": "logo",
+  "bg": "planet",
+  "cap": "BNB Chain is a blockchain that works with Ethereum-style tooling. desciBnb is built on BNB Chain: Research × AI × Blockchain."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Closed data vs open data.",
+  "hi": "open data",
+  "items": [
+   "Closed|Findings sit behind barriers. Few can check or build on them.",
+   "Open|Others can check, reuse and build on what was found."
+  ],
+  "bg": "plain",
+  "cap": "Closed data: findings sit behind barriers, and few can check or build on them. Open data: others can check, reuse and build on what was found. DeSci leans open."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Three disciplines, one stack.",
+  "hi": "one stack",
+  "s": "Research, AI and blockchain, on BNB Chain.",
+  "v": "mol",
+  "bg": "planet",
+  "cap": "Three disciplines, one stack: research, AI and blockchain, built on BNB Chain. That is where desciBnb sits."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is peer review?",
+  "hi": "peer review",
+  "s": "Experts checking research before it is published. Valuable, and slow to scale.",
+  "v": "chain",
+  "bg": "plain",
+  "cap": "Peer review is experts checking research before it's published. It's valuable, and hard to scale. A clear, open record of who reviewed what is one idea DeSci explores."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is a smart contract?",
+  "hi": "smart contract",
+  "s": "Code on a blockchain that runs agreed rules, so no middleman has to.",
+  "v": "mol",
+  "bg": "planet",
+  "cap": "A smart contract is code on a blockchain that runs agreed rules automatically, so no middleman has to. For research funding, the rules can be visible to everyone."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What slows research down most?",
+  "hi": "slows",
+  "items": [
+   "A  Funding",
+   "B  Access to data",
+   "C  Collaboration",
+   "D  Peer review"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "plain",
+  "cap": "Community question: what slows research down the most? A) Funding B) Access to data C) Collaboration D) Peer review. Researchers especially: tell us what you've run into."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Would you fund a study onchain?",
+  "hi": "fund",
+  "items": [
+   "A  Yes",
+   "B  Maybe",
+   "C  I'd need to learn more",
+   "D  No"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "planet",
+  "cap": "Would you fund a scientific study onchain? A) Yes B) Maybe C) I'd need to learn more D) No. Tell us what would make you comfortable."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which field needs DeSci first?",
+  "hi": "first",
+  "items": [
+   "A  Biology",
+   "B  Climate",
+   "C  Materials",
+   "D  Space"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "plain",
+  "cap": "Which field needs DeSci first? A) Biology B) Climate C) Materials D) Space. If it's another one, say so in the replies."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Funding a discovery shouldn't be harder than making a trade.",
+  "hi": "harder than making a trade",
+  "s": "Our view.",
+  "bg": "planet",
+  "cap": "Our view: funding a discovery shouldn't be harder than making a trade. We can move assets in a few clicks. Moving support to research should be simpler too."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Discovery compounds when it's shared.",
+  "hi": "shared",
+  "s": "Our view.",
+  "bg": "plain",
+  "cap": "Our view: discovery compounds when it's shared. Each result that others can check and build on is worth more than one that stays in a drawer."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "AI speeds up research. Trust still has to be built.",
+  "hi": "Trust still has to be built.",
+  "s": "Our view.",
+  "bg": "planet",
+  "cap": "Our view: AI can speed up research, but trust still has to be built, with clear records of who did what and how. That's where blockchain can help."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "A small lab, opening a proposal.",
+  "hi": "opening a proposal",
+  "s": "Hypothetical. A lab shares a research idea and invites support in the open.",
+  "v": "chain",
+  "bg": "plain",
+  "cap": "Use case (hypothetical): a small lab shares a research proposal in the open and invites support, with a clear, public record of what was asked and what came in."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Two labs, one shared record.",
+  "hi": "shared record",
+  "s": "Hypothetical. Both can see who contributed what.",
+  "v": "nodes",
+  "bg": "planet",
+  "cap": "Use case (hypothetical): two labs working on one question keep a shared record of who contributed what. Collaboration is easier when credit is clear."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "An AI assistant, reviewing literature.",
+  "hi": "reviewing literature",
+  "s": "Hypothetical. AI helps read; people still decide what it means.",
+  "v": "flow",
+  "bg": "plain",
+  "cap": "Use case (hypothetical): an AI assistant helps review the literature. AI helps read; people still decide what it means. Research × AI, with humans in charge."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "A belief we are building toward.",
+  "hi": "building toward",
+  "s": "The future of science is decentralized.",
+  "v": "logo",
+  "bg": "planet",
+  "cap": "The future of science is decentralized. It's a belief, and desciBnb is early in building toward it, on BNB Chain."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "desciBnb",
+  "s": "The future of science is decentralized.",
+  "cap": "desciBnb: the future of science is decentralized. Research × AI × Blockchain, built on BNB Chain. Decentralizing scientific discovery. desciai.vercel.app"
+ }
+]

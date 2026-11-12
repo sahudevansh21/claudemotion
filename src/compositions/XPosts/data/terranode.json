@@ -1,0 +1,218 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is edge AI?",
+  "hi": "edge AI",
+  "s": "AI that runs on the device in the field, so it keeps working without a connection.",
+  "v": "node",
+  "bg": "cream",
+  "cap": "What is edge AI? AI that runs on the device itself, in the field, so it keeps working without a connection. TerraNode is offline edge-AI for smarter farms."
+ },
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is LoRa?",
+  "hi": "LoRa",
+  "s": "A long-range, low-power radio technology. Small messages travel far without mobile coverage.",
+  "v": "lora",
+  "bg": "gold",
+  "cap": "LoRa is a long-range, low-power radio technology. Small messages can travel far without mobile coverage, which suits sensors spread across a farm. TerraNode uses LoRa."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Why offline matters on a farm.",
+  "hi": "offline",
+  "s": "Fields are often beyond good coverage. A tool that needs the internet stops where the signal does.",
+  "bg": "cream",
+  "cap": "Fields are often beyond good coverage. A tool that needs the internet stops where the signal does. That's why TerraNode is AI-powered farming without the internet."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What soil moisture tells you.",
+  "hi": "soil moisture",
+  "s": "How much water is in the soil. One input to deciding when to irrigate.",
+  "v": "readings",
+  "bg": "gold",
+  "cap": "Soil moisture tells you how much water is in the soil. It's one input to deciding when to irrigate. Values shown are from the illustrative example dashboard."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Five readings in the example dashboard",
+  "hi": "Five readings",
+  "items": [
+   "Soil moisture",
+   "Temperature",
+   "Humidity",
+   "Light",
+   "Air quality"
+  ],
+  "bg": "cream",
+  "cap": "Five readings in the TerraNode example dashboard: soil moisture, temperature, humidity, light and air quality. Illustrative values, not live data."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Crop disease & pest detection.",
+  "hi": "detection",
+  "s": "Leaf analysis at the edge. The result shown is an illustrative example.",
+  "v": "leaf",
+  "bg": "cream",
+  "cap": "Crop disease and pest detection: TerraNode's leaf analysis runs at the edge, so it works in the field without internet. Example result shown is illustrative."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Smart irrigation.",
+  "hi": "irrigation",
+  "s": "Smart irrigation with LoRa and solar. The farmer approves the action.",
+  "v": "irrig",
+  "bg": "gold",
+  "cap": "Smart irrigation with LoRa and solar. TerraNode suggests; the farmer approves. The prompt shown is an illustrative example."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Powered by the sun.",
+  "hi": "sun",
+  "s": "Pole, tilted solar panel, antenna and enclosure: the field unit in the banner.",
+  "v": "node",
+  "bg": "cream",
+  "cap": "Powered by the sun. The TerraNode field unit pairs a tilted solar panel with an antenna and an enclosure on a pole, with edge AI and LoRa inside. Illustration of the unit."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "Farmer-approved actions.",
+  "hi": "approved",
+  "s": "The system suggests. The farmer decides.",
+  "v": "irrig",
+  "bg": "violet",
+  "cap": "Farmer-approved actions: TerraNode suggests, the farmer decides. Automation that keeps the person who knows the land in charge. Example prompt is illustrative."
+ },
+ {
+  "a": "Product",
+  "k": "big",
+  "h": "AI-powered farming, without the internet.",
+  "hi": "without the internet",
+  "s": "Offline Edge-AI for Smarter Farms.",
+  "bg": "gold",
+  "cap": "AI-powered farming, without the internet. Crop disease and pest detection, smart irrigation, LoRa and solar: offline edge-AI for smarter farms."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What would you automate first?",
+  "hi": "first",
+  "items": [
+   "A  Irrigation",
+   "B  Disease alerts",
+   "C  Pest alerts",
+   "D  Field readings"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "cream",
+  "cap": "Farmers: what would you automate first? A) Irrigation B) Disease alerts C) Pest alerts D) Field readings. Tell us what takes most of your time."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "What is connectivity like in your fields?",
+  "hi": "connectivity",
+  "items": [
+   "A  Good",
+   "B  Patchy",
+   "C  Almost none",
+   "D  Varies by field"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "gold",
+  "cap": "What is connectivity like in your fields? A) Good B) Patchy C) Almost none D) Varies by field. It decides which tools can actually work where you farm."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which reading do you check most?",
+  "hi": "most",
+  "items": [
+   "A  Soil moisture",
+   "B  Temperature",
+   "C  Humidity",
+   "D  Light"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "bg": "violet",
+  "cap": "Which reading do you check most? A) Soil moisture B) Temperature C) Humidity D) Light. Tell us what you do with it."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "The farmer decides.",
+  "hi": "decides",
+  "s": "Our view.",
+  "bg": "violet",
+  "cap": "Our view: the farmer decides. Tools should bring the right information to the person who knows the land, and leave the call with them.",
+  "v": "lora"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Smart farming shouldn't need a signal.",
+  "hi": "a signal",
+  "s": "Our view.",
+  "bg": "cream",
+  "cap": "Our view: smart farming shouldn't need a signal. If a tool stops working when the connection does, it isn't built for the field.",
+  "v": "node"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Simple beats clever when you're standing in a field.",
+  "hi": "Simple beats clever",
+  "s": "Our view.",
+  "bg": "gold",
+  "cap": "Our view: simple beats clever when you're standing in a field. A clear reading and a clear prompt are worth more than a clever dashboard.",
+  "v": "leaf"
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Catching a leaf problem early.",
+  "hi": "early",
+  "s": "Hypothetical. A scan flags a leaf for a closer look before it spreads.",
+  "v": "leaf",
+  "bg": "cream",
+  "cap": "Use case (hypothetical): a leaf scan flags a problem for a closer look early, rather than after it spreads. Detection at the edge, right in the field. Illustrative."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Watering the dry zone, not the whole field.",
+  "hi": "dry zone",
+  "s": "Hypothetical. Zone-level moisture readings drive a suggestion the farmer approves.",
+  "v": "irrig",
+  "bg": "gold",
+  "cap": "Use case (hypothetical): readings show one zone is dry. The system suggests watering that zone, and the farmer approves it. Illustrative example."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "Where the signal ends, the work doesn't.",
+  "hi": "the work doesn't",
+  "s": "AI-powered farming, without the internet.",
+  "v": "lora",
+  "bg": "violet",
+  "cap": "Where the signal ends, the work doesn't. TerraNode is AI-powered farming, without the internet: offline edge-AI for smarter farms."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "TerraNode",
+  "s": "Offline Edge-AI for Smarter Farms.",
+  "bg": "cream",
+  "cap": "TerraNode: offline edge-AI for smarter farms. AI-powered farming, without the internet. Crop disease and pest detection, smart irrigation, LoRa, solar, farmer-approved actions."
+ }
+]

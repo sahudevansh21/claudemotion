@@ -1,0 +1,205 @@
+[
+ {
+  "a": "Education",
+  "k": "qa",
+  "h": "What is a drawdown?",
+  "hi": "drawdown",
+  "s": "The fall from a peak to the next low. It shows how much you could have lost, not where you ended.",
+  "v": "dd",
+  "cap": "Drawdown: the fall from a peak to the next low. It tells you how much you could have lost along the way, not where you ended up. Chart: synthetic demo data."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "Same average. Different path.",
+  "hi": "Different path.",
+  "s": "Two series can end in the same place and feel nothing alike on the way.",
+  "v": "paths",
+  "cap": "Two paths can end at the same number and feel nothing alike on the way. That is why drawdown and path matter, not only the final return. Chart: synthetic demo data."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is a simulation, really?",
+  "hi": "simulation",
+  "s": "Many possible paths from the same assumptions. Read the range, not one line.",
+  "v": "fan",
+  "cap": "A market simulation runs many possible paths from the same assumptions. The useful output is the range, not any single line. Chart: synthetic demo data."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "What is a tokenized stock?",
+  "hi": "tokenized stock",
+  "s": "An onchain token designed to track a listed share. How it tracks varies by issuer.",
+  "v": "mark",
+  "cap": "Tokenized stocks are onchain tokens designed to track a listed share. How they track it varies by issuer, which research on onchain finance has to account for."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "ETFs, in one line.",
+  "hi": "ETFs",
+  "s": "A fund that holds a basket of assets, so one position gives you the whole basket.",
+  "v": "basket",
+  "cap": "An ETF is a fund that holds a basket of assets, so a single position gives you exposure to the basket. Look inside the basket before you look at the label. Illustration: synthetic."
+ },
+ {
+  "a": "Education",
+  "k": "list",
+  "h": "Every simulation inherits its assumptions.",
+  "hi": "assumptions",
+  "items": [
+   "The time window",
+   "The return distribution",
+   "The rebalancing rule",
+   "The cost model"
+  ],
+  "cap": "Every simulation inherits its assumptions: the time window, the return distribution, the rebalancing rule, the cost model. Change one and the answer moves. Read them first."
+ },
+ {
+  "a": "Education",
+  "k": "vs",
+  "h": "Volatility vs drawdown.",
+  "hi": "drawdown",
+  "items": [
+   "Volatility|How much returns swing around their average.",
+   "Drawdown|How far the path fell from its peak."
+  ],
+  "cap": "Volatility: how much returns swing around their average. Drawdown: how far the path fell from its peak. Related, not the same. A calm-looking series can still have a deep drawdown."
+ },
+ {
+  "a": "Education",
+  "k": "big",
+  "h": "The arithmetic of recovery.",
+  "hi": "recovery",
+  "s": "A 50% fall needs a 100% gain to get back to even.",
+  "v": "recov",
+  "cap": "The arithmetic of drawdowns: a 50% fall needs a 100% gain to get back to even. Depth matters, and so does the climb back. Illustration: synthetic demo data."
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "One number hides the path.",
+  "hi": "hides the path",
+  "s": "Return is a destination. Drawdown is the journey.",
+  "cap": "Our view: one number hides the path. Return is a destination; drawdown is the journey. Ask for both.",
+  "v": "mark"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "A backtest is a story. Read the assumptions.",
+  "hi": "Read the assumptions.",
+  "s": "Our view.",
+  "cap": "Our view: a backtest is a story told with the benefit of hindsight. Read the assumptions behind it before you trust the ending.",
+  "v": "mark"
+ },
+ {
+  "a": "Opinion",
+  "k": "quote",
+  "h": "Synthetic data is fine, if it says so.",
+  "hi": "if it says so",
+  "s": "Label it. Always.",
+  "cap": "Our view: synthetic data is a fine way to explain a method, as long as it says so. Every chart in this series is labelled.",
+  "v": "mark"
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which do you check first?",
+  "hi": "first",
+  "items": [
+   "A  Max drawdown",
+   "B  Recovery time",
+   "C  Volatility",
+   "D  Final return"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "cap": "Community question: you are comparing two strategies. Which number do you check first? A) Max drawdown B) Recovery time C) Volatility D) Final return."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "How long could you sit through a drawdown?",
+  "hi": "sit through",
+  "items": [
+   "A  Days",
+   "B  Weeks",
+   "C  Months",
+   "D  Years"
+  ],
+  "s": "Honest answers only. Reply A to D.",
+  "cap": "How long could you sit through a drawdown before you act? A) Days B) Weeks C) Months D) Years. The answer says more about a strategy than its average return."
+ },
+ {
+  "a": "Community question",
+  "k": "poll",
+  "h": "Which would you trust for tail risk?",
+  "hi": "tail risk",
+  "items": [
+   "A  Historical data",
+   "B  Simulated paths",
+   "C  Both",
+   "D  Neither"
+  ],
+  "s": "Reply with A, B, C or D.",
+  "cap": "Tail risk: which do you trust more? A) Historical data B) Simulated paths C) Both D) Neither. Tell us what would change your mind."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Stress-testing a tokenized ETF basket.",
+  "hi": "Stress-testing",
+  "s": "Hypothetical. Run many paths, then read the worst ones before the average.",
+  "v": "fan",
+  "cap": "Use case (hypothetical): stress-testing a basket of tokenized ETFs. Run many paths, then read the worst of them before the average. Chart: synthetic demo data."
+ },
+ {
+  "a": "Use case",
+  "k": "big",
+  "h": "Two strategies, one return.",
+  "hi": "one return",
+  "s": "Hypothetical. Same final number: compare the path, the drawdown and the assumptions.",
+  "v": "vol",
+  "cap": "Use case (hypothetical): two strategies end with the same return. Compare the path, the drawdown and the assumptions, not just the final number. Chart: synthetic demo data."
+ },
+ {
+  "a": "Product",
+  "k": "list",
+  "h": "Three lenses on onchain finance.",
+  "hi": "Three lenses",
+  "items": [
+   "Tokenized stocks",
+   "ETFs",
+   "Market simulations"
+  ],
+  "v": "rise",
+  "cap": "Quantora Labs does quantitative research for onchain finance through three lenses: tokenized stocks, ETFs and market simulations. Charts in this series use synthetic demo data."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "What a chart owes you.",
+  "hi": "owes you",
+  "s": "It should say what it shows and what it assumes.",
+  "v": "mark",
+  "cap": "What a chart owes you: a clear statement of what it shows and what it assumes. That is the standard we hold our own research preview to. Charts here are synthetic demo data."
+ },
+ {
+  "a": "Brand story",
+  "k": "big",
+  "h": "A research preview.",
+  "hi": "preview",
+  "s": "Everything here uses synthetic demo data, labelled as such.",
+  "v": "hist",
+  "cap": "Quantora is a research preview. Everything shown in this series uses synthetic demo data, labelled as such, to explain how we think about risk."
+ },
+ {
+  "a": "Brand story",
+  "k": "end",
+  "h": "Quantora",
+  "s": "Quantitative research for onchain finance.",
+  "cap": "Quantora Labs: quantitative research for onchain finance. Tokenized stocks, ETFs, market simulations. The market, read clearly. quantora.buzz"
+ }
+]
