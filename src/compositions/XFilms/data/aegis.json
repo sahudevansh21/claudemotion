@@ -1,0 +1,253 @@
+{
+ "fps": 60,
+ "durationInFrames": 1556,
+ "bpm": 100,
+ "transpose": 7,
+ "calm": false,
+ "musicGain": 0.6,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 646,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 144,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 646,
+   "end": 986,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 48,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 200,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 206,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 986,
+   "end": 1266,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1266,
+   "end": 1556,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "black",
+   "label": "Agentic DeFi infrastructure",
+   "h": "Every trade,",
+   "swap": [
+    "small ones run.",
+    "big ones wait.",
+    "rogue ones stop."
+   ],
+   "sub": "Let AI agents trade onchain, with a human on the big calls.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "black2",
+   "label": "Agent identity · ENS",
+   "text": "agent1.aegisnet.eth",
+   "reply": "Every agent gets a name.",
+   "id": "b2",
+   "start": 366,
+   "end": 646
+  },
+  {
+   "k": "rows",
+   "bg": "black",
+   "label": "Autonomy for agents. Control for owners.",
+   "h": "Three outcomes.",
+   "rows": [
+    {
+     "a": "Small trade",
+     "b": "Runs",
+     "c": "automatic"
+    },
+    {
+     "a": "Big trade · ≥ $1,000",
+     "b": "Waits",
+     "c": "World ID proof of human"
+    },
+    {
+     "a": "Rogue trade",
+     "b": "Stops",
+     "c": "blocked"
+    }
+   ],
+   "pick": 1,
+   "sub": "Midnight ZK gate · cleared by a human.",
+   "id": "b3",
+   "start": 646,
+   "end": 986
+  },
+  {
+   "k": "cluster",
+   "bg": "black2",
+   "label": "Building on Sepolia testnet",
+   "h": "The stack.",
+   "chips": [
+    "ENS identity",
+    "1inch SwapVM",
+    "Uniswap v4",
+    "World ID",
+    "Midnight ZK gate",
+    "Sepolia testnet"
+   ],
+   "id": "b4",
+   "start": 986,
+   "end": 1266
+  },
+  {
+   "k": "end",
+   "bg": "black",
+   "name": "AegisNet",
+   "line": "Let AI agents trade onchain, with a human on the big calls.",
+   "url": "aegisnet.solrun.fun · @AegisNets",
+   "foot": "AegisNet · Building on Sepolia testnet · Not financial advice",
+   "id": "b5",
+   "start": 1266,
+   "end": 1556
+  }
+ ]
+}

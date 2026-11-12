@@ -1,0 +1,267 @@
+{
+ "fps": 60,
+ "durationInFrames": 1638,
+ "bpm": 100,
+ "transpose": 0,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 728,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 226,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 728,
+   "end": 1068,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 48,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 60,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 72,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 200,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 206,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 1068,
+   "end": 1348,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1348,
+   "end": 1638,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "cream",
+   "label": "TerraNode · provisional theme",
+   "h": "Offline edge-AI for",
+   "swap": [
+    "smarter farms.",
+    "disease detection.",
+    "smart irrigation."
+   ],
+   "sub": "AI-powered farming, without the internet.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "gold",
+   "label": "Illustrative prompt",
+   "text": "Zone 2 soil moisture is low. Irrigate for 15 min?",
+   "reply": "Farmer-approved actions.",
+   "id": "b2",
+   "start": 366,
+   "end": 728
+  },
+  {
+   "k": "rows",
+   "bg": "cream",
+   "label": "Example dashboard · illustrative values",
+   "h": "Field readings.",
+   "rows": [
+    {
+     "a": "Soil Moisture",
+     "b": "68%"
+    },
+    {
+     "a": "Temperature",
+     "b": "24°C"
+    },
+    {
+     "a": "Humidity",
+     "b": "56%"
+    },
+    {
+     "a": "Light",
+     "b": "820 lux"
+    },
+    {
+     "a": "Air Quality",
+     "b": "Good"
+    }
+   ],
+   "pick": 0,
+   "sub": "Illustrative values, not live data.",
+   "id": "b3",
+   "start": 728,
+   "end": 1068
+  },
+  {
+   "k": "cluster",
+   "bg": "violet",
+   "label": "One field unit",
+   "h": "Works where the signal ends.",
+   "chips": [
+    "Edge AI",
+    "LoRa",
+    "Solar",
+    "Crop disease & pest detection",
+    "Smart irrigation",
+    "Farmer-approved actions"
+   ],
+   "id": "b4",
+   "start": 1068,
+   "end": 1348
+  },
+  {
+   "k": "end",
+   "bg": "cream",
+   "line": "Offline Edge-AI for Smarter Farms.",
+   "url": "@terranode_ai",
+   "foot": "TerraNode · Illustrative UI · Not agronomic advice",
+   "id": "b5",
+   "start": 1348,
+   "end": 1638
+  }
+ ]
+}

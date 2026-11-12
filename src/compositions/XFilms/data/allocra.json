@@ -1,0 +1,261 @@
+{
+ "fps": 60,
+ "durationInFrames": 1828,
+ "bpm": 78,
+ "transpose": 2,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 438,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 256,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 438,
+   "end": 868,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 294,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 868,
+   "end": 1208,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 48,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 200,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 206,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 1208,
+   "end": 1538,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1538,
+   "end": 1828,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "red",
+   "label": "Allocra · Private allocation desk / 01",
+   "h": "Before you confirm, see",
+   "swap": [
+    "concentration.",
+    "overlap.",
+    "quotes.",
+    "trading costs."
+   ],
+   "sub": "Plan first. Assets remain individually held until you approve a trade.",
+   "id": "b1",
+   "start": 0,
+   "end": 438
+  },
+  {
+   "k": "type",
+   "bg": "dark",
+   "label": "Allocation slate / draft · Preview",
+   "text": "Plan a tokenized ETF basket around the positions you actually want to own.",
+   "reply": "Your assets. Your allocation.",
+   "id": "b2",
+   "start": 438,
+   "end": 868
+  },
+  {
+   "k": "rows",
+   "bg": "cream",
+   "label": "Preview / TestNet demo",
+   "h": "Core allocation · 3 ETFs",
+   "rows": [
+    {
+     "a": "US equity",
+     "b": "55%",
+     "c": "sample"
+    },
+    {
+     "a": "International equity",
+     "b": "25%",
+     "c": "sample"
+    },
+    {
+     "a": "US bonds",
+     "b": "20%",
+     "c": "sample"
+    }
+   ],
+   "pick": 0,
+   "sub": "Monthly purchase $1,200 · Est. cost / yr $0.50 (Preview values).",
+   "id": "b3",
+   "start": 868,
+   "end": 1208
+  },
+  {
+   "k": "cards",
+   "bg": "red",
+   "label": "Collection / 02",
+   "h": "Old masters. New allocation.",
+   "cards": [
+    {
+     "t": "Look beneath the percentages",
+     "d": "Overlap, concentration, cost"
+    },
+    {
+     "t": "Read before you act",
+     "d": "Quotes and costs, checked first"
+    },
+    {
+     "t": "Hold steady",
+     "d": "Volatility is part of the story"
+    }
+   ],
+   "pick": 1,
+   "id": "b4",
+   "start": 1208,
+   "end": 1538
+  },
+  {
+   "k": "end",
+   "bg": "dark",
+   "name": "Allocra",
+   "line": "Plan clearly. Act deliberately.",
+   "url": "allocra.buzz · @allocraa",
+   "foot": "Allocra · Preview / TestNet demo · Not investment advice",
+   "id": "b5",
+   "start": 1538,
+   "end": 1828
+  }
+ ]
+}

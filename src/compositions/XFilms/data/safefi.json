@@ -1,0 +1,233 @@
+{
+ "fps": 60,
+ "durationInFrames": 1477,
+ "bpm": 88,
+ "transpose": 3,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 294,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 294,
+   "end": 577,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 147,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 577,
+   "end": 907,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 907,
+   "end": 1187,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1187,
+   "end": 1477,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "white",
+   "label": "SafeFi",
+   "h": "Decentralized insurance for",
+   "swap": [
+    "your digital assets.",
+    "the Web3 era."
+   ],
+   "sub": "Built for the Web3 era.",
+   "id": "b1",
+   "start": 0,
+   "end": 294
+  },
+  {
+   "k": "type",
+   "bg": "gray",
+   "label": "The question",
+   "text": "What if this breaks?",
+   "reply": "Hoping nothing breaks isn't a security strategy.",
+   "id": "b2",
+   "start": 294,
+   "end": 577
+  },
+  {
+   "k": "cards",
+   "bg": "white",
+   "label": "Three lines, one idea",
+   "h": "What SafeFi is about.",
+   "cards": [
+    {
+     "t": "On-chain security"
+    },
+    {
+     "t": "Web3 insurance"
+    },
+    {
+     "t": "A safer decentralized future"
+    }
+   ],
+   "pick": 1,
+   "id": "b3",
+   "start": 577,
+   "end": 907
+  },
+  {
+   "k": "cluster",
+   "bg": "ink",
+   "label": "What we talk about",
+   "h": "Risk, plainly.",
+   "chips": [
+    "Smart contract risk",
+    "DeFi",
+    "Crypto insurance",
+    "On-chain security",
+    "Web3 insurance"
+   ],
+   "id": "b4",
+   "start": 907,
+   "end": 1187
+  },
+  {
+   "k": "end",
+   "bg": "white",
+   "line": "Decentralized protection for your digital assets.",
+   "url": "safefisolana.vercel.app · @safefi_io",
+   "foot": "SafeFi · Illustrative graphics · Not financial advice",
+   "id": "b5",
+   "start": 1187,
+   "end": 1477
+  }
+ ]
+}

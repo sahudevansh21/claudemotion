@@ -1,0 +1,258 @@
+{
+ "fps": 60,
+ "durationInFrames": 1571,
+ "bpm": 120,
+ "transpose": 0,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 671,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 169,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 671,
+   "end": 1001,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 1001,
+   "end": 1281,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1281,
+   "end": 1571,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "night",
+   "label": "Collateral risk monitoring / 001",
+   "h": "Watch the",
+   "swap": [
+    "buffer.",
+    "price freshness.",
+    "closed-market risk."
+   ],
+   "sub": "Catch stale oracles before they catch you.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "green",
+   "label": "Stress test · illustrative",
+   "text": "What if the price drops 20%?",
+   "reply": "A user-chosen scenario, not a forecast.",
+   "id": "b2",
+   "start": 366,
+   "end": 671
+  },
+  {
+   "k": "cards",
+   "bg": "night",
+   "label": "Workflow",
+   "h": "How it works.",
+   "cards": [
+    {
+     "t": "01 Monitor",
+     "d": "Watch the position"
+    },
+    {
+     "t": "02 Stress test",
+     "d": "Drag the price"
+    },
+    {
+     "t": "03 Get alerts",
+     "d": "Know early"
+    },
+    {
+     "t": "04 Preview repayment",
+     "d": "Before you decide"
+    }
+   ],
+   "pick": 1,
+   "id": "b3",
+   "start": 671,
+   "end": 1001
+  },
+  {
+   "k": "cluster",
+   "bg": "lime",
+   "label": "Read-only",
+   "h": "See it. Understand it. Decide.",
+   "chips": [
+    "Buffer",
+    "Price freshness",
+    "Closed-market liquidity risk",
+    "Read-only",
+    "No transaction is sent",
+    "Starting on Algorand · Demo v1"
+   ],
+   "id": "b4",
+   "start": 1001,
+   "end": 1281
+  },
+  {
+   "k": "end",
+   "bg": "night",
+   "name": "Collatera",
+   "line": "Monitoring first. Automation later.",
+   "url": "collatera.buzz · @collatera_io",
+   "foot": "Collatera · Illustrative demo data · Not financial advice",
+   "id": "b5",
+   "start": 1281,
+   "end": 1571
+  }
+ ]
+}

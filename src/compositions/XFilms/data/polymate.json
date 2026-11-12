@@ -1,0 +1,250 @@
+{
+ "fps": 60,
+ "durationInFrames": 1523,
+ "bpm": 112,
+ "transpose": 2,
+ "calm": false,
+ "musicGain": 0.65,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 294,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 294,
+   "end": 563,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 133,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 563,
+   "end": 903,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 200,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 206,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 903,
+   "end": 1233,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 80,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1233,
+   "end": 1523,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "cream",
+   "label": "PolyMate",
+   "h": "Trade the",
+   "swap": [
+    "future.",
+    "future, fast."
+   ],
+   "sub": "The trading layer for prediction markets.",
+   "id": "b1",
+   "start": 0,
+   "end": 294
+  },
+  {
+   "k": "type",
+   "bg": "lapis",
+   "label": "Start trading",
+   "text": "t.me/Tryoddsbot",
+   "reply": "Building tools to trade the future, fast.",
+   "id": "b2",
+   "start": 294,
+   "end": 563
+  },
+  {
+   "k": "rows",
+   "bg": "cream",
+   "label": "Live Markets · illustrative, from the banner",
+   "h": "Pick a market.",
+   "rows": [
+    {
+     "a": "US Election 2024 · Trump to win?",
+     "b": "62% Yes"
+    },
+    {
+     "a": "Fed Rate Cut in Nov?",
+     "b": "Yes / No"
+    }
+   ],
+   "pick": 0,
+   "sub": "Illustrative example, not live data.",
+   "id": "b3",
+   "start": 563,
+   "end": 903
+  },
+  {
+   "k": "cards",
+   "bg": "red",
+   "label": "Inside PolyMate",
+   "h": "Five tools, one layer.",
+   "cards": [
+    {
+     "t": "Trade"
+    },
+    {
+     "t": "Markets"
+    },
+    {
+     "t": "Positions"
+    },
+    {
+     "t": "Strategy"
+    },
+    {
+     "t": "Balance"
+    }
+   ],
+   "pick": 2,
+   "id": "b4",
+   "start": 903,
+   "end": 1233
+  },
+  {
+   "k": "end",
+   "bg": "cream",
+   "name": "PolyMate",
+   "line": "The trading layer for prediction markets.",
+   "url": "t.me/Tryoddsbot · @Polymatedotfun",
+   "foot": "PolyMate · Illustrative UI · Not financial advice",
+   "id": "b5",
+   "start": 1233,
+   "end": 1523
+  }
+ ]
+}

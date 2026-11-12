@@ -1,0 +1,248 @@
+{
+ "fps": 60,
+ "durationInFrames": 1554,
+ "bpm": 104,
+ "transpose": 2,
+ "calm": false,
+ "musicGain": 0.6,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 654,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 152,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 654,
+   "end": 984,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 984,
+   "end": 1264,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1264,
+   "end": 1554,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "black",
+   "label": "Argus",
+   "h": "Detecting contamination",
+   "swap": [
+    "invisible to the eye.",
+    "in 15 ms.",
+    "at 99.4% precision."
+   ],
+   "sub": "15 ms inference and 99.4% precision, as stated on the Argus profile.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "black2",
+   "label": "Look closer",
+   "text": "It looks clean. Is it?",
+   "reply": "UV fluorescence · optical CV · biomedical AI",
+   "id": "b2",
+   "start": 366,
+   "end": 654
+  },
+  {
+   "k": "cards",
+   "bg": "black",
+   "label": "Three layers, one pipeline",
+   "h": "How Argus sees.",
+   "cards": [
+    {
+     "t": "UV fluorescence",
+     "d": "Reveals what white light misses"
+    },
+    {
+     "t": "Optical CV",
+     "d": "Reads what the light shows"
+    },
+    {
+     "t": "Biomedical AI",
+     "d": "Built on Virtu"
+    }
+   ],
+   "pick": 0,
+   "id": "b3",
+   "start": 654,
+   "end": 984
+  },
+  {
+   "k": "cluster",
+   "bg": "black2",
+   "label": "As stated on the profile",
+   "h": "Fast. Precise. Visible.",
+   "chips": [
+    "15 ms inference",
+    "99.4% precision",
+    "Built on Virtu",
+    "UV fluorescence",
+    "Optical CV",
+    "Biomedical AI"
+   ],
+   "id": "b4",
+   "start": 984,
+   "end": 1264
+  },
+  {
+   "k": "end",
+   "bg": "black",
+   "line": "Making the Invisible Visible.",
+   "url": "argus-iota.vercel.app · @argus_io",
+   "foot": "Argus · Figures as stated on the Argus profile · Illustrative visuals",
+   "id": "b5",
+   "start": 1264,
+   "end": 1554
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "fps": 60,
+ "durationInFrames": 1566,
+ "bpm": 72,
+ "transpose": 5,
+ "calm": true,
+ "musicGain": 1.0,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 646,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 144,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 646,
+   "end": 946,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 30,
+     "type": "riser",
+     "gain": 0.3
+    },
+    {
+     "cue": 170,
+     "type": "pop",
+     "gain": 0.4
+    },
+    {
+     "cue": 200,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 946,
+   "end": 1276,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1276,
+   "end": 1566,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "paper",
+   "label": "Quantora Labs",
+   "h": "Read the",
+   "swap": [
+    "drawdown.",
+    "path.",
+    "assumptions."
+   ],
+   "sub": "Quantitative research for onchain finance.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "paper2",
+   "label": "The question",
+   "text": "How bad can it get?",
+   "reply": "Drawdown, path and the assumptions behind both.",
+   "id": "b2",
+   "start": 366,
+   "end": 646
+  },
+  {
+   "k": "chart",
+   "bg": "paper",
+   "label": "Fig. 01 · synthetic demo data",
+   "h": "From the peak to the trough.",
+   "chart": "dd",
+   "note": "Illustrative path · synthetic demo data · no real values",
+   "id": "b3",
+   "start": 646,
+   "end": 946
+  },
+  {
+   "k": "cards",
+   "bg": "ink",
+   "label": "Three lenses",
+   "h": "What we study.",
+   "cards": [
+    {
+     "t": "Tokenized stocks",
+     "d": "Onchain tokens designed to track a listed share"
+    },
+    {
+     "t": "ETFs",
+     "d": "A basket, read clearly"
+    },
+    {
+     "t": "Market simulations",
+     "d": "Many paths, one picture"
+    }
+   ],
+   "pick": 2,
+   "id": "b4",
+   "start": 946,
+   "end": 1276
+  },
+  {
+   "k": "end",
+   "bg": "paper",
+   "name": "QUANTORA",
+   "line": "The market, read clearly.",
+   "url": "quantora.buzz · @Quantora_Labs",
+   "foot": "Quantora research preview · Synthetic demo data",
+   "id": "b5",
+   "start": 1276,
+   "end": 1566
+  }
+ ]
+}

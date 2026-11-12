@@ -44,6 +44,7 @@ import { PolymateX2 } from "./compositions/XPosts/polymate2";
 import { OrynX20 } from "./compositions/XPosts/oryn_x20";
 import { QuantoraX20 } from "./compositions/XPosts/quantora_x20";
 import { PolymateX20 } from "./compositions/XPosts/polymate_x20";
+import { FILMS } from "./compositions/XFilms/films";
 import { TerranodeX20 } from "./compositions/XPosts/terranode_x20";
 import { DesciX20 } from "./compositions/XPosts/desci_x20";
 import { ArgusX20 } from "./compositions/XPosts/argus_x20";
@@ -289,6 +290,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="OrynX20" component={OrynX20} width={1080} height={1350} fps={1} durationInFrames={20} />
       <Composition id="QuantoraX20" component={QuantoraX20} width={1080} height={1350} fps={1} durationInFrames={20} />
       <Composition id="PolymateX20" component={PolymateX20} width={1080} height={1350} fps={1} durationInFrames={20} />
+      {FILMS.map((fm) => <Composition key={fm.id} id={`Film-${fm.id}`} component={fm.C} width={1920} height={1080} fps={60} durationInFrames={fm.frames} />)}
       <Composition id="TerranodeX20" component={TerranodeX20} width={1080} height={1350} fps={1} durationInFrames={20} />
       <Composition id="DesciX20" component={DesciX20} width={1080} height={1350} fps={1} durationInFrames={20} />
       <Composition id="ArgusX20" component={ArgusX20} width={1080} height={1350} fps={1} durationInFrames={20} />

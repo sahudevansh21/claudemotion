@@ -1,0 +1,248 @@
+{
+ "fps": 60,
+ "durationInFrames": 1713,
+ "bpm": 118,
+ "transpose": 0,
+ "calm": false,
+ "musicGain": 0.7,
+ "scenes": [
+  {
+   "id": "b1",
+   "start": 0,
+   "end": 366,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 10,
+     "type": "pop",
+     "gain": 0.5
+    },
+    {
+     "cue": 40,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 112,
+     "type": "tick",
+     "gain": 0.4
+    },
+    {
+     "cue": 184,
+     "type": "tick",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 366,
+   "end": 813,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 56,
+     "type": "tick",
+     "gain": 0.5
+    },
+    {
+     "cue": 78,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 110,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 150,
+     "type": "tick",
+     "gain": 0.3
+    },
+    {
+     "cue": 311,
+     "type": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "start": 813,
+   "end": 1143,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 24,
+     "type": "whoosh",
+     "gain": 0.4
+    },
+    {
+     "cue": 24,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 38,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 52,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 190,
+     "type": "tick",
+     "gain": 0.6
+    },
+    {
+     "cue": 200,
+     "type": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "start": 1143,
+   "end": 1423,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 16,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 26,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 36,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 46,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 56,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 66,
+     "type": "pop",
+     "gain": 0.3
+    },
+    {
+     "cue": 120,
+     "type": "whoosh",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 1423,
+   "end": 1713,
+   "cues": {},
+   "sfx": [
+    {
+     "cue": 14,
+     "type": "pop",
+     "gain": 0.7
+    },
+    {
+     "cue": 110,
+     "type": "chime",
+     "gain": 0.7
+    }
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "k": "swap",
+   "bg": "cyan",
+   "label": "Example",
+   "h": "A theme is a recipe:",
+   "swap": [
+    "40% NVDA",
+    "30% AMD",
+    "30% TSM"
+   ],
+   "sub": "VYBE opens every leg on Hyperliquid at once.",
+   "id": "b1",
+   "start": 0,
+   "end": 366
+  },
+  {
+   "k": "type",
+   "bg": "yellow",
+   "label": "VYBE",
+   "text": "Turn a market opinion into a trade anyone can copy, and earn every time they do.",
+   "reply": "You keep custody.",
+   "id": "b2",
+   "start": 366,
+   "end": 813
+  },
+  {
+   "k": "cards",
+   "bg": "pink",
+   "label": "Three steps",
+   "h": "How it works.",
+   "cards": [
+    {
+     "t": "Pick markets",
+     "d": "Stock, gold or crypto"
+    },
+    {
+     "t": "One click",
+     "d": "Every leg opens on Hyperliquid at once"
+    },
+    {
+     "t": "Earn on every trade",
+     "d": "Creators earn a share of the fees"
+    }
+   ],
+   "pick": 1,
+   "id": "b3",
+   "start": 813,
+   "end": 1143
+  },
+  {
+   "k": "cluster",
+   "bg": "lime",
+   "label": "Launch a theme in 30 seconds",
+   "h": "Stock, gold or crypto.",
+   "chips": [
+    "Stock themes",
+    "Gold themes",
+    "Crypto themes",
+    "You keep custody",
+    "TESTNET",
+    "Built on Hyperliquid"
+   ],
+   "id": "b4",
+   "start": 1143,
+   "end": 1423
+  },
+  {
+   "k": "end",
+   "bg": "cyan",
+   "line": "Turn a market opinion into a trade anyone can copy.",
+   "url": "@vybe_fi",
+   "foot": "VYBE routes orders to Hyperliquid. VYBE never holds funds or keys. Perps are risky. TESTNET",
+   "id": "b5",
+   "start": 1423,
+   "end": 1713
+  }
+ ]
+}

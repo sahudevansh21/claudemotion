@@ -35,8 +35,11 @@ STEP = BEAT / 4
 rng = np.random.default_rng(96)
 
 
+TRANSPOSE = TL.get("transpose", 0)
+
+
 def midi(n):
-    return 440 * 2 ** ((n - 69) / 12)
+    return 440 * 2 ** ((n + TRANSPOSE - 69) / 12)
 
 
 def lp(x, fc, order=2):
