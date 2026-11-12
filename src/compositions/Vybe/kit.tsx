@@ -91,10 +91,10 @@ export const Photo: React.FC<{ src: string; x: number; y: number; w: number; h: 
     <Img src={staticFile(`vybe/img/${src}`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos, transform: `scale(${scale})` }} />
   </div>
 );
-export const Foot: React.FC<{ n: number; dark?: boolean; note?: string }> = ({ n, dark, note }) => (
+export const Foot: React.FC<{ n: number; total?: number; dark?: boolean; note?: string }> = ({ n, total = 15, dark, note }) => (
   <div style={{ position: "absolute", left: 60, right: 60, bottom: 46, display: "flex", alignItems: "center", justifyContent: "space-between", fontFamily: OUT, fontWeight: 600, fontSize: 24, color: dark ? "#fff" : V.navy }}>
     <Logo w={130} />
     <span style={{ opacity: 0.9 }}>{note ?? "X @vybe_fi"}</span>
-    <span style={{ fontWeight: 700 }}>{String(n).padStart(2, "0")}/15</span>
+    <span style={{ fontWeight: 700 }}>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );

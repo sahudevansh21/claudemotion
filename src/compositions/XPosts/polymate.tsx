@@ -6,11 +6,11 @@ import { makeStill } from "./still";
 /** PolyMate X-profile posts (15): banner system = golden-hour Rome, cream marble, lapis + gold laurel emblem, Roman red banners, heavy italic Poppins with Instrument Serif accents. UI cards reuse the vocabulary visible on the X banner and are labelled illustrative. */
 loadFont({ family: "Cinzel", url: staticFile("polymate/fonts/cinzel-latin-700-normal.woff2"), weight: "700" });
 loadFont({ family: "Cinzel", url: staticFile("polymate/fonts/cinzel-latin-500-normal.woff2"), weight: "500" });
-const D = PM_FONTS.display; const S = PM_FONTS.serif; const U = PM_FONTS.ui;
-const cin = (fs: number, color: string = PM.inkSoft, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: "Cinzel, serif", fontWeight: 700, fontSize: fs, letterSpacing: fs * 0.22, textTransform: "uppercase", color, ...extra });
-const NOISE = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='500'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0.35 0'/></filter><rect width='500' height='500' filter='url(%23n)'/></svg>")`;
+export const D = PM_FONTS.display; export const S = PM_FONTS.serif; export const U = PM_FONTS.ui;
+export const cin = (fs: number, color: string = PM.inkSoft, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: "Cinzel, serif", fontWeight: 700, fontSize: fs, letterSpacing: fs * 0.22, textTransform: "uppercase", color, ...extra });
+export const NOISE = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='500'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0.35 0'/></filter><rect width='500' height='500' filter='url(%23n)'/></svg>")`;
 
-const Marble: React.FC = () => (
+export const Marble: React.FC = () => (
   <>
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(90% 70% at 30% 20%, ${PM.marble}, ${PM.cream} 70%, ${PM.marbleShade})` }} />
     <div style={{ position: "absolute", inset: 0, backgroundImage: NOISE, opacity: 0.25, mixBlendMode: "multiply" }} />
@@ -20,7 +20,7 @@ const Marble: React.FC = () => (
     </svg>
   </>
 );
-const Lapis: React.FC = () => (
+export const Lapis: React.FC = () => (
   <>
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(90% 60% at 30% 10%, ${PM.lapisLight}, ${PM.lapis} 45%, ${PM.lapisDeep})` }} />
     <svg width={1080} height={1350} style={{ position: "absolute", inset: 0, opacity: 0.35 }}>
@@ -29,32 +29,32 @@ const Lapis: React.FC = () => (
     </svg>
   </>
 );
-const Banner: React.FC<{ x: number; y: number; h?: number }> = ({ x, y, h = 360 }) => (
+export const Banner: React.FC<{ x: number; y: number; h?: number }> = ({ x, y, h = 360 }) => (
   <svg width={110} height={h} viewBox="0 0 110 360" style={{ position: "absolute", left: x, top: y }}>
     <path d="M0 0 H110 V330 L55 360 L0 330 Z" fill="#8E1F1F" /><path d="M8 8 H102 V324 L55 350 L8 324 Z" fill="none" stroke={PM.goldLight} strokeWidth={3} />
     <circle cx={55} cy={150} r={30} fill="none" stroke={PM.goldLight} strokeWidth={4} strokeDasharray="6 5" /><path d="M40 160 q15 -40 30 0" fill="none" stroke={PM.goldLight} strokeWidth={4} />
   </svg>
 );
-const Emblem: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("polymate/img/emblem.png")} style={{ width: s, height: (s * 1232) / 1476, filter: "drop-shadow(0 20px 30px rgba(60,40,10,0.3))", ...style }} />;
-const Photo: React.FC<{ x: number; y: number; w: number; h: number; src?: string; pos?: string; style?: React.CSSProperties }> = ({ x, y, w, h, src = "polymate/img/forum.jpg", pos = "50% 50%", style }) => (
+export const Emblem: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("polymate/img/emblem.png")} style={{ width: s, height: (s * 1232) / 1476, filter: "drop-shadow(0 20px 30px rgba(60,40,10,0.3))", ...style }} />;
+export const Photo: React.FC<{ x: number; y: number; w: number; h: number; src?: string; pos?: string; style?: React.CSSProperties }> = ({ x, y, w, h, src = "polymate/img/forum.jpg", pos = "50% 50%", style }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, overflow: "hidden", border: `4px solid ${PM.goldLight}`, boxShadow: "0 30px 70px rgba(60,40,10,0.35)", ...style }}>
     <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos }} />
   </div>
 );
-const Foot: React.FC<{ n: number; c?: string }> = ({ n, c = PM.inkSoft }) => (
+export const Foot: React.FC<{ n: number; total?: number; c?: string }> = ({ n, total = 15, c = PM.inkSoft }) => (
   <div style={{ ...cin(13, c, { letterSpacing: 4, fontWeight: 500 }), position: "absolute", left: 70, right: 70, bottom: 42, display: "flex", justifyContent: "space-between", zIndex: 5 }}>
-    <span>PolyMate · Illustrative UI · Not financial advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>PolyMate · Illustrative UI · Not financial advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; w?: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, c = PM.ink, w = 940, center, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; w?: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, c = PM.ink, w = 940, center, style }) => (
   <div style={{ fontFamily: D, fontWeight: 800, fontStyle: "italic", fontSize: fs, lineHeight: 1.0, letterSpacing: -fs * 0.035, color: c, position: "absolute", left: center ? (1080 - w) / 2 : 70, width: w, top, textAlign: center ? "center" : "left", ...style }}>{children}</div>
 );
-const Ser: React.FC<{ children: React.ReactNode; c?: string }> = ({ children, c = PM.lapis }) => <span style={{ fontFamily: S, fontStyle: "italic", fontWeight: 400, letterSpacing: "-0.02em", color: c }}>{children}</span>;
-const Tag: React.FC<{ children: React.ReactNode; top?: number; c?: string }> = ({ children, top = 80, c = PM.gold }) => <div style={{ ...cin(18, c), position: "absolute", left: 70, top }}>{children}</div>;
-const Card: React.FC<{ x: number; y: number; w: number; h?: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ x, y, w, h, children, style }) => (
+export const Ser: React.FC<{ children: React.ReactNode; c?: string }> = ({ children, c = PM.lapis }) => <span style={{ fontFamily: S, fontStyle: "italic", fontWeight: 400, letterSpacing: "-0.02em", color: c }}>{children}</span>;
+export const Tag: React.FC<{ children: React.ReactNode; top?: number; c?: string }> = ({ children, top = 80, c = PM.gold }) => <div style={{ ...cin(18, c), position: "absolute", left: 70, top }}>{children}</div>;
+export const Card: React.FC<{ x: number; y: number; w: number; h?: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ x, y, w, h, children, style }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, background: "linear-gradient(160deg,#fffdf8,#f1eadb)", border: `2px solid ${PM.goldLight}`, borderRadius: 26, boxShadow: "0 30px 70px rgba(60,40,10,0.28)", boxSizing: "border-box", padding: 40, ...style }}>{children}</div>
 );
-const Ill: React.FC<{ x: number; y: number; c?: string }> = ({ x, y, c = PM.muted }) => <div style={{ ...cin(14, c, { fontWeight: 500 }), position: "absolute", left: x, top: y }}>Illustrative · not live data</div>;
+export const Ill: React.FC<{ x: number; y: number; c?: string }> = ({ x, y, c = PM.muted }) => <div style={{ ...cin(14, c, { fontWeight: 500 }), position: "absolute", left: x, top: y }}>Illustrative · not live data</div>;
 
 const P1: React.FC = () => (
   <>

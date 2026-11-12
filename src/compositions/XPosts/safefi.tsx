@@ -3,13 +3,13 @@ import "../../config/theme";
 import { makeStill } from "./still";
 
 /** SafeFi X-profile posts (15): banner system = clean white stage with a faint grid and rings, heavy black grotesk headlines (bold + regular pairing), the black arrow wordmark, a glossy shield with an orbit and floating coin tiles. Copy only from the profile, banner and pinned post. */
-const BG = "#fbfbfb";
-const INK = "#0d0d0f";
-const SOFT = "#5c5c63";
-const SANS = "Inter, system-ui, sans-serif";
-const MONO = "'JetBrains Mono', monospace";
+export const BG = "#fbfbfb";
+export const INK = "#0d0d0f";
+export const SOFT = "#5c5c63";
+export const SANS = "Inter, system-ui, sans-serif";
+export const MONO = "'JetBrains Mono', monospace";
 
-const Bg: React.FC<{ rings?: boolean; dark?: boolean }> = ({ rings = true, dark }) => (
+export const Bg: React.FC<{ rings?: boolean; dark?: boolean }> = ({ rings = true, dark }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: dark ? INK : BG }} />
     <div style={{ position: "absolute", inset: 0, backgroundImage: `linear-gradient(${dark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)"} 1px, transparent 1px), linear-gradient(90deg, ${dark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)"} 1px, transparent 1px)`, backgroundSize: "180px 180px" }} />
@@ -21,10 +21,10 @@ const Bg: React.FC<{ rings?: boolean; dark?: boolean }> = ({ rings = true, dark 
     )}
   </>
 );
-const Logo: React.FC<{ w: number; style?: React.CSSProperties; invert?: boolean }> = ({ w, style, invert }) => (
+export const Logo: React.FC<{ w: number; style?: React.CSSProperties; invert?: boolean }> = ({ w, style, invert }) => (
   <Img src={staticFile("safefi/logo.png")} style={{ width: w, height: (w * 360) / 1680, filter: invert ? "invert(1)" : undefined, ...style }} />
 );
-const Shield: React.FC<{ s: number; style?: React.CSSProperties; orbit?: boolean }> = ({ s, style, orbit = true }) => (
+export const Shield: React.FC<{ s: number; style?: React.CSSProperties; orbit?: boolean }> = ({ s, style, orbit = true }) => (
   <svg width={s} height={s * 1.1} viewBox="0 0 260 286" style={{ overflow: "visible", ...style }}>
     <defs>
       <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff" /><stop offset="0.55" stopColor="#e4e4e7" /><stop offset="1" stopColor="#b9b9bf" /></linearGradient>
@@ -43,24 +43,24 @@ const Shield: React.FC<{ s: number; style?: React.CSSProperties; orbit?: boolean
     )}
   </svg>
 );
-const Tile: React.FC<{ x: number; y: number; s?: number; kind: "eth" | "btc" | "lines" }> = ({ x, y, s = 84, kind }) => (
+export const Tile: React.FC<{ x: number; y: number; s?: number; kind: "eth" | "btc" | "lines" }> = ({ x, y, s = 84, kind }) => (
   <div style={{ position: "absolute", left: x, top: y, width: s, height: s, borderRadius: s * 0.28, background: "#fff", boxShadow: "0 14px 36px rgba(0,0,0,0.14), 0 0 0 1px rgba(0,0,0,0.05)", display: "flex", alignItems: "center", justifyContent: "center" }}>
     {kind === "eth" && <svg width={s * 0.4} height={s * 0.56} viewBox="0 0 40 56"><path d="M20 0 L38 28 20 38 2 28z M20 42 L38 32 20 56 2 32z" fill={INK} /></svg>}
     {kind === "btc" && <svg width={s * 0.4} height={s * 0.5} viewBox="0 0 40 50"><path d="M8 6 H24 C32 6 34 12 32 17 C30 21 27 22 24 22 C30 22 34 25 33 32 C32 40 26 44 18 44 H8z M16 14 V20 H22 C26 20 26 14 22 14z M16 28 V36 H23 C28 36 28 28 23 28z" fill={INK} fillRule="evenodd" /><rect x={14} y={0} width={4} height={50} fill={INK} /><rect x={22} y={0} width={4} height={50} fill={INK} /></svg>}
     {kind === "lines" && <svg width={s * 0.42} height={s * 0.34} viewBox="0 0 42 34"><path d="M2 4h38M2 17h38M2 30h38" stroke={INK} strokeWidth={7} strokeLinecap="round" /></svg>}
   </div>
 );
-const Foot: React.FC<{ n: number; dark?: boolean }> = ({ n, dark }) => (
+export const Foot: React.FC<{ n: number; total?: number; dark?: boolean }> = ({ n, total = 15, dark }) => (
   <div style={{ fontFamily: MONO, fontSize: 14, letterSpacing: 3, textTransform: "uppercase", color: dark ? "rgba(255,255,255,0.55)" : "rgba(13,13,15,0.5)", position: "absolute", left: 70, right: 70, bottom: 44, display: "flex", justifyContent: "space-between" }}>
-    <span>SafeFi · Illustrative graphics · Not financial advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>SafeFi · Illustrative graphics · Not financial advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; w?: number; style?: React.CSSProperties }> = ({ children, fs, top, c = INK, w = 940, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; w?: number; style?: React.CSSProperties }> = ({ children, fs, top, c = INK, w = 940, style }) => (
   <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: fs, lineHeight: 1.0, letterSpacing: -fs * 0.045, color: c, position: "absolute", left: 70, width: w, top, ...style }}>{children}</div>
 );
-const L: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontWeight: 400 }}>{children}</span>;
-const Sub: React.FC<{ children: React.ReactNode; top: number; c?: string; w?: number }> = ({ children, top, c = SOFT, w = 800 }) => <div style={{ fontFamily: SANS, fontSize: 38, lineHeight: 1.3, color: c, position: "absolute", left: 70, width: w, top }}>{children}</div>;
-const Chip: React.FC<{ children: React.ReactNode; style?: React.CSSProperties; dark?: boolean }> = ({ children, style, dark }) => (
+export const L: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontWeight: 400 }}>{children}</span>;
+export const Sub: React.FC<{ children: React.ReactNode; top: number; c?: string; w?: number }> = ({ children, top, c = SOFT, w = 800 }) => <div style={{ fontFamily: SANS, fontSize: 38, lineHeight: 1.3, color: c, position: "absolute", left: 70, width: w, top }}>{children}</div>;
+export const Chip: React.FC<{ children: React.ReactNode; style?: React.CSSProperties; dark?: boolean }> = ({ children, style, dark }) => (
   <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 28, padding: "16px 28px", borderRadius: 99, background: dark ? "rgba(255,255,255,0.1)" : "#fff", color: dark ? "#fff" : INK, boxShadow: dark ? "0 0 0 1px rgba(255,255,255,0.2)" : "0 8px 24px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.06)", display: "inline-block", ...style }}>{children}</div>
 );
 

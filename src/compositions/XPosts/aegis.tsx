@@ -5,14 +5,14 @@ import { makeStill } from "./still";
 
 /** AegisNet X-profile posts (15): banner system = black stage with a silver dotted wave, white Inter headline with one italic serif word, "Agentic DeFi Infrastructure" pill, white + dark buttons, two-bar mark. Copy only from the profile, banner, pinned post and site; AegisNet is building on Sepolia testnet. */
 loadFont({ family: "AegisSerif", url: staticFile("quantora/fonts/newsreader-latin-400-italic.woff2"), weight: "400", style: "italic" });
-const INK = "#050505";
-const SILVER = "#c9ccd1";
-const DIM = "rgba(255,255,255,0.62)";
-const SANS = "Inter, system-ui, sans-serif";
-const SERIF = "AegisSerif, Georgia, serif";
-const MONO = "'JetBrains Mono', monospace";
+export const INK = "#050505";
+export const SILVER = "#c9ccd1";
+export const DIM = "rgba(255,255,255,0.62)";
+export const SANS = "Inter, system-ui, sans-serif";
+export const SERIF = "AegisSerif, Georgia, serif";
+export const MONO = "'JetBrains Mono', monospace";
 
-const Wave: React.FC<{ y: number; amp?: number; rows?: number; seed?: string }> = ({ y, amp = 90, rows = 20, seed = "w" }) => (
+export const Wave: React.FC<{ y: number; amp?: number; rows?: number; seed?: string }> = ({ y, amp = 90, rows = 20, seed = "w" }) => (
   <svg width={1080} height={520} style={{ position: "absolute", left: 0, top: y }}>
     {Array.from({ length: rows }).map((_, k) => Array.from({ length: 68 }).map((__, i) => {
       const x = i * 16 + 4;
@@ -21,7 +21,7 @@ const Wave: React.FC<{ y: number; amp?: number; rows?: number; seed?: string }> 
     }))}
   </svg>
 );
-const Bg: React.FC<{ wave?: number | false; seed?: string }> = ({ wave = false, seed }) => (
+export const Bg: React.FC<{ wave?: number | false; seed?: string }> = ({ wave = false, seed }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: INK }} />
     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(80% 50% at 50% 0%, rgba(210,215,225,0.20), transparent 70%)" }} />
@@ -29,36 +29,36 @@ const Bg: React.FC<{ wave?: number | false; seed?: string }> = ({ wave = false, 
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 70%, rgba(5,5,5,0.85) 100%)" }} />
   </>
 );
-const Mark: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => (
+export const Mark: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => (
   <svg width={s} height={s} viewBox="0 0 100 100" style={style}>
     <rect x={18} y={26} width={13} height={60} rx={6.5} fill="#fff" transform="rotate(-22 24 56)" /><circle cx={21} cy={24} r={7.5} fill="#fff" />
     <rect x={52} y={14} width={13} height={60} rx={6.5} fill="#fff" transform="rotate(-22 58 44)" /><circle cx={70} cy={80} r={7.5} fill="#fff" />
   </svg>
 );
-const Pill: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+export const Pill: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
   <div style={{ display: "inline-flex", alignItems: "center", gap: 14, padding: "14px 26px", borderRadius: 14, background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.16)", fontFamily: SANS, fontWeight: 500, fontSize: 24, color: "#fff", ...style }}>
     <span style={{ fontSize: 28 }}>✦</span>{children}
   </div>
 );
-const Btn: React.FC<{ children: React.ReactNode; solid?: boolean }> = ({ children, solid }) => (
+export const Btn: React.FC<{ children: React.ReactNode; solid?: boolean }> = ({ children, solid }) => (
   <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, padding: "20px 40px", borderRadius: 10, background: solid ? "#e9e9ea" : "rgba(255,255,255,0.06)", color: solid ? INK : "#fff", border: solid ? "none" : "1px solid rgba(255,255,255,0.2)" }}>{children}</div>
 );
-const Foot: React.FC<{ n: number }> = ({ n }) => (
+export const Foot: React.FC<{ n: number; total?: number }> = ({ n, total = 15 }) => (
   <div style={{ fontFamily: MONO, fontSize: 14, letterSpacing: 3, color: "rgba(255,255,255,0.5)", textTransform: "uppercase", position: "absolute", left: 70, right: 70, bottom: 44, display: "flex", justifyContent: "space-between" }}>
-    <span>AegisNet · Building on Sepolia testnet · Not financial advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>AegisNet · Building on Sepolia testnet · Not financial advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
   <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: fs, lineHeight: 1.02, letterSpacing: -fs * 0.045, color: "#fff", position: "absolute", left: 70, right: 70, top, textAlign: center ? "center" : "left", ...style }}>{children}</div>
 );
-const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: SILVER, letterSpacing: "-0.02em" }}>{children}</span>;
-const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number; center?: boolean }> = ({ children, top, w = 820, center }) => (
+export const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: SILVER, letterSpacing: "-0.02em" }}>{children}</span>;
+export const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number; center?: boolean }> = ({ children, top, w = 820, center }) => (
   <div style={{ fontFamily: SANS, fontSize: 36, lineHeight: 1.3, color: DIM, position: "absolute", left: center ? (1080 - w) / 2 : 70, width: w, top, textAlign: center ? "center" : "left" }}>{children}</div>
 );
-const Chip: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+export const Chip: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
   <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 2, textTransform: "uppercase", color: "#fff", padding: "14px 22px", border: "1px solid rgba(255,255,255,0.28)", borderRadius: 10, background: "rgba(255,255,255,0.06)", ...style }}>{children}</div>
 );
-const Shot: React.FC<{ src: string; top: number; h: number; pos?: string }> = ({ src, top, h, pos = "50% 0%" }) => (
+export const Shot: React.FC<{ src: string; top: number; h: number; pos?: string }> = ({ src, top, h, pos = "50% 0%" }) => (
   <div style={{ position: "absolute", left: 70, right: 70, top, height: h, borderRadius: 18, overflow: "hidden", border: "1px solid rgba(255,255,255,0.2)", boxShadow: "0 40px 100px rgba(0,0,0,0.6)" }}>
     <Img src={staticFile(`aegis/site/${src}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos }} />
   </div>
@@ -80,7 +80,7 @@ const P2: React.FC = () => (
     <Foot n={2} />
   </>
 );
-const Pillar: React.FC<{ n: number; k: string; head: React.ReactNode; sub: string; chips: string[] }> = ({ n, k, head, sub, chips }) => (
+export const Pillar: React.FC<{ n: number; k: string; head: React.ReactNode; sub: string; chips: string[] }> = ({ n, k, head, sub, chips }) => (
   <>
     <Bg wave={760} seed={`p${n}`} />
     <div style={{ fontFamily: MONO, fontSize: 20, letterSpacing: 6, color: DIM, textTransform: "uppercase", position: "absolute", left: 70, top: 90 }}>{k}</div>

@@ -5,10 +5,10 @@ import { CL, CL_FONTS } from "../Collatera/brand";
 import { makeStill } from "./still";
 
 /** COLLATERA X-profile posts (15): banner system = night-green pixel world, lime pixel type (Silkscreen), pixel moon + stars, bordered panels with offset pixel shadow, the decoded mascot. All figures are labelled illustrative. */
-const px = (fs: number, color: string = CL.lime, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: CL_FONTS.pixel, fontWeight: 700, fontSize: fs, color, lineHeight: 1.12, letterSpacing: 1, textTransform: "uppercase", ...extra });
-const body = (fs: number, color: string = CL.mint, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: CL_FONTS.mono, fontSize: fs, lineHeight: 1.4, color, ...extra });
+export const px = (fs: number, color: string = CL.lime, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: CL_FONTS.pixel, fontWeight: 700, fontSize: fs, color, lineHeight: 1.12, letterSpacing: 1, textTransform: "uppercase", ...extra });
+export const body = (fs: number, color: string = CL.mint, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: CL_FONTS.mono, fontSize: fs, lineHeight: 1.4, color, ...extra });
 
-const Stars: React.FC<{ n?: number; seed?: string; maxY?: number }> = ({ n = 26, seed = "s", maxY = 700 }) => (
+export const Stars: React.FC<{ n?: number; seed?: string; maxY?: number }> = ({ n = 26, seed = "s", maxY = 700 }) => (
   <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }} shapeRendering="crispEdges">
     {Array.from({ length: n }).map((_, i) => {
       const s = 6 + Math.floor(random(`${seed}s${i}`) * 3) * 6;
@@ -16,36 +16,36 @@ const Stars: React.FC<{ n?: number; seed?: string; maxY?: number }> = ({ n = 26,
     })}
   </svg>
 );
-const Moon: React.FC<{ x: number; y: number; r?: number }> = ({ x, y, r = 90 }) => {
+export const Moon: React.FC<{ x: number; y: number; r?: number }> = ({ x, y, r = 90 }) => {
   const cells = [];
   const c = 12;
   for (let gy = -r; gy <= r; gy += c) for (let gx = -r; gx <= r; gx += c) if (gx * gx + gy * gy <= r * r && !(gy > 10 && gy < 30)) cells.push(<rect key={`${gx}${gy}`} x={x + gx} y={y + gy} width={c} height={c} fill={CL.lime} />);
   return <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }} shapeRendering="crispEdges">{cells}</svg>;
 };
-const Water: React.FC<{ y: number }> = ({ y }) => (
+export const Water: React.FC<{ y: number }> = ({ y }) => (
   <svg width={1080} height={400} style={{ position: "absolute", left: 0, top: y }} shapeRendering="crispEdges">
     {Array.from({ length: 12 }).map((_, i) => <rect key={i} x={540 - (240 - i * 14) * (1 - i * 0.03)} y={i * 18} width={(240 - i * 14) * 2 * (1 - i * 0.03)} height={6} fill={CL.lime} opacity={0.75 - i * 0.055} />)}
     <rect x={0} y={0} width={1080} height={4} fill={CL.lime} opacity={0.5} />
   </svg>
 );
-const Bg: React.FC<{ c?: string; grid?: boolean }> = ({ c = CL.night, grid = true }) => (
+export const Bg: React.FC<{ c?: string; grid?: boolean }> = ({ c = CL.night, grid = true }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: c }} />
     {grid && <div style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(${CL.line} 2px, transparent 2px)`, backgroundSize: "36px 36px", opacity: 0.55 }} />}
   </>
 );
-const Panel: React.FC<{ x: number; y: number; w: number; h?: number; children?: React.ReactNode; hi?: boolean; style?: React.CSSProperties }> = ({ x, y, w, h, children, hi, style }) => (
+export const Panel: React.FC<{ x: number; y: number; w: number; h?: number; children?: React.ReactNode; hi?: boolean; style?: React.CSSProperties }> = ({ x, y, w, h, children, hi, style }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, background: CL.panel, border: `3px solid ${hi ? CL.lime : CL.line}`, boxShadow: `14px 14px 0 ${CL.shadow}`, boxSizing: "border-box", padding: 36, ...style }}>{children}</div>
 );
-const Foot: React.FC<{ n: number; c?: string }> = ({ n, c = CL.sage }) => (
+export const Foot: React.FC<{ n: number; total?: number; c?: string }> = ({ n, total = 15, c = CL.sage }) => (
   <div style={{ ...px(15, c, { fontWeight: 400 }), position: "absolute", left: 60, right: 60, bottom: 44, display: "flex", justifyContent: "space-between" }}>
-    <span>Collatera · Illustrative demo data · Not financial advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>Collatera · Illustrative demo data · Not financial advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const Label: React.FC<{ children: React.ReactNode; c?: string }> = ({ children, c = CL.lime }) => <div style={{ ...px(22, c), position: "absolute", left: 60, top: 64 }}>{children}</div>;
-const Head: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; style?: React.CSSProperties }> = ({ children, fs, top, c = CL.lime, style }) => <div style={{ ...px(fs, c), position: "absolute", left: 60, right: 60, top, ...style }}>{children}</div>;
-const Chip: React.FC<{ children: React.ReactNode; bg?: string; fg?: string; style?: React.CSSProperties }> = ({ children, bg = CL.lime, fg = CL.night, style }) => <div style={{ ...px(20, fg), background: bg, padding: "8px 16px", display: "inline-block", ...style }}>{children}</div>;
-const Bar: React.FC<{ x: number; y: number; w: number; v: number; c?: string }> = ({ x, y, w, v, c = CL.lime }) => (
+export const Label: React.FC<{ children: React.ReactNode; c?: string }> = ({ children, c = CL.lime }) => <div style={{ ...px(22, c), position: "absolute", left: 60, top: 64 }}>{children}</div>;
+export const Head: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; style?: React.CSSProperties }> = ({ children, fs, top, c = CL.lime, style }) => <div style={{ ...px(fs, c), position: "absolute", left: 60, right: 60, top, ...style }}>{children}</div>;
+export const Chip: React.FC<{ children: React.ReactNode; bg?: string; fg?: string; style?: React.CSSProperties }> = ({ children, bg = CL.lime, fg = CL.night, style }) => <div style={{ ...px(20, fg), background: bg, padding: "8px 16px", display: "inline-block", ...style }}>{children}</div>;
+export const Bar: React.FC<{ x: number; y: number; w: number; v: number; c?: string }> = ({ x, y, w, v, c = CL.lime }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: 34, border: `3px solid ${CL.line}`, boxSizing: "border-box", background: CL.night }}>
     <div style={{ width: `${v * 100}%`, height: "100%", background: c }} />
   </div>

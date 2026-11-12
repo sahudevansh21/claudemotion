@@ -9,10 +9,10 @@ loadFont({ family: "Newsreader", url: staticFile("quantora/fonts/newsreader-lati
 loadFont({ family: "Jost", url: staticFile("quantora/fonts/jost-latin-400-normal.woff2"), weight: "400" });
 loadFont({ family: "Jost", url: staticFile("quantora/fonts/jost-latin-300-normal.woff2"), weight: "300" });
 
-const Q = { paper: "#ECE8DF", ink: "#161514", soft: "#55524C", faint: "#8F8A80", line: "rgba(22,21,20,0.4)", grid: "rgba(22,21,20,0.2)" };
-const F = { serif: "Newsreader, Georgia, serif", word: "Jost, Inter, sans-serif", mono: "'JetBrains Mono', monospace" };
+export const Q = { paper: "#ECE8DF", ink: "#161514", soft: "#55524C", faint: "#8F8A80", line: "rgba(22,21,20,0.4)", grid: "rgba(22,21,20,0.2)" };
+export const F = { serif: "Newsreader, Georgia, serif", word: "Jost, Inter, sans-serif", mono: "'JetBrains Mono', monospace" };
 
-const Paper: React.FC<{ seed: number }> = ({ seed }) => (
+export const Paper: React.FC<{ seed: number }> = ({ seed }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: Q.paper }} />
     <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }}>
@@ -23,11 +23,11 @@ const Paper: React.FC<{ seed: number }> = ({ seed }) => (
     </svg>
   </>
 );
-const Mono: React.FC<{ children: React.ReactNode; size?: number; style?: React.CSSProperties }> = ({ children, size = 16, style }) => (
+export const Mono: React.FC<{ children: React.ReactNode; size?: number; style?: React.CSSProperties }> = ({ children, size = 16, style }) => (
   <div style={{ fontFamily: F.mono, fontSize: size, letterSpacing: size * 0.42, color: Q.ink, lineHeight: 1.75, textTransform: "uppercase", ...style }}>{children}</div>
 );
-const Mark: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("quantora/img/mark.png")} style={{ width: s, height: s, ...style }} />;
-const Shell: React.FC<{ n: number; seed: number; children: React.ReactNode; label?: string }> = ({ n, seed, children, label = "Quantora Labs" }) => (
+export const Mark: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("quantora/img/mark.png")} style={{ width: s, height: s, ...style }} />;
+export const Shell: React.FC<{ n: number; total?: number; seed: number; children: React.ReactNode; label?: string }> = ({ n, total = 15, seed, children, label = "Quantora Labs" }) => (
   <>
     <Paper seed={seed} />
     <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }}>
@@ -37,27 +37,27 @@ const Shell: React.FC<{ n: number; seed: number; children: React.ReactNode; labe
     <Mono size={13} style={{ position: "absolute", left: 70, top: 78, letterSpacing: 6 }}>{label}</Mono>
     {children}
     <Mono size={12} style={{ position: "absolute", left: 70, right: 70, bottom: 38, display: "flex", justifyContent: "space-between", letterSpacing: 4, color: Q.soft }}>
-      <span>Quantora research preview · Synthetic demo data</span><span>{String(n).padStart(2, "0")}/15</span>
+      <span>Quantora research preview · Synthetic demo data</span><span>{String(n).padStart(2, "0")}/{total}</span>
     </Mono>
   </>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; style?: React.CSSProperties }> = ({ children, fs, top, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; style?: React.CSSProperties }> = ({ children, fs, top, style }) => (
   <div style={{ fontFamily: F.serif, fontWeight: 400, fontSize: fs, lineHeight: 1.0, letterSpacing: -fs * 0.02, color: Q.ink, position: "absolute", left: 70, right: 70, top, ...style }}>{children}</div>
 );
-const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontStyle: "italic" }}>{children}</span>;
-const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number }> = ({ children, top, w = 760 }) => (
+export const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontStyle: "italic" }}>{children}</span>;
+export const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number }> = ({ children, top, w = 760 }) => (
   <div style={{ fontFamily: F.serif, fontSize: 36, lineHeight: 1.25, color: Q.soft, position: "absolute", left: 70, width: w, top }}>{children}</div>
 );
 
 /** Synthetic series (seeded). kind picks the shape. */
-const series = (seed: string, n: number, shape: (t: number) => number, noise: number) => {
+export const series = (seed: string, n: number, shape: (t: number) => number, noise: number) => {
   let w = 0;
   return Array.from({ length: n }, (_, i) => {
     w = w * 0.7 + (random(`${seed}${i}`) - 0.5) * noise;
     return shape(i / (n - 1)) + w;
   });
 };
-const Chart: React.FC<{ x: number; y: number; w: number; h: number; lines: { d: number[]; width?: number; color?: string; op?: number }[]; marks?: { i: number; label: string; line: number; up?: boolean }[]; lo?: number; hi?: number }> = ({ x, y, w, h, lines, marks = [], lo = 0, hi = 2 }) => {
+export const Chart: React.FC<{ x: number; y: number; w: number; h: number; lines: { d: number[]; width?: number; color?: string; op?: number }[]; marks?: { i: number; label: string; line: number; up?: boolean }[]; lo?: number; hi?: number }> = ({ x, y, w, h, lines, marks = [], lo = 0, hi = 2 }) => {
   const px = (i: number, len: number) => (i / (len - 1)) * w;
   const py = (v: number) => h - ((v - lo) / (hi - lo)) * h;
   return (
@@ -80,12 +80,12 @@ const Chart: React.FC<{ x: number; y: number; w: number; h: number; lines: { d: 
   );
 };
 
-const DD = series("dd", 120, (t) => (t < 0.34 ? 0.9 + (t / 0.34) * 0.8 : t < 0.62 ? 1.7 - ((t - 0.34) / 0.28) * 0.95 : 0.75 + ((t - 0.62) / 0.38) * 1.0), 0.08);
-const peak = DD.indexOf(Math.max(...DD.slice(0, 50)));
-const trough = 60 + DD.slice(60, 85).indexOf(Math.min(...DD.slice(60, 85)));
-const PA = series("pa", 100, (t) => 1 + t * 0.8 + Math.sin(t * 7) * 0.25, 0.05);
-const PB = series("pb", 100, (t) => 1 + t * 0.8 - Math.sin(t * 7) * 0.25, 0.05);
-const FAN = Array.from({ length: 14 }, (_, k) => series(`fan${k}`, 80, (t) => 1 + t * 0.5, 0.2).map((v, i, a) => a.slice(0, i + 1).reduce((s, x) => s + x, 0) / (i + 1) * 0.0 + 1 + (v - 1) * (0.6 + (i / 79) * 1.6) + (random(`z${k}`) - 0.5) * (i / 79) * 0.9));
+export const DD = series("dd", 120, (t) => (t < 0.34 ? 0.9 + (t / 0.34) * 0.8 : t < 0.62 ? 1.7 - ((t - 0.34) / 0.28) * 0.95 : 0.75 + ((t - 0.62) / 0.38) * 1.0), 0.08);
+export const peak = DD.indexOf(Math.max(...DD.slice(0, 50)));
+export const trough = 60 + DD.slice(60, 85).indexOf(Math.min(...DD.slice(60, 85)));
+export const PA = series("pa", 100, (t) => 1 + t * 0.8 + Math.sin(t * 7) * 0.25, 0.05);
+export const PB = series("pb", 100, (t) => 1 + t * 0.8 - Math.sin(t * 7) * 0.25, 0.05);
+export const FAN = Array.from({ length: 14 }, (_, k) => series(`fan${k}`, 80, (t) => 1 + t * 0.5, 0.2).map((v, i, a) => a.slice(0, i + 1).reduce((s, x) => s + x, 0) / (i + 1) * 0.0 + 1 + (v - 1) * (0.6 + (i / 79) * 1.6) + (random(`z${k}`) - 0.5) * (i / 79) * 0.9));
 
 const P1: React.FC = () => (
   <Shell n={1} seed={11} label="">
@@ -102,7 +102,7 @@ const P2: React.FC = () => (
     <Mono size={15} style={{ position: "absolute", left: 220, bottom: 190 }}>Tokenized stocks · ETFs · Market simulations</Mono>
   </Shell>
 );
-const Topic: React.FC<{ n: number; seed: number; k: string; head: React.ReactNode; sub: string; chart: React.ReactNode }> = ({ n, seed, k, head, sub, chart }) => (
+export const Topic: React.FC<{ n: number; seed: number; k: string; head: React.ReactNode; sub: string; chart: React.ReactNode }> = ({ n, seed, k, head, sub, chart }) => (
   <Shell n={n} seed={seed}>
     <Mono size={17} style={{ position: "absolute", left: 70, top: 160 }}>{k}</Mono>
     <H fs={172} top={230}>{head}</H>

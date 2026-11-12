@@ -6,16 +6,16 @@ import { makeStill } from "./still";
 loadFont({ family: "DJost", url: staticFile("quantora/fonts/jost-latin-300-normal.woff2"), weight: "300" });
 loadFont({ family: "DJost", url: staticFile("quantora/fonts/jost-latin-400-normal.woff2"), weight: "400" });
 loadFont({ family: "DSerif", url: staticFile("quantora/fonts/newsreader-latin-400-italic.woff2"), weight: "400", style: "italic" });
-const INK = "#050403";
-const GOLD = "#e8b936";
-const GOLD2 = "#f6d56a";
-const DEEP = "#8a5d12";
-const DIM = "rgba(240,215,160,0.66)";
-const J = "DJost, sans-serif";
-const MONO = "'JetBrains Mono', monospace";
+export const INK = "#050403";
+export const GOLD = "#e8b936";
+export const GOLD2 = "#f6d56a";
+export const DEEP = "#8a5d12";
+export const DIM = "rgba(240,215,160,0.66)";
+export const J = "DJost, sans-serif";
+export const MONO = "'JetBrains Mono', monospace";
 
-const gt: React.CSSProperties = { background: `linear-gradient(180deg, ${GOLD2}, ${GOLD} 55%, #c8921f)`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" };
-const Dots: React.FC<{ cx: number; cy: number; r: number; seed: string; from?: number; to?: number }> = ({ cx, cy, r, seed, from = 200, to = 340 }) => (
+export const gt: React.CSSProperties = { background: `linear-gradient(180deg, ${GOLD2}, ${GOLD} 55%, #c8921f)`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" };
+export const Dots: React.FC<{ cx: number; cy: number; r: number; seed: string; from?: number; to?: number }> = ({ cx, cy, r, seed, from = 200, to = 340 }) => (
   <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }}>
     {Array.from({ length: 150 }).map((_, i) => {
       const a = ((from + (to - from) * (i / 150)) * Math.PI) / 180; const rr = r + (random(`${seed}r${i}`) - 0.5) * 14;
@@ -23,7 +23,7 @@ const Dots: React.FC<{ cx: number; cy: number; r: number; seed: string; from?: n
     })}
   </svg>
 );
-const Bg: React.FC<{ planet?: boolean; seed?: string; glow?: number }> = ({ planet, seed = "a", glow = 1 }) => (
+export const Bg: React.FC<{ planet?: boolean; seed?: string; glow?: number }> = ({ planet, seed = "a", glow = 1 }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: INK }} />
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(70% 45% at 85% 10%, rgba(200,146,31,${0.35 * glow}), transparent 70%)` }} />
@@ -35,32 +35,32 @@ const Bg: React.FC<{ planet?: boolean; seed?: string; glow?: number }> = ({ plan
     )}
   </>
 );
-const Node: React.FC<{ x: number; y: number; r: number }> = ({ x, y, r }) => (
+export const Node: React.FC<{ x: number; y: number; r: number }> = ({ x, y, r }) => (
   <div style={{ position: "absolute", left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: r * 2, background: "radial-gradient(circle at 35% 30%, #fff3b8, #e8b936 45%, #7a4d0c 100%)", boxShadow: "0 0 30px rgba(232,185,54,0.45)" }} />
 );
-const Molecule: React.FC<{ pts: [number, number, number][]; links: [number, number][] }> = ({ pts, links }) => (
+export const Molecule: React.FC<{ pts: [number, number, number][]; links: [number, number][] }> = ({ pts, links }) => (
   <>
     <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }}>{links.map(([a, b], i) => <line key={i} x1={pts[a][0]} y1={pts[a][1]} x2={pts[b][0]} y2={pts[b][1]} stroke={GOLD} strokeWidth={2.5} opacity={0.7} />)}</svg>
     {pts.map(([x, y, r], i) => <Node key={i} x={x} y={y} r={r} />)}
   </>
 );
-const Logo: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("desci/logo.png")} style={{ width: s, height: (s * 860) / 880, ...style }} />;
-const Foot: React.FC<{ n: number }> = ({ n }) => (
+export const Logo: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => <Img src={staticFile("desci/logo.png")} style={{ width: s, height: (s * 860) / 880, ...style }} />;
+export const Foot: React.FC<{ n: number; total?: number }> = ({ n, total = 15 }) => (
   <div style={{ fontFamily: MONO, fontSize: 13, letterSpacing: 3, textTransform: "uppercase", color: "rgba(240,215,160,0.5)", position: "absolute", left: 70, right: 70, bottom: 42, display: "flex", justifyContent: "space-between" }}>
-    <span>desciBnb · Illustrative graphics · Not financial advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>desciBnb · Illustrative graphics · Not financial advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const Cap: React.FC<{ children: React.ReactNode; fs?: number; top: number; c?: string; style?: React.CSSProperties }> = ({ children, fs = 22, top, c = DIM, style }) => (
+export const Cap: React.FC<{ children: React.ReactNode; fs?: number; top: number; c?: string; style?: React.CSSProperties }> = ({ children, fs = 22, top, c = DIM, style }) => (
   <div style={{ fontFamily: J, fontWeight: 400, fontSize: fs, letterSpacing: fs * 0.5, textTransform: "uppercase", color: c, position: "absolute", left: 70, right: 70, top, ...style }}>{children}</div>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
   <div style={{ fontFamily: J, fontWeight: 300, fontSize: fs, lineHeight: 1.04, letterSpacing: -fs * 0.02, color: "#f7ecd0", position: "absolute", left: 70, right: 70, top, textAlign: center ? "center" : "left", ...style }}>{children}</div>
 );
-const G: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ ...gt, fontWeight: 400 }}>{children}</span>;
-const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontFamily: "DSerif, serif", fontStyle: "italic", ...gt }}>{children}</span>;
-const Bar: React.FC<{ x: number; y: number }> = ({ x, y }) => <div style={{ position: "absolute", left: x, top: y, width: 3, height: 70, background: DEEP }} />;
-const M1: [number, number, number][] = [[820, 230, 34], [960, 330, 20], [900, 110, 16], [720, 380, 12]];
-const L1: [number, number][] = [[0, 1], [0, 2], [0, 3]];
+export const G: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ ...gt, fontWeight: 400 }}>{children}</span>;
+export const I: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ fontFamily: "DSerif, serif", fontStyle: "italic", ...gt }}>{children}</span>;
+export const Bar: React.FC<{ x: number; y: number }> = ({ x, y }) => <div style={{ position: "absolute", left: x, top: y, width: 3, height: 70, background: DEEP }} />;
+export const M1: [number, number, number][] = [[820, 230, 34], [960, 330, 20], [900, 110, 16], [720, 380, 12]];
+export const L1: [number, number][] = [[0, 1], [0, 2], [0, 3]];
 
 const P1: React.FC = () => (
   <>
@@ -100,7 +100,7 @@ const P4: React.FC = () => (
     <Foot n={4} />
   </>
 );
-const Thread: React.FC<{ n: number; text: React.ReactNode; k: string }> = ({ n, text, k }) => (
+export const Thread: React.FC<{ n: number; text: React.ReactNode; k: string }> = ({ n, text, k }) => (
   <>
     <Bg seed={`t${n}`} /><Molecule pts={[[900, 220, 26], [1000, 120, 14], [800, 120, 11]]} links={[[0, 1], [0, 2]]} /><Cap top={110}>{k}</Cap>
     <H fs={118} top={330}>{text}</H>
@@ -118,7 +118,7 @@ const P8: React.FC = () => (
     <Foot n={8} />
   </>
 );
-const Pillar: React.FC<{ n: number; i: number; w: string }> = ({ n, i, w }) => (
+export const Pillar: React.FC<{ n: number; i: number; w: string }> = ({ n, i, w }) => (
   <>
     <Bg planet seed={`p${n}`} />
     <Cap top={110}>Research × Funding × Collaboration × AI</Cap>

@@ -40,6 +40,10 @@ import { SafefiX } from "./compositions/XPosts/safefi";
 import { ArgusX } from "./compositions/XPosts/argus";
 import { PolymateX } from "./compositions/XPosts/polymate";
 import { DesciX } from "./compositions/XPosts/desci";
+import { PolymateX2 } from "./compositions/XPosts/polymate2";
+import { Quantora20 } from "./compositions/XPosts/quantora20";
+import { Collatera20 } from "./compositions/XPosts/collatera20";
+import { Oryn20 } from "./compositions/XPosts/oryn20";
 import { Lampzi } from "./compositions/Lampzi/Lampzi";
 import { LampziWalk } from "./compositions/Lampzi/walk/Walk";
 import { VybePosts } from "./compositions/Vybe/posts";
@@ -274,6 +278,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="ArgusX" component={ArgusX} width={1080} height={1350} fps={1} durationInFrames={15} />
       <Composition id="PolymateX" component={PolymateX} width={1080} height={1350} fps={1} durationInFrames={15} />
       <Composition id="DesciX" component={DesciX} width={1080} height={1350} fps={1} durationInFrames={15} />
+      <Composition id="PolymateX2" component={PolymateX2} width={1080} height={1350} fps={1} durationInFrames={20} />
+      <Composition id="Quantora20" component={Quantora20} width={1080} height={1350} fps={1} durationInFrames={20} />
+      <Composition id="Collatera20" component={Collatera20} width={1080} height={1350} fps={1} durationInFrames={20} />
+      <Composition id="Oryn20" component={Oryn20} width={1080} height={1350} fps={1} durationInFrames={20} />
 
       {/* ALLOCRA 16:9 videos: 1920x1080 @ 60 fps; same timing and scores as the vertical cuts. */}
       <Composition id="AllocraH1" component={AllocraH1} width={1920} height={1080} fps={60} durationInFrames={1080} />

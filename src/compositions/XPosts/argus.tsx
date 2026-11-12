@@ -3,14 +3,14 @@ import "../../config/theme";
 import { makeStill } from "./still";
 
 /** ARGUS X-profile posts (15): banner system = black stage with a teal-green UV glow and fluorescent specks, white grotesk headline with the key phrase in mint gradient, gold swirl logo. Figures (15 ms inference, 99.4% precision) are quoted from the Argus profile; detection visuals are illustrative. */
-const INK = "#030504";
-const MINT = "#2ee6a6";
-const SOFT = "rgba(255,255,255,0.66)";
-const GOLD = "#e8c43a";
-const SANS = "Inter, system-ui, sans-serif";
-const MONO = "'JetBrains Mono', monospace";
+export const INK = "#030504";
+export const MINT = "#2ee6a6";
+export const SOFT = "rgba(255,255,255,0.66)";
+export const GOLD = "#e8c43a";
+export const SANS = "Inter, system-ui, sans-serif";
+export const MONO = "'JetBrains Mono', monospace";
 
-const Specks: React.FC<{ cx: number; cy: number; n?: number; spread?: number; seed?: string; max?: number }> = ({ cx, cy, n = 70, spread = 420, seed = "a", max = 7 }) => (
+export const Specks: React.FC<{ cx: number; cy: number; n?: number; spread?: number; seed?: string; max?: number }> = ({ cx, cy, n = 70, spread = 420, seed = "a", max = 7 }) => (
   <svg width={1080} height={1350} style={{ position: "absolute", inset: 0 }}>
     {Array.from({ length: n }).map((_, i) => {
       const a = random(`${seed}a${i}`) * Math.PI * 2; const d = Math.pow(random(`${seed}d${i}`), 0.7) * spread;
@@ -19,29 +19,29 @@ const Specks: React.FC<{ cx: number; cy: number; n?: number; spread?: number; se
     })}
   </svg>
 );
-const Bg: React.FC<{ cx?: number; cy?: number; seed?: string; n?: number; glow?: number }> = ({ cx = 760, cy = 330, seed, n = 60, glow = 1 }) => (
+export const Bg: React.FC<{ cx?: number; cy?: number; seed?: string; n?: number; glow?: number }> = ({ cx = 760, cy = 330, seed, n = 60, glow = 1 }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: INK }} />
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(60% 40% at ${(cx / 1080) * 100}% ${(cy / 1350) * 100}%, rgba(20,200,140,${0.55 * glow}), rgba(8,100,70,${0.25 * glow}) 45%, transparent 75%)` }} />
     {seed && <Specks cx={cx} cy={cy} seed={seed} n={n} />}
   </>
 );
-const Logo: React.FC<{ w: number; style?: React.CSSProperties }> = ({ w, style }) => <Img src={staticFile("argus/logo.png")} style={{ width: w, height: (w * 370) / 1070, ...style }} />;
-const Foot: React.FC<{ n: number }> = ({ n }) => (
+export const Logo: React.FC<{ w: number; style?: React.CSSProperties }> = ({ w, style }) => <Img src={staticFile("argus/logo.png")} style={{ width: w, height: (w * 370) / 1070, ...style }} />;
+export const Foot: React.FC<{ n: number; total?: number }> = ({ n, total = 15 }) => (
   <div style={{ fontFamily: MONO, fontSize: 13, letterSpacing: 3, textTransform: "uppercase", color: "rgba(255,255,255,0.5)", position: "absolute", left: 70, right: 70, bottom: 44, display: "flex", justifyContent: "space-between" }}>
-    <span>Argus · Figures as stated on the Argus profile · Illustrative visuals</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>Argus · Figures as stated on the Argus profile · Illustrative visuals</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
+export const H: React.FC<{ children: React.ReactNode; fs: number; top: number; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, center, style }) => (
   <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: fs, lineHeight: 1.02, letterSpacing: -fs * 0.04, color: "#f4f6f5", position: "absolute", left: 70, right: 70, top, textAlign: center ? "center" : "left", ...style }}>{children}</div>
 );
-const G: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ background: `linear-gradient(90deg, #7ff5c9, ${MINT} 50%, #12b783)`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>{children}</span>;
-const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number }> = ({ children, top, w = 840 }) => <div style={{ fontFamily: SANS, fontSize: 38, lineHeight: 1.3, color: SOFT, position: "absolute", left: 70, width: w, top }}>{children}</div>;
-const Tag: React.FC<{ children: React.ReactNode; top?: number }> = ({ children, top = 90 }) => <div style={{ fontFamily: MONO, fontSize: 20, letterSpacing: 6, textTransform: "uppercase", color: MINT, position: "absolute", left: 70, top }}>{children}</div>;
-const Card: React.FC<{ x: number; y: number; w: number; h: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ x, y, w, h, children, style }) => (
+export const G: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ background: `linear-gradient(90deg, #7ff5c9, ${MINT} 50%, #12b783)`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>{children}</span>;
+export const Sub: React.FC<{ children: React.ReactNode; top: number; w?: number }> = ({ children, top, w = 840 }) => <div style={{ fontFamily: SANS, fontSize: 38, lineHeight: 1.3, color: SOFT, position: "absolute", left: 70, width: w, top }}>{children}</div>;
+export const Tag: React.FC<{ children: React.ReactNode; top?: number }> = ({ children, top = 90 }) => <div style={{ fontFamily: MONO, fontSize: 20, letterSpacing: 6, textTransform: "uppercase", color: MINT, position: "absolute", left: 70, top }}>{children}</div>;
+export const Card: React.FC<{ x: number; y: number; w: number; h: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ x, y, w, h, children, style }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 26, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.14)", boxShadow: "0 30px 80px rgba(0,0,0,0.5)", boxSizing: "border-box", padding: 40, ...style }}>{children}</div>
 );
-const Viewfinder: React.FC<{ x: number; y: number; w: number; h: number; seed: string }> = ({ x, y, w, h, seed }) => (
+export const Viewfinder: React.FC<{ x: number; y: number; w: number; h: number; seed: string }> = ({ x, y, w, h, seed }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 22, overflow: "hidden", border: "1px solid rgba(255,255,255,0.2)", background: "#04100c" }}>
     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(60% 55% at 55% 50%, rgba(25,210,150,0.45), transparent 70%)" }} />
     <svg width={w} height={h} style={{ position: "absolute", inset: 0 }}>
@@ -67,7 +67,7 @@ const P2: React.FC = () => (
     <Foot n={2} />
   </>
 );
-const Step: React.FC<{ n: number; k: string; head: React.ReactNode; sub: string; seed: string }> = ({ n, k, head, sub, seed }) => (
+export const Step: React.FC<{ n: number; k: string; head: React.ReactNode; sub: string; seed: string }> = ({ n, k, head, sub, seed }) => (
   <>
     <Bg seed={seed} cx={560} cy={940} n={80} glow={0.9} /><Tag>{k}</Tag>
     <H fs={156} top={210}>{head}</H>

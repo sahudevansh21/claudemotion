@@ -3,48 +3,48 @@ import { DEPLOYMENTS, DISPLAY, MONO, SANS, VERDICTS, type Status } from "../Oryn
 import { makeStill } from "./still";
 
 /** ORYN X-profile posts (15): banner system = cream stock, cyan halftone glow, navy cloud scallops, orange asterisk + flame, navy tracked caps. Verdict copy is verbatim from the Oryn board (simulated issuer data). */
-const NAVY = "#1d3fa8";
-const CYAN = "#58c3dc";
-const OR = "#f0501e";
-const CREAM = "#f0e9d6";
+export const NAVY = "#1d3fa8";
+export const CYAN = "#58c3dc";
+export const OR = "#f0501e";
+export const CREAM = "#f0e9d6";
 
-const cap = (fs: number, color: string = NAVY, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: SANS, fontWeight: 700, fontSize: fs, letterSpacing: fs * 0.22, textTransform: "uppercase", color, ...extra });
-const disp = (fs: number, color: string = NAVY, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: DISPLAY, fontSize: fs, lineHeight: 0.98, textTransform: "uppercase", color, letterSpacing: 1, ...extra });
+export const cap = (fs: number, color: string = NAVY, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: SANS, fontWeight: 700, fontSize: fs, letterSpacing: fs * 0.22, textTransform: "uppercase", color, ...extra });
+export const disp = (fs: number, color: string = NAVY, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: DISPLAY, fontSize: fs, lineHeight: 0.98, textTransform: "uppercase", color, letterSpacing: 1, ...extra });
 
-const Halftone: React.FC<{ cx: number; cy: number; w: number; h: number; dot?: number }> = ({ cx, cy, w, h, dot = 20 }) => {
+export const Halftone: React.FC<{ cx: number; cy: number; w: number; h: number; dot?: number }> = ({ cx, cy, w, h, dot = 20 }) => {
   const mask = "radial-gradient(ellipse at center, #000 0%, rgba(0,0,0,0.85) 35%, transparent 70%)";
   return <div style={{ position: "absolute", left: cx - w / 2, top: cy - h / 2, width: w, height: h, backgroundImage: `radial-gradient(circle, ${CYAN} 36%, transparent 40%)`, backgroundSize: `${dot}px ${dot}px`, WebkitMaskImage: mask, maskImage: mask, opacity: 0.9 }} />;
 };
-const Cloud: React.FC<{ x: number; y: number; s?: number; flip?: boolean }> = ({ x, y, s = 1, flip }) => (
+export const Cloud: React.FC<{ x: number; y: number; s?: number; flip?: boolean }> = ({ x, y, s = 1, flip }) => (
   <svg style={{ position: "absolute", left: x, top: y, transform: `scale(${flip ? -s : s}, ${s})`, transformOrigin: "0 0" }} width={420} height={220} viewBox="0 0 420 220">
     {[[60, 160, 70], [150, 120, 90], [250, 140, 75], [340, 150, 70], [210, 190, 80]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill={NAVY} />)}
     {[[130, 90, 50], [235, 108, 44], [330, 120, 36]].map(([cx, cy, r], i) => <path key={i} d={`M${cx - r} ${cy + 20} A${r} ${r} 0 0 1 ${cx + r} ${cy + 20}`} fill="none" stroke={CREAM} strokeWidth={6} strokeLinecap="round" opacity={0.9} />)}
   </svg>
 );
-const Clouds: React.FC<{ y?: number }> = ({ y = 1130 }) => (
+export const Clouds: React.FC<{ y?: number }> = ({ y = 1130 }) => (
   <>
     <Cloud x={-120} y={y} /><Cloud x={250} y={y + 50} s={0.8} /><Cloud x={620} y={y + 10} s={1.05} /><Cloud x={870} y={y + 60} s={0.8} />
   </>
 );
-const Asterisk: React.FC<{ s: number; color?: string; style?: React.CSSProperties }> = ({ s, color = OR, style }) => (
+export const Asterisk: React.FC<{ s: number; color?: string; style?: React.CSSProperties }> = ({ s, color = OR, style }) => (
   <svg width={s} height={s} viewBox="0 0 100 100" style={style}>
     {[0, 60, 120].map((a) => <rect key={a} x={42} y={8} width={16} height={84} rx={3} fill={color} transform={`rotate(${a} 50 50)`} />)}
   </svg>
 );
-const Ring: React.FC<{ s: number }> = ({ s }) => (
+export const Ring: React.FC<{ s: number }> = ({ s }) => (
   <div style={{ width: s, height: s, borderRadius: s, border: `${s * 0.03}px solid ${NAVY}`, display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box", background: CREAM }}>
     <Asterisk s={s * 0.6} />
   </div>
 );
-const Flame: React.FC<{ s: number }> = ({ s }) => (
+export const Flame: React.FC<{ s: number }> = ({ s }) => (
   <svg width={s} height={s * 1.25} viewBox="0 0 80 100"><path d="M42 2C44 22 70 34 70 62c0 20-14 34-30 34S10 82 10 64c0-14 8-22 14-30 2 10 8 14 12 14C34 34 36 16 42 2z" fill={OR} /></svg>
 );
-const Rule: React.FC<{ y: number }> = ({ y }) => (
+export const Rule: React.FC<{ y: number }> = ({ y }) => (
   <div style={{ position: "absolute", left: 120, right: 120, top: y, display: "flex", alignItems: "center", gap: 14 }}>
     <div style={{ flex: 1, height: 3, background: NAVY }} /><Asterisk s={34} /><div style={{ flex: 1, height: 3, background: NAVY }} />
   </div>
 );
-const Bg: React.FC<{ glow?: boolean; clouds?: boolean; cx?: number; cy?: number }> = ({ glow = true, clouds = true, cx = 540, cy = 430 }) => (
+export const Bg: React.FC<{ glow?: boolean; clouds?: boolean; cx?: number; cy?: number }> = ({ glow = true, clouds = true, cx = 540, cy = 430 }) => (
   <>
     <div style={{ position: "absolute", inset: 0, background: CREAM }} />
     {glow && <Halftone cx={cx} cy={cy} w={1300} h={900} />}
@@ -52,15 +52,15 @@ const Bg: React.FC<{ glow?: boolean; clouds?: boolean; cx?: number; cy?: number 
     {clouds && <Clouds />}
   </>
 );
-const Foot: React.FC<{ n: number; light?: boolean }> = ({ n, light }) => (
+export const Foot: React.FC<{ n: number; total?: number; light?: boolean }> = ({ n, total = 15, light }) => (
   <div style={{ ...cap(13, light ? CREAM : NAVY, { letterSpacing: 3 }), position: "absolute", left: 60, right: 60, bottom: 40, display: "flex", justifyContent: "space-between", zIndex: 4 }}>
-    <span>ORYN · Simulated issuer data · Not investment advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>ORYN · Simulated issuer data · Not investment advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
-const Head: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, c = NAVY, center, style }) => (
+export const Head: React.FC<{ children: React.ReactNode; fs: number; top: number; c?: string; center?: boolean; style?: React.CSSProperties }> = ({ children, fs, top, c = NAVY, center, style }) => (
   <div style={{ ...disp(fs, c), position: "absolute", left: 70, right: 70, top, textAlign: center ? "center" : "left", ...style }}>{children}</div>
 );
-const Tag: React.FC<{ children: React.ReactNode; top?: number }> = ({ children, top = 70 }) => <div style={{ ...cap(20, NAVY), position: "absolute", left: 70, top }}>{children}</div>;
+export const Tag: React.FC<{ children: React.ReactNode; top?: number }> = ({ children, top = 70 }) => <div style={{ ...cap(20, NAVY), position: "absolute", left: 70, top }}>{children}</div>;
 
 const P1: React.FC = () => (
   <>
@@ -130,7 +130,7 @@ const P6: React.FC = () => {
     </>
   );
 };
-const Dep: React.FC<{ n: number; idx: number; q: string }> = ({ n, idx, q }) => {
+export const Dep: React.FC<{ n: number; idx: number; q: string }> = ({ n, idx, q }) => {
   const d = DEPLOYMENTS[idx]; const v = VERDICTS[d.status];
   return (
     <>

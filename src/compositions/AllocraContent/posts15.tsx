@@ -2,52 +2,52 @@ import { AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig } from "
 import { AL_FONTS, Logo, P, serif, sans, mono } from "./kit";
 
 /** Allocra X-profile posts: 15 stills, 1080x1350 (4:5), frame N = post N+1. Theme: the account banner (vermilion, old-master portrait, cream serif, hairline arc). */
-const W = 1080;
-const H = 1350;
-const RED = "#E22403";
-const GOLD = "#F2C892";
-const BROWN = "#3d1812";
-const NOISE = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.012 0.02' numOctaves='5' seed='7'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.02  0 0 0 0 0  0 0 0 1.1 -0.35'/></filter><rect width='600' height='600' filter='url(%23n)'/></svg>")`;
+export const W = 1080;
+export const H = 1350;
+export const RED = "#E22403";
+export const GOLD = "#F2C892";
+export const BROWN = "#3d1812";
+export const NOISE = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.012 0.02' numOctaves='5' seed='7'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.02  0 0 0 0 0  0 0 0 1.1 -0.35'/></filter><rect width='600' height='600' filter='url(%23n)'/></svg>")`;
 
-const cap = (size: number, color: string = P.cream, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: AL_FONTS.serif, fontSize: size, letterSpacing: size * 0.34, textTransform: "uppercase", color, ...extra });
+export const cap = (size: number, color: string = P.cream, extra: React.CSSProperties = {}): React.CSSProperties => ({ fontFamily: AL_FONTS.serif, fontSize: size, letterSpacing: size * 0.34, textTransform: "uppercase", color, ...extra });
 
-const Red: React.FC = () => (
+export const Red: React.FC = () => (
   <>
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(120% 90% at 30% 25%, #F02A04 0%, ${RED} 45%, #C81E02 100%)` }} />
     <div style={{ position: "absolute", inset: 0, backgroundImage: NOISE, backgroundSize: "600px 600px", opacity: 0.55, mixBlendMode: "multiply" }} />
     <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 0 220px rgba(80,6,0,0.35)" }} />
   </>
 );
-const Dark: React.FC = () => (
+export const Dark: React.FC = () => (
   <>
     <div style={{ position: "absolute", inset: 0, background: P.dark }} />
     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(90% 60% at 50% 0%, rgba(226,36,3,0.20), transparent 70%)" }} />
     <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 0 220px rgba(0,0,0,0.4)" }} />
   </>
 );
-const Cream: React.FC = () => (
+export const Cream: React.FC = () => (
   <>
     <div style={{ position: "absolute", inset: 0, background: P.cream }} />
     <div style={{ position: "absolute", inset: 0, backgroundImage: NOISE, backgroundSize: "600px 600px", opacity: 0.10, mixBlendMode: "multiply" }} />
   </>
 );
 
-const Foot: React.FC<{ n: number; color?: string }> = ({ n, color = "rgba(246,218,195,0.75)" }) => (
+export const Foot: React.FC<{ n: number; total?: number; color?: string }> = ({ n, total = 15, color = "rgba(246,218,195,0.75)" }) => (
   <div style={{ ...cap(13, color, { letterSpacing: 4 }), position: "absolute", left: 70, right: 70, bottom: 46, display: "flex", justifyContent: "space-between", zIndex: 5 }}>
-    <span>Allocra · Preview / TestNet demo · Not investment advice</span><span>{String(n).padStart(2, "0")}/15</span>
+    <span>Allocra · Preview / TestNet demo · Not investment advice</span><span>{String(n).padStart(2, "0")}/{total}</span>
   </div>
 );
 /** "MMXXV +———" masthead from the banner. */
-const Mast: React.FC<{ color?: string; right?: string }> = ({ color = GOLD, right }) => (
+export const Mast: React.FC<{ color?: string; right?: string }> = ({ color = GOLD, right }) => (
   <div style={{ position: "absolute", left: 70, right: 70, top: 64, display: "flex", alignItems: "center", gap: 18, ...cap(16, color) }}>
     <span>MMXXV</span><span style={{ letterSpacing: 0 }}>+</span><span style={{ flex: "0 0 170px", height: 1, background: color, opacity: 0.7 }} />
     {right && <span style={{ marginLeft: "auto", letterSpacing: 5 }}>{right}</span>}
   </div>
 );
-const Arc: React.FC<{ cx: number; cy: number; r: number; color?: string }> = ({ cx, cy, r, color = GOLD }) => (
+export const Arc: React.FC<{ cx: number; cy: number; r: number; color?: string }> = ({ cx, cy, r, color = GOLD }) => (
   <div style={{ position: "absolute", left: cx - r, top: cy - r, width: r * 2, height: r * 2, borderRadius: r, border: `1.5px solid ${color}`, opacity: 0.6 }} />
 );
-const Cross: React.FC<{ x: number; y: number; s?: number; color?: string }> = ({ x, y, s = 26, color = GOLD }) => (
+export const Cross: React.FC<{ x: number; y: number; s?: number; color?: string }> = ({ x, y, s = 26, color = GOLD }) => (
   <div style={{ position: "absolute", left: x - s / 2, top: y - s / 2, width: s, height: s, opacity: 0.85 }}>
     <div style={{ position: "absolute", left: s / 2, top: 0, width: 1.5, height: s, background: color }} />
     <div style={{ position: "absolute", top: s / 2, left: 0, height: 1.5, width: s, background: color }} />
@@ -55,7 +55,7 @@ const Cross: React.FC<{ x: number; y: number; s?: number; color?: string }> = ({
 );
 
 /** Portrait crop from the account banner, feathered into the red. */
-const Portrait: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => {
+export const Portrait: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, style }) => {
   const x0 = 880, x1 = 1330, bw = 1500, bh = 500;
   const mask = "linear-gradient(90deg, transparent 0%, #000 22%, #000 78%, transparent 100%)";
   return (
@@ -65,14 +65,14 @@ const Portrait: React.FC<{ s: number; style?: React.CSSProperties }> = ({ s, sty
   );
 };
 
-const Frame: React.FC<{ src: string; w: number; h: number; pos?: string; style?: React.CSSProperties }> = ({ src, w, h, pos = "50% 50%", style }) => (
+export const Frame: React.FC<{ src: string; w: number; h: number; pos?: string; style?: React.CSSProperties }> = ({ src, w, h, pos = "50% 50%", style }) => (
   <div style={{ width: w, border: "1px solid rgba(246,218,195,0.45)", padding: 14, boxSizing: "border-box", background: "rgba(0,0,0,0.2)", boxShadow: "0 40px 90px rgba(0,0,0,0.35)", ...style }}>
     <div style={{ width: "100%", height: h, overflow: "hidden" }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos }} />
     </div>
   </div>
 );
-const T: React.FC<{ children: React.ReactNode; fs: number; top: number; color?: string; left?: number; right?: number; style?: React.CSSProperties }> = ({ children, fs, top, color = P.cream, left = 70, right = 70, style }) => (
+export const T: React.FC<{ children: React.ReactNode; fs: number; top: number; color?: string; left?: number; right?: number; style?: React.CSSProperties }> = ({ children, fs, top, color = P.cream, left = 70, right = 70, style }) => (
   <div style={{ ...serif(fs, color, { lineHeight: 0.98 }), position: "absolute", left, right, top, ...style }}>{children}</div>
 );
 
@@ -100,7 +100,7 @@ const P2: React.FC = () => (
   </>
 );
 /* 03-05 pillars */
-const Pillar: React.FC<{ n: number; roman: string; title: React.ReactNode; img: string; pos: string; sub: string }> = ({ n, roman, title, img, pos, sub }) => (
+export const Pillar: React.FC<{ n: number; roman: string; title: React.ReactNode; img: string; pos: string; sub: string }> = ({ n, roman, title, img, pos, sub }) => (
   <>
     <Red /><Mast right={`${roman} / III`} />
     <T fs={176} top={170}>{title}</T>
@@ -232,7 +232,7 @@ const P15: React.FC = () => (
   </>
 );
 
-const POSTS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15];
+export const POSTS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15];
 export const AllocraPosts15: React.FC = () => {
   const f = useCurrentFrame();
   const { width } = useVideoConfig();
